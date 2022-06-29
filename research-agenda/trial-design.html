@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+    
+<!-- Mirrored from md2k.org/research-agenda/trial-design.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 19:32:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+                <!-- head -->
+        <base  />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="mHealth, md2k, mobile health, precision medicine, biomarkers, mobile sensor data, mobile sensors" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Advancing biomedical discovery and improving health through mobile sensor Big Data" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>MD2K - Trial Design</title>
+	<link href="trial-designdcab.html?type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+	<link href="trial-designb550.html?type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+	<link href="http://md2k-webtest.memphis.edu/research-agenda/trial-design.html" rel="canonical" />
+	<link href="../images/Logos/favicon2.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="../favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="../media/bibtex/css/bibtex.css" rel="stylesheet" type="text/css" />
+	<link href="../plugins/system/maximenuckmobile/themes/default/maximenuckmobile.css" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic&amp;subset=latin-ext" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Fjalla+One:regular&amp;subset=latin-ext" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&amp;subset=greek,greek-ext" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/legacy.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/template.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/presets/preset2.css" rel="stylesheet" type="text/css" class="preset" />
+	<link href="../templates/shaper_helix3/css/custom.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/frontend-edit.css" rel="stylesheet" type="text/css" />
+	<link href="../modules/mod_maximenuck/themes/custom/css/maximenuck_maximenuck196.css" rel="stylesheet" type="text/css" />
+	<link href="../modules/mod_maximenuck/assets/maximenuresponsiveck.css" rel="stylesheet" type="text/css" />
+	<link href="../modules/mod_maximenuck/assets/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+.mobilebarmaximenuck { display: none; }
+	@media only screen and (max-width:640px){
+    #maximenuck196 { display: none !important; }
+    .mobilebarmaximenuck { display: block; }
+	.hidemenumobileck {display: none !important;}
+     }body{font-family:Lato, sans-serif; font-size:14px; font-weight:normal; }h1{font-family:Fjalla One, sans-serif; font-size:36px; font-weight:normal; }h2{font-family:Fjalla One, sans-serif; font-size:30px; font-weight:normal; }h3{font-family:Roboto, sans-serif; font-size:24px; font-weight:700; }h4{font-family:Roboto, sans-serif; font-size:18px; font-weight:700; }h5{font-family:Roboto, sans-serif; font-size:18px; font-weight:700italic; }h6{font-family:Lato, sans-serif; font-size:16px; font-weight:700; }button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #2a9eb2;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #aed141}
+
+.button:active {
+  background-color: #aed141;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+ 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+     -webkit-flex-direction: column;
+    flex-direction: column;
+    webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+	background-color: #2b3675;
+	border-radius: 45px;
+}
+
+.flex-item {
+    background-color: #ffffff;
+    width: 98%;
+    height: auto;
+    margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 45px;
+	padding: 15px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+	text-align: justify;
+}
+
+.flex-study {
+    background-color: #ffffff;
+    width: 25%;
+    height: auto;
+    margin: 10px;
+	border-radius: 45px;
+	padding: 20px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+	
+}
+.flex-study1 {
+    background-color: #ffffff;
+    width: 25%;
+    height: 100%;
+    margin: 10px;
+	border-radius: 45px;
+	padding: 20px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+      text-align: center;
+-webkit-align-self: center; /* Safari 7.0+ */
+    align-contents: center;
+}
+
+.flex-container2 {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: auto;
+	background-color: #2b3675;
+	border-radius: 45px;
+}
+
+p {
+text-align: justify;
+}
+
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #bbb;
+	width: 100%;
+	}
+	
+	td {
+    border-top: 1px solid #ddd;
+    padding: 4px 8px;
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	font-size: 14px;
+		color: #2b3675;
+}
+	th {
+    border-top: 1px solid #ddd;
+    padding: 4px 8px;
+	font-family:Roboto Black, Raleway Black, Oswald SemiBold, Montserrat SemiBold;
+	font-size: 22px;
+		background-color: #2b3675;
+		color: #fff;
+}
+	
+		
+	tbody tr:nth-child(even) td {
+    background-color: #eee;
+}
+
+
+.one-half,
+
+.one-third,
+
+.two-third,
+
+.one-fourth,
+
+.three-fourth,
+
+.one-fifth,
+
+.two-fifth,
+
+.three-fifth,
+
+.four-fifth,
+
+.one-sixth,
+
+.five-sixth {
+
+  float: left;
+
+  margin: 0 4% 15px 0;
+
+}
+
+.three-across-1
+{
+
+  float: left;
+
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border: 5px;
+  width: 30%;
+
+}
+
+.three-across-2
+{
+
+  float: left;
+
+ margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 30%;
+
+}
+
+
+
+.three-across-3
+{
+
+  float: left;
+   margin-bottom: 15px;
+  margin-left: 15px;
+  
+  width: 30%;
+
+}
+
+
+.one-half.last,
+
+.one-third.last,
+
+.two-third.last,
+
+.one-fourth.last,
+
+.three-fourth.last,
+
+.one-fifth.last,
+
+.two-fifth.last,
+
+.three-fifth.last,
+
+.four-fifth.last,
+
+.one-sixth.last,
+
+.five-sixth.last {
+
+  margin-right: 0;
+
+  margin-bottom: 15px;
+
+}
+
+.one-half {
+
+  width: 48%;
+
+}
+
+.one-third {
+
+  width: 30.66%;
+
+}
+
+.two-third {
+
+  width: 65.33%;
+
+}
+
+.one-fourth {
+
+  width: 22%;
+
+}
+
+.three-fourth {
+
+  width: 74%;
+
+}
+
+.one-fifth {
+
+  width: 16.8%;
+
+}
+
+.two-fifth {
+
+  width: 37.6%;
+
+}
+
+.three-fifth {
+
+  width: 58.4%;
+
+}
+
+.four-fifth {
+
+  width: 79.2%;
+
+}
+
+.one-sixth {
+
+  width: 13.33%;
+
+}
+
+.five-sixth {
+
+  width: 82.66%;
+
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.characteristic {
+  text-align: center;
+  color: #fff;
+
+  padding: 2px 7px;
+
+  background-color: #BB4C38;
+  border-radius: 10px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 60%;
+  margin: 2px;
+  top: -4px;
+  position: relative;
+
+}#sp-main-body{ margin:-20px 0px 0px 0px; }#sp-feature-team-page{ padding:20px; }@media screen and (max-width: 640px) {div#maximenuck196 ul.maximenuck li.maximenuck.nomobileck, div#maximenuck196 .maxipushdownck ul.maximenuck2 li.maximenuck.nomobileck { display: none !important; }}@media screen and (min-width: 641px) {div#maximenuck196 ul.maximenuck li.maximenuck.nodesktopck, div#maximenuck196 .maxipushdownck ul.maximenuck2 li.maximenuck.nodesktopck { display: none !important; }}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"c6fd3bb597f281d3fe9d338cc365b486","system.paths":{"root":"","base":""}}</script>
+	<script src="../media/system/js/mootools-core700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/system/js/core700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/bibtex/js/bibtex.js" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-noconflict700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-migrate.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/system/js/caption700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../plugins/system/maximenuckmobile/assets/maximenuckmobile.js" type="text/javascript"></script>
+	<script src="../templates/shaper_helix3/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../templates/shaper_helix3/js/jquery.sticky.js" type="text/javascript"></script>
+	<script src="../templates/shaper_helix3/js/main.js" type="text/javascript"></script>
+	<script src="../templates/shaper_helix3/js/frontend-edit.js" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery.ui.core.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/plg_captcha_recaptcha/js/recaptcha.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=JoomlaInitReCaptcha2&amp;render=explicit&amp;hl=en-GB" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});jQuery(document).ready(function($){
+                    $('#maximenuck196').MobileMaxiMenu({usemodules : 0,container : 'menucontainer',showdesc : 0,showlogo : 1,useimages : 0,menuid : 'maximenuck196',showmobilemenutext : 'default',mobilemenutext : 'Menu',mobilebackbuttontext : 'Back',displaytype : 'flat',menubarbuttoncontent : '',topbarbuttoncontent : '',uriroot : '',displayeffect : 'normal',menuwidth : '300',openedonactiveitem : '0'});});// Find all YouTube videos
+var $allVideos = $("iframe[src^='//www.youtube.com']"),
+
+    // The element that is fluid width
+    $fluidEl = $("body");
+
+// Figure out and save aspect ratio for each video
+$allVideos.each(function() {
+
+  $(this)
+    .data('aspectRatio', this.height / this.width)
+
+    // and remove the hard coded width/height
+    .removeAttr('height')
+    .removeAttr('width');
+
+});
+
+// When the window is resized
+$(window).resize(function() {
+
+  var newWidth = $fluidEl.width();
+
+  // Resize all videos according to their own aspect ratio
+  $allVideos.each(function() {
+
+    var $el = $(this);
+    $el
+      .width(newWidth)
+      .height(newWidth * $el.data('aspectRatio'));
+
+  });
+
+// Kick off one resize to fix all videos on page load
+}).resize();
+var sp_preloader = '0';
+
+var sp_gotop = '0';
+
+var sp_offanimation = 'default';
+
+	</script>
+
+            
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55313502-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Universal Google Analytics Plugin by PB Web Development -->
+
+
+</head>
+
+    <body class="site com-content view-category layout-blog no-task itemid-474 en-gb ltr  layout-fluid off-canvas-menu-init">
+
+        <div class="body-wrapper">
+            <div class="body-innerwrapper">
+                <header id="sp-header"><div class="container"><div class="row"><div id="sp-logo" class="col-xs-8 col-sm-2 col-md-2"><div class="sp-column "><div class="logo"><a href="../index.html"><img class="sp-default-logo hidden-xs" src="../images/Logos/MD2K-Logo_80px.png" alt="MD2K"><img class="sp-retina-logo hidden-xs" src="../images/Logos/MD2K-Logo_80px.png" alt="MD2K" width="179" height="80"><img class="sp-default-logo visible-xs" src="../images/Logos/MD2K-Logo_60px.png" alt="MD2K"></a></div></div></div><div id="sp-title" class="col-xs-3 col-sm-10 col-md-10 hidden-sm hidden-xs"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<h2 style="font-size: 1.4em; font-style: italic; font-weight: 300; padding-top: 10px;">Advancing biomedical discovery and improving health through mobile sensor Big Data</h2></div>
+</div></div></div></div></div></div></header><section id="sp-page-title"><div class="row"><div id="sp-othermenu" class="col-sm-12 col-md-12"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+			<!--[if lte IE 7]>
+			<link href="/modules/mod_maximenuck/themes/tabs/css/ie7.css" rel="stylesheet" type="text/css" />
+			<![endif]--><!-- debut Maximenu CK, par cedric keiflin -->
+	<div class="maximenuckh ltr" id="maximenuck196" style="z-index:10;">
+        <div class="maxiroundedleft"></div>
+        <div class="maxiroundedcenter">
+            <ul class=" maximenuck">
+												<li data-level="1" class="maximenuck item101 first level1 " style="z-index : 12000;" ><a class="maximenuck " href="../index.html"><span class="titreck">Home</span></a>
+		</li><li data-level="1" class="maximenuck item191 parent level1 " style="z-index : 11999;" ><a class="maximenuck " href="../about.html"><span class="titreck">About</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item196 first level2 " style="z-index : 11998;" ><a class="maximenuck " href="../about/meet-the-team.html"><span class="titreck">MD2K Team</span></a>
+		</li><li data-level="2" class="maximenuck item198 parent level2 " style="z-index : 11997;" ><a class="maximenuck " href="../about/news.html"><span class="titreck">News</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item443 first last level3 " style="z-index : 11996;" ><a class="maximenuck " href="../about/news/md2k-in-the-news.html"><span class="titreck">MD2K in the News</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item581 level2 " style="z-index : 11995;" ><a class="maximenuck " href="../about/privacy.html"><span class="titreck">Privacy</span></a>
+		</li><li data-level="2" class="maximenuck item224 last level2 " style="z-index : 11994;" ><a class="maximenuck " href="../about/contact.html"><span class="titreck">Contact</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item193 active parent level1 " style="z-index : 11993;" ><a class="maximenuck " href="../research-agenda.html"><span class="titreck">Research</span></a>
+	<div class="floatck" style="width:900px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item338 first level2 " style="z-index : 11992;" ><a class="maximenuck " href="pubs.html"><span class="titreck">Publications</span></a>
+		</li></ul><div class="clr"></div></div><div class="maximenuck2"  style="width:200px;float:left;"><ul class="maximenuck2"><li data-level="2" class="maximenuck headingck item471 level2 " style="z-index : 11991;" ><span class="separator "><span class="titreck"><span class="maximenuiconck fa fa-square"></span>Research Areas</span></span>
+		</li><li data-level="2" class="maximenuck item213 level2 " style="z-index : 11990;" ><a class="maximenuck " href="research-agenda.html"><span class="titreck">Research Agenda</span></a>
+		</li><li data-level="2" class="maximenuck item285 level2 " style="z-index : 11989;" ><a class="maximenuck " href="sensors.html"><span class="titreck">Sensors</span></a>
+		</li><li data-level="2" class="maximenuck item214 level2 " style="z-index : 11988;" ><a class="maximenuck " href="biomarkers.html"><span class="titreck">mHealth Biomarkers</span></a>
+		</li><li data-level="2" class="maximenuck item474 current active level2 " style="z-index : 11987;" ><a class="maximenuck " href="trial-design.html"><span class="titreck">Trial Design</span></a>
+		</li><li data-level="2" class="maximenuck item216 level2 " style="z-index : 11986;" ><a class="maximenuck " href="jitai.html"><span class="titreck">mHealth Interventions</span></a>
+		</li></ul><div class="clr"></div></div><div class="maximenuck2"  style="width:180px;float:left;"><ul class="maximenuck2"><li data-level="2" class="maximenuck item284 level2 " style="z-index : 11985;" ><a class="maximenuck " href="architecture.html"><span class="titreck">Architecture</span></a>
+		</li><li data-level="2" class="maximenuck item219 level2 " style="z-index : 11984;" ><a class="maximenuck " href="methodology.html"><span class="titreck">Big Data Analytics</span></a>
+		</li><li data-level="2" class="maximenuck item473 level2 " style="z-index : 11983;" ><a class="maximenuck " href="visualization.html"><span class="titreck">Visualization</span></a>
+		</li><li data-level="2" class="maximenuck item221 level2 " style="z-index : 11982;" ><a class="maximenuck " href="privacy.html"><span class="titreck">Behavioral Privacy</span></a>
+		</li></ul><div class="clr"></div></div><div class="maximenuck2"  style="width:200px;float:left;"><ul class="maximenuck2"><li data-level="2" class="maximenuck headingck item470 level2 fullwidth" style="z-index : 11981;" ><span class="separator "><span class="titreck"><span class="maximenuiconck fa fa-square"></span>Field Study Focus Areas</span></span>
+		</li><li data-level="2" class="maximenuck item463 level2 " style="z-index : 11980;" ><a class="maximenuck " href="smoking.html"><span class="titreck">Smoking</span></a>
+		</li><li data-level="2" class="maximenuck item464 level2 " style="z-index : 11979;" ><a class="maximenuck " href="eating-control.html"><span class="titreck">Eating Regulation</span></a>
+		</li><li data-level="2" class="maximenuck item465 level2 " style="z-index : 11978;" ><a class="maximenuck " href="drug-use.html"><span class="titreck">Drug Use</span></a>
+		</li><li data-level="2" class="maximenuck item466 level2 " style="z-index : 11977;" ><a class="maximenuck " href="stress-management.html"><span class="titreck">Stress Management</span></a>
+		</li></ul><div class="clr"></div></div><div class="maximenuck2"  style="width:200px;float:left;"><ul class="maximenuck2"><li data-level="2" class="maximenuck item467 level2 " style="z-index : 11976;" ><a class="maximenuck " href="heart-failure-care.html"><span class="titreck">Heart Failure Care</span></a>
+		</li><li data-level="2" class="maximenuck item472 level2 " style="z-index : 11975;" ><a class="maximenuck " href="behavior-change.html"><span class="titreck">Behavior Change</span></a>
+		</li><li data-level="2" class="maximenuck item468 level2 " style="z-index : 11974;" ><a class="maximenuck " href="http://mperf.md2k.org/"><span class="titreck">Work Productivity</span></a>
+		</li><li data-level="2" class="maximenuck item469 last level2 " style="z-index : 11973;" ><a class="maximenuck " href="oral-health.html"><span class="titreck">Oral Health</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item197 parent level1 " style="z-index : 11972;" ><a class="maximenuck " href="../software.html"><span class="titreck">Software</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item421 first parent level2 " style="z-index : 11971;" ><a class="maximenuck " href="../software/under-the-hood.html"><span class="titreck">Under the Hood</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item427 first level3 " style="z-index : 11970;" ><a class="maximenuck " href="../software/under-the-hood/mcerebrum.html"><span class="titreck">Smartphone Software</span></a>
+		</li><li data-level="3" class="maximenuck item428 parent level3 " style="z-index : 11969;" ><a class="maximenuck " href="../software/under-the-hood/cerebral-cortex.html"><span class="titreck">Cloud Software</span></a>
+	<div class="floatck" style="margin-left:225px;width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="4" class="maximenuck item436 first last level4 " style="z-index : 11968;" ><a class="maximenuck " href="../software/under-the-hood/cerebral-cortex/architecture.html"><span class="titreck">Architecture</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="3" class="maximenuck item429 level3 " style="z-index : 11967;" ><a class="maximenuck " href="../software/under-the-hood/bug-reports-feature-requests.html"><span class="titreck">Bug Reports / Feature Requests</span></a>
+		</li><li data-level="3" class="maximenuck item430 level3 " style="z-index : 11966;" ><a class="maximenuck " href="../software/under-the-hood/software-license.html"><span class="titreck">Software License</span></a>
+		</li><li data-level="3" class="maximenuck item431 level3 " style="z-index : 11965;" ><a class="maximenuck " href="../software/under-the-hood/contributing.html"><span class="titreck">Contributing</span></a>
+		</li><li data-level="3" class="maximenuck item432 level3 " style="z-index : 11964;" ><a class="maximenuck " href="../software/under-the-hood/references.html"><span class="titreck">References</span></a>
+		</li><li data-level="3" class="maximenuck item533 last level3 " style="z-index : 11963;" ><a class="maximenuck " href="../software/under-the-hood/software-docs.html"><span class="titreck">Documentation</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item422 parent level2 " style="z-index : 11962;" ><a class="maximenuck " href="../software/how-to.html"><span class="titreck">How-To</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item433 first parent level3 " style="z-index : 11961;" ><a class="maximenuck " href="../software/how-to/smartphone-software.html"><span class="titreck">Smartphone Software</span></a>
+	<div class="floatck" style="margin-left:225px;width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="4" class="maximenuck item440 first level4 " style="z-index : 11960;" ><a class="maximenuck " href="../software/how-to/smartphone-software/getting-started.html"><span class="titreck">Getting Started</span></a>
+		</li><li data-level="4" class="maximenuck item476 last level4 " style="z-index : 11959;" ><a class="maximenuck " href="../software/how-to/smartphone-software/implementing-datakit.html"><span class="titreck">Implementing DataKit</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="3" class="maximenuck item434 parent level3 " style="z-index : 11958;" ><a class="maximenuck " href="../software/how-to/supported-sensors.html"><span class="titreck">Supported Sensors</span></a>
+	<div class="floatck" style="margin-left:225px;width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="4" class="maximenuck item441 first level4 " style="z-index : 11957;" ><a class="maximenuck " href="../software/how-to/supported-sensors/sensors-troubleshooting.html"><span class="titreck">Sensors Troubleshooting</span></a>
+		</li><li data-level="4" class="maximenuck item442 last level4 " style="z-index : 11956;" ><a class="maximenuck " href="../software/how-to/supported-sensors/adding-sensors.html"><span class="titreck">Adding Sensors </span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="3" class="maximenuck item438 parent level3 " style="z-index : 11955;" ><a class="maximenuck " href="../software/how-to/getting-started.html"><span class="titreck">Cloud Software</span></a>
+	<div class="floatck" style="width:300px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="4" class="maximenuck item437 first level4 " style="z-index : 11954;" ><a class="maximenuck " href="../software/how-to/getting-started/docker.html"><span class="titreck">Docker</span></a>
+		</li><li data-level="4" class="maximenuck item439 last level4 " style="z-index : 11953;" ><a class="maximenuck " href="../software/how-to/getting-started/working-with-cerebral-cortex.html"><span class="titreck">Working with Cerebral Cortex</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="3" class="maximenuck item453 last level3 " style="z-index : 11952;" ><a class="maximenuck " href="../software/how-to/software-howto-studyguides.html"><span class="titreck">Study Guides</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item423 level2 " style="z-index : 11951;" ><a class="maximenuck " href="../software/deployments.html"><span class="titreck">Deployments</span></a>
+		</li><li data-level="2" class="maximenuck item424 level2 " style="z-index : 11950;" ><a class="maximenuck " href="../software/contributors.html"><span class="titreck">Contributors</span></a>
+		</li><li data-level="2" class="maximenuck item482 level2 " style="z-index : 11949;" ><a class="maximenuck " href="../software/personal.html"><span class="titreck">Personal Edition</span></a>
+		</li><li data-level="2" class="maximenuck item486 last level2 " style="z-index : 11948;" ><a class="maximenuck " href="../software/codeofconduct.html"><span class="titreck">Code of Conduct</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item564 parent level1 " style="z-index : 11947;" ><a class="maximenuck " href="../tutorials.html"><span class="titreck">Tutorials</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item565 first last level2 " style="z-index : 11946;" ><a class="maximenuck " href="../tutorials/cps-iot-week-2020.html"><span class="titreck">CPS-IoT Week 2020</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item247 parent level1 " style="z-index : 11945;" ><a class="maximenuck " href="../webinars.html"><span class="titreck">Training</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item425 first parent level2 " style="z-index : 11944;" ><a class="maximenuck " href="https://mhti.md2k.org/"><span class="titreck">mHealth Training Institute</span></a>
+	<div class="floatck" style="margin-left:200px;width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item426 first last level3 " style="z-index : 11943;" ><a class="maximenuck " href="https://mhti.md2k.org/index.php/gallery/2019/2019-lectures"><span class="titreck">mHTI Lectures</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item356 last level2 " style="z-index : 11942;" ><a class="maximenuck " href="https://mhealth.md2k.org/training/webinars" target="_blank" ><span class="titreck">Webinar Videos</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item223 level1 " style="z-index : 11941;" ><a class="maximenuck " href="../studies.html"><span class="titreck">Deployments</span></a>
+		</li><li data-level="1" class="maximenuck item226 parent level1 " style="z-index : 11940;" ><a class="maximenuck " href="../events.html"><span class="titreck">Events</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item512 first level2 " style="z-index : 11939;" ><a class="maximenuck " href="../events/md2k-2018.html"><span class="titreck">2018 Annual Meeting</span></a>
+		</li><li data-level="2" class="maximenuck item353 parent level2 " style="z-index : 11938;" ><a class="maximenuck " href="../events/2017-annual-meeting.html"><span class="titreck">2017 Annual Meeting</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item455 first last level3 " style="z-index : 11937;" ><a class="maximenuck " href="../events/2017-annual-meeting/2017-career-day.html"><span class="titreck">2017 Career Day</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item228 level2 " style="z-index : 11936;" ><a class="maximenuck " href="../events/2016-annual-meeting.html"><span class="titreck">2016 Annual Meeting</span></a>
+		</li><li data-level="2" class="maximenuck item227 last level2 " style="z-index : 11935;" ><a class="maximenuck " href="../events/2015-annual-meeting.html"><span class="titreck">2015 Annual Meeting</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item348 level1 " style="z-index : 11934;" ><a class="maximenuck " href="https://mhealth.md2k.org/"><span class="titreck">mHealthHUB</span></a>
+		</li><li data-level="1" class="maximenuck item199 parent level1 " style="z-index : 11933;" ><a class="maximenuck " href="../related-projects.html"><span class="titreck">Related Projects</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item239 first level2 " style="z-index : 11932;" ><a class="maximenuck " href="http://mperf.md2k.org/" target="_blank" ><span class="titreck">mPerf</span></a>
+		</li><li data-level="2" class="maximenuck item240 level2 " style="z-index : 11931;" ><a class="maximenuck " href="http://mprov.md2k.org/" target="_blank" ><span class="titreck">mProv</span></a>
+		</li><li data-level="2" class="maximenuck item577 level2 " style="z-index : 11930;" ><a class="maximenuck " href="http://mcontain.md2k.org/" target="_blank" ><span class="titreck">mContain</span></a>
+		</li><li data-level="2" class="maximenuck item513 last level2 " style="z-index : 11929;" ><a class="maximenuck " href="https://mdot.md2k.org/" target="_blank" ><span class="titreck">mDOT</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item556 last level1 " style="z-index : 11928;" ><a class="maximenuck " href="../moods.html"><span class="titreck">MOODS</span></a></li>            </ul>
+        </div>
+        <div class="maxiroundedright"></div>
+        <div style="clear:both;"></div>
+    </div>
+    <!-- fin maximenuCK -->
+</div></div></div></div></div></section><section id="sp-main-body"><div class="container"><div class="row"><div id="sp-component" class="col-sm-12 col-md-12"><div class="sp-column custom-class"><div id="system-message-container">
+	</div>
+<div class="blog" itemscope itemtype="http://schema.org/Blog">
+	
+	
+	
+	
+	
+				<div class="items-leading clearfix">
+							<article class="item leading-0"
+					itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+					
+
+
+
+<div class="entry-header">
+
+	
+		
+	
+</div>
+
+
+
+<div style="margin-top: -50px;">
+<h1>Trial Design</h1>
+<h2>Publications</h2>
+<p><ol class="bibtex-list"><li id="ArticleEntry-Almirall2018"><p>Daniel Almirall, Connie Kasari, Daniel  F McCaffrey and Inbal Nahum-Shani. <br><strong>Developing Optimized Adaptive Interventions in Education</strong>. <i>Journal of Research on Educational Effectiveness</i> 11(1):27-34, 2018. <a target="_blank" class="bibtex-link bibtex-link-url" href="https://doi.org/10.1080/19345747.2017.1407136">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1080/19345747.2017.1407136">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Almirall2018,
+	author = "Daniel Almirall and Connie Kasari and Daniel F. McCaffrey and Inbal Nahum-Shani",
+	title = "Developing Optimized Adaptive Interventions in Education",
+	journal = "Journal of Research on Educational Effectiveness",
+	year = 2018,
+	volume = 11,
+	number = 1,
+	pages = "27-34",
+	abstract = "Hedges (2018) encourages us to consider asking new scientific questions concerning the optimization of adaptive interventions in education. In this commentary, we have expanded on this (albeit briefly) by providing concrete examples of scientific questions and associated experimental designs to optimize adaptive interventions, and commenting on some of the ways such designs might challenge us to think differently. A great deal of methodological work remains to be done. For example, we have only begun to consider experimental design and analysis methods for developing “cluster-level adaptive interventions” (NeCamp, Kilbourne, & Almirall, 2017), or to extend methods for comparing the marginal mean trajectories between the adaptive interventions embedded in a SMART (Lu et al., 2016) to accommodate random effects. These methodological advances, among others, will propel educational research concerning the construction of more complex, yet meaningful, interventions that are necessary for improving student and teacher outcomes.",
+	doi = "10.1080/19345747.2017.1407136",
+	eprint = "https://doi.org/10.1080/19345747.2017.1407136",
+	publisher = "Routledge",
+	url = "https://doi.org/10.1080/19345747.2017.1407136"
+}
+</pre></li><li id="ArticleEntry-Nahum-Shani2017"><p>Inbal Nahum-Shani, John   J Dziak and Linda   M Collins. <br><strong>Multilevel Factorial Designs With Experiment-Induced Clustering.</strong>. <i>Psychological methods</i>, April 2017. <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Nahum-Shani2017,
+	author = "Nahum-Shani, Inbal and Dziak, John J. and Collins, Linda M.",
+	title = "Multilevel Factorial Designs With Experiment-Induced Clustering.",
+	journal = "Psychological methods",
+	year = 2017,
+	month = "Apr",
+	abstract = "Factorial experimental designs have many applications in the behavioral sciences. In the context of intervention development, factorial experiments play a critical role in building and optimizing high-quality, multicomponent behavioral interventions. One challenge in implementing factorial experiments in the behavioral sciences is that individuals are often clustered in social or administrative units and may be more similar to each other than to individuals in other clusters. This means that data are dependent within clusters. Power planning resources are available for factorial experiments in which the multilevel structure of the data is due to individuals' membership in groups that existed before experimentation. However, in many cases clusters are generated in the course of the study itself. Such experiment-induced clustering (EIC) requires different data analysis models and power planning resources from those available for multilevel experimental designs in which clusters exist prior to experimentation. Despite the common occurrence of both experimental designs with EIC and factorial designs, a bridge has yet to be built between EIC and factorial designs. Therefore, resources are limited or nonexistent for planning factorial experiments that involve EIC. This article seeks to bridge this gap by extending prior models for EIC, developed for single-factor experiments, to factorial experiments involving various types of EIC. We also offer power formulas to help investigators decide whether a particular experimental design involving EIC is feasible. We demonstrate that factorial experiments can be powerful and feasible even with EIC. We discuss design considerations and directions for future research. (PsycINFO Database Record",
+	address = "United States",
+	article-doi = "10.1037/met0000128",
+	article-pii = "2017-15223-001",
+	electronic-issn = "1939-1463",
+	electronic-publication = 20170406,
+	grantno = "R01 DK097364/DK/NIDDK NIH HHS/United States",
+	history = "2017/04/07 06:00 [medline]",
+	language = "eng",
+	linking-issn = "1082-989X",
+	location-id = "10.1037/met0000128 [doi]",
+	manuscript-id = "NIHMS854875",
+	nlm-unique-id = 9606928,
+	owner = "NLM",
+	publication-status = "aheadofprint",
+	revised = 20171009,
+	source = "Psychol Methods. 2017 Apr 6. pii: 2017-15223-001. doi: 10.1037/met0000128.",
+	status = "Publisher",
+	title-abbreviation = "Psychol Methods"
+}
+</pre></li><li id="InBookEntry-Smith2017"><p>James   M Rehg, Susan   A Murphy and Santosh Kumar (eds.). <i><br><strong>Design Lessons from a Micro-Randomized Pilot Study in Mobile Health</strong></i>. pages 59–82, Springer International Publishing, 2017. <a target="_blank" class="bibtex-link bibtex-link-url" href="https://doi.org/10.1007/978-3-319-51394-2_4">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1007/978-3-319-51394-2_4">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inbook{Smith2017,
+	pages = "59--82",
+	title = "Design Lessons from a Micro-Randomized Pilot Study in Mobile Health",
+	publisher = "Springer International Publishing",
+	year = 2017,
+	author = "Smith, Shawna N. and Lee, Andy Jinseok and Hall, Kelly and Seewald, Nicholas J. and Boruvka, Audrey and Murphy, Susan A. and Klasnja, Predrag",
+	editor = "Rehg, James M. and Murphy, Susan A. and Kumar, Santosh",
+	address = "Cham",
+	isbn = "978-3-319-51394-2",
+	abstract = "Micro-randomized trials (MRTs) offer promise for informing the development of effective mobile just-in-time adaptive interventions (JITAIs) intended to support individuals' health behavior change, but both their novelty and the novelty of JITAIs introduces new problems in implementation. An understanding of the practical challenges unique to rolling out MRTs and JITAIs is a prerequisite to valid empirical tests of such interventions. In this chapter, we relay lessons learned from the first MRT pilot study of HeartSteps, a JITAI intended to encourage sedentary adults to increase their physical activity by sending contextually-relevant, actionable activity suggestions and by supporting activity planning for the following day. This chapter outlines the lessons our study team learned from the HeartSteps pilot across four domains: (1) study recruitment and retention; (2) technical challenges in architecting a just-in-time adaptive intervention; (3) considerations of treatment delivery unique to JITAIs and MRTs; and (4) participant usage of and reflections on the HeartSteps study.",
+	booktitle = "Mobile Health: Sensors, Analytic Methods, and Applications",
+	doi = "10.1007/978-3-319-51394-2_4",
+	url = "https://doi.org/10.1007/978-3-319-51394-2_4"
+}
+</pre></li><li id="ArticleEntry-Nahum-Shani2016"><p>Inbal Nahum-Shani, Shawna  N Smith, Bonnie  J Spring, Linda  M Collins, Katie Witkiewitz, Ambuj Tewari and Susan  A Murphy. <br><strong>Just-in-Time Adaptive Interventions (JITAIs) in Mobile Health: Key Components and Design Principles for Ongoing Health Behavior Support</strong>. <i>Annals of Behavioral Medicine</i>, pages 1–17, 2016. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/jitai/BehavMed_Nahum-Shani16.pdf">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1007/s12160-016-9830-8">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Nahum-Shani2016,
+	author = "Inbal Nahum-Shani and Shawna N. Smith and Bonnie J. Spring and Linda M. Collins and Katie Witkiewitz and Ambuj Tewari and Susan A. Murphy",
+	title = "Just-in-Time Adaptive Interventions (JITAIs) in Mobile Health: Key Components and Design Principles for Ongoing Health Behavior Support",
+	journal = "Annals of Behavioral Medicine",
+	year = 2016,
+	pages = "1--17",
+	issn = "1532-4796",
+	abstract = "Background. The just-in-time adaptive intervention (JITAI) is an intervention design aiming to provide the right type/amount of support, at the right time, by adapting to an individual’s changing internal and contextual state. The availability of increasingly powerful mobile and sensing technologies underpins the use of JITAIs to support health behavior, as in such a setting an individual’s state can change rapidly, unexpectedly, and in his/her natural environment. Purpose. Despite the increasing use and appeal of JITAIs, a major gap exists between the growing technological capabilities for delivering JITAIs and research on the development and evaluation of these interventions. Many JITAIs have been developed with minimal use of empirical evidence, theory, or accepted treatment guidelines. Here, we take an essential first step towards bridging this gap. Methods. Building on health behavior theories and the extant literature on JITAIs, we clarify the scientific motivation for JITAIs, define their fundamental components, and highlight design principles related to these components. Examples of JITAIs from various domains of health behavior research are used for illustration. Conclusion. As we enter a new era of technological capacity for delivering JITAIs, it is critical that researchers develop sophisticated and nuanced health behavior theories capable of guiding the construction of such interventions. Particular attention has to be given to better understanding the implica-tions of providing timely and ecologically sound support for intervention adherence and retention.",
+	doi = "10.1007/s12160-016-9830-8",
+	pmid = 27663578,
+	pubstate = "published",
+	tppubtype = "article",
+	url = "https://md2k.org/images/papers/jitai/BehavMed_Nahum-Shani16.pdf"
+}
+</pre></li><li id="ProceedingsPaperEntry-Natarajan_2016_DAM_2971648_2971666b"><p>Annamalai Natarajan, Gustavo Angarita, Edward Gaiser, Robert Malison, Deepak Ganesan and Benjamin  M Marlin. <br><strong>Domain Adaptation Methods for Improving Lab-to-field Generalization of Cocaine Detection Using Wearable ECG</strong>. In <i>Proceedings of the 2016 ACM International Joint Conference on Pervasive and Ubiquitous Computing</i>. 2016, 875–885. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/methods/nihms835285_Marlin.pdf">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1145/2971648.2971666">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{Natarajan:2016:DAM:2971648.2971666b,
+	author = "Annamalai Natarajan and Gustavo Angarita and Edward Gaiser and Robert Malison and Deepak Ganesan and Benjamin M. Marlin",
+	title = "Domain Adaptation Methods for Improving Lab-to-field Generalization of Cocaine Detection Using Wearable ECG",
+	booktitle = "Proceedings of the 2016 ACM International Joint Conference on Pervasive and Ubiquitous Computing",
+	year = 2016,
+	series = "UbiComp '16",
+	pages = "875--885",
+	address = "Heidelberg, Germany",
+	publisher = "ACM",
+	abstract = "Mobile health research on illicit drug use detection typically involves a two-stage study design where data to learn detectors is first collected in lab-based trials, followed by a deployment to subjects in a free-living environment to assess detector performance. While recent work has demonstrated the feasibility of wearable sensors for illicit drug use detection in the lab setting, several key problems can limit lab-to-field generalization performance. For example, lab-based data collection often has low ecological validity, the ground-truth event labels collected in the lab may not be available at the same level of temporal granularity in the field, and there can be significant variability between subjects. In this paper, we present domain adaptation methods for assessing and mitigating potential sources of performance loss in lab-to-field generalization and apply them to the problem of cocaine use detection from wearable electrocardiogram sensor data.",
+	doi = "10.1145/2971648.2971666",
+	isbn = "978-1-4503-4461-6",
+	keywords = "classification, cocaine detection, covariate shift, domain adaptation, prior probability shift, Wearable Sensors",
+	pmid = 28090605,
+	pubstate = "published",
+	tppubtype = "inproceedings",
+	url = "https://md2k.org/images/papers/methods/nihms835285_Marlin.pdf"
+}
+</pre></li><li id="ArticleEntry-Pellegrini2015"><p>C A Pellegrini, J Steglitz, W Johnston, J Warnick, T Adams, H G McFadden, J Siddique, D Hedeker and B Spring. <br><strong>Design and protocol of a randomized multiple behavior change trial: Make Better Choices 2 (MBC2).</strong>. <i>Contemporary Clinical Trials</i> 41C:85–92, 2015. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1016/j.cct.2015.01.009">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Pellegrini2015,
+	author = "C.A. Pellegrini and J. Steglitz and W. Johnston and J. Warnick and T. Adams and H.G. McFadden and J. Siddique and D. Hedeker and B. Spring",
+	title = "Design and protocol of a randomized multiple behavior change trial: Make Better Choices 2 (MBC2).",
+	journal = "Contemporary Clinical Trials",
+	year = 2015,
+	volume = "41C",
+	pages = "85--92",
+	abstract = "Suboptimal diet and inactive lifestyle are among the most prevalent preventable causes of premature death. Interventions that target multiple behaviors are potentially efficient; however the optimal way to initiate and maintain multiple health behavior changes is unknown.The Make Better Choices 2 (MBC2) trial aims to examine whether sustained healthful diet and activity change are best achieved by targeting diet and activity behaviors simultaneously or sequentially. Study design approximately 250 inactive adults with poor quality diet will be randomized to 3 conditions examining the best way to prescribe healthy diet and activity change. The 3 intervention conditions prescribe: 1) an increase in fruit and vegetable consumption (F/V+), decrease in sedentary leisure screen time (Sed-), and increase in physical activity (PA+) simultaneously (Simultaneous); 2) F/V+ and Sed- first, and then sequentially add PA+ (Sequential); or 3) Stress Management Control that addresses stress, relaxation, and sleep. All participants will receive a smartphone application to self-monitor behaviors and regular coaching calls to help facilitate behavior change during the 9month intervention. Healthy lifestyle change in fruit/vegetable and saturated fat intakes, sedentary leisure screen time, and physical activity will be assessed at 3, 6, and 9months.MBC2 is a randomized m-Health intervention examining methods to maximize initiation and maintenance of multiple healthful behavior changes. Results from this trial will provide insight about an optimal technology supported approach to promote improvement in diet and physical activity.",
+	institution = "Department of Preventive Medicine, Northwestern University Feinberg School of Medicine, 680N. Lake Shore Drive, Suite 1400, Chicago, IL 60611, United States.",
+	keywords = "Diet, mHealth, Multiple behavior change, Physical activity",
+	pmid = 25625810,
+	pubstate = "published",
+	tppubtype = "article",
+	url = "http://dx.doi.org/10.1016/j.cct.2015.01.009"
+}
+</pre></li><li id="ArticleEntry-Han2015"><p>Y Han, M S Faulkner, H Fritz, D Fadoju, A Muir, G D Abowd, L Head and R I Arriaga. <br><strong>A Pilot Randomized Trial of Text-Messaging for Symptom Awareness and Diabetes Knowledge in Adolescents With Type 1 Diabetes</strong>. <i>Journal of Pediatric Nursing</i> (0):-, 2015. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://www.sciencedirect.com/science/article/pii/S0882596315000342">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Han2015,
+	author = "Y. Han and M.S. Faulkner and H. Fritz and D. Fadoju and A. Muir and G.D. Abowd and L. Head and R.I. Arriaga",
+	title = "A Pilot Randomized Trial of Text-Messaging for Symptom Awareness and Diabetes Knowledge in Adolescents With Type 1 Diabetes",
+	journal = "Journal of Pediatric Nursing",
+	year = 2015,
+	number = 0,
+	pages = "-",
+	issn = "0882-5963",
+	abstract = "Adolescents with type 1 diabetes typically receive clinical care every 3&#xa0;months. Between visits, diabetes-related issues may not be frequently reflected, learned, and documented by the patients, limiting their self-awareness and knowledge about their condition. We designed a text-messaging system to help resolve this problem. In a pilot, randomized controlled trial with 30 adolescents, we examined the effect of text messages about symptom awareness and diabetes knowledge on glucose control and quality of life. The intervention group that received more text messages between visits had significant improvements in quality of life.",
+	keywords = "Adolescents, Text messaging, Type 1 diabetes",
+	pmid = 25720675,
+	pubstate = "published",
+	tppubtype = "article",
+	url = "http://www.sciencedirect.com/science/article/pii/S0882596315000342"
+}
+</pre></li><li id="ArticleEntry-Abraham201516"><p>W T Abraham, J Lindenfeld, V Y Reddy, G Hasenfuss, K Kuck, J Boscardin, R Gibbons and D Burkhoff. <br><strong>A Randomized Controlled Trial to Evaluate the Safety and Efficacy of Cardiac Contractility Modulation in Patients With Moderately Reduced Left Ventricular Ejection Fraction and a Narrow QRS Duration: Study Rationale and Design</strong>. <i>Journal of Cardiac Failure</i> 21(1):16 - 23, 2015. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://www.sciencedirect.com/science/article/pii/S1071916414012214">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Abraham201516,
+	author = "W. T. Abraham and J. Lindenfeld and V.Y. Reddy and G. Hasenfuss and K. Kuck and J. Boscardin and R. Gibbons and D. Burkhoff",
+	title = "A Randomized Controlled Trial to Evaluate the Safety and Efficacy of Cardiac Contractility Modulation in Patients With Moderately Reduced Left Ventricular Ejection Fraction and a Narrow QRS Duration: Study Rationale and Design",
+	journal = "Journal of Cardiac Failure",
+	year = 2015,
+	volume = 21,
+	number = 1,
+	pages = "16 - 23",
+	issn = "1071-9164",
+	abstract = "Abstract Cardiac contractility modulation (CCM) signals are nonexcitatory electrical signals delivered during the cardiac absolute refractory period that enhance the strength of cardiac muscular contraction. The FIX-HF-5 study was a prospective randomized study comparing CCM plus optimal medical therapy (OMT) to OMT alone that included 428 New York Heart Association (NYHA) functional class III or IV heart failure patients with ejection fraction (EF) â¤45% according to core laboratory assessment. The study met its primary safety end point, but did not reach its primary efficacy end point: a responders analysis of changes in ventilatory anaerobic threshold (VAT). However, in a prespecified subgroup analysis, significant improvements in primary and secondary end points, including the responder VAT end point, were observed in patients with EFs ranging from 25% to 45%, who constituted about one-half of the study subjects. We therefore designed a new study to prospectively confirm the efficacy of CCM in this population. A hierarchic bayesian statistical analysis plan was developed to take advantage of the data already available from the first study. In addition, based on technical difficulties encountered in reliably quantifying VAT and the relatively large amount of nonquantifiable studies, the primary efficacy end point was changed to peak VO2, with significant measures incorporated to minimize the influence of placebo effect. In this paper, we provide the details and rationale of the FIX-HF-5C study design to study CCM plus OMT compared with OMT alone in subjects with normal QRS duration, NYHA functional class III or IV, and EF 25% to 45%. This study is registered on www.clinicaltrials.gov with identifier no. NCT01381172.",
+	keywords = "cardiac resynchronization therapy, cardiopulmonary stress testing, Heart failure, quality of life",
+	pmid = 25285748,
+	pubstate = "published",
+	tppubtype = "article",
+	url = "http://www.sciencedirect.com/science/article/pii/S1071916414012214"
+}
+</pre></li><li id="ArticleEntry-Liao2017"><p>Peng Liao, Predrag Klasnja, Ambuj Tewari and Susan  A Murphy. <br><strong>Sample Size Calculations for Micro-randomized Trials in mHealth</strong>. <i>Statistics in Medicine</i> 35(12):1944-1971, 2015. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/jitai/nihms744437_murphy.pdf">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1002/sim.6847">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Liao2017,
+	author = "Peng Liao and Predrag Klasnja and Ambuj Tewari and Susan A. Murphy",
+	title = "Sample Size Calculations for Micro-randomized Trials in mHealth",
+	journal = "Statistics in Medicine",
+	year = 2015,
+	volume = 35,
+	number = 12,
+	pages = "1944-1971",
+	abstract = "The use and development of mobile interventions are experiencing rapid growth. In “just-in-time” mobile interventions, treatments are provided via a mobile device and they are intended to help an individual make healthy decisions “in the moment,” and thus have a proximal, near future impact. Currently the development of mobile interventions is proceeding at a much faster pace than that of associated data science methods. A first step toward developing data-based methods is to provide an experimental design for testing the proximal effects of these just-in-time treatments. In this paper, we propose a “micro-randomized” trial design for this purpose. In a micro-randomized trial, treatments are sequentially randomized throughout the conduct of the study, with the result that each participant may be randomized at the 100s or 1000s of occasions at which a treatment might be provided. Further, we develop a test statistic for assessing the proximal effect of a treatment as well as an associated sample size calculator. We conduct simulation evaluations of the sample size calculator in various settings. Rules of thumb that might be used in designing a micro-randomized trial are discussed. This work is motivated by our collaboration on the HeartSteps mobile application designed to increase physical activity.",
+	doi = "10.1002/sim.6847",
+	keywords = "mHealth, micro-randomized trial, Sample Size Calculation",
+	pmid = 26707831,
+	pubstate = "published",
+	tppubtype = "article",
+	url = "https://md2k.org/images/papers/jitai/nihms744437_murphy.pdf"
+}
+</pre></li><li id="InCollectionEntry-Dallery2014"><p>J Dallery, W T Riley and I Nahum-Shani. <br><strong>Research designs to develop and evaluate technology-based health behavior interventions</strong>. In L Marsch, S Lord and J Dallery (eds.). <i>Behavioral Healthcare and Technology</i>. Oxford University Press, 2014, page 168. <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@incollection{Dallery2014,
+	author = "J. Dallery and W.T. Riley and I. Nahum-Shani",
+	title = "Research designs to develop and evaluate technology-based health behavior interventions",
+	booktitle = "Behavioral Healthcare and Technology",
+	publisher = "Oxford University Press",
+	year = 2014,
+	editor = "L. Marsch and S. Lord and J. Dallery",
+	pages = 168,
+	journal = "Behavioral Health Care and Technology: Using Science-Based Innovations to Transform Practice",
+	keywords = "Adaptive intervention, health interventions",
+	pubstate = "published",
+	tppubtype = "incollection"
+}
+</pre></li><li id="ArticleEntry-almirall2014introduction"><p>D Almirall, I Nahum-Shani, N E Sherwood and S A Murphy. <br><strong>Introduction to SMART designs for the development of adaptive interventions: with application to weight loss research</strong>. <i>Translational Behavioral Medicine</i> 4(3):260–274, 2014. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4167891/pdf/13142_2014_Article_265.pdf">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{almirall2014introduction,
+	author = "D. Almirall and I. Nahum-Shani and N.E. Sherwood and S.A. Murphy",
+	title = "Introduction to SMART designs for the development of adaptive interventions: with application to weight loss research",
+	journal = "Translational Behavioral Medicine",
+	year = 2014,
+	volume = 4,
+	number = 3,
+	pages = "260--274",
+	__markedentry = "[bbwillms:6]",
+	abstract = "The management of many health disorders often entails a sequential, individualized approach whereby treatment is adapted and readapted over time in response to the specific needs and evolving status of the individual. Adaptive interventions provide one way to operationalize the strategies (e.g., continue, augment, switch, step-down) leading to individualized sequences of treatment. Often, a wide variety of critical questions must be answered when developing a high-quality adaptive intervention. Yet, there is often insufficient empirical evidence or theoretical basis to address these questions. The Sequential Multiple Assignment Randomized Trial (SMART)—a type of research design—was developed explicitly for the purpose of building optimal adaptive interventions by providing answers to such questions. Despite increasing popularity, SMARTs remain relatively new to intervention scientists. This manuscript provides an introduction to adaptive interventions and SMARTs. We discuss SMART design considerations, including common primary and secondary aims. For illustration, we discuss the development of an adaptive intervention for optimizing weight loss among adult individuals who are overweight.",
+	keywords = "Adaptive treatment strategies, Dynamic treatment regimens or regimes, Experimental design, Individualized or personalized behavioral interventions, Timing and sequencing of intervention components",
+	pmid = 25264466,
+	publisher = "Springer",
+	pubstate = "published",
+	tppubtype = "article",
+	url = "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4167891/pdf/13142_2014_Article_265.pdf"
+}
+</pre></li></ol></p>
+</div>
+
+
+
+
+				</article>
+									</div><!-- end items-leading -->
+	
+	
+	
+	
+		</div>
+</div></div></div></div></section><section id="sp-feature-team-page" class="div#maximenuck253 div.floatck { 	 	background:#F4F4F4; 	background: -moz-linear-gradient(top, #f4f4f4, #eeeeee); 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f4f4), to(#eeeeee)); 	-moz-border-radius: 0px 5px 5px 5px; 	 }"><div class="row"><div id="sp-secondmenu" class="col-sm-12 col-md-12"><div class="sp-column div.floatck { background: #eeeeee;          background: -moz-linear-gradient(top, #EEEEEE, #EEEEEE);     /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEEEEE), to(#EEEEEE)); */  }"><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
+</div></div></div></div></div></section><footer id="sp-footer"><div class="container"><div class="row"><div id="sp-footer1" class="col-sm-10 col-md-10"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<p style="text-align: center; font-size: 12px; padding-top: 14px;">Copyright &copy; 2020 MD2K. <strong>MD2K was established by the National Institutes of Health Big Data to Knowledge Initiative <a href="https://projectreporter.nih.gov/project_info_description.cfm?aid=9303353&amp;icde=36143741&amp;ddparam=&amp;ddvalue=&amp;ddsub=&amp;cr=7&amp;csb=default&amp;cs=ASC&amp;pball=" target="_blank">(Grant #1U54EB020404)</a></strong><br /><span style="color: #ffffff; font-style: italic;">Team: Cornell Tech, GA Tech, Harvard, U. Memphis, Northwestern, Ohio State, UCLA, UCSD, UCSF, UMass, U. Michigan, U. Utah, WVU </span></p></div>
+</div></div></div></div><div id="sp-footer2" class="col-sm-2 col-md-2"><div class="sp-column "><ul class="sp-contact-info"><li class="sp-contact-phone"><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:901-678-1493">901-678-1493</a></li><li class="sp-contact-email"><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@md2k.org">info@md2k.org</a></li></ul><ul class="social-icons"><li><a target="_blank" href="https://twitter.com/MD2Korg" aria-label="twitter"><i class="fa fa-twitter"></i></a></li><li><a target="_blank" href="https://www.youtube.com/c/MD2KCenter" aria-label="youtube"><i class="fa fa-youtube"></i></a></li></ul></div></div></div></div></footer>            </div> <!-- /.body-innerwrapper -->
+        </div> <!-- /.body-innerwrapper -->
+
+        <!-- Off Canvas Menu -->
+        <div class="offcanvas-menu">
+            <a href="#" class="close-offcanvas" aria-label="Close"><i class="fa fa-remove" aria-hidden="true" title="HELIX_CLOSE_MENU"></i></a>
+            <div class="offcanvas-inner">
+                                  <div class="sp-module "><div class="sp-module-content"><ul class="nav menu">
+<li class="item-101"><a href="../index.html" > Home</a></li><li class="item-191  deeper parent"><a href="../about.html" > About</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-191"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-191"><li class="item-196"><a href="../about/meet-the-team.html" > MD2K Team</a></li><li class="item-198  deeper parent"><a href="../about/news.html" > News</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-198"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-198"><li class="item-443"><a href="../about/news/md2k-in-the-news.html" > MD2K in the News</a></li></ul></li><li class="item-581"><a href="../about/privacy.html" > Privacy</a></li><li class="item-224"><a href="../about/contact.html" > Contact</a></li></ul></li><li class="item-193  active deeper parent"><a href="../research-agenda.html" > Research</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-193"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-193"><li class="item-338"><a href="pubs.html" > Publications</a></li><li class="item-471  divider"><a class="separator ">Research Areas</a>
+</li><li class="item-213"><a href="research-agenda.html" > Research Agenda</a></li><li class="item-285"><a href="sensors.html" > Sensors</a></li><li class="item-214"><a href="biomarkers.html" > mHealth Biomarkers</a></li><li class="item-474  current active"><a href="trial-design.html" > Trial Design</a></li><li class="item-216"><a href="jitai.html" > mHealth Interventions</a></li><li class="item-284"><a href="architecture.html" > Architecture</a></li><li class="item-219"><a href="methodology.html" > Big Data Analytics</a></li><li class="item-473"><a href="visualization.html" > Visualization</a></li><li class="item-221"><a href="privacy.html" > Behavioral Privacy</a></li><li class="item-470  divider"><a class="separator ">Field Study Focus Areas</a>
+</li><li class="item-463"><a href="smoking.html" > Smoking</a></li><li class="item-464"><a href="eating-control.html" > Eating Regulation</a></li><li class="item-465"><a href="drug-use.html" > Drug Use</a></li><li class="item-466"><a href="stress-management.html" > Stress Management</a></li><li class="item-467"><a href="heart-failure-care.html" > Heart Failure Care</a></li><li class="item-472"><a href="behavior-change.html" > Behavior Change</a></li><li class="item-468">		<a  href="http://mperf.md2k.org/"  > Work Productivity</a></li><li class="item-469"><a href="oral-health.html" > Oral Health</a></li></ul></li><li class="item-197  deeper parent"><a href="../software.html" > Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-197"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-197"><li class="item-421  deeper parent"><a href="../software/under-the-hood.html" > Under the Hood</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-421"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-421"><li class="item-427"><a href="../software/under-the-hood/mcerebrum.html" > Smartphone Software</a></li><li class="item-428  deeper parent"><a href="../software/under-the-hood/cerebral-cortex.html" > Cloud Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-428"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-428"><li class="item-436"><a href="../software/under-the-hood/cerebral-cortex/architecture.html" > Architecture</a></li></ul></li><li class="item-429"><a href="../software/under-the-hood/bug-reports-feature-requests.html" > Bug Reports / Feature Requests</a></li><li class="item-430"><a href="../software/under-the-hood/software-license.html" > Software License</a></li><li class="item-431"><a href="../software/under-the-hood/contributing.html" > Contributing</a></li><li class="item-432"><a href="../software/under-the-hood/references.html" > References</a></li><li class="item-533"><a href="../software/under-the-hood/software-docs.html" > Documentation</a></li></ul></li><li class="item-422  deeper parent"><a href="../software/how-to.html" > How-To</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-422"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-422"><li class="item-433  deeper parent"><a href="../software/how-to/smartphone-software.html" > Smartphone Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-433"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-433"><li class="item-440"><a href="../software/how-to/smartphone-software/getting-started.html" > Getting Started</a></li><li class="item-476"><a href="../software/how-to/smartphone-software/implementing-datakit.html" > Implementing DataKit</a></li></ul></li><li class="item-434  deeper parent"><a href="../software/how-to/supported-sensors.html" > Supported Sensors</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-434"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-434"><li class="item-441"><a href="../software/how-to/supported-sensors/sensors-troubleshooting.html" > Sensors Troubleshooting</a></li><li class="item-442"><a href="../software/how-to/supported-sensors/adding-sensors.html" > Adding Sensors </a></li></ul></li><li class="item-438  deeper parent"><a href="../software/how-to/getting-started.html" > Cloud Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-438"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-438"><li class="item-437"><a href="../software/how-to/getting-started/docker.html" > Docker</a></li><li class="item-439"><a href="../software/how-to/getting-started/working-with-cerebral-cortex.html" > Working with Cerebral Cortex</a></li></ul></li><li class="item-453"><a href="../software/how-to/software-howto-studyguides.html" > Study Guides</a></li></ul></li><li class="item-423"><a href="../software/deployments.html" > Deployments</a></li><li class="item-424"><a href="../software/contributors.html" > Contributors</a></li><li class="item-482"><a href="../software/personal.html" > Personal Edition</a></li><li class="item-486"><a href="../software/codeofconduct.html" > Code of Conduct</a></li></ul></li><li class="item-564  deeper parent"><a href="../tutorials.html" > Tutorials</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-564"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-564"><li class="item-565"><a href="../tutorials/cps-iot-week-2020.html" > CPS-IoT Week 2020</a></li></ul></li><li class="item-247  deeper parent"><a href="../webinars.html" > Training</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-247"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-247"><li class="item-425  deeper parent">		<a  href="https://mhti.md2k.org/"  > mHealth Training Institute</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-425"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-425"><li class="item-426">		<a  href="https://mhti.md2k.org/index.php/gallery/2019/2019-lectures"  > mHTI Lectures</a></li></ul></li><li class="item-356">		<a href="https://mhealth.md2k.org/training/webinars" rel="noopener noreferrer" target="_blank" > Webinar Videos</a></li></ul></li><li class="item-223"><a href="../studies.html" > Deployments</a></li><li class="item-226  deeper parent"><a href="../events.html" > Events</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-226"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-226"><li class="item-512"><a href="../events/md2k-2018.html" > 2018 Annual Meeting</a></li><li class="item-353  deeper parent"><a href="../events/2017-annual-meeting.html" > 2017 Annual Meeting</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-353"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-353"><li class="item-455"><a href="../events/2017-annual-meeting/2017-career-day.html" > 2017 Career Day</a></li></ul></li><li class="item-228"><a href="../events/2016-annual-meeting.html" > 2016 Annual Meeting</a></li><li class="item-227"><a href="../events/2015-annual-meeting.html" > 2015 Annual Meeting</a></li></ul></li><li class="item-348">		<a  href="https://mhealth.md2k.org/"  > mHealthHUB</a></li><li class="item-199  deeper parent"><a href="../related-projects.html" > Related Projects</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-199"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-199"><li class="item-239">		<a href="http://mperf.md2k.org/" rel="noopener noreferrer" target="_blank" > mPerf</a></li><li class="item-240">		<a href="http://mprov.md2k.org/" rel="noopener noreferrer" target="_blank" > mProv</a></li><li class="item-577">		<a href="http://mcontain.md2k.org/" rel="noopener noreferrer" target="_blank" > mContain</a></li><li class="item-513">		<a href="https://mdot.md2k.org/" rel="noopener noreferrer" target="_blank" > mDOT</a></li></ul></li><li class="item-556"><a href="../moods.html" > MOODS</a></li></ul>
+</div></div>
+                            </div> <!-- /.offcanvas-inner -->
+        </div> <!-- /.offcanvas-menu -->
+
+        
+        
+        
+        <!-- Preloader -->
+        
+
+        <!-- Go to top -->
+        
+    </body>
+
+<!-- Mirrored from md2k.org/research-agenda/trial-design.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 19:32:06 GMT -->
+</html>

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+    
+<!-- Mirrored from md2k.org/software-how-to/software-howto-studyguides/opioid-pg/fossil.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 19:56:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+                <!-- head -->
+        <base  />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="mHealth, md2k, mobile health, precision medicine, biomarkers, mobile sensor data, mobile sensors" />
+	<meta name="author" content="Brian Ahern" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Advancing biomedical discovery and improving health through mobile sensor Big Data" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>MD2K - Fossil Smartwatch</title>
+	<link href="http://md2k-webtest.memphis.edu/software-how-to/software-howto-studyguides/opioid-pg/fossil.html" rel="canonical" />
+	<link href="../../../images/Logos/favicon2.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="../../../favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="http://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic&amp;subset=latin-ext" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Fjalla+One:regular&amp;subset=latin-ext" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&amp;subset=greek,greek-ext" rel="stylesheet" type="text/css" />
+	<link href="../../../templates/shaper_helix3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../../../templates/shaper_helix3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="../../../templates/shaper_helix3/css/legacy.css" rel="stylesheet" type="text/css" />
+	<link href="../../../templates/shaper_helix3/css/template.css" rel="stylesheet" type="text/css" />
+	<link href="../../../templates/shaper_helix3/css/presets/preset2.css" rel="stylesheet" type="text/css" class="preset" />
+	<link href="../../../templates/shaper_helix3/css/custom.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+body{font-family:Lato, sans-serif; font-size:14px; font-weight:normal; }h1{font-family:Fjalla One, sans-serif; font-size:36px; font-weight:normal; }h2{font-family:Fjalla One, sans-serif; font-size:30px; font-weight:normal; }h3{font-family:Roboto, sans-serif; font-size:24px; font-weight:700; }h4{font-family:Roboto, sans-serif; font-size:18px; font-weight:700; }h5{font-family:Roboto, sans-serif; font-size:18px; font-weight:700italic; }h6{font-family:Lato, sans-serif; font-size:16px; font-weight:700; }button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #2a9eb2;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #aed141}
+
+.button:active {
+  background-color: #aed141;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+ 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+     -webkit-flex-direction: column;
+    flex-direction: column;
+    webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+	background-color: #2b3675;
+	border-radius: 45px;
+}
+
+.flex-item {
+    background-color: #ffffff;
+    width: 98%;
+    height: auto;
+    margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 45px;
+	padding: 15px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+	text-align: justify;
+}
+
+.flex-study {
+    background-color: #ffffff;
+    width: 25%;
+    height: auto;
+    margin: 10px;
+	border-radius: 45px;
+	padding: 20px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+	
+}
+.flex-study1 {
+    background-color: #ffffff;
+    width: 25%;
+    height: 100%;
+    margin: 10px;
+	border-radius: 45px;
+	padding: 20px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+      text-align: center;
+-webkit-align-self: center; /* Safari 7.0+ */
+    align-contents: center;
+}
+
+.flex-container2 {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: auto;
+	background-color: #2b3675;
+	border-radius: 45px;
+}
+
+p {
+text-align: justify;
+}
+
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #bbb;
+	width: 100%;
+	}
+	
+	td {
+    border-top: 1px solid #ddd;
+    padding: 4px 8px;
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	font-size: 14px;
+		color: #2b3675;
+}
+	th {
+    border-top: 1px solid #ddd;
+    padding: 4px 8px;
+	font-family:Roboto Black, Raleway Black, Oswald SemiBold, Montserrat SemiBold;
+	font-size: 22px;
+		background-color: #2b3675;
+		color: #fff;
+}
+	
+		
+	tbody tr:nth-child(even) td {
+    background-color: #eee;
+}
+
+
+.one-half,
+
+.one-third,
+
+.two-third,
+
+.one-fourth,
+
+.three-fourth,
+
+.one-fifth,
+
+.two-fifth,
+
+.three-fifth,
+
+.four-fifth,
+
+.one-sixth,
+
+.five-sixth {
+
+  float: left;
+
+  margin: 0 4% 15px 0;
+
+}
+
+.three-across-1
+{
+
+  float: left;
+
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border: 5px;
+  width: 30%;
+
+}
+
+.three-across-2
+{
+
+  float: left;
+
+ margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 30%;
+
+}
+
+
+
+.three-across-3
+{
+
+  float: left;
+   margin-bottom: 15px;
+  margin-left: 15px;
+  
+  width: 30%;
+
+}
+
+
+.one-half.last,
+
+.one-third.last,
+
+.two-third.last,
+
+.one-fourth.last,
+
+.three-fourth.last,
+
+.one-fifth.last,
+
+.two-fifth.last,
+
+.three-fifth.last,
+
+.four-fifth.last,
+
+.one-sixth.last,
+
+.five-sixth.last {
+
+  margin-right: 0;
+
+  margin-bottom: 15px;
+
+}
+
+.one-half {
+
+  width: 48%;
+
+}
+
+.one-third {
+
+  width: 30.66%;
+
+}
+
+.two-third {
+
+  width: 65.33%;
+
+}
+
+.one-fourth {
+
+  width: 22%;
+
+}
+
+.three-fourth {
+
+  width: 74%;
+
+}
+
+.one-fifth {
+
+  width: 16.8%;
+
+}
+
+.two-fifth {
+
+  width: 37.6%;
+
+}
+
+.three-fifth {
+
+  width: 58.4%;
+
+}
+
+.four-fifth {
+
+  width: 79.2%;
+
+}
+
+.one-sixth {
+
+  width: 13.33%;
+
+}
+
+.five-sixth {
+
+  width: 82.66%;
+
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.characteristic {
+  text-align: center;
+  color: #fff;
+
+  padding: 2px 7px;
+
+  background-color: #BB4C38;
+  border-radius: 10px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 60%;
+  margin: 2px;
+  top: -4px;
+  position: relative;
+
+}#sp-feature-main{ padding:0px 20px 0 px 20px;margin:-40px 0px 20px 0 px 20px; }#sp-feature-team-page{ padding:20px; }
+	</style>
+	<script src="../../../media/jui/js/jquery.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../../../media/jui/js/jquery-noconflict700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../../../media/jui/js/jquery-migrate.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../../../media/system/js/caption700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../../../plugins/system/maximenuckmobile/assets/maximenuckmobile.js" type="text/javascript"></script>
+	<script src="../../../templates/shaper_helix3/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../../../templates/shaper_helix3/js/jquery.sticky.js" type="text/javascript"></script>
+	<script src="../../../templates/shaper_helix3/js/main.js" type="text/javascript"></script>
+	<script src="../../../media/plg_captcha_recaptcha/js/recaptcha.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=JoomlaInitReCaptcha2&amp;render=explicit&amp;hl=en-GB" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});// Find all YouTube videos
+var $allVideos = $("iframe[src^='//www.youtube.com']"),
+
+    // The element that is fluid width
+    $fluidEl = $("body");
+
+// Figure out and save aspect ratio for each video
+$allVideos.each(function() {
+
+  $(this)
+    .data('aspectRatio', this.height / this.width)
+
+    // and remove the hard coded width/height
+    .removeAttr('height')
+    .removeAttr('width');
+
+});
+
+// When the window is resized
+$(window).resize(function() {
+
+  var newWidth = $fluidEl.width();
+
+  // Resize all videos according to their own aspect ratio
+  $allVideos.each(function() {
+
+    var $el = $(this);
+    $el
+      .width(newWidth)
+      .height(newWidth * $el.data('aspectRatio'));
+
+  });
+
+// Kick off one resize to fix all videos on page load
+}).resize();
+var sp_preloader = '0';
+
+var sp_gotop = '0';
+
+var sp_offanimation = 'default';
+
+	</script>
+	<meta property="og:url" content="https://md2k.org/software-how-to/software-howto-studyguides/opioid-pg/fossil.html" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Software - How-To - Opioid Fossil" />
+	<meta property="og:description" content="" />
+
+            
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55313502-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Universal Google Analytics Plugin by PB Web Development -->
+
+
+</head>
+
+    <body class="site com-content view-article no-layout no-task itemid-570 en-gb ltr  layout-fluid off-canvas-menu-init">
+
+        <div class="body-wrapper">
+            <div class="body-innerwrapper">
+                <header id="sp-header"><div class="container"><div class="row"><div id="sp-logo" class="col-xs-8 col-sm-2 col-md-2"><div class="sp-column "><div class="logo"><a href="../../../index.html"><img class="sp-default-logo hidden-xs" src="../../../images/Logos/MD2K-Logo_80px.png" alt="MD2K"><img class="sp-retina-logo hidden-xs" src="../../../images/Logos/MD2K-Logo_80px.png" alt="MD2K" width="179" height="80"><img class="sp-default-logo visible-xs" src="../../../images/Logos/MD2K-Logo_60px.png" alt="MD2K"></a></div></div></div><div id="sp-title" class="col-xs-3 col-sm-10 col-md-10 hidden-sm hidden-xs"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<h2 style="font-size: 1.4em; font-style: italic; font-weight: 300; padding-top: 10px;">Advancing biomedical discovery and improving health through mobile sensor Big Data</h2></div>
+</div></div></div></div></div></div></header><section id="sp-feature-main"><div class="row"><div id="sp-feature" class="col-sm-12 col-md-12"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<div style="padding-left: 20px; padding-right: 20px;">
+<h1>Study Coordinator Guide - Fossil Smartwatch</h1>
+<p>&nbsp;</p>
+<h2>Contents</h2>
+<p style="margin: 30px;">&bull;&nbsp;<a href="#dataCollection">Data Collection<br /></a>&nbsp; &nbsp; &nbsp;-&nbsp;<a href="#startApp">Start the Study App</a><br />&nbsp; &nbsp; &nbsp;-&nbsp;<a href="#stopApp">Stop the Study App</a><br />&bull;&nbsp;<a href="#transfer">Transfer Data from the Smartwatch to the Laptop</a><br />&nbsp; &nbsp; &nbsp;-&nbsp;<a href="#enableHotspot">Enable the Laptop's Hotspot</a><br />&nbsp; &nbsp; &nbsp;-&nbsp;<a href="#connectHotspot">Connect the Smartwatch to the Wi-Fi Hotspot</a><br />&nbsp; &nbsp; &nbsp;-&nbsp;<a href="#retrieveIP">Retrieve the Smartwatch IP Address</a><br />&nbsp; &nbsp; &nbsp;-&nbsp;<a href="#runScript">Run the Script to Offload the Data</a><br />&nbsp; &nbsp; &nbsp;-&nbsp;<a href="#confirmScript">Confirm the Succesful Script Execution</a><br />&nbsp; &nbsp; &nbsp;-&nbsp;<a href="#disableHotspot">Disable the Laptop&rsquo;s Hotspot</a><br />&bull; <a href="#finalSteps">Final Steps</a></p>
+<p>&nbsp;</p>
+<h2><a id="dataCollection"></a>Data Collection</h2>
+<p><span style="font-size: 12pt;">These instructions will guide you in collecting data using the Fossil smartwatch.&nbsp;We understand these procedures are quite different from the instructions for MotionSense HRV, so please reach out to us with any questions.</span></p>
+<p><span style="font-size: 12pt;">Every morning when the participant starts their day, we ask them to wear the watch and start the data collection app on the watch (explained below). The battery should ideally last for 8 to 12 hours from a full charge. We ask participants to take off the watch for charging at least nightly. We especially want participants to charge the device every night and begin wearing to resume data collection the next morning.</span></p>
+<p><strong>Note:&nbsp;</strong>When the charge goes below 10%, you will see the following watch face.&nbsp;When the battery drops below 10%, the data collection app on the watch will stop collecting data.</p>
+<p><img src="../../../images/howto/BatteryBelow10percent2.jpg" alt="BatteryBelow10percent" style="width: 200px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></p>
+<p>This smartwatch is different from MotionSense HRV in that data are stored on the watch itself, rather than streaming in real-time to the smartphone platform.</p>
+<p>&nbsp;</p>
+<h4><a id="startApp"></a>Start the Study App</h4>
+<p>1)&nbsp;There are three buttons on the side of the smartwatch. Press the middle button to view the watch's home screen.</p>
+<p><img src="../../../images/howto/FossilHome.jpg" alt="FossilHome" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></p>
+<p><strong><strong>Note:</strong>&nbsp;</strong>You may need to wait for the watch to power on first. If so, wait for the startup to complete and the home screen to appear.<strong><br />Note:&nbsp;</strong>Sometimes you may see a screen with a "Learn more" button when the watch restarts. If so, just press &ldquo;Learn more&rdquo; and it will take it to you the home screen.</p>
+<p>&nbsp;</p>
+<p>2) Press the middle button again to view the recent apps as shown below.&nbsp;</p>
+<p><img src="../../../images/howto/FossilRecentApps.jpg" alt="FossilRecentApps" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></p>
+<p>&nbsp;</p>
+<p>3) Using the touchscreen, find and tap &ldquo;JHU Study&rdquo; to open the study app. Make sure you see the study app screen as shown below.&nbsp;Once the study app screen appears, the app will automatically begin collecting data.</p>
+<p><img src="../../../images/howto/JHUstudyApp.jpg" alt="JHUstudyApp" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></p>
+<p><strong>Important:&nbsp;</strong>It is necessary to leave the screen as it is (do not press any buttons). Navigating to a different screen may stop data collection. To conserve battery life, please remind and encourage participants to avoid using the watch for purposes outside of the study data collection.</p>
+<p><strong>Note:</strong> It is expected that the screen display will turn off automatically after a few seconds. Data collection will continue as long as the participant does not exit the study app screen.</p>
+<p><strong>General Troubleshooting:&nbsp;</strong>It is important to ensure the study app is always running via the main display while the watch is being worn in order to collect good data. To verify the app is running, double-tap on the screen of the watch or simply lift the wrist and you should be able to see the study app screen:</p>
+<p><img src="../../../images/howto/JHUdataGood.jpg" alt="JHUdataGood" style="width: 200px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></p>
+<p>If you see either of the screens below, please follow the steps above to start the study app again.&nbsp;</p>
+<p><img src="../../../images/howto/JHUdataBad1.jpg" alt="JHUdataBad1" style="width: 200px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" />&nbsp;<img src="../../../images/howto/JHUdataBad2.jpg" alt="JHUdataBad2" style="width: 200px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></p>
+<p>&nbsp;It is advised for participants to quickly check whether the app is running or not once or twice a day.</p>
+<p>&nbsp;</p>
+<h4><a id="stopApp"></a>Stop the Study App</h4>
+<p><strong>Important:&nbsp;</strong>To conserve storage on the watch, when it is time to end data collection for the day, we ask the participants to follow&nbsp;these steps&nbsp;to stop the app when not wearing the watch.&nbsp;It is advised to stop the app before taking off the watch, as we don&rsquo;t want to collect any data when the watch is not worn.&nbsp;</p>
+<p><strong>Note: To reduce burden, these steps must only be completed on days when the smartwatch battery is greater than 10% at the end of the day.</strong> If the battery charge has run out or is less than 10%, the study app is no longer running so there is no need to stop the app. Simply skip these steps and charge the smartwatch at the end of the day.</p>
+<p><strong>To stop data collection:</strong></p>
+<p>1) Press the middle button to return to the home screen.</p>
+<p>2) Press the middle button again to view recent apps.</p>
+<p>3) Using the touchscreen, tap "Settings"</p>
+<p>4) Tap "Apps &amp; Notifications"</p>
+<p>5) Tap "App Info"</p>
+<p>6) Tap "JHU Study"</p>
+<p>7) Tap "Force Stop"</p>
+<p>8) Tap the "checkmark" button to confirm.</p>
+<p>&nbsp;</p>
+<h2><a id="transfer"></a>Transfer Data from the Smartwatch to the Laptop</h2>
+<p>As mentioned, the collected data is stored in the smartwatch itself. We are providing a specially configured laptop to offload the smartwatch data for analyses. Please follow these steps to transfer the smartwatch data after each participant has completed the study.</p>
+<p><strong>Note:</strong>&nbsp;If the smartwatch battery is below 10%, you will need to first set the smartwatch on the charger.</p>
+<p><span style="font-size: 1em;"></span></p>
+<p>&nbsp;</p>
+<h4><a id="enableHotspot"></a>Enable the Laptop&rsquo;s Hotspot</h4>
+<p>Hotspot name: Opioid <br />Hotspot password: opioidstudy</p>
+<p>&nbsp;</p>
+<p>1) On the laptop, login to the Ubuntu operating system. The password is&nbsp;<strong>opioid</strong></p>
+<p><strong>Note:</strong>&nbsp;There is a file named "data_export.sh" on the Desktop. It is important not to move or delete this file.</p>
+<p>&nbsp;</p>
+<p>2) On the left side of the laptop screen, click the Settings icon.</p>
+<p><img src="../../../images/howto/JHUlaptopSettingsIcon.png" alt="JHUlaptopSettingsIcon" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></p>
+<p>&nbsp;</p>
+<p>3) Select "Wi-Fi" from the left-hand Settings menu.</p>
+<p><img src="../../../images/howto/JHUlaptopSettingsWifi.png" alt="JHUlaptopSettingsWifi" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></p>
+<p>&nbsp;</p>
+<p>4)&nbsp;In the top-right corner of the window, select the Menu icon (fourth icon from the right), and click &ldquo;Turn On Wi-Fi Hotspot...&rdquo; then click the "Turn On" button to confirm.</p>
+<p><img src="../../../images/howto/JHUturnOnHotspot.jpg" alt="JHUturnOnHotspot" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></p>
+<p>&nbsp;</p>
+<h4><a id="connectHotspot"></a>Connect the Smartwatch to the Wi-Fi Hotspot</h4>
+<p>1)&nbsp;From the smartwatch home screen, press the middle button to view recent apps, then tap "Settings"</p>
+<p><img src="../../../images/howto/FossilRecentApps.jpg" alt="FossilRecentApps" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></p>
+<p>&nbsp;</p>
+<p>2) Scroll down and tap "Connectivity"</p>
+<p><img src="../../../images/howto/JHUconnectivity.jpg" alt="JHUconnectivity" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></p>
+<p>&nbsp;</p>
+<p>3) Tap "Wi-Fi"</p>
+<p><img src="../../../images/howto/JHUwatchWifi.jpg" alt="JHUwatchWifi" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></p>
+<p>&nbsp;</p>
+<p>4) Scroll down and tap "Add Network"</p>
+<p><img src="../../../images/howto/JHUaddNetwork.jpg" alt="JHUaddNetwork" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></p>
+<p>&nbsp;</p>
+<p>5) Tap the network named "Opioid" to connect to the laptop's hotspot.</p>
+<p><img src="../../../images/howto/JHUopioidNetwork.jpg" alt="JHUopioidNetwork" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></p>
+<p>&nbsp;</p>
+<h4><a id="retrieveIP"></a>Retrieve the Smartwatch IP Address</h4>
+<p>1) When you see the Opioid hotspot network is "Connected" as shown in the step above, swipe right on the smartwatch to return to the Wi-Fi screen.</p>
+<p><img src="../../../images/howto/JHUwifiScreen.jpg" alt="JHUwifiScreen" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></p>
+<p>&nbsp;</p>
+<p>2) Tap &ldquo;Opioid&rdquo; to view the IP address of the smartwatch.<br /><strong>Troubleshooting:&nbsp;</strong>If you do not see the Opioid Wi-Fi network listed on this screen, try tapping the "Wi-Fi (Automatic)" button twice to toggle Wi-Fi off and back on. Then wait for the Opioid network to appear in the list. You may need to reconnect by repeating steps 4 and 5 from the previous section.&nbsp;</p>
+<p>&nbsp;</p>
+<p>3) Make a note of this IP address as you will need it in the following steps.&nbsp;<br /><strong>Note:</strong> The below image is an example. Be sure to use the IP address shown on your smartwatch screen.</p>
+<p><img src="../../../images/howto/JHUwatchIPaddress.jpg" alt="JHUwatchIPaddress" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></p>
+<p>&nbsp;</p>
+<h4><a id="runScript"></a>Run the Script to Offload the Data</h4>
+<p>1) On the laptop, return to the Desktop screen.</p>
+<p>2) Right-click on the desktop and select "Open Terminal"</p>
+<p>3)&nbsp;Type the following command into the command prompt window then press Enter:&nbsp;<code>cd Desktop</code></p>
+<p>4) In the next line of the command prompt, type the following command then press Enter:&nbsp;<code>./data_export.sh<br /></code><strong>Note:</strong>&nbsp;If you receive any errors in steps 3 or 4, try again and be sure to type the commands exactly as they are listed, including all special characters.</p>
+<p>5) The command prompt will ask &ldquo;Hello, what is the username of the participant?&rdquo; Please type the desired username and press Enter.</p>
+<p>6) The command prompt will ask&nbsp;&ldquo;Enter the IP address of the watch.&rdquo; Please type the IP address found from the previous steps and press Enter then immediately proceed to the next step.</p>
+<p>7) On the smartwatch, you will be prompted to &ldquo;Allow Debugging&rdquo; on the screen. Tap on the watch screen to view the message and then tap OK.<br /><strong>Note:</strong> You must tap OK on the watch within 10 seconds or else the script will begin running and will return an error message. If this occurs, repeat the process beginning with step 4.</p>
+<p>&nbsp;</p>
+<h4><a id="confirmScript"></a>Confirm the Succesful Script Execution</h4>
+<p>1) Wait for the script to complete. A successful completion of the script looks like the example image below. You should be able to see the following lines in the command prompt.<br /><code>/sdcard/Opioid/ : X_number of files pulled <br />/sdcard/logger/ : Y_number of files pulled <br />Data is successfully exported</code></p>
+<p><img src="../../../images/howto/JHUsuccessfulScript2.jpg" alt="JHUsuccessfulScript" style="width: 600px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></p>
+<p>&nbsp;</p>
+<p>2) The script creates a folder on the Desktop with the username of the participant. This folder contains the data files (in Opioid and logger subfolders).</p>
+<p>&nbsp;</p>
+<p><strong>Note:</strong> When the script completes its execution, you should see the message &ldquo;Data is successfully exported&rdquo; along with the above mentioned two lines of code from step 1. If you see any error messages along with the above message, or if you don&rsquo;t see the three lines mentioned, please delete the created folder from Desktop and run the script again.</p>
+<p>Below is an example of an error message. This error occurs when we do not "Allow Debugging" on the smartwatch as explained in step 7 in the previous section.</p>
+<p><img src="../../../images/howto/JHUerrorScript2.jpg" alt="JHUerrorScript" style="width: 600px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></p>
+<p><strong>Note:&nbsp;</strong>Another possible error may occur if the smartwatch gets disconnected from WI-Fi. In this case, you won&rsquo;t see the three lines of code from step 1. If this occurs, please delete the created folder from Desktop, follow the steps to connect the smartwatch to the Wi-Fi hotspot, and run the script again.</p>
+<p>&nbsp;</p>
+<h4><a id="disableHotspot"></a>Disable the Laptop&rsquo;s Hotspot</h4>
+<p>1) To turn off the Wi-Fi hotspot after data offloading is complete, return to the Settings window on the laptop and click on the toggle button to OFF.</p>
+<p><img src="../../../images/howto/JHUhotspotToggleOFF.jpg" alt="JHUhotspotToggleOFF" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></p>
+<p>&nbsp;</p>
+<p>2) Click "Stop Hotspot" to confirm.</p>
+<p><img src="../../../images/howto/JHUstopHotspot.jpg" alt="JHUstopHotspot" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></p>
+<p>&nbsp;</p>
+<h2><a id="finalSteps"></a>Final Steps</h2>
+<p>1) Connect the laptop to the JHU Wi-Fi network.</p>
+<p>2) Upload the folder(s) with the particpant's username to send to the MD2K team.</p>
+<p><strong>Note:&nbsp;</strong>Running the script above will also delete the participant data from the watch so that the watch is automatically ready to use for the next participant.</p>
+</div></div>
+</div></div></div></div></div></section><section id="sp-feature-team-page" class="div#maximenuck253 div.floatck { 	 	background:#F4F4F4; 	background: -moz-linear-gradient(top, #f4f4f4, #eeeeee); 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f4f4), to(#eeeeee)); 	-moz-border-radius: 0px 5px 5px 5px; 	 }"><div class="row"><div id="sp-secondmenu" class="col-sm-12 col-md-12"><div class="sp-column div.floatck { background: #eeeeee;          background: -moz-linear-gradient(top, #EEEEEE, #EEEEEE);     /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEEEEE), to(#EEEEEE)); */  }"><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
+</div></div></div></div></div></section><footer id="sp-footer"><div class="container"><div class="row"><div id="sp-footer1" class="col-sm-10 col-md-10"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<p style="text-align: center; font-size: 12px; padding-top: 14px;">Copyright &copy; 2020 MD2K. <strong>MD2K was established by the National Institutes of Health Big Data to Knowledge Initiative <a href="https://projectreporter.nih.gov/project_info_description.cfm?aid=9303353&amp;icde=36143741&amp;ddparam=&amp;ddvalue=&amp;ddsub=&amp;cr=7&amp;csb=default&amp;cs=ASC&amp;pball=" target="_blank">(Grant #1U54EB020404)</a></strong><br /><span style="color: #ffffff; font-style: italic;">Team: Cornell Tech, GA Tech, Harvard, U. Memphis, Northwestern, Ohio State, UCLA, UCSD, UCSF, UMass, U. Michigan, U. Utah, WVU </span></p></div>
+</div></div></div></div><div id="sp-footer2" class="col-sm-2 col-md-2"><div class="sp-column "><ul class="sp-contact-info"><li class="sp-contact-phone"><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:901-678-1493">901-678-1493</a></li><li class="sp-contact-email"><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@md2k.org">info@md2k.org</a></li></ul><ul class="social-icons"><li><a target="_blank" href="https://twitter.com/MD2Korg" aria-label="twitter"><i class="fa fa-twitter"></i></a></li><li><a target="_blank" href="https://www.youtube.com/c/MD2KCenter" aria-label="youtube"><i class="fa fa-youtube"></i></a></li></ul></div></div></div></div></footer>            </div> <!-- /.body-innerwrapper -->
+        </div> <!-- /.body-innerwrapper -->
+
+        <!-- Off Canvas Menu -->
+        <div class="offcanvas-menu">
+            <a href="#" class="close-offcanvas" aria-label="Close"><i class="fa fa-remove" aria-hidden="true" title="HELIX_CLOSE_MENU"></i></a>
+            <div class="offcanvas-inner">
+                                  <div class="sp-module "><div class="sp-module-content"><ul class="nav menu">
+<li class="item-101"><a href="../../../index.html" > Home</a></li><li class="item-191  deeper parent"><a href="../../../about.html" > About</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-191"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-191"><li class="item-196"><a href="../../../about/meet-the-team.html" > MD2K Team</a></li><li class="item-198  deeper parent"><a href="../../../about/news.html" > News</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-198"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-198"><li class="item-443"><a href="../../../about/news/md2k-in-the-news.html" > MD2K in the News</a></li></ul></li><li class="item-581"><a href="../../../about/privacy.html" > Privacy</a></li><li class="item-224"><a href="../../../about/contact.html" > Contact</a></li></ul></li><li class="item-193  deeper parent"><a href="../../../research-agenda.html" > Research</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-193"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-193"><li class="item-338"><a href="../../../research-agenda/pubs.html" > Publications</a></li><li class="item-471  divider"><a class="separator ">Research Areas</a>
+</li><li class="item-213"><a href="../../../research-agenda/research-agenda.html" > Research Agenda</a></li><li class="item-285"><a href="../../../research-agenda/sensors.html" > Sensors</a></li><li class="item-214"><a href="../../../research-agenda/biomarkers.html" > mHealth Biomarkers</a></li><li class="item-474"><a href="../../../research-agenda/trial-design.html" > Trial Design</a></li><li class="item-216"><a href="../../../research-agenda/jitai.html" > mHealth Interventions</a></li><li class="item-284"><a href="../../../research-agenda/architecture.html" > Architecture</a></li><li class="item-219"><a href="../../../research-agenda/methodology.html" > Big Data Analytics</a></li><li class="item-473"><a href="../../../research-agenda/visualization.html" > Visualization</a></li><li class="item-221"><a href="../../../research-agenda/privacy.html" > Behavioral Privacy</a></li><li class="item-470  divider"><a class="separator ">Field Study Focus Areas</a>
+</li><li class="item-463"><a href="../../../research-agenda/smoking.html" > Smoking</a></li><li class="item-464"><a href="../../../research-agenda/eating-control.html" > Eating Regulation</a></li><li class="item-465"><a href="../../../research-agenda/drug-use.html" > Drug Use</a></li><li class="item-466"><a href="../../../research-agenda/stress-management.html" > Stress Management</a></li><li class="item-467"><a href="../../../research-agenda/heart-failure-care.html" > Heart Failure Care</a></li><li class="item-472"><a href="../../../research-agenda/behavior-change.html" > Behavior Change</a></li><li class="item-468">		<a  href="http://mperf.md2k.org/"  > Work Productivity</a></li><li class="item-469"><a href="../../../research-agenda/oral-health.html" > Oral Health</a></li></ul></li><li class="item-197  deeper parent"><a href="../../../software.html" > Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-197"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-197"><li class="item-421  deeper parent"><a href="../../../software/under-the-hood.html" > Under the Hood</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-421"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-421"><li class="item-427"><a href="../../../software/under-the-hood/mcerebrum.html" > Smartphone Software</a></li><li class="item-428  deeper parent"><a href="../../../software/under-the-hood/cerebral-cortex.html" > Cloud Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-428"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-428"><li class="item-436"><a href="../../../software/under-the-hood/cerebral-cortex/architecture.html" > Architecture</a></li></ul></li><li class="item-429"><a href="../../../software/under-the-hood/bug-reports-feature-requests.html" > Bug Reports / Feature Requests</a></li><li class="item-430"><a href="../../../software/under-the-hood/software-license.html" > Software License</a></li><li class="item-431"><a href="../../../software/under-the-hood/contributing.html" > Contributing</a></li><li class="item-432"><a href="../../../software/under-the-hood/references.html" > References</a></li><li class="item-533"><a href="../../../software/under-the-hood/software-docs.html" > Documentation</a></li></ul></li><li class="item-422  deeper parent"><a href="../../../software/how-to.html" > How-To</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-422"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-422"><li class="item-433  deeper parent"><a href="../../../software/how-to/smartphone-software.html" > Smartphone Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-433"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-433"><li class="item-440"><a href="../../../software/how-to/smartphone-software/getting-started.html" > Getting Started</a></li><li class="item-476"><a href="../../../software/how-to/smartphone-software/implementing-datakit.html" > Implementing DataKit</a></li></ul></li><li class="item-434  deeper parent"><a href="../../../software/how-to/supported-sensors.html" > Supported Sensors</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-434"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-434"><li class="item-441"><a href="../../../software/how-to/supported-sensors/sensors-troubleshooting.html" > Sensors Troubleshooting</a></li><li class="item-442"><a href="../../../software/how-to/supported-sensors/adding-sensors.html" > Adding Sensors </a></li></ul></li><li class="item-438  deeper parent"><a href="../../../software/how-to/getting-started.html" > Cloud Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-438"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-438"><li class="item-437"><a href="../../../software/how-to/getting-started/docker.html" > Docker</a></li><li class="item-439"><a href="../../../software/how-to/getting-started/working-with-cerebral-cortex.html" > Working with Cerebral Cortex</a></li></ul></li><li class="item-453"><a href="../../../software/how-to/software-howto-studyguides.html" > Study Guides</a></li></ul></li><li class="item-423"><a href="../../../software/deployments.html" > Deployments</a></li><li class="item-424"><a href="../../../software/contributors.html" > Contributors</a></li><li class="item-482"><a href="../../../software/personal.html" > Personal Edition</a></li><li class="item-486"><a href="../../../software/codeofconduct.html" > Code of Conduct</a></li></ul></li><li class="item-564  deeper parent"><a href="../../../tutorials.html" > Tutorials</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-564"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-564"><li class="item-565"><a href="../../../tutorials/cps-iot-week-2020.html" > CPS-IoT Week 2020</a></li></ul></li><li class="item-247  deeper parent"><a href="../../../webinars.html" > Training</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-247"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-247"><li class="item-425  deeper parent">		<a  href="https://mhti.md2k.org/"  > mHealth Training Institute</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-425"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-425"><li class="item-426">		<a  href="https://mhti.md2k.org/index.php/gallery/2019/2019-lectures"  > mHTI Lectures</a></li></ul></li><li class="item-356">		<a href="https://mhealth.md2k.org/training/webinars" rel="noopener noreferrer" target="_blank" > Webinar Videos</a></li></ul></li><li class="item-223"><a href="../../../studies.html" > Deployments</a></li><li class="item-226  deeper parent"><a href="../../../events.html" > Events</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-226"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-226"><li class="item-512"><a href="../../../events/md2k-2018.html" > 2018 Annual Meeting</a></li><li class="item-353  deeper parent"><a href="../../../events/2017-annual-meeting.html" > 2017 Annual Meeting</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-353"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-353"><li class="item-455"><a href="../../../events/2017-annual-meeting/2017-career-day.html" > 2017 Career Day</a></li></ul></li><li class="item-228"><a href="../../../events/2016-annual-meeting.html" > 2016 Annual Meeting</a></li><li class="item-227"><a href="../../../events/2015-annual-meeting.html" > 2015 Annual Meeting</a></li></ul></li><li class="item-348">		<a  href="https://mhealth.md2k.org/"  > mHealthHUB</a></li><li class="item-199  deeper parent"><a href="../../../related-projects.html" > Related Projects</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-199"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-199"><li class="item-239">		<a href="http://mperf.md2k.org/" rel="noopener noreferrer" target="_blank" > mPerf</a></li><li class="item-240">		<a href="http://mprov.md2k.org/" rel="noopener noreferrer" target="_blank" > mProv</a></li><li class="item-577">		<a href="http://mcontain.md2k.org/" rel="noopener noreferrer" target="_blank" > mContain</a></li><li class="item-513">		<a href="https://mdot.md2k.org/" rel="noopener noreferrer" target="_blank" > mDOT</a></li></ul></li><li class="item-556"><a href="../../../moods.html" > MOODS</a></li></ul>
+</div></div>
+                            </div> <!-- /.offcanvas-inner -->
+        </div> <!-- /.offcanvas-menu -->
+
+        
+        
+        
+        <!-- Preloader -->
+        
+
+        <!-- Go to top -->
+        
+    </body>
+
+<!-- Mirrored from md2k.org/software-how-to/software-howto-studyguides/opioid-pg/fossil.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 19:56:21 GMT -->
+</html>

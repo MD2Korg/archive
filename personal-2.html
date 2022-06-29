@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+    
+<!-- Mirrored from md2k.org/personal by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 20:03:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+                <!-- head -->
+        <base  />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="mHealth, md2k, mobile health, precision medicine, biomarkers, mobile sensor data, mobile sensors" />
+	<meta name="author" content="Brian Ahern" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Advancing biomedical discovery and improving health through mobile sensor Big Data" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>MD2K - Personal Edition</title>
+	<link href="http://md2k-webtest.memphis.edu/personal" rel="canonical" />
+	<link href="images/Logos/favicon2.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="plugins/system/maximenuckmobile/themes/default/maximenuckmobile.css" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic&amp;subset=latin-ext" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Fjalla+One:regular&amp;subset=latin-ext" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&amp;subset=greek,greek-ext" rel="stylesheet" type="text/css" />
+	<link href="templates/shaper_helix3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="templates/shaper_helix3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="templates/shaper_helix3/css/legacy.css" rel="stylesheet" type="text/css" />
+	<link href="templates/shaper_helix3/css/template.css" rel="stylesheet" type="text/css" />
+	<link href="templates/shaper_helix3/css/presets/preset2.css" rel="stylesheet" type="text/css" class="preset" />
+	<link href="templates/shaper_helix3/css/custom.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet" type="text/css" />
+	<link href="modules/mod_maximenuck/themes/tabs/css/maximenuck110d.css?monid=maximenuck351" rel="stylesheet" type="text/css" />
+	<link href="modules/mod_maximenuck/assets/maximenuresponsiveck.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+.mobilebarmaximenuck { display: none; }
+	@media only screen and (max-width:640px){
+    #maximenuck351 { display: none !important; }
+    .mobilebarmaximenuck { display: block; }
+	.hidemenumobileck {display: none !important;}
+     }body{font-family:Lato, sans-serif; font-size:14px; font-weight:normal; }h1{font-family:Fjalla One, sans-serif; font-size:36px; font-weight:normal; }h2{font-family:Fjalla One, sans-serif; font-size:30px; font-weight:normal; }h3{font-family:Roboto, sans-serif; font-size:24px; font-weight:700; }h4{font-family:Roboto, sans-serif; font-size:18px; font-weight:700; }h5{font-family:Roboto, sans-serif; font-size:18px; font-weight:700italic; }h6{font-family:Lato, sans-serif; font-size:16px; font-weight:700; }button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #2a9eb2;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #aed141}
+
+.button:active {
+  background-color: #aed141;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+ 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+     -webkit-flex-direction: column;
+    flex-direction: column;
+    webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+	background-color: #2b3675;
+	border-radius: 45px;
+}
+
+.flex-item {
+    background-color: #ffffff;
+    width: 98%;
+    height: auto;
+    margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 45px;
+	padding: 15px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+	text-align: justify;
+}
+
+.flex-study {
+    background-color: #ffffff;
+    width: 25%;
+    height: auto;
+    margin: 10px;
+	border-radius: 45px;
+	padding: 20px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+	
+}
+.flex-study1 {
+    background-color: #ffffff;
+    width: 25%;
+    height: 100%;
+    margin: 10px;
+	border-radius: 45px;
+	padding: 20px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+      text-align: center;
+-webkit-align-self: center; /* Safari 7.0+ */
+    align-contents: center;
+}
+
+.flex-container2 {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: auto;
+	background-color: #2b3675;
+	border-radius: 45px;
+}
+
+p {
+text-align: justify;
+}
+
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #bbb;
+	width: 100%;
+	}
+	
+	td {
+    border-top: 1px solid #ddd;
+    padding: 4px 8px;
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	font-size: 14px;
+		color: #2b3675;
+}
+	th {
+    border-top: 1px solid #ddd;
+    padding: 4px 8px;
+	font-family:Roboto Black, Raleway Black, Oswald SemiBold, Montserrat SemiBold;
+	font-size: 22px;
+		background-color: #2b3675;
+		color: #fff;
+}
+	
+		
+	tbody tr:nth-child(even) td {
+    background-color: #eee;
+}
+
+
+.one-half,
+
+.one-third,
+
+.two-third,
+
+.one-fourth,
+
+.three-fourth,
+
+.one-fifth,
+
+.two-fifth,
+
+.three-fifth,
+
+.four-fifth,
+
+.one-sixth,
+
+.five-sixth {
+
+  float: left;
+
+  margin: 0 4% 15px 0;
+
+}
+
+.three-across-1
+{
+
+  float: left;
+
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border: 5px;
+  width: 30%;
+
+}
+
+.three-across-2
+{
+
+  float: left;
+
+ margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 30%;
+
+}
+
+
+
+.three-across-3
+{
+
+  float: left;
+   margin-bottom: 15px;
+  margin-left: 15px;
+  
+  width: 30%;
+
+}
+
+
+.one-half.last,
+
+.one-third.last,
+
+.two-third.last,
+
+.one-fourth.last,
+
+.three-fourth.last,
+
+.one-fifth.last,
+
+.two-fifth.last,
+
+.three-fifth.last,
+
+.four-fifth.last,
+
+.one-sixth.last,
+
+.five-sixth.last {
+
+  margin-right: 0;
+
+  margin-bottom: 15px;
+
+}
+
+.one-half {
+
+  width: 48%;
+
+}
+
+.one-third {
+
+  width: 30.66%;
+
+}
+
+.two-third {
+
+  width: 65.33%;
+
+}
+
+.one-fourth {
+
+  width: 22%;
+
+}
+
+.three-fourth {
+
+  width: 74%;
+
+}
+
+.one-fifth {
+
+  width: 16.8%;
+
+}
+
+.two-fifth {
+
+  width: 37.6%;
+
+}
+
+.three-fifth {
+
+  width: 58.4%;
+
+}
+
+.four-fifth {
+
+  width: 79.2%;
+
+}
+
+.one-sixth {
+
+  width: 13.33%;
+
+}
+
+.five-sixth {
+
+  width: 82.66%;
+
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.characteristic {
+  text-align: center;
+  color: #fff;
+
+  padding: 2px 7px;
+
+  background-color: #BB4C38;
+  border-radius: 10px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 60%;
+  margin: 2px;
+  top: -4px;
+  position: relative;
+
+}#sp-feature-main{ padding:0px 20px 0 px 20px;margin:-40px 0px 20px 0 px 20px; }#sp-feature-team-page{ padding:20px; }div#maximenuck351 li > a, div#maximenuck351 li > span { font-family: 'Roboto';}div#maximenuck351 ul.maximenuck2 li > a, div#maximenuck351 ul.maximenuck2 li > span { font-family: 'Lato';}
+div#maximenuck351.maximenuckh ul.maximenuck div.maxidrop-main, div#maximenuck351.maximenuckh ul.maximenuck li div.maxidrop-main { width: 350px; } 
+div#maximenuck351.maximenuckh ul.maximenuck div.floatck, div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck div.floatck { margin-left: -75px; } 
+div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck div.floatck div.floatck { margin-left: 240px; } 
+div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck.level1.parent > a:after, div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck.level1.parent > span.separator:after { display: none;}
+div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck.level1 li.maximenuck.parent > a:after, div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck.level1 li.maximenuck.parent > span.separator:after,
+	div#maximenuck351 .maxipushdownck li.maximenuck.parent > a:after, div#maximenuck351 .maxipushdownck li.maximenuck.parent > span.separator:after { display: none;}
+div#maximenuck351.maximenuckh ul.maximenuck { padding-top: -25px;background: rgba(255,255,255,0);background-color: rgba(255,255,255,0);background-image: url("modules/mod_maximenuck/assets/svggradient/maximenuck351menustyles-gradient.svg");background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, #FFFFFF 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,#FFFFFF)); background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,#FFFFFF 100%);background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,#FFFFFF 100%);background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,#FFFFFF 100%);background: linear-gradient(top,  rgba(255,255,255,0) 0%,#FFFFFF 100%); -moz-border-radius: 0px 0px 0px 0px;-webkit-border-radius: 0px 0px 0px 0px;border-radius: 0px 0px 0px 0px;border-top: #5E76FF 2px solid ;border-bottom: #5E76FF 2px solid ;text-align: center; } 
+div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck.level1 > a span.titreck, div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck.level1 > span.separator span.titreck { color: #2B3675;font-size: 11px;font-weight: bold;text-transform: uppercase; } 
+div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck.level1.active, div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck.level1.parent.active, 
+div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck.level1:hover, div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck.level1.parent:hover { background: #FFFFFF;background-color: #FFFFFF; } 
+div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck.level1.active > a, div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck.level1.active > span, 
+div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck.level1:hover > a, div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck.level1:hover > span.separator {  } 
+div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck.level1.active > a span.titreck, div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck.level1.active > span.separator span.titreck, 
+div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck.level1:hover > a span.titreck, div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck.level1:hover > span.separator span.titreck { color: #2A9EB2; } 
+div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck div.floatck, div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck div.floatck div.floatck,
+div#maximenuck351 .maxipushdownck div.floatck { background: #EEEEEE;background-color: #EEEEEE;background-image: url("modules/mod_maximenuck/assets/svggradient/maximenuck351level2menustyles-gradient.svg");background: -moz-linear-gradient(top,  #EEEEEE 0%, #EEEEEE 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EEEEEE), color-stop(100%,#EEEEEE)); background: -webkit-linear-gradient(top,  #EEEEEE 0%,#EEEEEE 100%);background: -o-linear-gradient(top,  #EEEEEE 0%,#EEEEEE 100%);background: -ms-linear-gradient(top,  #EEEEEE 0%,#EEEEEE 100%);background: linear-gradient(top,  #EEEEEE 0%,#EEEEEE 100%);  } 
+div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck.level1 li.maximenuck > a span.titreck, div#maximenuck351.maximenuckh ul.maximenuck li.maximenuck.level1 li.maximenuck > span.separator span.titreck, div#maximenuck351 li.maximenuck.maximenuflatlistck:not(.level1) span.titreck,
+div#maximenuck351 .maxipushdownck li.maximenuck > a span.titreck, div#maximenuck351 .maxipushdownck li.maximenuck > span.separator span.titreck { color: #2B3675;font-size: 11px;font-weight: bold;text-transform: uppercase; } @media screen and (max-width: 640px) {div#maximenuck351 ul.maximenuck li.maximenuck.nomobileck, div#maximenuck351 .maxipushdownck ul.maximenuck2 li.maximenuck.nomobileck { display: none !important; }}@media screen and (min-width: 641px) {div#maximenuck351 ul.maximenuck li.maximenuck.nodesktopck, div#maximenuck351 .maxipushdownck ul.maximenuck2 li.maximenuck.nodesktopck { display: none !important; }}
+	</style>
+	<script src="media/jui/js/jquery.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="media/jui/js/jquery-noconflict700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="media/jui/js/jquery-migrate.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="media/system/js/caption700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="plugins/system/maximenuckmobile/assets/maximenuckmobile.js" type="text/javascript"></script>
+	<script src="templates/shaper_helix3/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="templates/shaper_helix3/js/jquery.sticky.js" type="text/javascript"></script>
+	<script src="templates/shaper_helix3/js/main.js" type="text/javascript"></script>
+	<script src="media/jui/js/jquery.ui.core.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="media/plg_captcha_recaptcha/js/recaptcha.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=JoomlaInitReCaptcha2&amp;render=explicit&amp;hl=en-GB" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});jQuery(document).ready(function($){
+                    $('#maximenuck351').MobileMaxiMenu({usemodules : 0,container : 'menucontainer',showdesc : 0,showlogo : 1,useimages : 0,menuid : 'maximenuck351',showmobilemenutext : 'default',mobilemenutext : 'Menu',mobilebackbuttontext : 'Back',displaytype : 'flat',menubarbuttoncontent : '',topbarbuttoncontent : '',uriroot : '',displayeffect : 'normal',menuwidth : '300',openedonactiveitem : '0'});});// Find all YouTube videos
+var $allVideos = $("iframe[src^='//www.youtube.com']"),
+
+    // The element that is fluid width
+    $fluidEl = $("body");
+
+// Figure out and save aspect ratio for each video
+$allVideos.each(function() {
+
+  $(this)
+    .data('aspectRatio', this.height / this.width)
+
+    // and remove the hard coded width/height
+    .removeAttr('height')
+    .removeAttr('width');
+
+});
+
+// When the window is resized
+$(window).resize(function() {
+
+  var newWidth = $fluidEl.width();
+
+  // Resize all videos according to their own aspect ratio
+  $allVideos.each(function() {
+
+    var $el = $(this);
+    $el
+      .width(newWidth)
+      .height(newWidth * $el.data('aspectRatio'));
+
+  });
+
+// Kick off one resize to fix all videos on page load
+}).resize();
+var sp_preloader = '0';
+
+var sp_gotop = '0';
+
+var sp_offanimation = 'default';
+
+	</script>
+	<meta property="og:url" content="https://md2k.org/personal" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Software - HowTo - Personal Edition" />
+	<meta property="og:description" content="" />
+
+            
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55313502-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Universal Google Analytics Plugin by PB Web Development -->
+
+
+</head>
+
+    <body class="site com-content view-article no-layout no-task itemid-481 en-gb ltr  layout-fluid off-canvas-menu-init">
+
+        <div class="body-wrapper">
+            <div class="body-innerwrapper">
+                <header id="sp-header"><div class="container"><div class="row"><div id="sp-logo" class="col-xs-8 col-sm-2 col-md-2"><div class="sp-column "><div class="logo"><a href="index.html"><img class="sp-default-logo hidden-xs" src="images/Logos/MD2K-Logo_80px.png" alt="MD2K"><img class="sp-retina-logo hidden-xs" src="images/Logos/MD2K-Logo_80px.png" alt="MD2K" width="179" height="80"><img class="sp-default-logo visible-xs" src="images/Logos/MD2K-Logo_60px.png" alt="MD2K"></a></div></div></div><div id="sp-title" class="col-xs-3 col-sm-10 col-md-10 hidden-sm hidden-xs"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<h2 style="font-size: 1.4em; font-style: italic; font-weight: 300; padding-top: 10px;">Advancing biomedical discovery and improving health through mobile sensor Big Data</h2></div>
+</div></div></div></div></div></div></header><section id="sp-page-title"><div class="row"><div id="sp-othermenu" class="col-sm-12 col-md-12"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+			<!--[if lte IE 7]>
+			<link href="/modules/mod_maximenuck/themes/tabs/css/ie7.css" rel="stylesheet" type="text/css" />
+			<![endif]--><!-- debut Maximenu CK, par cedric keiflin -->
+	<div class="maximenuckh ltr" id="maximenuck351" style="z-index:10;">
+        <div class="maxiroundedleft"></div>
+        <div class="maxiroundedcenter">
+            <ul class=" maximenuck">
+												<li data-level="1" class="maximenuck item395 first level1 " style="z-index : 12000;" ><a class="maximenuck " href="index.html"><span class="titreck">MD2K Home</span></a>
+		</li><li data-level="1" class="maximenuck item396 level1 " style="z-index : 11999;" ><a class="maximenuck " href="software-home.html"><span class="titreck">Home</span></a>
+		</li><li data-level="1" class="maximenuck item397 parent level1 " style="z-index : 11998;" ><a class="maximenuck " href="software-under-the-hood.html"><span class="titreck">Under The Hood</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item403 first level2 " style="z-index : 11997;" ><a class="maximenuck " href="software-under-the-hood/software-uth-mcerebrum.html"><span class="titreck">Smartphone Software</span></a>
+		</li><li data-level="2" class="maximenuck item405 parent level2 " style="z-index : 11996;" ><a class="maximenuck " href="software-under-the-hood/software-uth-cc.html"><span class="titreck">Cloud Software</span></a>
+	<div class="floatck" style="margin-left:175px;width:300px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item417 first last level3 " style="z-index : 11995;" ><a class="maximenuck " href="software-under-the-hood/software-uth-cc/software-cc-architecture.html"><span class="titreck">Architecture</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item412 level2 " style="z-index : 11994;" ><a class="maximenuck " href="software-under-the-hood/software-uth-references.html"><span class="titreck">References</span></a>
+		</li><li data-level="2" class="maximenuck item409 level2 " style="z-index : 11993;" ><a class="maximenuck " href="software-under-the-hood/software-uth-bug-feature-requests.html"><span class="titreck">Bug Reports / Feature Requests</span></a>
+		</li><li data-level="2" class="maximenuck item410 level2 " style="z-index : 11992;" ><a class="maximenuck " href="software-under-the-hood/software-uth-license.html"><span class="titreck">Software License</span></a>
+		</li><li data-level="2" class="maximenuck item532 last level2 " style="z-index : 11991;" ><a class="maximenuck " href="software-under-the-hood/software-docs.html"><span class="titreck">Documentation</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item402 parent level1 " style="z-index : 11990;" ><a class="maximenuck " href="software-how-to.html"><span class="titreck">How-To</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item401 first parent level2 " style="z-index : 11989;" ><a class="maximenuck " href="software-how-to/software-smartphone.html"><span class="titreck">Smartphone Software</span></a>
+	<div class="floatck" style="margin-left:150px;width:300px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item413 first level3 " style="z-index : 11988;" ><a class="maximenuck " href="software-how-to/software-smartphone/software-howto-getting-started.html"><span class="titreck">Getting Started</span></a>
+		</li><li data-level="3" class="maximenuck item477 last level3 " style="z-index : 11987;" ><a class="maximenuck " href="software-how-to/software-smartphone/implementing-datakit.html"><span class="titreck">Implementing DataKit</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item414 parent level2 " style="z-index : 11986;" ><a class="maximenuck " href="software-how-to/spftware-howto-sensors.html"><span class="titreck">Supported Sensors</span></a>
+	<div class="floatck" style="margin-left:150px;width:300px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item415 first level3 " style="z-index : 11985;" ><a class="maximenuck " href="software-how-to/spftware-howto-sensors/software-howto-troubleshooting.html"><span class="titreck">Sensors Troubleshooting</span></a>
+		</li><li data-level="3" class="maximenuck item416 last level3 " style="z-index : 11984;" ><a class="maximenuck " href="software-how-to/spftware-howto-sensors/software-howto-adding-sensors.html"><span class="titreck">Adding Sensors</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item407 parent level2 " style="z-index : 11983;" ><a class="maximenuck " href="software-how-to/software-cc-getting-started.html"><span class="titreck">Cloud Software</span></a>
+	<div class="floatck" style="margin-left:175px;width:300px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item454 first level3 " style="z-index : 11982;" ><a class="maximenuck " href="software-how-to/software-cc-getting-started/install-test.html"><span class="titreck">Install &amp; Test</span></a>
+		</li><li data-level="3" class="maximenuck item406 level3 fullwidth" style="z-index : 11981;" ><a class="maximenuck " href="software-how-to/software-cc-getting-started/software-cc-docker.html"><span class="titreck">Docker</span></a>
+		</li><li data-level="3" class="maximenuck item408 last level3 fullwidth" style="z-index : 11980;" ><a class="maximenuck " href="software-how-to/software-cc-getting-started/software-working-with-cc.html"><span class="titreck">Working with Cerebral Cortex</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item411 level2 " style="z-index : 11979;" ><a class="maximenuck " href="software-how-to/software-uth-contributing.html"><span class="titreck">Contributing</span></a>
+		</li><li data-level="2" class="maximenuck item452 parent last level2 " style="z-index : 11978;" ><a class="maximenuck " href="software-how-to/software-howto-studyguides.html"><span class="titreck">Study Guides</span></a>
+	<div class="floatck" style="margin-left:150px;width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item459 first level3 " style="z-index : 11977;" ><a class="maximenuck " href="software-how-to/software-howto-studyguides/software-howto-robasscg.html"><span class="titreck">ROBAS SCG</span></a>
+		</li><li data-level="3" class="maximenuck item480 level3 " style="z-index : 11976;" ><a class="maximenuck " href="software-how-to/software-howto-studyguides/cc-mitll.html"><span class="titreck">MIT Lincoln Lab</span></a>
+		</li><li data-level="3" class="maximenuck item483 level3 " style="z-index : 11975;" ><a class="maximenuck " href="software-how-to/software-howto-studyguides/ses.html"><span class="titreck">SES</span></a>
+		</li><li data-level="3" class="maximenuck item484 level3 " style="z-index : 11974;" ><a class="maximenuck " href="software-how-to/software-howto-studyguides/ses-pg.html"><span class="titreck">SES PG</span></a>
+		</li><li data-level="3" class="maximenuck item509 level3 " style="z-index : 11973;" ><a class="maximenuck " href="software-how-to/software-howto-studyguides/sobc.html"><span class="titreck">SOBC</span></a>
+		</li><li data-level="3" class="maximenuck item535 level3 " style="z-index : 11972;" ><a class="maximenuck " href="software-how-to/software-howto-studyguides/moffitt-pg.html"><span class="titreck">Moffitt PG</span></a>
+		</li><li data-level="3" class="maximenuck item536 parent level3 " style="z-index : 11971;" ><a class="maximenuck " href="software-how-to/software-howto-studyguides/opioid-pg.html"><span class="titreck">Opioid PG</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="4" class="maximenuck item570 first last level4 " style="z-index : 11970;" ><a class="maximenuck " href="software-how-to/software-howto-studyguides/opioid-pg/fossil.html"><span class="titreck">Fossil Smartwatch</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="3" class="maximenuck item542 last level3 " style="z-index : 11969;" ><a class="maximenuck " href="software-how-to/software-howto-studyguides/data-syncing.html"><span class="titreck">Data Syncing</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item398 level1 " style="z-index : 11968;" ><a class="maximenuck " href="software-deployments.html"><span class="titreck">Deployments</span></a>
+		</li><li data-level="1" class="maximenuck item450 level1 " style="z-index : 11967;" ><a class="maximenuck " href="software-bug-feature-requests.html"><span class="titreck">Bug Reports / Feature Requests</span></a>
+		</li><li data-level="1" class="maximenuck item400 level1 " style="z-index : 11966;" ><a class="maximenuck " href="software-contact.html"><span class="titreck">Contact</span></a>
+		</li><li data-level="1" class="maximenuck item481 current active level1 " style="z-index : 11965;" ><a class="maximenuck " href="personal.html"><span class="titreck">Personal Edition</span></a>
+		</li><li data-level="1" class="maximenuck item485 parent level1 " style="z-index : 11964;" ><a class="maximenuck " href="contributing.html"><span class="titreck">Contributing</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item399 first level2 " style="z-index : 11963;" ><a class="maximenuck " href="contributing/software-contributors.html"><span class="titreck">Contributors</span></a>
+		</li><li data-level="2" class="maximenuck item487 level2 " style="z-index : 11962;" ><a class="maximenuck " href="contributing/contributing-guidelines.html"><span class="titreck">Contributing Guidelines</span></a>
+		</li><li data-level="2" class="maximenuck item488 level2 " style="z-index : 11961;" ><a class="maximenuck " href="contributing/code-of-conduct.html"><span class="titreck">Code of Conduct</span></a>
+		</li><li data-level="2" class="maximenuck item508 level2 " style="z-index : 11960;" ><a class="maximenuck " href="contributing/acknowledgments.html"><span class="titreck">Acknowledgments</span></a>
+		</li><li data-level="2" class="maximenuck item552 parent level2 " style="z-index : 11959;" ><a class="maximenuck " href="contributing/sw-2019.html"><span class="titreck">SW 2019</span></a>
+	<div class="floatck" style="margin-left:100px;width:300px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item553 first level3 " style="z-index : 11958;" ><a class="maximenuck " href="contributing/sw-2019/smartphone-software.html"><span class="titreck">Smartphone Software</span></a>
+		</li><li data-level="3" class="maximenuck item554 level3 " style="z-index : 11957;" ><a class="maximenuck " href="contributing/sw-2019/cloud-software.html"><span class="titreck">Cloud Software</span></a>
+		</li><li data-level="3" class="maximenuck item555 last level3 " style="z-index : 11956;" ><a class="maximenuck " href="contributing/sw-2019/data-dictionary.html"><span class="titreck">Data Dictionary</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li>            </ul>
+        </div>
+        <div class="maxiroundedright"></div>
+        <div style="clear:both;"></div>
+    </div>
+    <!-- fin maximenuCK -->
+</div></div></div></div></div></section><section id="sp-feature-main"><div class="row"><div id="sp-feature" class="col-sm-12 col-md-12"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<div style="padding-left: 20px; padding-right: 20px;">
+<p><img src="images/howto/personal/CCmClogos350.png" alt="CCmClogos350" /></p>
+<h1>Software: Personal Edition</h1>
+<p>This page will assist users in collecting and analyzing your own data using the Personal Edition of MD2K's mobile-sensor big-data software platform, as well as making your own meaningful software contributions.&nbsp;The MD2K software includes a smartphone platform called mCerebrum and a cloud counterpart called Cerebral Cortex.</p>
+<p><strong>mCerebrum is a configurable smartphone software platform for mobile and wearable sensors.</strong> It provides support for reliable data collection from mobile and wearable sensors, and offers real-time processing of these data.</p>
+<p><strong>Cerebral Cortex is the big data cloud companion of mCerebrum</strong> designed to support population-scale data analysis, visualization, model development, and intervention design for mobile sensor data.&nbsp;</p>
+<p>While MD2K is not a recruitment tool nor a server host, our software can be installed and used by anyone who wishes to advance research in mobile health using cutting edge techniques in high-frequency data collection and all the other unique capabilities MD2K can offer.</p>
+<p>&nbsp;</p>
+<h2>Contents</h2>
+<p style="margin: 30px;"><strong>mCerebrum Personal Edition</strong><br />&bull; <a href="#releases">Release History</a><br />&bull;&nbsp;<a href="#installmC">Install mCerebrum</a><br />&bull; <a href="#setupPhone">Setup Phone Sensors</a><br />&bull; <a href="#setupMS">Setup MotionSense</a><br />&bull; <a href="#collect">Collect Data</a><br />&bull; <a href="#visualize">Visualize Real-Time Data</a><br />&bull; <a href="#activity">Activity Markers</a><br />&bull; <a href="#clear">Clear Your Data</a><br /><strong>Cerebral Cortex Personal Edition<br /></strong>&bull; <a href="https://github.com/MD2Korg/CerebralCortex-Vagrant/blob/personal/README.md">Cerebral Cortex Instructions</a></p>
+<h3>Additional Info</h3>
+<p>&bull; Discussion forum: <a href="https://discuss.md2k.org/">https://discuss.md2k.org</a><br />&bull; Mailing list: <a href="mailto:md2k-software@googlegroups.com">md2k-software@googlegroups.com</a><br />&bull; Source Code: <a href="https://github.com/MD2Korg">https://github.com/MD2Korg</a></p>
+<p>&nbsp;</p>
+<h2>mCerebrum Personal Edition</h2>
+<h3><a id="releases"></a>Release History</h3>
+<table style="max-width: 300px;">
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>Version</strong></td>
+<td style="text-align: center;"><strong>&nbsp;Release Date</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">3.0.0</td>
+<td style="text-align: center;">June 4, 2018</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a-name-installmc-a-install-mcerebrum"><a id="installmC"></a>Install mCerebrum</h3>
+<p>1) <strong>Download</strong>&nbsp;the&nbsp;<a href="https://raw.githubusercontent.com/MD2Korg/mCerebrum-releases/master/3.0/org.md2k.mcerebrum/mcerebrum3.0.0.apk">latest version of mCerebrum</a>&nbsp;(found at this link or by using the QR code below) and install the APK file on an Android 5.0+ device.</p>
+<p><img src="images/howto/personal/mC_QR.jpg" alt="mC QR" /></p>
+<p>2) Follow the on-screen instructions on your Android device to <strong>complete the installation</strong>.</p>
+<p><img src="images/howto/personal/installUpdate.png" alt="installUpdate" /></p>
+<p>3) When the installation is complete, <strong>open mCerebrum </strong>using the&nbsp;<em>Open</em> button on the installation screen or the <em></em>mCerebrum app icon on the phone.</p>
+<p><img src="images/howto/personal/openButton2.png" alt="openButton2" />&nbsp;<img src="images/howto/personal/mCpIcon.png" alt="mCpIcon" /></p>
+<p>4) On the first screen, <strong>tap <em>Agree </em></strong>to accept&nbsp;the Terms and Conditions.&nbsp;</p>
+<p><img src="images/howto/personal/TermsAndC.png" alt="TermsAndC" /></p>
+<p>5) If prompted, <strong>allow permissions</strong> to draw over other apps, then tap the back button to advance.&nbsp;</p>
+<p><img src="images/howto/personal/allow1.png" alt="allow1" /></p>
+<p>6) If prompted for Usage Data Access, select&nbsp;<em>mCerebrum</em> from the list, tap to <strong>allow</strong> usage tracking, then tap the back button to advance.</p>
+<p><img src="images/howto/personal/allow2.png" alt="allow2" /></p>
+<p>7) Finally, <strong>tap&nbsp;<em>Allow</em></strong> to allow all requested permissions to the mCerebrum app.&nbsp;</p>
+<p><img src="images/howto/personal/allow3.png" alt="allow3" /></p>
+<p>8) When you have completed all steps, you should see the <strong>mCerebrum home screen</strong> shown below.&nbsp;&nbsp;</p>
+<p><img src="images/howto/personal/mCpHome.png" alt="mCpHome" /></p>
+<h3>&nbsp;</h3>
+<h3 id="a-name-installapps-a-install-update-apps"><a id="setupPhone"></a>Setup Phone Sensors</h3>
+<p>mCerebrum is capable of using a suite of software applications in conjunction with the main mCerebrum app. Follow these steps to download the latest versions of the apps in your mCerebrum suite.</p>
+<p>1) If necessary, <strong>open the&nbsp;<em>mCerebrum</em>&nbsp;app</strong>.</p>
+<p><img src="images/howto/personal/mCpIcon.png" alt="mCpIcon" /></p>
+<p>2) From the mCerebrum home screen, <strong>tap the <em>Plugins</em> tab</strong> at the bottom of the screen (icon shown below).</p>
+<p><img src="images/howto/personal/pluginsTab.png" alt="pluginsTab" /></p>
+<p>3) In the menu, find <em>Phone Sensor&nbsp;</em>and <strong>tap the&nbsp;<em>Settings</em> button</strong> under the Phone Sensor heading.</p>
+<p><img src="images/howto/personal/phoneSensorSettings.png" alt="phoneSensorSettings" /></p>
+<p>4)&nbsp;Use the Settings screen to <strong>select which phone sensors you would like to turn on/off</strong>. You may also use the <em>Select All</em> button to turn on all phone sensors.&nbsp;<strong>Note:&nbsp;</strong>For some of the sensors, you may select the frequency at which you would like to collect the sensor data.</p>
+<p><img src="images/howto/personal/phoneSensorSelect.png" alt="phoneSensorSelect" /></p>
+<p>5)<strong>&nbsp;</strong>When finished,<strong> tap the back button</strong>. You changes are automatically saved.&nbsp;</p>
+<p>&nbsp;</p>
+<h3 id="a-name-installapps-a-install-update-apps"><a id="setupMS"></a>Setup MotionSense</h3>
+<p><strong>Note: If you are using a MotionSense wrist sensor, complete the steps below. If you are not using a MotionSense device, skip to the next section.&nbsp;</strong></p>
+<p>1) If you have a MotionSense wrist sensor, return to the Plugins screen and&nbsp;<strong>tap the <em>Add</em>&nbsp;button </strong>under the MotionSense heading.</p>
+<p><img src="images/howto/personal/MsenseSettings.png" alt="MsenseSettings" /></p>
+<p>2) The MotionSense plugin app will begin downloading. Follow the on-screen instructions on your Android device to&nbsp;<strong>complete the installation</strong>.</p>
+<p><img src="images/howto/personal/installUpdate.png" alt="installUpdate" /></p>
+<p>3) When MotionSense installation is complete,&nbsp;<strong>tap</strong><em><strong> Done</strong>.</em>&nbsp;</p>
+<p><img src="images/howto/personal/doneButton.png" alt="doneButton" /></p>
+<p>4)&nbsp;<strong>T<strong>ap&nbsp;<em>Allow</em></strong>&nbsp;</strong>to allow all requested permissions to the MotionSense app.</p>
+<p><img src="images/howto/personal/allow4.png" alt="allow4" /></p>
+<p>5) With the MotionSense app installed, you will now need to pair your wrist sensor to the phone.&nbsp;<strong>Tap&nbsp;<em>Settings</em></strong>&nbsp;to access the MotionSense Settings screen.</p>
+<p><img src="images/howto/personal/MsenseSettings2.png" alt="MsenseSettings2" /></p>
+<p>6) <strong>Select your device&nbsp;from the list of Available Devices</strong>. Make sure your MotionSense device(s) is charged and within range. The list of Available Devices will automatically populate with sensors that are available for pairing.&nbsp;</p>
+<p><img src="images/howto/personal/MSenseAvailable.png" alt="MSenseAvailable" /></p>
+<p>7) After selecting your device from the list, <strong>tap Left Wrist or Right Wrist</strong> to select the appropriate wrist placement.&nbsp;<strong><br /></strong></p>
+<p><img src="images/howto/personal/MSensePlacement.png" alt="MSensePlacement" /></p>
+<p>8) <strong>Your device is now paired</strong>. You should see your paired MotionSense in the list of Configured Devices as shown below.</p>
+<p><img src="images/howto/personal/MSenseConfigured.png" alt="MSenseConfigured" /></p>
+<p>9) If applicable, repeat the pairing process for any additional MotionSense wrist sensors. When finished,&nbsp;<strong>tap&nbsp;<em>Back</em> to return</strong>&nbsp;to the mCerebrum app. Your changes are automatically saved.&nbsp;</p>
+<p>&nbsp;</p>
+<h3><a id="collect"></a>Collect Data</h3>
+<p>You are now ready to begin collecting data.&nbsp;</p>
+<p>1) If necessary, <strong>open mCerebrum</strong> and/or <strong>tap the&nbsp;<em>Home</em> tab</strong>.&nbsp;</p>
+<p><img src="images/howto/personal/mCpIcon.png" alt="mCpIcon" /><br /><img src="images/howto/personal/HomeTab.png" alt="HomeTab" /></p>
+<p>2)&nbsp;<strong>Tap the&nbsp;<em>Data collection</em></strong>&nbsp;<b>toggle&nbsp;</b>to turn data collection on/off.&nbsp;</p>
+<p><img src="images/howto/personal/DataCollectionOFF.png" alt="DataCollectionOFF" /><br /><img src="images/howto/personal/DataCollectionON.png" alt="DataCollectionON" /></p>
+<p>3) With data collection on,&nbsp;<strong>t</strong><strong>ap the refresh icon</strong> next to<em> Data Scream Summary</em> to refresh the screen.&nbsp;</p>
+<p><img src="images/howto/personal/DataREFRESH.png" alt="DataREFRESH" /></p>
+<p>4) When the screen refreshes, you should be able to view a list of all available data streams. These streams are all actively collecting data when data collection is turned on.&nbsp;</p>
+<p><img src="images/howto/personal/DataStreamsCollapsed.png" alt="DataStreamsCollapsed" /></p>
+<p>5)<strong> Tap the name of the device&nbsp;</strong>(i.e., Phone, MotionSense) to view a drop-down list of all available data streams. Details are shown below.</p>
+<p><img src="images/howto/personal/DataStreamsInfo.png" alt="DataStreamsInfo" /></p>
+<p>You can use the refresh icon button to refresh the screen at any time.&nbsp;Collect data for as long as you wish, using the toggle button to turn data collection on/off.</p>
+<p><strong>Note:</strong> To improve data collection reliability, go to your phone's settings and disable Battery Saving Mode for the mCerebrum and MotionSense apps. If using GPS features, improve accuracy by turning on High Accuracy Mode in your phone's GPS settings.&nbsp;&nbsp;</p>
+<p>&nbsp;</p>
+<h3 id="a-name-visual-a-visualize-real-time-data"><a id="visualize"></a>Visualize Real-Time Data</h3>
+<p>When applicable, you can tap the&nbsp;<em>Plot</em>&nbsp;icon on each data stream (viewable on the mCerebrum home screen) to view the stream's data plotted in real time.</p>
+<p><strong>Tap the&nbsp;<em>Plot</em> icon</strong> for the data stream you wish to visualize. Note that visualization is only available for certain sets of data.</p>
+<p><img src="images/howto/personal/DataStreamsPlot.png" alt="DataStreamsPlot" /></p>
+<p>Below is an example of the phone accelerometer data.</p>
+<p><img src="images/howto/plotAccelData.png" alt="" /></p>
+<h3>&nbsp;</h3>
+<h3><a id="activity"></a>Activity Markers</h3>
+<p>You can use mCerebrum to create markers of activity in real time.&nbsp;</p>
+<p>1) In the mCerebrum app, <strong>tap the <em>Activities</em> tab</strong> at the bottom of the screen.&nbsp;</p>
+<p><img src="images/howto/personal/ActivitiesTab.png" alt="ActivitiesTab" /></p>
+<p>2) During data collection, use the Activities interface to mark the start and end of certain activities such as eating, drinking, and driving.</p>
+<p>Markers can be added or removed by tapping the edit icon in the top-right corner of the screen.</p>
+<p><img src="images/howto/personal/ActivitiesStartEnd.png" alt="ActivitiesStartEnd" /></p>
+<p>&nbsp;</p>
+<h3><a id="clear"></a>Clear Your Data</h3>
+<p>At any time you wish, you can use mCerebrum to easily clear all data from the system and start fresh.&nbsp;<strong>Note: This is not reversible. All data will be deleted.</strong></p>
+<p>1) In the mCerebrum app,&nbsp;<strong>tap the&nbsp;<em>Settings</em>&nbsp;tab</strong>&nbsp;at the bottom of the screen.&nbsp;</p>
+<p><img src="images/howto/personal/SettingsTab.png" alt="SettingsTab" /></p>
+<p>2) Under the Storage heading,&nbsp;<strong>tap&nbsp;<em>Clear</em></strong><strong><em> Data</em></strong>. You will be prompted to <strong>tap <em>Yes</em> to confirm</strong>.&nbsp;&nbsp;</p>
+<p><img src="images/howto/personal/ClearDataStorage.png" alt="ClearDataStorage" /></p>
+<p>&nbsp;</p>
+<h2>Cerebral Cortex Personal Edition</h2>
+<p>When you are ready to analyze and work with the data you have collected, visit our <a href="https://github.com/MD2Korg/CerebralCortex-Vagrant/blob/personal/README.md">Cerebral Cortex Personal Edition GitHUB page</a> to learn how to install Cerebral Cortex. With Cerebral Cortex installed on your computer, you may then import your data and begin visualization, analysis, computations, and other exciting ways to work with your data through MD2K's mobile-sensor big-data software platform.&nbsp;</p>
+<p><span style="font-size: 18pt;"><a href="https://github.com/MD2Korg/CerebralCortex-Vagrant/blob/personal/README.md">Cerebral Cortex Personal Edition GitHUB page</a></span></p>
+</div>
+<p>&nbsp;</p></div>
+</div></div></div></div></div></section><section id="sp-feature-team-page" class="div#maximenuck253 div.floatck { 	 	background:#F4F4F4; 	background: -moz-linear-gradient(top, #f4f4f4, #eeeeee); 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f4f4), to(#eeeeee)); 	-moz-border-radius: 0px 5px 5px 5px; 	 }"><div class="row"><div id="sp-secondmenu" class="col-sm-12 col-md-12"><div class="sp-column div.floatck { background: #eeeeee;          background: -moz-linear-gradient(top, #EEEEEE, #EEEEEE);     /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEEEEE), to(#EEEEEE)); */  }"><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
+</div></div></div></div></div></section><footer id="sp-footer"><div class="container"><div class="row"><div id="sp-footer1" class="col-sm-10 col-md-10"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<p style="text-align: center; font-size: 12px; padding-top: 14px;">Copyright &copy; 2020 MD2K. <strong>MD2K was established by the National Institutes of Health Big Data to Knowledge Initiative <a href="https://projectreporter.nih.gov/project_info_description.cfm?aid=9303353&amp;icde=36143741&amp;ddparam=&amp;ddvalue=&amp;ddsub=&amp;cr=7&amp;csb=default&amp;cs=ASC&amp;pball=" target="_blank">(Grant #1U54EB020404)</a></strong><br /><span style="color: #ffffff; font-style: italic;">Team: Cornell Tech, GA Tech, Harvard, U. Memphis, Northwestern, Ohio State, UCLA, UCSD, UCSF, UMass, U. Michigan, U. Utah, WVU </span></p></div>
+</div></div></div></div><div id="sp-footer2" class="col-sm-2 col-md-2"><div class="sp-column "><ul class="sp-contact-info"><li class="sp-contact-phone"><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:901-678-1493">901-678-1493</a></li><li class="sp-contact-email"><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@md2k.org">info@md2k.org</a></li></ul><ul class="social-icons"><li><a target="_blank" href="https://twitter.com/MD2Korg" aria-label="twitter"><i class="fa fa-twitter"></i></a></li><li><a target="_blank" href="https://www.youtube.com/c/MD2KCenter" aria-label="youtube"><i class="fa fa-youtube"></i></a></li></ul></div></div></div></div></footer>            </div> <!-- /.body-innerwrapper -->
+        </div> <!-- /.body-innerwrapper -->
+
+        <!-- Off Canvas Menu -->
+        <div class="offcanvas-menu">
+            <a href="#" class="close-offcanvas" aria-label="Close"><i class="fa fa-remove" aria-hidden="true" title="HELIX_CLOSE_MENU"></i></a>
+            <div class="offcanvas-inner">
+                                  <div class="sp-module "><div class="sp-module-content"><ul class="nav menu">
+<li class="item-101"><a href="index.html" > Home</a></li><li class="item-191  deeper parent"><a href="about.html" > About</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-191"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-191"><li class="item-196"><a href="about/meet-the-team.html" > MD2K Team</a></li><li class="item-198  deeper parent"><a href="about/news.html" > News</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-198"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-198"><li class="item-443"><a href="about/news/md2k-in-the-news.html" > MD2K in the News</a></li></ul></li><li class="item-581"><a href="about/privacy.html" > Privacy</a></li><li class="item-224"><a href="about/contact.html" > Contact</a></li></ul></li><li class="item-193  deeper parent"><a href="research-agenda.html" > Research</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-193"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-193"><li class="item-338"><a href="research-agenda/pubs.html" > Publications</a></li><li class="item-471  divider"><a class="separator ">Research Areas</a>
+</li><li class="item-213"><a href="research-agenda/research-agenda.html" > Research Agenda</a></li><li class="item-285"><a href="research-agenda/sensors.html" > Sensors</a></li><li class="item-214"><a href="research-agenda/biomarkers.html" > mHealth Biomarkers</a></li><li class="item-474"><a href="research-agenda/trial-design.html" > Trial Design</a></li><li class="item-216"><a href="research-agenda/jitai.html" > mHealth Interventions</a></li><li class="item-284"><a href="research-agenda/architecture.html" > Architecture</a></li><li class="item-219"><a href="research-agenda/methodology.html" > Big Data Analytics</a></li><li class="item-473"><a href="research-agenda/visualization.html" > Visualization</a></li><li class="item-221"><a href="research-agenda/privacy.html" > Behavioral Privacy</a></li><li class="item-470  divider"><a class="separator ">Field Study Focus Areas</a>
+</li><li class="item-463"><a href="research-agenda/smoking.html" > Smoking</a></li><li class="item-464"><a href="research-agenda/eating-control.html" > Eating Regulation</a></li><li class="item-465"><a href="research-agenda/drug-use.html" > Drug Use</a></li><li class="item-466"><a href="research-agenda/stress-management.html" > Stress Management</a></li><li class="item-467"><a href="research-agenda/heart-failure-care.html" > Heart Failure Care</a></li><li class="item-472"><a href="research-agenda/behavior-change.html" > Behavior Change</a></li><li class="item-468">		<a  href="http://mperf.md2k.org/"  > Work Productivity</a></li><li class="item-469"><a href="research-agenda/oral-health.html" > Oral Health</a></li></ul></li><li class="item-197  deeper parent"><a href="software.html" > Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-197"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-197"><li class="item-421  deeper parent"><a href="software/under-the-hood.html" > Under the Hood</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-421"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-421"><li class="item-427"><a href="software/under-the-hood/mcerebrum.html" > Smartphone Software</a></li><li class="item-428  deeper parent"><a href="software/under-the-hood/cerebral-cortex.html" > Cloud Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-428"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-428"><li class="item-436"><a href="software/under-the-hood/cerebral-cortex/architecture.html" > Architecture</a></li></ul></li><li class="item-429"><a href="software/under-the-hood/bug-reports-feature-requests.html" > Bug Reports / Feature Requests</a></li><li class="item-430"><a href="software/under-the-hood/software-license.html" > Software License</a></li><li class="item-431"><a href="software/under-the-hood/contributing.html" > Contributing</a></li><li class="item-432"><a href="software/under-the-hood/references.html" > References</a></li><li class="item-533"><a href="software/under-the-hood/software-docs.html" > Documentation</a></li></ul></li><li class="item-422  deeper parent"><a href="software/how-to.html" > How-To</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-422"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-422"><li class="item-433  deeper parent"><a href="software/how-to/smartphone-software.html" > Smartphone Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-433"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-433"><li class="item-440"><a href="software/how-to/smartphone-software/getting-started.html" > Getting Started</a></li><li class="item-476"><a href="software/how-to/smartphone-software/implementing-datakit.html" > Implementing DataKit</a></li></ul></li><li class="item-434  deeper parent"><a href="software/how-to/supported-sensors.html" > Supported Sensors</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-434"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-434"><li class="item-441"><a href="software/how-to/supported-sensors/sensors-troubleshooting.html" > Sensors Troubleshooting</a></li><li class="item-442"><a href="software/how-to/supported-sensors/adding-sensors.html" > Adding Sensors </a></li></ul></li><li class="item-438  deeper parent"><a href="software/how-to/getting-started.html" > Cloud Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-438"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-438"><li class="item-437"><a href="software/how-to/getting-started/docker.html" > Docker</a></li><li class="item-439"><a href="software/how-to/getting-started/working-with-cerebral-cortex.html" > Working with Cerebral Cortex</a></li></ul></li><li class="item-453"><a href="software/how-to/software-howto-studyguides.html" > Study Guides</a></li></ul></li><li class="item-423"><a href="software/deployments.html" > Deployments</a></li><li class="item-424"><a href="software/contributors.html" > Contributors</a></li><li class="item-482"><a href="software/personal.html" > Personal Edition</a></li><li class="item-486"><a href="software/codeofconduct.html" > Code of Conduct</a></li></ul></li><li class="item-564  deeper parent"><a href="tutorials.html" > Tutorials</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-564"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-564"><li class="item-565"><a href="tutorials/cps-iot-week-2020.html" > CPS-IoT Week 2020</a></li></ul></li><li class="item-247  deeper parent"><a href="webinars.html" > Training</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-247"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-247"><li class="item-425  deeper parent">		<a  href="https://mhti.md2k.org/"  > mHealth Training Institute</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-425"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-425"><li class="item-426">		<a  href="https://mhti.md2k.org/index.php/gallery/2019/2019-lectures"  > mHTI Lectures</a></li></ul></li><li class="item-356">		<a href="https://mhealth.md2k.org/training/webinars" rel="noopener noreferrer" target="_blank" > Webinar Videos</a></li></ul></li><li class="item-223"><a href="studies.html" > Deployments</a></li><li class="item-226  deeper parent"><a href="events.html" > Events</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-226"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-226"><li class="item-512"><a href="events/md2k-2018.html" > 2018 Annual Meeting</a></li><li class="item-353  deeper parent"><a href="events/2017-annual-meeting.html" > 2017 Annual Meeting</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-353"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-353"><li class="item-455"><a href="events/2017-annual-meeting/2017-career-day.html" > 2017 Career Day</a></li></ul></li><li class="item-228"><a href="events/2016-annual-meeting.html" > 2016 Annual Meeting</a></li><li class="item-227"><a href="events/2015-annual-meeting.html" > 2015 Annual Meeting</a></li></ul></li><li class="item-348">		<a  href="https://mhealth.md2k.org/"  > mHealthHUB</a></li><li class="item-199  deeper parent"><a href="related-projects.html" > Related Projects</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-199"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-199"><li class="item-239">		<a href="http://mperf.md2k.org/" rel="noopener noreferrer" target="_blank" > mPerf</a></li><li class="item-240">		<a href="http://mprov.md2k.org/" rel="noopener noreferrer" target="_blank" > mProv</a></li><li class="item-577">		<a href="http://mcontain.md2k.org/" rel="noopener noreferrer" target="_blank" > mContain</a></li><li class="item-513">		<a href="https://mdot.md2k.org/" rel="noopener noreferrer" target="_blank" > mDOT</a></li></ul></li><li class="item-556"><a href="moods.html" > MOODS</a></li></ul>
+</div></div>
+                            </div> <!-- /.offcanvas-inner -->
+        </div> <!-- /.offcanvas-menu -->
+
+        
+        
+        
+        <!-- Preloader -->
+        
+
+        <!-- Go to top -->
+        
+    </body>
+
+<!-- Mirrored from md2k.org/personal by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 20:03:22 GMT -->
+</html>

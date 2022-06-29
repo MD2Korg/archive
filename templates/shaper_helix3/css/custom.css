@@ -1,0 +1,225 @@
+div#maximenuck253 div.floatck {
+	
+	background:#F4F4F4;
+	background: -moz-linear-gradient(top, #f4f4f4, #eeeeee);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f4f4), to(#eeeeee));
+	-moz-border-radius: 0px 5px 5px 5px;
+	
+}
+
+@media screen and (max-width: 435px){
+     .wdform-page-and-images {
+          display: block !important;
+     }
+     .wdform_page {
+          padding: 10px 10px 10px 10px !important;
+     }
+     .wdform_column {
+          float: none !important;
+          display: inline-block;
+     }
+     .wdform_section {
+          display: block !important;
+     }
+     ․wdform-page-and-images *, .wdform_section * {
+          max-width: 100% !important;
+     }
+     .wdform-field {
+          display: block !important;
+     }
+     .wdform-element-section {
+         display: block !important;
+     }
+}
+
+.img-responsivec {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/*********************************************************************
+
+ ** Columns
+
+ *********************************************************************/
+
+
+
+.one-half,
+
+.one-third,
+
+.two-third,
+
+.one-fourth,
+
+.three-fourth,
+
+.one-fifth,
+
+.two-fifth,
+
+.three-fifth,
+
+.four-fifth,
+
+.one-sixth,
+
+.five-sixth {
+
+  float: left;
+
+  margin: 0 4% 15px 0;
+
+}
+
+.three-across-1
+{
+
+  float: left;
+
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border: 5px;
+  width: 30%;
+
+}
+
+.three-across-2
+{
+
+  float: left;
+
+ margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 30%;
+
+}
+
+
+
+.three-across-3
+{
+
+  float: left;
+   margin-bottom: 15px;
+  margin-left: 15px;
+  
+  width: 30%;
+
+}
+
+
+.one-half.last,
+
+.one-third.last,
+
+.two-third.last,
+
+.one-fourth.last,
+
+.three-fourth.last,
+
+.one-fifth.last,
+
+.two-fifth.last,
+
+.three-fifth.last,
+
+.four-fifth.last,
+
+.one-sixth.last,
+
+.five-sixth.last {
+
+  margin-right: 0;
+
+  margin-bottom: 15px;
+
+}
+
+.one-half {
+
+  width: 48%;
+
+}
+
+.one-third {
+
+  width: 30.66%;
+
+}
+
+.two-third {
+
+  width: 65.33%;
+
+}
+
+.one-fourth {
+
+  width: 22%;
+
+}
+
+.three-fourth {
+
+  width: 74%;
+
+}
+
+.one-fifth {
+
+  width: 16.8%;
+
+}
+
+.two-fifth {
+
+  width: 37.6%;
+
+}
+
+.three-fifth {
+
+  width: 58.4%;
+
+}
+
+.four-fifth {
+
+  width: 79.2%;
+
+}
+
+.one-sixth {
+
+  width: 13.33%;
+
+}
+
+.five-sixth {
+
+  width: 82.66%;
+
+}
+
+
+.characteristic {
+  text-align: center;
+  color: #fff;
+
+  padding: 2px 7px;
+
+  background-color: #BB4C38;
+  border-radius: 10px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 60%;
+  margin: 2px;
+  top: -4px;
+  position: relative;
+
+}

@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+    
+<!-- Mirrored from md2k.org/tutorials/cps-iot-week-2020.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 19:35:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+                <!-- head -->
+        <base  />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="mHealth, md2k, mobile health, precision medicine, biomarkers, mobile sensor data, mobile sensors" />
+	<meta name="author" content="Brian Ahern" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Advancing biomedical discovery and improving health through mobile sensor Big Data" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>MD2K - CPS-IoT Week 2020</title>
+	<link href="http://md2k-webtest.memphis.edu/tutorials/cps-iot-week-2020.html" rel="canonical" />
+	<link href="../images/Logos/favicon2.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="../favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="../plugins/system/maximenuckmobile/themes/default/maximenuckmobile.css" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic&amp;subset=latin-ext" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Fjalla+One:regular&amp;subset=latin-ext" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&amp;subset=greek,greek-ext" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/legacy.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/template.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/presets/preset2.css" rel="stylesheet" type="text/css" class="preset" />
+	<link href="../templates/shaper_helix3/css/custom.css" rel="stylesheet" type="text/css" />
+	<link href="../modules/mod_maximenuck/themes/custom/css/maximenuck_maximenuck196.css" rel="stylesheet" type="text/css" />
+	<link href="../modules/mod_maximenuck/assets/maximenuresponsiveck.css" rel="stylesheet" type="text/css" />
+	<link href="../modules/mod_maximenuck/assets/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+.mobilebarmaximenuck { display: none; }
+	@media only screen and (max-width:640px){
+    #maximenuck196 { display: none !important; }
+    .mobilebarmaximenuck { display: block; }
+	.hidemenumobileck {display: none !important;}
+     }body{font-family:Lato, sans-serif; font-size:14px; font-weight:normal; }h1{font-family:Fjalla One, sans-serif; font-size:36px; font-weight:normal; }h2{font-family:Fjalla One, sans-serif; font-size:30px; font-weight:normal; }h3{font-family:Roboto, sans-serif; font-size:24px; font-weight:700; }h4{font-family:Roboto, sans-serif; font-size:18px; font-weight:700; }h5{font-family:Roboto, sans-serif; font-size:18px; font-weight:700italic; }h6{font-family:Lato, sans-serif; font-size:16px; font-weight:700; }button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #2a9eb2;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #aed141}
+
+.button:active {
+  background-color: #aed141;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+ 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+     -webkit-flex-direction: column;
+    flex-direction: column;
+    webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+	background-color: #2b3675;
+	border-radius: 45px;
+}
+
+.flex-item {
+    background-color: #ffffff;
+    width: 98%;
+    height: auto;
+    margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 45px;
+	padding: 15px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+	text-align: justify;
+}
+
+.flex-study {
+    background-color: #ffffff;
+    width: 25%;
+    height: auto;
+    margin: 10px;
+	border-radius: 45px;
+	padding: 20px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+	
+}
+.flex-study1 {
+    background-color: #ffffff;
+    width: 25%;
+    height: 100%;
+    margin: 10px;
+	border-radius: 45px;
+	padding: 20px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+      text-align: center;
+-webkit-align-self: center; /* Safari 7.0+ */
+    align-contents: center;
+}
+
+.flex-container2 {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: auto;
+	background-color: #2b3675;
+	border-radius: 45px;
+}
+
+p {
+text-align: justify;
+}
+
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #bbb;
+	width: 100%;
+	}
+	
+	td {
+    border-top: 1px solid #ddd;
+    padding: 4px 8px;
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	font-size: 14px;
+		color: #2b3675;
+}
+	th {
+    border-top: 1px solid #ddd;
+    padding: 4px 8px;
+	font-family:Roboto Black, Raleway Black, Oswald SemiBold, Montserrat SemiBold;
+	font-size: 22px;
+		background-color: #2b3675;
+		color: #fff;
+}
+	
+		
+	tbody tr:nth-child(even) td {
+    background-color: #eee;
+}
+
+
+.one-half,
+
+.one-third,
+
+.two-third,
+
+.one-fourth,
+
+.three-fourth,
+
+.one-fifth,
+
+.two-fifth,
+
+.three-fifth,
+
+.four-fifth,
+
+.one-sixth,
+
+.five-sixth {
+
+  float: left;
+
+  margin: 0 4% 15px 0;
+
+}
+
+.three-across-1
+{
+
+  float: left;
+
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border: 5px;
+  width: 30%;
+
+}
+
+.three-across-2
+{
+
+  float: left;
+
+ margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 30%;
+
+}
+
+
+
+.three-across-3
+{
+
+  float: left;
+   margin-bottom: 15px;
+  margin-left: 15px;
+  
+  width: 30%;
+
+}
+
+
+.one-half.last,
+
+.one-third.last,
+
+.two-third.last,
+
+.one-fourth.last,
+
+.three-fourth.last,
+
+.one-fifth.last,
+
+.two-fifth.last,
+
+.three-fifth.last,
+
+.four-fifth.last,
+
+.one-sixth.last,
+
+.five-sixth.last {
+
+  margin-right: 0;
+
+  margin-bottom: 15px;
+
+}
+
+.one-half {
+
+  width: 48%;
+
+}
+
+.one-third {
+
+  width: 30.66%;
+
+}
+
+.two-third {
+
+  width: 65.33%;
+
+}
+
+.one-fourth {
+
+  width: 22%;
+
+}
+
+.three-fourth {
+
+  width: 74%;
+
+}
+
+.one-fifth {
+
+  width: 16.8%;
+
+}
+
+.two-fifth {
+
+  width: 37.6%;
+
+}
+
+.three-fifth {
+
+  width: 58.4%;
+
+}
+
+.four-fifth {
+
+  width: 79.2%;
+
+}
+
+.one-sixth {
+
+  width: 13.33%;
+
+}
+
+.five-sixth {
+
+  width: 82.66%;
+
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.characteristic {
+  text-align: center;
+  color: #fff;
+
+  padding: 2px 7px;
+
+  background-color: #BB4C38;
+  border-radius: 10px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 60%;
+  margin: 2px;
+  top: -4px;
+  position: relative;
+
+}
+
+/* COLLAPSIBLE CONTENT (data dictionary) */
+input[type='checkbox'] {
+  display: none;
+}
+
+.lbl-toggle {
+  display: block;
+
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 1.8rem;
+  text-align: left;
+
+  padding: 1rem;
+
+  color: #222222;
+  background: #ffffff;
+
+  cursor: pointer;
+
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+  color: #bbbbbb;
+}
+
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+
+  transition: transform .2s ease-out;
+}
+
+.collapsible-content .content-inner {
+  background: rgba(60, 166, 185, .05);
+  border: 1px solid rgba(43, 54, 117, .1);
+
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: .5rem 1rem;
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 15350px;
+}
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}#sp-header{ margin:0px 20px 0px -0px; }#sp-feature-main{ padding:0px 20px 0 px 20px;margin:0px 20px 0 px 20px; }#sp-feature-team-page{ padding:20px; }@media screen and (max-width: 640px) {div#maximenuck196 ul.maximenuck li.maximenuck.nomobileck, div#maximenuck196 .maxipushdownck ul.maximenuck2 li.maximenuck.nomobileck { display: none !important; }}@media screen and (min-width: 641px) {div#maximenuck196 ul.maximenuck li.maximenuck.nodesktopck, div#maximenuck196 .maxipushdownck ul.maximenuck2 li.maximenuck.nodesktopck { display: none !important; }}
+	</style>
+	<script src="../media/jui/js/jquery.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-noconflict700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-migrate.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/system/js/caption700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../plugins/system/maximenuckmobile/assets/maximenuckmobile.js" type="text/javascript"></script>
+	<script src="../templates/shaper_helix3/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../templates/shaper_helix3/js/jquery.sticky.js" type="text/javascript"></script>
+	<script src="../templates/shaper_helix3/js/main.js" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery.ui.core.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/plg_captcha_recaptcha/js/recaptcha.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=JoomlaInitReCaptcha2&amp;render=explicit&amp;hl=en-GB" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});jQuery(document).ready(function($){
+                    $('#maximenuck196').MobileMaxiMenu({usemodules : 0,container : 'menucontainer',showdesc : 0,showlogo : 1,useimages : 0,menuid : 'maximenuck196',showmobilemenutext : 'default',mobilemenutext : 'Menu',mobilebackbuttontext : 'Back',displaytype : 'flat',menubarbuttoncontent : '',topbarbuttoncontent : '',uriroot : '',displayeffect : 'normal',menuwidth : '300',openedonactiveitem : '0'});});// Find all YouTube videos
+var $allVideos = $("iframe[src^='//www.youtube.com']"),
+
+    // The element that is fluid width
+    $fluidEl = $("body");
+
+// Figure out and save aspect ratio for each video
+$allVideos.each(function() {
+
+  $(this)
+    .data('aspectRatio', this.height / this.width)
+
+    // and remove the hard coded width/height
+    .removeAttr('height')
+    .removeAttr('width');
+
+});
+
+// When the window is resized
+$(window).resize(function() {
+
+  var newWidth = $fluidEl.width();
+
+  // Resize all videos according to their own aspect ratio
+  $allVideos.each(function() {
+
+    var $el = $(this);
+    $el
+      .width(newWidth)
+      .height(newWidth * $el.data('aspectRatio'));
+
+  });
+
+// Kick off one resize to fix all videos on page load
+}).resize();
+
+var sp_preloader = '0';
+
+var sp_gotop = '0';
+
+var sp_offanimation = 'default';
+
+	</script>
+	<meta property="og:url" content="https://md2k.org/tutorials/cps-iot-week-2020.html" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Software Tutorials - CPS-IoT Week" />
+	<meta property="og:description" content="" />
+
+            
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55313502-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Universal Google Analytics Plugin by PB Web Development -->
+
+
+</head>
+
+    <body class="site com-content view-article no-layout no-task itemid-565 en-gb ltr  layout-fluid off-canvas-menu-init">
+
+        <div class="body-wrapper">
+            <div class="body-innerwrapper">
+                <header id="sp-header"><div class="container"><div class="row"><div id="sp-logo" class="col-xs-8 col-sm-3 col-md-3"><div class="sp-column "><div class="logo"><a href="../index.html"><img class="sp-default-logo hidden-xs" src="../images/Logos/MD2K-Logo_80px.png" alt="MD2K"><img class="sp-retina-logo hidden-xs" src="../images/Logos/MD2K-Logo_80px.png" alt="MD2K" width="179" height="80"><img class="sp-default-logo visible-xs" src="../images/Logos/MD2K-Logo_60px.png" alt="MD2K"></a></div></div></div><div id="sp-title" class="col-xs-3 col-sm-9 col-md-9 hidden-sm hidden-xs"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<h2 style="font-size: 1.4em; font-style: italic; font-weight: 300; padding-top: 10px;">Advancing biomedical discovery and improving health through mobile sensor Big Data</h2></div>
+</div></div></div></div></div></div></header><section id="sp-page-title"><div class="row"><div id="sp-othermenu" class="col-sm-12 col-md-12"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+			<!--[if lte IE 7]>
+			<link href="/modules/mod_maximenuck/themes/tabs/css/ie7.css" rel="stylesheet" type="text/css" />
+			<![endif]--><!-- debut Maximenu CK, par cedric keiflin -->
+	<div class="maximenuckh ltr" id="maximenuck196" style="z-index:10;">
+        <div class="maxiroundedleft"></div>
+        <div class="maxiroundedcenter">
+            <ul class=" maximenuck">
+												<li data-level="1" class="maximenuck item101 first level1 " style="z-index : 12000;" ><a class="maximenuck " href="../index.html"><span class="titreck">Home</span></a>
+		</li><li data-level="1" class="maximenuck item191 parent level1 " style="z-index : 11999;" ><a class="maximenuck " href="../about.html"><span class="titreck">About</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item196 first level2 " style="z-index : 11998;" ><a class="maximenuck " href="../about/meet-the-team.html"><span class="titreck">MD2K Team</span></a>
+		</li><li data-level="2" class="maximenuck item198 parent level2 " style="z-index : 11997;" ><a class="maximenuck " href="../about/news.html"><span class="titreck">News</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item443 first last level3 " style="z-index : 11996;" ><a class="maximenuck " href="../about/news/md2k-in-the-news.html"><span class="titreck">MD2K in the News</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item581 level2 " style="z-index : 11995;" ><a class="maximenuck " href="../about/privacy.html"><span class="titreck">Privacy</span></a>
+		</li><li data-level="2" class="maximenuck item224 last level2 " style="z-index : 11994;" ><a class="maximenuck " href="../about/contact.html"><span class="titreck">Contact</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item193 parent level1 " style="z-index : 11993;" ><a class="maximenuck " href="../research-agenda.html"><span class="titreck">Research</span></a>
+	<div class="floatck" style="width:900px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item338 first level2 " style="z-index : 11992;" ><a class="maximenuck " href="../research-agenda/pubs.html"><span class="titreck">Publications</span></a>
+		</li></ul><div class="clr"></div></div><div class="maximenuck2"  style="width:200px;float:left;"><ul class="maximenuck2"><li data-level="2" class="maximenuck headingck item471 level2 " style="z-index : 11991;" ><span class="separator "><span class="titreck"><span class="maximenuiconck fa fa-square"></span>Research Areas</span></span>
+		</li><li data-level="2" class="maximenuck item213 level2 " style="z-index : 11990;" ><a class="maximenuck " href="../research-agenda/research-agenda.html"><span class="titreck">Research Agenda</span></a>
+		</li><li data-level="2" class="maximenuck item285 level2 " style="z-index : 11989;" ><a class="maximenuck " href="../research-agenda/sensors.html"><span class="titreck">Sensors</span></a>
+		</li><li data-level="2" class="maximenuck item214 level2 " style="z-index : 11988;" ><a class="maximenuck " href="../research-agenda/biomarkers.html"><span class="titreck">mHealth Biomarkers</span></a>
+		</li><li data-level="2" class="maximenuck item474 level2 " style="z-index : 11987;" ><a class="maximenuck " href="../research-agenda/trial-design.html"><span class="titreck">Trial Design</span></a>
+		</li><li data-level="2" class="maximenuck item216 level2 " style="z-index : 11986;" ><a class="maximenuck " href="../research-agenda/jitai.html"><span class="titreck">mHealth Interventions</span></a>
+		</li></ul><div class="clr"></div></div><div class="maximenuck2"  style="width:180px;float:left;"><ul class="maximenuck2"><li data-level="2" class="maximenuck item284 level2 " style="z-index : 11985;" ><a class="maximenuck " href="../research-agenda/architecture.html"><span class="titreck">Architecture</span></a>
+		</li><li data-level="2" class="maximenuck item219 level2 " style="z-index : 11984;" ><a class="maximenuck " href="../research-agenda/methodology.html"><span class="titreck">Big Data Analytics</span></a>
+		</li><li data-level="2" class="maximenuck item473 level2 " style="z-index : 11983;" ><a class="maximenuck " href="../research-agenda/visualization.html"><span class="titreck">Visualization</span></a>
+		</li><li data-level="2" class="maximenuck item221 level2 " style="z-index : 11982;" ><a class="maximenuck " href="../research-agenda/privacy.html"><span class="titreck">Behavioral Privacy</span></a>
+		</li></ul><div class="clr"></div></div><div class="maximenuck2"  style="width:200px;float:left;"><ul class="maximenuck2"><li data-level="2" class="maximenuck headingck item470 level2 fullwidth" style="z-index : 11981;" ><span class="separator "><span class="titreck"><span class="maximenuiconck fa fa-square"></span>Field Study Focus Areas</span></span>
+		</li><li data-level="2" class="maximenuck item463 level2 " style="z-index : 11980;" ><a class="maximenuck " href="../research-agenda/smoking.html"><span class="titreck">Smoking</span></a>
+		</li><li data-level="2" class="maximenuck item464 level2 " style="z-index : 11979;" ><a class="maximenuck " href="../research-agenda/eating-control.html"><span class="titreck">Eating Regulation</span></a>
+		</li><li data-level="2" class="maximenuck item465 level2 " style="z-index : 11978;" ><a class="maximenuck " href="../research-agenda/drug-use.html"><span class="titreck">Drug Use</span></a>
+		</li><li data-level="2" class="maximenuck item466 level2 " style="z-index : 11977;" ><a class="maximenuck " href="../research-agenda/stress-management.html"><span class="titreck">Stress Management</span></a>
+		</li></ul><div class="clr"></div></div><div class="maximenuck2"  style="width:200px;float:left;"><ul class="maximenuck2"><li data-level="2" class="maximenuck item467 level2 " style="z-index : 11976;" ><a class="maximenuck " href="../research-agenda/heart-failure-care.html"><span class="titreck">Heart Failure Care</span></a>
+		</li><li data-level="2" class="maximenuck item472 level2 " style="z-index : 11975;" ><a class="maximenuck " href="../research-agenda/behavior-change.html"><span class="titreck">Behavior Change</span></a>
+		</li><li data-level="2" class="maximenuck item468 level2 " style="z-index : 11974;" ><a class="maximenuck " href="http://mperf.md2k.org/"><span class="titreck">Work Productivity</span></a>
+		</li><li data-level="2" class="maximenuck item469 last level2 " style="z-index : 11973;" ><a class="maximenuck " href="../research-agenda/oral-health.html"><span class="titreck">Oral Health</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item197 parent level1 " style="z-index : 11972;" ><a class="maximenuck " href="../software.html"><span class="titreck">Software</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item421 first parent level2 " style="z-index : 11971;" ><a class="maximenuck " href="../software/under-the-hood.html"><span class="titreck">Under the Hood</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item427 first level3 " style="z-index : 11970;" ><a class="maximenuck " href="../software/under-the-hood/mcerebrum.html"><span class="titreck">Smartphone Software</span></a>
+		</li><li data-level="3" class="maximenuck item428 parent level3 " style="z-index : 11969;" ><a class="maximenuck " href="../software/under-the-hood/cerebral-cortex.html"><span class="titreck">Cloud Software</span></a>
+	<div class="floatck" style="margin-left:225px;width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="4" class="maximenuck item436 first last level4 " style="z-index : 11968;" ><a class="maximenuck " href="../software/under-the-hood/cerebral-cortex/architecture.html"><span class="titreck">Architecture</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="3" class="maximenuck item429 level3 " style="z-index : 11967;" ><a class="maximenuck " href="../software/under-the-hood/bug-reports-feature-requests.html"><span class="titreck">Bug Reports / Feature Requests</span></a>
+		</li><li data-level="3" class="maximenuck item430 level3 " style="z-index : 11966;" ><a class="maximenuck " href="../software/under-the-hood/software-license.html"><span class="titreck">Software License</span></a>
+		</li><li data-level="3" class="maximenuck item431 level3 " style="z-index : 11965;" ><a class="maximenuck " href="../software/under-the-hood/contributing.html"><span class="titreck">Contributing</span></a>
+		</li><li data-level="3" class="maximenuck item432 level3 " style="z-index : 11964;" ><a class="maximenuck " href="../software/under-the-hood/references.html"><span class="titreck">References</span></a>
+		</li><li data-level="3" class="maximenuck item533 last level3 " style="z-index : 11963;" ><a class="maximenuck " href="../software/under-the-hood/software-docs.html"><span class="titreck">Documentation</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item422 parent level2 " style="z-index : 11962;" ><a class="maximenuck " href="../software/how-to.html"><span class="titreck">How-To</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item433 first parent level3 " style="z-index : 11961;" ><a class="maximenuck " href="../software/how-to/smartphone-software.html"><span class="titreck">Smartphone Software</span></a>
+	<div class="floatck" style="margin-left:225px;width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="4" class="maximenuck item440 first level4 " style="z-index : 11960;" ><a class="maximenuck " href="../software/how-to/smartphone-software/getting-started.html"><span class="titreck">Getting Started</span></a>
+		</li><li data-level="4" class="maximenuck item476 last level4 " style="z-index : 11959;" ><a class="maximenuck " href="../software/how-to/smartphone-software/implementing-datakit.html"><span class="titreck">Implementing DataKit</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="3" class="maximenuck item434 parent level3 " style="z-index : 11958;" ><a class="maximenuck " href="../software/how-to/supported-sensors.html"><span class="titreck">Supported Sensors</span></a>
+	<div class="floatck" style="margin-left:225px;width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="4" class="maximenuck item441 first level4 " style="z-index : 11957;" ><a class="maximenuck " href="../software/how-to/supported-sensors/sensors-troubleshooting.html"><span class="titreck">Sensors Troubleshooting</span></a>
+		</li><li data-level="4" class="maximenuck item442 last level4 " style="z-index : 11956;" ><a class="maximenuck " href="../software/how-to/supported-sensors/adding-sensors.html"><span class="titreck">Adding Sensors </span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="3" class="maximenuck item438 parent level3 " style="z-index : 11955;" ><a class="maximenuck " href="../software/how-to/getting-started.html"><span class="titreck">Cloud Software</span></a>
+	<div class="floatck" style="width:300px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="4" class="maximenuck item437 first level4 " style="z-index : 11954;" ><a class="maximenuck " href="../software/how-to/getting-started/docker.html"><span class="titreck">Docker</span></a>
+		</li><li data-level="4" class="maximenuck item439 last level4 " style="z-index : 11953;" ><a class="maximenuck " href="../software/how-to/getting-started/working-with-cerebral-cortex.html"><span class="titreck">Working with Cerebral Cortex</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="3" class="maximenuck item453 last level3 " style="z-index : 11952;" ><a class="maximenuck " href="../software/how-to/software-howto-studyguides.html"><span class="titreck">Study Guides</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item423 level2 " style="z-index : 11951;" ><a class="maximenuck " href="../software/deployments.html"><span class="titreck">Deployments</span></a>
+		</li><li data-level="2" class="maximenuck item424 level2 " style="z-index : 11950;" ><a class="maximenuck " href="../software/contributors.html"><span class="titreck">Contributors</span></a>
+		</li><li data-level="2" class="maximenuck item482 level2 " style="z-index : 11949;" ><a class="maximenuck " href="../software/personal.html"><span class="titreck">Personal Edition</span></a>
+		</li><li data-level="2" class="maximenuck item486 last level2 " style="z-index : 11948;" ><a class="maximenuck " href="../software/codeofconduct.html"><span class="titreck">Code of Conduct</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item564 active parent level1 " style="z-index : 11947;" ><a class="maximenuck " href="../tutorials.html"><span class="titreck">Tutorials</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item565 current active first last level2 " style="z-index : 11946;" ><a class="maximenuck " href="cps-iot-week-2020.html"><span class="titreck">CPS-IoT Week 2020</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item247 parent level1 " style="z-index : 11945;" ><a class="maximenuck " href="../webinars.html"><span class="titreck">Training</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item425 first parent level2 " style="z-index : 11944;" ><a class="maximenuck " href="https://mhti.md2k.org/"><span class="titreck">mHealth Training Institute</span></a>
+	<div class="floatck" style="margin-left:200px;width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item426 first last level3 " style="z-index : 11943;" ><a class="maximenuck " href="https://mhti.md2k.org/index.php/gallery/2019/2019-lectures"><span class="titreck">mHTI Lectures</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item356 last level2 " style="z-index : 11942;" ><a class="maximenuck " href="https://mhealth.md2k.org/training/webinars" target="_blank" ><span class="titreck">Webinar Videos</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item223 level1 " style="z-index : 11941;" ><a class="maximenuck " href="../studies.html"><span class="titreck">Deployments</span></a>
+		</li><li data-level="1" class="maximenuck item226 parent level1 " style="z-index : 11940;" ><a class="maximenuck " href="../events.html"><span class="titreck">Events</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item512 first level2 " style="z-index : 11939;" ><a class="maximenuck " href="../events/md2k-2018.html"><span class="titreck">2018 Annual Meeting</span></a>
+		</li><li data-level="2" class="maximenuck item353 parent level2 " style="z-index : 11938;" ><a class="maximenuck " href="../events/2017-annual-meeting.html"><span class="titreck">2017 Annual Meeting</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item455 first last level3 " style="z-index : 11937;" ><a class="maximenuck " href="../events/2017-annual-meeting/2017-career-day.html"><span class="titreck">2017 Career Day</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item228 level2 " style="z-index : 11936;" ><a class="maximenuck " href="../events/2016-annual-meeting.html"><span class="titreck">2016 Annual Meeting</span></a>
+		</li><li data-level="2" class="maximenuck item227 last level2 " style="z-index : 11935;" ><a class="maximenuck " href="../events/2015-annual-meeting.html"><span class="titreck">2015 Annual Meeting</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item348 level1 " style="z-index : 11934;" ><a class="maximenuck " href="https://mhealth.md2k.org/"><span class="titreck">mHealthHUB</span></a>
+		</li><li data-level="1" class="maximenuck item199 parent level1 " style="z-index : 11933;" ><a class="maximenuck " href="../related-projects.html"><span class="titreck">Related Projects</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item239 first level2 " style="z-index : 11932;" ><a class="maximenuck " href="http://mperf.md2k.org/" target="_blank" ><span class="titreck">mPerf</span></a>
+		</li><li data-level="2" class="maximenuck item240 level2 " style="z-index : 11931;" ><a class="maximenuck " href="http://mprov.md2k.org/" target="_blank" ><span class="titreck">mProv</span></a>
+		</li><li data-level="2" class="maximenuck item577 level2 " style="z-index : 11930;" ><a class="maximenuck " href="http://mcontain.md2k.org/" target="_blank" ><span class="titreck">mContain</span></a>
+		</li><li data-level="2" class="maximenuck item513 last level2 " style="z-index : 11929;" ><a class="maximenuck " href="https://mdot.md2k.org/" target="_blank" ><span class="titreck">mDOT</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item556 last level1 " style="z-index : 11928;" ><a class="maximenuck " href="../moods.html"><span class="titreck">MOODS</span></a></li>            </ul>
+        </div>
+        <div class="maxiroundedright"></div>
+        <div style="clear:both;"></div>
+    </div>
+    <!-- fin maximenuCK -->
+</div></div></div></div></div></section><section id="sp-feature-main"><div class="row"><div id="sp-feature" class="col-sm-12 col-md-12"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<div style="padding-left: 20px; padding-right: 20px;">
+<div class="col-md-12">
+<h1 style="text-align: center; margin-top: 50px;">A Principled Approach to Computational Modeling of Health, Daily Behaviors, and Momentary Contexts from High-Frequency Sensor Data</h1>
+<h4 style="text-align: center; margin-top: 40px;">A tutorial by the&nbsp;<a href="../index.html">MD2K</a>&nbsp;Center&nbsp;</h4>
+<p style="text-align: center;">This MD2K tutorial has been cancelled. We are currently exploring other venues for this tutorial and thank you for your interest!</p>
+<h3 style="text-align: center;"><span style="text-decoration: line-through;"><strong style="font-size: 24pt;"><a href="https://www.cse.unsw.edu.au/~cpsiot/cpsweek2020/">CPS-IoT Week</a> in Sydney, Australia</strong></span></h3>
+<h4 style="text-align: center; margin-top: 15px;"><span style="text-decoration: line-through;">Tuesday, April 21st, 2020</span></h4>
+<p><img src="../images/cloudVisual.png" alt="cloudVisual" style="display: block; margin-left: auto; margin-right: auto; border-radius: 25px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: 14pt;"><a href="#context">Context</a> | <a href="#audience">Target Audience</a> | <a href="#tutorial-preparations">Tutorial Preparations</a> |&nbsp;<a href="#schedule">Tutorial Schedule</a> | <a href="#sessions">Tutorial Sessions</a> |&nbsp;<a href="#speakers">Speakers</a></span></p>
+<p>This tutorial will introduce students, researchers, and professionals to the end-to-end process for converting high-frequency wearable sensor data into validated features and inferences.&nbsp; This tutorial will begin with a principled approach to doing science before moving into data exploration.&nbsp; Computational and data processing challenges will discussed next along with approaches to handling each.&nbsp; The afternoon sessions will explore computational modeling and validation of approaches for inferring health, daily behaviors, and momentary contexts.&nbsp; The tutorial will conclude with a discussion of the importance of responsible data access, IRBs, and participant privacy.&nbsp; A hands-on component will complement each session and allow the attendee to apply the presented knowledge to a real-world data set.</p>
+<p>&nbsp;</p>
+<hr />
+<h4><a id="context"></a>Context</h4>
+<p>Over the past decade, we have collected and analyzed 100+ terabytes of high-frequency wearable sensor data from lab and field studies at various research institutions across the United States. Through close collaboration of health researchers, we have developed computational models to detect&nbsp; stress, smoking, craving, cocaine use, conversation, brushing, and flossing from physiological and inertial sensors. These models have been published and cited widely in top-tier computing venues (e.g., IPSN, SenSys, UbiComp, CHI, ICML) and health journals. These works have involved 50+ students, postdocs, and faculty from 20 universities and have been supported by the National Institutes of Health (<a href="https://www.nih.gov/">NIH</a>), National Science Foundation (<a href="https://nsf.gov/">NSF</a>), and other federal agencies via $45+ million in research grants.</p>
+<p><img src="../images/Cerebral-Cortex.png" alt="Cerebral Cortex" width="560" style="width: 300px; padding: 10px; margin-left: 17px; margin-top: 10px; margin-bottom: 10px; border-radius: 25px; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px; float: right;" />These experiences have enabled us to articulate a research vision (in IEEE Computer&rsquo;13 and &rsquo;16) and a principled approach in a graduate-level textbook (Mobile Health by Springer &lsquo;17). Since 2014, via support from both NIH and NSF, including our NIH BD2K Center of Excellence for Mobile Sensor Data-to-Knowledge (<a href="../index.html">MD2K</a>), we have developed an open-source big data software platform for the research community to accelerate their task of collecting, analyzing, and sharing high-frequency, raw sensor data and associated labels (e.g., from self-reports or videos). The platform supports the development and validation of computational models and algorithms for inferring markers of daily behaviors and other risk factors in health and wellness such as momentary contexts. It has supported or currently supports research studies at 15 sites across the United States, investigating smoking, overeating, stress, congestive heart failure, oral health, cocaine use, opioid use, chronic pain, behavior change, and workplace performance.&nbsp;</p>
+<p>The software platform consists of a platform for smartphones, mCerebrum [SenSys&rsquo;17], consisting of 25+ apps that enables the collection of large volumes of data from wearables and smartphones (exceeding 1,000 samples per second or 4 gigabytes per day) and a cloud platform, Cerebral Cortex [AMIA&rsquo;17] which can receive data remotely from thousands of mCerebrum or IoT instances deployed in the field and provide real-time remote monitoring of data collection status for each participant. For researchers, Cerebral Cortex supports scalable big data machine learning model development and custom visualization across population-scale data.</p>
+<p>Metadata annotation of the collected sensor data makes them easily usable by third-party researchers. By integrating industry-standard open-source platforms (e.g. Apache Spark, Jupyter Notebooks) the entire software platform is easily usable, deployable, and extensible by other independent researchers.</p>
+<p><strong>Goal:</strong> This tutorial aims to share the knowledge we have acquired in our computational modeling of health and personal daily behaviors and momentary contexts from high-frequency raw sensor data and provide hands-on experiences with open-source software platforms and libraries. To engage attendees, this tutorial will feature a combination of lectures and demos, presented by the speakers, and participants working with real-world datasets.&nbsp; Attendees will be provided slides, relevant research papers, and a virtual machine containing all the necessary software and datasets before the tutorial session.&nbsp;</p>
+<p><strong>Prior Experience:</strong> This tutorial builds and expands on talks and keynote speeches at computing and health conferences, universities, industry, and governments, as well as on tutorials (with hands-on experiments) at the annual meeting of the <a href="../index.html">MD2K Center</a> and the <a href="https://mhealth.md2k.org/training/mhealth-training-institute.html">mHealth Training Institute</a> at UCLA.</p>
+<p>&nbsp;</p>
+<hr />
+<h4><a id="audience"></a>Target Audience</h4>
+<p>This tutorial will benefit CPS and IoT students and faculty by describing interesting new research directions and presenting systematic approaches to mining large sensor datasets for computational modeling of human behaviors and contexts. By using an open-source mobile sensor big data platform for hands-on experiments, this tutorial will also serve faculty and researchers seeking to gain a better understanding of mobile sensor big data research and professionals looking for approaches to handle ever-growing data challenges and demands of high-frequency sensors. At the conclusion, attendees will become familiar with a principled approach for computational modeling of daily behaviors and momentary contexts, be aware of the potential hurdles in conducting research with this type of data, and have hands-on experience working with this data via an open-source mobile sensor big data software.</p>
+<p>&nbsp;</p>
+<hr />
+<h4><a id="tutorial-preparations"></a>Tutorial Preparations</h4>
+<p>We will post a link to a VirtualBox virtual machine on this site by <strong>March 21, 2020</strong>.&nbsp; This virtual machine will contain all of the software and data utilized for this tutorial session and the interactive components will leverage this virtual machine configuration.&nbsp; Slides for each session will also be made available on this site prior to the tutorial day.</p>
+<p>&nbsp;</p>
+<hr />
+<h4><a id="schedule"></a>Tutorial Schedule</h4>
+<table border="1" style="width: 900px; margin-left: auto; margin-right: auto; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" cellpadding="2">
+<tbody>
+<tr>
+<td>8:30 - 9:00</td>
+<td colspan="2"><strong>Welcome and Overview</strong></td>
+</tr>
+<tr>
+<td>9:00 - 10:00&nbsp;</td>
+<td><a href="#principledapproach"><strong>Principled Approach with Examples</strong></a></td>
+<td><a href="#kumar">Santosh Kumar</a></td>
+</tr>
+<tr>
+<td>10:00 - 10:30</td>
+<td colspan="2"><em>Break and Networking</em></td>
+</tr>
+<tr>
+<td>10:30 - 11:00</td>
+<td><a href="#datavisualization"><strong>Data and Visualization</strong></a></td>
+<td><a href="#ali">Nasir Ali</a></td>
+</tr>
+<tr>
+<td>11:00 - 12:00</td>
+<td><a href="#comppipeline"><strong>Computational Pipeline</strong></a></td>
+<td><a href="#hnat">Tim Hnat</a></td>
+</tr>
+<tr>
+<td>12:00 - 13:30</td>
+<td colspan="2"><em>Lunch</em></td>
+</tr>
+<tr>
+<td>13:30 - 14:30</td>
+<td><a href="#modeltraining"><strong>Model Training</strong></a></td>
+<td><a href="#nandugudi">Anandatirtha Nandugudi</a></td>
+</tr>
+<tr>
+<td>14:30 - 15:00</td>
+<td><a href="#validation"><strong>Validation Approaches</strong></a></td>
+<td><a href="#hnat">Tim Hnat</a></td>
+</tr>
+<tr>
+<td>15:00 - 15:30</td>
+<td colspan="2"><em>Break and Networking</em></td>
+</tr>
+<tr>
+<td>15:30 - 16:00</td>
+<td><a href="#dataaccessirb"><strong>Data Access, IRBs, Participant Privacy</strong></a></td>
+<td><a href="#samiei">Shahin Samiei</a> and <a href="#kumar">Santosh Kumar</a></td>
+</tr>
+<tr>
+<td>16:00 - 17:00</td>
+<td><a href="#teamproject"><strong>Team Project: Developing New Features and Inferences</strong></a></td>
+<td><a href="#hnat">Tim Hnat </a>and <a href="#ali">Nasir Ali</a></td>
+</tr>
+<tr>
+<td>17:00 - 17:30</td>
+<td><a href="#conclusion"><strong>Conclusion, Q&amp;A, and Wrap-Up</strong>&nbsp;</a></td>
+<td><a href="#kumar">Santosh Kumar</a> and <a href="#hnat">Tim Hnat</a></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 10pt; font-family: Calibri, sans-serif; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"></span></p>
+<hr />
+<h4><a id="sessions"></a>Tutorial Sessions</h4>
+<p>&nbsp;</p>
+<h5><a id="principledapproach"></a>Principled Approach with Examples <em>(<a href="#kumar">Santosh Kumar</a>)</em></h5>
+<p style="text-indent: 36pt;">This tutorial is designed to help students, researchers, and professionals to introduce rigor in their approach in handling the data diversity and noise that comes from high-frequency sensor data, especially when using them to reliably infer behavioral and momentary contexts. We believe that these techniques will help attendees improve the accuracy and real-world utility of their sensor-derived models.&nbsp; This tutorial will start with the presentation of a principled approach to doing science and will be followed by the topics below.</p>
+<h5><a id="datavisualization"></a>Data and Visualization <em>(<a href="#ali">Nasir Ali</a>)</em></h5>
+<p style="text-indent: 36pt;">This topic focuses on organizing, curating, and storing high-frequency data sets so they are easily and efficiently usable for modeling.&nbsp; An open dataset, mOral, will be utilized to provide real-world context to the data exploration discussions and hands-on coding tutorial.</p>
+<h5><a id="comppipeline"></a>Computational Pipeline <em>(<a href="#hnat">Tim Hnat</a>)</em></h5>
+<p style="text-indent: 36pt;">Transforming data from one form to another (e.g., detecting hand to mouth gestures from wrist-worn inertial sensors) is a critical preprocessing stage before getting to the modeling and validation steps. There are many nuances (e.g. windowing, data cleaning, filtering) associated with performing these data transformations which will be discussed in the context of published works and grounded with real data examples.&nbsp; We will show the benefits of these transformations by writing custom feature transformations on the mOral dataset.</p>
+<h5><a id="modeltraining"></a>Model Training<em> (<a href="#nandugudi">Anandatirtha Nandugudi</a>)</em></h5>
+<p style="text-indent: 36pt;">This section is dedicated to the techniques needed to cleanly build, test, and adapt models on large-scale sensor data.&nbsp; We will discuss various considerations including state estimation and event detection, data processing pipelines, interpretability or explainability, generalizability, personalization without new training, and computational efficiency for real-time operation.&nbsp; We will ground this discussion in available open-source tools and use an example from the mOral open dataset. We will show the benefits of these techniques through the impact and quality of the generated results.</p>
+<h5><a id="validation"></a>Validation Approaches <em>(<a href="#hnat">Tim Hnat</a>)</em></h5>
+<p style="text-indent: 36pt;">The discussion on validation will emphasize to the attendees the importance and impact of carefully considering how the models are validated for both detection accuracy and temporal accuracy.&nbsp; We will discuss the importance of cross-subject validation, train/test splits, independence of data sets, and the selection of gold standards. Additionally, a discussion on accuracy reporting, including false-positive analysis, recall analysis, temporal accuracy for event start/end times, and confidence levels will expose the attendees to key differences between this type of data and traditional interpretations.&nbsp; As with the other sections, examples will be demonstrated in the context of available open-source tools and a running example.</p>
+<h5><a id="dataaccessirb"></a>Data Access, IRBs, Participant Privacy <em>(<a href="#samiei">Shahin Samiei </a>and <a href="#kumar">Santosh Kumar</a>)</em></h5>
+<p style="text-indent: 36pt;">This discussion will highlight the importance of addressing data access concerns throughout the study and data collection processes.&nbsp; We will discuss the key components of an Institutional Review Board (IRB) protocol and the responsibilities of the researchers involved.&nbsp; Finally, this session will discuss participant privacy issues in the collection and analysis of high-frequency sensor data and current approaches to mitigating them.</p>
+<h5><a id="teamproject"></a>Team Project: Developing New Features and Inferences <em>(<a href="#hnat">Tim Hnat</a> and <a href="#ali">Nasir Ali</a>)</em></h5>
+<p style="text-indent: 36pt;">The tutorial attendees will be organized in small teams to develop new features or inferences using the knowledge gains from the day&rsquo;s session using the open mOral dataset and storing them with appropriate metadata so they can be easily used by other researchers.</p>
+<h5><a id="conclusion"></a>Conclusion, Q&amp;A, and Wrap-Up <em>(<a href="#kumar">Santosh Kumar </a>and <a href="#hnat">Tim Hnat</a>)</em></h5>
+<p style="text-indent: 36pt;">We will discuss the challenges, opportunities, and open problems in the computational modeling of daily behaviors and momentary contexts. It will also provide opportunities for open discussions among the attendees including possible next steps.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr />
+<div>
+<h4><a id="speakers"></a>Speakers</h4>
+<p>&nbsp;<a id="kumar"></a></p>
+<span style="width: 80%;"><span style="width: 80%;"><img src="../images/team/Kumar.png" alt="Kumar" width="229" class="img-circle" style="width: 200px; padding: 5px; margin-right: 10px; margin-bottom: 10px; float: left; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></span></span>
+<h5><a href="mailto:skumar4@memphis.edu">Santosh Kumar</a></h5>
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 12pt;"><strong><span style="font-family: Calibri, sans-serif; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">Director, MD2K Center of Excellence </span><span style="font-family: Calibri, sans-serif; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"><br /></span><span style="font-family: Calibri, sans-serif; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">Professor &amp; Lillian and Morrie Moss Chair of Excellence</span><span style="font-family: Calibri, sans-serif; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"><br /></span></strong><span style="font-family: Calibri, sans-serif; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"><strong>Department of Computer Science, University of Memphis</strong><br /><br /></span></span></p>
+<p dir="ltr" style="line-height: 1.2; text-indent: 36pt; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 10pt; font-family: Calibri, sans-serif; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"><span style="font-size: 12pt;">Santosh Kumar is the Lillian and Morrie Moss Chair of Excellence Professor in the Department of Computer Science at the University of Memphis. Santosh has been leading large multidisciplinary mobile health (mHealth) projects since 2007, sponsored by NSF and NIH. He is currently leading an NIH Center of Excellence on Mobile Sensor Data-to-Knowledge (MD2K), a truly transdisciplinary project in which Santosh leads a team of 20+ investigators from 12 universities who come from diverse but complementary disciplines including computer science, engineering, statistics, public health, medicine, and behavioral science. His work has led to the development of novel sensor-derived mHealth biomarkers such as stress, conversation, smoking, craving, cocaine use, brushing, and flossing. In addition to direct experience with leading transdisciplinary mobile sensor research projects, Santosh has led national efforts to advance the field of mHealth. He has chaired national meetings on mHealth Evidence and on identifying computing grand challenges in mHealth.</span><br /><br /></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;<a id="hnat"></a></p>
+<span style="width: 80%;"><span style="width: 80%;"><img src="../images/team/Hnat.png" alt="Hnat" width="229" class="img-circle" style="width: 200px; padding: 5px; margin-right: 10px; margin-bottom: 10px; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px; float: left;" /></span></span>
+<h5><a href="mailto:twhnat@memphis.edu">Tim Hnat</a></h5>
+<p dir="ltr" style="line-height: 1.2; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 12pt;"><strong><span style="font-family: Calibri, sans-serif; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">Chief Software Architect, MD2K Center of Excellence</span></strong></span></p>
+<p dir="ltr" style="line-height: 1.2; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 12pt; font-family: Calibri, sans-serif; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"><strong>University of Memphis</strong><br /><br /></span></p>
+<p dir="ltr" style="line-height: 1.2; text-indent: 36pt; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 10pt; font-family: Calibri, sans-serif; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"><span style="font-size: 12pt;">Tim Hnat began working in mobile health (mHealth) and IoT space in 2008, publishing multiple papers in ACM SenSys. He works as an assistant professor of Computer Science from 2012 when he initiated a kinematic sensing project (K-Sense) that utilized motion tracking bands to target obesity and diabetes. This work led to his selection as an mHealth scholar as part of the prestigious, annual NIH mHealth Summer Institute in 2013 and returned in 2019 as a faculty instructor. Based on this experience, Tim was recruited in 2014 to become the chief software architect for the University of Memphis-based NIH Center of Excellence on Mobile Sensor Data-to-Knowledge (MD2K). In this role, Tim oversees the development of both mCerebrum and Cerebral Cortex and their deployment across 11 states in the US for high-frequency sensor data collection in research studies. He also supports the usage of these data for computational modeling by computing researchers and population-scale analysis by health researchers. He supervises a team of four software engineers, three with doctoral degrees.</span><br /><br /></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;<a id="ali"></a></p>
+<span style="width: 80%;"><span style="width: 80%;"><img src="../images/team/ali_headshot.png" alt="ali headshot" width="400" class="img-circle" style="width: 200px; padding: 5px; margin-right: 10px; margin-bottom: 10px; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px; float: left;" /></span></span>
+<h5><a href="mailto:cnali@memphis.edu">Nasir Ali</a></h5>
+<p dir="ltr" style="line-height: 1.2; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 12pt;"><strong><span style="font-family: Calibri, sans-serif; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">Research Assistant Professor</span></strong></span></p>
+<p dir="ltr" style="line-height: 1.2; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 12pt; font-family: Calibri, sans-serif; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"><strong>Department of Computer Science, University of Memphis</strong><br /><br /></span></p>
+<p dir="ltr" style="line-height: 1.2; text-indent: 36pt; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 10pt; font-family: Calibri, sans-serif; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"><span style="font-size: 12pt;">Nasir Ali has a diverse research background from software engineering to mobile health (mHealth) and IoT space since 2009. His work has been published in top journals (Transactions in Software Engineering and Empirical Software Engineering). In 2016, he joined MD2K to conduct research and develop cloud-based solutions (i.e. Cerebral Cortex), standardization of mHealth sensor metadata, data analysis/modeling pipelines, and visualization layers to support high-frequency mobile sensor big data management, analysis, and producing actionable results. Nasir is the core developer of Cerebral Cortex.</span><br /><br /></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;<a id="nandugudi"></a></p>
+<span style="width: 80%;"><span style="width: 80%;"><img src="../images/team/anand.jpg" alt="anand" width="225" class="img-circle" style="width: 200px; padding: 5px; margin-right: 10px; margin-bottom: 10px; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px; float: left;" /></span></span>
+<h5><a href="mailto:nndugudi@memphis.edu">Anandatirtha Nandugudi</a></h5>
+<p dir="ltr" style="line-height: 1.2; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 12pt;"><strong><span style="font-family: Calibri, sans-serif; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">Data Science Software Engineer</span></strong></span></p>
+<p dir="ltr" style="line-height: 1.2; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 12pt; font-family: Calibri, sans-serif; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"><strong>Department of Computer Science, University of Memphis</strong><br /><br /></span></p>
+<p dir="ltr" style="line-height: 1.2; text-indent: 36pt; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 10pt; font-family: Calibri, sans-serif; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"><span style="font-size: 12pt;">Anandatirtha Nandugudi designs, develops, and validates mobile health (mHealth) biomarkers along with a team of graduate students at the MD2K Center of Excellence. He has a rich research background in the areas of mobile computing, networking and sensor networks, and has published several recognised works in these areas in proceedings such as UbiComp. In addition to leading the implementation of newly developed mHealth biomarkers in Cerebral Cortex and mCerebrum, he is volunteering his services to standardise health metadata as part of the IEEE P1752 working group to enable interoperability and wider adoption of mHealth biomarkers.</span><br /><br /></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;<a id="samiei"></a></p>
+<span style="width: 80%;"><span style="width: 80%;"><img src="../images/team/Shahin_Samiei.png" alt="Shahin Samiei" width="400" class="img-circle" style="width: 200px; padding: 5px; margin-right: 10px; margin-bottom: 10px; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px; float: left;" /></span></span>
+<h5><a href="mailto:ssamiei@memphis.edu">Shahin Samiei</a></h5>
+<p dir="ltr" style="line-height: 1.2; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 12pt;"><strong><span style="font-family: Calibri, sans-serif; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">Associate Director, Research &amp; Studies</span></strong></span></p>
+<p dir="ltr" style="line-height: 1.2; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 12pt; font-family: Calibri, sans-serif; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"><strong>MD2K Center of Excellence, University of Memphis</strong><br /><br /></span></p>
+<p dir="ltr" style="line-height: 1.2; text-indent: 36pt; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 12pt; font-family: Calibri, sans-serif; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">Shahin Samiei serves as the MD2K Center&rsquo;s Associate Director of Research &amp; Studies. He oversees the MD2K Center&rsquo;s human subjects research, institutional review board (IRB) protocol writing and management, research compliance, informed consent processes and procedures, and data sharing, for all 15 research studies using MD2K software and sensors. In doing so, he directs formal data-sharing agreements, ensures maintenance with procedures outlined in study protocols and consent processes, and manages access control to study data repositories, across all participating personnel at each collaborating site. He also directs research logistics (e.g., inventory management) for the MD2K Center&rsquo;s research tools, such as sensor platforms and related data collection equipment. Shahin&rsquo;s background is in public health, having received his MPH from the University of Memphis.</span></p>
+<p><span style="font-size: 10pt; font-family: Calibri, sans-serif; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"></span></p>
+<p><span id="docs-internal-guid-47b78019-7fff-a184-04ca-548e30220a3f"></span></p>
+</div>
+</div>
+</div></div>
+</div></div></div></div></div></section><section id="sp-feature-team-page" class="div#maximenuck253 div.floatck { 	 	background:#F4F4F4; 	background: -moz-linear-gradient(top, #f4f4f4, #eeeeee); 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f4f4), to(#eeeeee)); 	-moz-border-radius: 0px 5px 5px 5px; 	 }"><div class="row"><div id="sp-secondmenu" class="col-sm-12 col-md-12"><div class="sp-column div.floatck { background: #eeeeee;          background: -moz-linear-gradient(top, #EEEEEE, #EEEEEE);     /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEEEEE), to(#EEEEEE)); */  }"><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
+</div></div></div></div></div></section><footer id="sp-footer"><div class="container"><div class="row"><div id="sp-footer1" class="col-sm-10 col-md-10"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<p style="text-align: center; font-size: 12px; padding-top: 14px;">Copyright &copy; 2020 MD2K. <strong>MD2K was established by the National Institutes of Health Big Data to Knowledge Initiative <a href="https://projectreporter.nih.gov/project_info_description.cfm?aid=9303353&amp;icde=36143741&amp;ddparam=&amp;ddvalue=&amp;ddsub=&amp;cr=7&amp;csb=default&amp;cs=ASC&amp;pball=" target="_blank">(Grant #1U54EB020404)</a></strong><br /><span style="color: #ffffff; font-style: italic;">Team: Cornell Tech, GA Tech, Harvard, U. Memphis, Northwestern, Ohio State, UCLA, UCSD, UCSF, UMass, U. Michigan, U. Utah, WVU </span></p></div>
+</div></div></div></div><div id="sp-footer2" class="col-sm-2 col-md-2"><div class="sp-column "><ul class="sp-contact-info"><li class="sp-contact-phone"><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:901-678-1493">901-678-1493</a></li><li class="sp-contact-email"><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@md2k.org">info@md2k.org</a></li></ul></div></div></div></div></footer>            </div> <!-- /.body-innerwrapper -->
+        </div> <!-- /.body-innerwrapper -->
+
+        <!-- Off Canvas Menu -->
+        <div class="offcanvas-menu">
+            <a href="#" class="close-offcanvas" aria-label="Close"><i class="fa fa-remove" aria-hidden="true" title="HELIX_CLOSE_MENU"></i></a>
+            <div class="offcanvas-inner">
+                                  <div class="sp-module "><div class="sp-module-content"><ul class="nav menu">
+<li class="item-101"><a href="../index.html" > Home</a></li><li class="item-191  deeper parent"><a href="../about.html" > About</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-191"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-191"><li class="item-196"><a href="../about/meet-the-team.html" > MD2K Team</a></li><li class="item-198  deeper parent"><a href="../about/news.html" > News</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-198"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-198"><li class="item-443"><a href="../about/news/md2k-in-the-news.html" > MD2K in the News</a></li></ul></li><li class="item-581"><a href="../about/privacy.html" > Privacy</a></li><li class="item-224"><a href="../about/contact.html" > Contact</a></li></ul></li><li class="item-193  deeper parent"><a href="../research-agenda.html" > Research</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-193"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-193"><li class="item-338"><a href="../research-agenda/pubs.html" > Publications</a></li><li class="item-471  divider"><a class="separator ">Research Areas</a>
+</li><li class="item-213"><a href="../research-agenda/research-agenda.html" > Research Agenda</a></li><li class="item-285"><a href="../research-agenda/sensors.html" > Sensors</a></li><li class="item-214"><a href="../research-agenda/biomarkers.html" > mHealth Biomarkers</a></li><li class="item-474"><a href="../research-agenda/trial-design.html" > Trial Design</a></li><li class="item-216"><a href="../research-agenda/jitai.html" > mHealth Interventions</a></li><li class="item-284"><a href="../research-agenda/architecture.html" > Architecture</a></li><li class="item-219"><a href="../research-agenda/methodology.html" > Big Data Analytics</a></li><li class="item-473"><a href="../research-agenda/visualization.html" > Visualization</a></li><li class="item-221"><a href="../research-agenda/privacy.html" > Behavioral Privacy</a></li><li class="item-470  divider"><a class="separator ">Field Study Focus Areas</a>
+</li><li class="item-463"><a href="../research-agenda/smoking.html" > Smoking</a></li><li class="item-464"><a href="../research-agenda/eating-control.html" > Eating Regulation</a></li><li class="item-465"><a href="../research-agenda/drug-use.html" > Drug Use</a></li><li class="item-466"><a href="../research-agenda/stress-management.html" > Stress Management</a></li><li class="item-467"><a href="../research-agenda/heart-failure-care.html" > Heart Failure Care</a></li><li class="item-472"><a href="../research-agenda/behavior-change.html" > Behavior Change</a></li><li class="item-468">		<a  href="http://mperf.md2k.org/"  > Work Productivity</a></li><li class="item-469"><a href="../research-agenda/oral-health.html" > Oral Health</a></li></ul></li><li class="item-197  deeper parent"><a href="../software.html" > Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-197"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-197"><li class="item-421  deeper parent"><a href="../software/under-the-hood.html" > Under the Hood</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-421"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-421"><li class="item-427"><a href="../software/under-the-hood/mcerebrum.html" > Smartphone Software</a></li><li class="item-428  deeper parent"><a href="../software/under-the-hood/cerebral-cortex.html" > Cloud Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-428"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-428"><li class="item-436"><a href="../software/under-the-hood/cerebral-cortex/architecture.html" > Architecture</a></li></ul></li><li class="item-429"><a href="../software/under-the-hood/bug-reports-feature-requests.html" > Bug Reports / Feature Requests</a></li><li class="item-430"><a href="../software/under-the-hood/software-license.html" > Software License</a></li><li class="item-431"><a href="../software/under-the-hood/contributing.html" > Contributing</a></li><li class="item-432"><a href="../software/under-the-hood/references.html" > References</a></li><li class="item-533"><a href="../software/under-the-hood/software-docs.html" > Documentation</a></li></ul></li><li class="item-422  deeper parent"><a href="../software/how-to.html" > How-To</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-422"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-422"><li class="item-433  deeper parent"><a href="../software/how-to/smartphone-software.html" > Smartphone Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-433"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-433"><li class="item-440"><a href="../software/how-to/smartphone-software/getting-started.html" > Getting Started</a></li><li class="item-476"><a href="../software/how-to/smartphone-software/implementing-datakit.html" > Implementing DataKit</a></li></ul></li><li class="item-434  deeper parent"><a href="../software/how-to/supported-sensors.html" > Supported Sensors</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-434"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-434"><li class="item-441"><a href="../software/how-to/supported-sensors/sensors-troubleshooting.html" > Sensors Troubleshooting</a></li><li class="item-442"><a href="../software/how-to/supported-sensors/adding-sensors.html" > Adding Sensors </a></li></ul></li><li class="item-438  deeper parent"><a href="../software/how-to/getting-started.html" > Cloud Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-438"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-438"><li class="item-437"><a href="../software/how-to/getting-started/docker.html" > Docker</a></li><li class="item-439"><a href="../software/how-to/getting-started/working-with-cerebral-cortex.html" > Working with Cerebral Cortex</a></li></ul></li><li class="item-453"><a href="../software/how-to/software-howto-studyguides.html" > Study Guides</a></li></ul></li><li class="item-423"><a href="../software/deployments.html" > Deployments</a></li><li class="item-424"><a href="../software/contributors.html" > Contributors</a></li><li class="item-482"><a href="../software/personal.html" > Personal Edition</a></li><li class="item-486"><a href="../software/codeofconduct.html" > Code of Conduct</a></li></ul></li><li class="item-564  active deeper parent"><a href="../tutorials.html" > Tutorials</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-564"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-564"><li class="item-565  current active"><a href="cps-iot-week-2020.html" > CPS-IoT Week 2020</a></li></ul></li><li class="item-247  deeper parent"><a href="../webinars.html" > Training</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-247"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-247"><li class="item-425  deeper parent">		<a  href="https://mhti.md2k.org/"  > mHealth Training Institute</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-425"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-425"><li class="item-426">		<a  href="https://mhti.md2k.org/index.php/gallery/2019/2019-lectures"  > mHTI Lectures</a></li></ul></li><li class="item-356">		<a href="https://mhealth.md2k.org/training/webinars" rel="noopener noreferrer" target="_blank" > Webinar Videos</a></li></ul></li><li class="item-223"><a href="../studies.html" > Deployments</a></li><li class="item-226  deeper parent"><a href="../events.html" > Events</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-226"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-226"><li class="item-512"><a href="../events/md2k-2018.html" > 2018 Annual Meeting</a></li><li class="item-353  deeper parent"><a href="../events/2017-annual-meeting.html" > 2017 Annual Meeting</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-353"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-353"><li class="item-455"><a href="../events/2017-annual-meeting/2017-career-day.html" > 2017 Career Day</a></li></ul></li><li class="item-228"><a href="../events/2016-annual-meeting.html" > 2016 Annual Meeting</a></li><li class="item-227"><a href="../events/2015-annual-meeting.html" > 2015 Annual Meeting</a></li></ul></li><li class="item-348">		<a  href="https://mhealth.md2k.org/"  > mHealthHUB</a></li><li class="item-199  deeper parent"><a href="../related-projects.html" > Related Projects</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-199"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-199"><li class="item-239">		<a href="http://mperf.md2k.org/" rel="noopener noreferrer" target="_blank" > mPerf</a></li><li class="item-240">		<a href="http://mprov.md2k.org/" rel="noopener noreferrer" target="_blank" > mProv</a></li><li class="item-577">		<a href="http://mcontain.md2k.org/" rel="noopener noreferrer" target="_blank" > mContain</a></li><li class="item-513">		<a href="https://mdot.md2k.org/" rel="noopener noreferrer" target="_blank" > mDOT</a></li></ul></li><li class="item-556"><a href="../moods.html" > MOODS</a></li></ul>
+</div></div>
+                            </div> <!-- /.offcanvas-inner -->
+        </div> <!-- /.offcanvas-menu -->
+
+        
+        
+        
+        <!-- Preloader -->
+        
+
+        <!-- Go to top -->
+        
+    </body>
+
+<!-- Mirrored from md2k.org/tutorials/cps-iot-week-2020.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 19:35:56 GMT -->
+</html>

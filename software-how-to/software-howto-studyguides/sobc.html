@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+    
+<!-- Mirrored from md2k.org/software-how-to/software-howto-studyguides/sobc.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 19:55:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+                <!-- head -->
+        <base  />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="mHealth, md2k, mobile health, precision medicine, biomarkers, mobile sensor data, mobile sensors" />
+	<meta name="author" content="Brian Ahern" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Advancing biomedical discovery and improving health through mobile sensor Big Data" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>MD2K - SOBC</title>
+	<link href="http://md2k-webtest.memphis.edu/software-how-to/software-howto-studyguides/sobc.html" rel="canonical" />
+	<link href="../../images/Logos/favicon2.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="../../favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="http://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic&amp;subset=latin-ext" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Fjalla+One:regular&amp;subset=latin-ext" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&amp;subset=greek,greek-ext" rel="stylesheet" type="text/css" />
+	<link href="../../templates/shaper_helix3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../../templates/shaper_helix3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="../../templates/shaper_helix3/css/legacy.css" rel="stylesheet" type="text/css" />
+	<link href="../../templates/shaper_helix3/css/template.css" rel="stylesheet" type="text/css" />
+	<link href="../../templates/shaper_helix3/css/presets/preset2.css" rel="stylesheet" type="text/css" class="preset" />
+	<link href="../../templates/shaper_helix3/css/custom.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+body{font-family:Lato, sans-serif; font-size:14px; font-weight:normal; }h1{font-family:Fjalla One, sans-serif; font-size:36px; font-weight:normal; }h2{font-family:Fjalla One, sans-serif; font-size:30px; font-weight:normal; }h3{font-family:Roboto, sans-serif; font-size:24px; font-weight:700; }h4{font-family:Roboto, sans-serif; font-size:18px; font-weight:700; }h5{font-family:Roboto, sans-serif; font-size:18px; font-weight:700italic; }h6{font-family:Lato, sans-serif; font-size:16px; font-weight:700; }button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #2a9eb2;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #aed141}
+
+.button:active {
+  background-color: #aed141;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+ 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+     -webkit-flex-direction: column;
+    flex-direction: column;
+    webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+	background-color: #2b3675;
+	border-radius: 45px;
+}
+
+.flex-item {
+    background-color: #ffffff;
+    width: 98%;
+    height: auto;
+    margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 45px;
+	padding: 15px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+	text-align: justify;
+}
+
+.flex-study {
+    background-color: #ffffff;
+    width: 25%;
+    height: auto;
+    margin: 10px;
+	border-radius: 45px;
+	padding: 20px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+	
+}
+.flex-study1 {
+    background-color: #ffffff;
+    width: 25%;
+    height: 100%;
+    margin: 10px;
+	border-radius: 45px;
+	padding: 20px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+      text-align: center;
+-webkit-align-self: center; /* Safari 7.0+ */
+    align-contents: center;
+}
+
+.flex-container2 {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: auto;
+	background-color: #2b3675;
+	border-radius: 45px;
+}
+
+p {
+text-align: justify;
+}
+
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #bbb;
+	width: 100%;
+	}
+	
+	td {
+    border-top: 1px solid #ddd;
+    padding: 4px 8px;
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	font-size: 14px;
+		color: #2b3675;
+}
+	th {
+    border-top: 1px solid #ddd;
+    padding: 4px 8px;
+	font-family:Roboto Black, Raleway Black, Oswald SemiBold, Montserrat SemiBold;
+	font-size: 22px;
+		background-color: #2b3675;
+		color: #fff;
+}
+	
+		
+	tbody tr:nth-child(even) td {
+    background-color: #eee;
+}
+
+
+.one-half,
+
+.one-third,
+
+.two-third,
+
+.one-fourth,
+
+.three-fourth,
+
+.one-fifth,
+
+.two-fifth,
+
+.three-fifth,
+
+.four-fifth,
+
+.one-sixth,
+
+.five-sixth {
+
+  float: left;
+
+  margin: 0 4% 15px 0;
+
+}
+
+.three-across-1
+{
+
+  float: left;
+
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border: 5px;
+  width: 30%;
+
+}
+
+.three-across-2
+{
+
+  float: left;
+
+ margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 30%;
+
+}
+
+
+
+.three-across-3
+{
+
+  float: left;
+   margin-bottom: 15px;
+  margin-left: 15px;
+  
+  width: 30%;
+
+}
+
+
+.one-half.last,
+
+.one-third.last,
+
+.two-third.last,
+
+.one-fourth.last,
+
+.three-fourth.last,
+
+.one-fifth.last,
+
+.two-fifth.last,
+
+.three-fifth.last,
+
+.four-fifth.last,
+
+.one-sixth.last,
+
+.five-sixth.last {
+
+  margin-right: 0;
+
+  margin-bottom: 15px;
+
+}
+
+.one-half {
+
+  width: 48%;
+
+}
+
+.one-third {
+
+  width: 30.66%;
+
+}
+
+.two-third {
+
+  width: 65.33%;
+
+}
+
+.one-fourth {
+
+  width: 22%;
+
+}
+
+.three-fourth {
+
+  width: 74%;
+
+}
+
+.one-fifth {
+
+  width: 16.8%;
+
+}
+
+.two-fifth {
+
+  width: 37.6%;
+
+}
+
+.three-fifth {
+
+  width: 58.4%;
+
+}
+
+.four-fifth {
+
+  width: 79.2%;
+
+}
+
+.one-sixth {
+
+  width: 13.33%;
+
+}
+
+.five-sixth {
+
+  width: 82.66%;
+
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.characteristic {
+  text-align: center;
+  color: #fff;
+
+  padding: 2px 7px;
+
+  background-color: #BB4C38;
+  border-radius: 10px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 60%;
+  margin: 2px;
+  top: -4px;
+  position: relative;
+
+}
+
+/* COLLAPSIBLE CONTENT (data dictionary) */
+input[type='checkbox'] {
+  display: none;
+}
+
+.lbl-toggle {
+  display: block;
+
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 1.8rem;
+  text-align: left;
+
+  padding: 1rem;
+
+  color: #222222;
+  background: #ffffff;
+
+  cursor: pointer;
+
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+  color: #bbbbbb;
+}
+
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+
+  transition: transform .2s ease-out;
+}
+
+.collapsible-content .content-inner {
+  background: rgba(60, 166, 185, .05);
+  border: 1px solid rgba(43, 54, 117, .1);
+
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: .5rem 1rem;
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 15350px;
+}
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}#sp-header{ margin:0px 20px 0px -0px; }#sp-feature-main{ padding:0px 20px 0 px 20px;margin:0px 20px 0 px 20px; }#sp-feature-team-page{ padding:20px; }
+	</style>
+	<script src="../../media/jui/js/jquery.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../../media/jui/js/jquery-noconflict700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../../media/jui/js/jquery-migrate.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../../media/system/js/caption700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../../plugins/system/maximenuckmobile/assets/maximenuckmobile.js" type="text/javascript"></script>
+	<script src="../../templates/shaper_helix3/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../../templates/shaper_helix3/js/jquery.sticky.js" type="text/javascript"></script>
+	<script src="../../templates/shaper_helix3/js/main.js" type="text/javascript"></script>
+	<script src="../../media/plg_captcha_recaptcha/js/recaptcha.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=JoomlaInitReCaptcha2&amp;render=explicit&amp;hl=en-GB" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});// Find all YouTube videos
+var $allVideos = $("iframe[src^='//www.youtube.com']"),
+
+    // The element that is fluid width
+    $fluidEl = $("body");
+
+// Figure out and save aspect ratio for each video
+$allVideos.each(function() {
+
+  $(this)
+    .data('aspectRatio', this.height / this.width)
+
+    // and remove the hard coded width/height
+    .removeAttr('height')
+    .removeAttr('width');
+
+});
+
+// When the window is resized
+$(window).resize(function() {
+
+  var newWidth = $fluidEl.width();
+
+  // Resize all videos according to their own aspect ratio
+  $allVideos.each(function() {
+
+    var $el = $(this);
+    $el
+      .width(newWidth)
+      .height(newWidth * $el.data('aspectRatio'));
+
+  });
+
+// Kick off one resize to fix all videos on page load
+}).resize();
+
+var sp_preloader = '0';
+
+var sp_gotop = '0';
+
+var sp_offanimation = 'default';
+
+	</script>
+	<meta property="og:url" content="https://md2k.org/software-how-to/software-howto-studyguides/sobc.html" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Software - HowTo - SOBC" />
+	<meta property="og:description" content="" />
+
+            
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55313502-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Universal Google Analytics Plugin by PB Web Development -->
+
+
+</head>
+
+    <body class="site com-content view-article no-layout no-task itemid-509 en-gb ltr  layout-fluid off-canvas-menu-init">
+
+        <div class="body-wrapper">
+            <div class="body-innerwrapper">
+                <header id="sp-header"><div class="container"><div class="row"><div id="sp-logo" class="col-xs-8 col-sm-3 col-md-3"><div class="sp-column "><div class="logo"><a href="../../index.html"><img class="sp-default-logo hidden-xs" src="../../images/Logos/MD2K-Logo_80px.png" alt="MD2K"><img class="sp-retina-logo hidden-xs" src="../../images/Logos/MD2K-Logo_80px.png" alt="MD2K" width="179" height="80"><img class="sp-default-logo visible-xs" src="../../images/Logos/MD2K-Logo_60px.png" alt="MD2K"></a></div></div></div><div id="sp-title" class="col-xs-3 col-sm-9 col-md-9 hidden-sm hidden-xs"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<h2 style="font-size: 1.4em; font-style: italic; font-weight: 300; padding-top: 10px;">Advancing biomedical discovery and improving health through mobile sensor Big Data</h2></div>
+</div></div></div></div></div></div></header><section id="sp-feature-main"><div class="row"><div id="sp-feature" class="col-sm-12 col-md-12"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<div style="padding-left: 20px; padding-right: 20px;">
+<h1>Study Coordinator Guide</h1>
+<p>These instructions will guide you in downloading, installing, and configuring the mCerebrum software suite.</p>
+<h2>&nbsp;</h2>
+<h2>Install mCerebrum</h2>
+<p>1) Download the&nbsp;<a href="https://github.com/MD2Korg/mCerebrum-releases/raw/master/2.0/org.md2k.mcerebrum/mcerebrum2.0.14.apk">latest version of mCerebrum</a>&nbsp;(found at this link or by using the QR code below) and install the APK file.</p>
+<p><img src="../../images/QR_mC2.0.14.png" alt="QR mC2.0.14" /></p>
+<p>2) Follow the on-screen instructions on your Android device to complete the installation.</p>
+<p>3) When the installation is complete, open mCerebrum. You should see the home screen as shown here:</p>
+<p><img src="../../images/howto/m2homescreen.png" alt="m2homescreen" /></p>
+<h2>&nbsp;</h2>
+<h2 id="a-name-installapps-a-install-update-apps">Join the Study</h2>
+<p>1) Tap the&nbsp;<em>Summary</em>&nbsp;button at the top of the mCerebrum home screen.&nbsp;</p>
+<p><img src="../../images/howto/click2join.png" alt="click2join" /></p>
+<p>2) Enter your Username and Password, then tap&nbsp;<em>Login</em>.</p>
+<p><img src="../../images/howto/m2login.png" alt="m2login" /></p>
+<p>3) Select your configuration file from the list of configurations and install it.&nbsp;</p>
+<p><img src="../../images/howto/m2selectConfig.png" alt="m2selectConfig" /></p>
+<h2>&nbsp;</h2>
+<h2>Install/Update Apps</h2>
+<p>mCerebrum uses a suite of software applications in conjunction with the main mCerebrum interface app. Follow these steps to download the latest versions of the apps in your mCerebrum suite.</p>
+<p>1)&nbsp;From the mCerebrum home screen, tap&nbsp;<em>Application Install</em>.</p>
+<p><img src="../../images/howto/applicationInstall50.png" alt="" /></p>
+<p>2) Tap the green&nbsp;<em>Install All</em>&nbsp;button found at the top of the screen.&nbsp;Follow the on-screen instructions to complete the installation of all the apps.</p>
+<p><img src="../../images/howto/m2installAll.png" alt="m2installAll" /></p>
+<p>3) If prompted, please tap&nbsp;<em>Allow&nbsp;</em>to grant the necessary permissions to each of the mCerebrum apps.&nbsp;</p>
+<p><img src="../../images/howto/m2allow.png" alt="m2allow" /></p>
+<h2>&nbsp;</h2>
+<h2 id="a-name-setup-a-sensors-setup">Sensors Setup</h2>
+<p>1)&nbsp;From the mCerebrum home screen, tap&nbsp;<em>Application Setup</em>.</p>
+<p><img src="../../images/howto/m2appSetup.png" alt="m2appSetup" /></p>
+<p>2) You will need to make sure all the sensors are properly configured. For each app that shows<strong>&nbsp;<em>partially configured</em></strong>&nbsp;or&nbsp;<strong><em>not configured</em></strong>, tap the gear icon to access the app settings.&nbsp;</p>
+<p><img src="../../images/howto/m2gearicon.png" alt="m2gearicon" /></p>
+<p>3) For&nbsp;the&nbsp;<em>PhoneSensor</em>&nbsp;app, tap the checkbox to select&nbsp;<em>Default Settings</em>, then tap the back button to return to the mCerebrum app.&nbsp;<em><br /></em></p>
+<p><img src="../../images/howto/m2phoneDefaultSettings.png" alt="m2phoneDefaultSettings" /></p>
+<p>4) For the&nbsp;<em>Chest Sensor</em>&nbsp;app, select your device from the list of Available Devices (make sure your AutoSense device is charged and within range). When the sensor is paired, it will appear in the Configured Devices list. Tap the back button to return to the mCerebrum app.</p>
+<p><img src="../../images/chestPaired.png" alt="chestPaired" /></p>
+<p>5) For the&nbsp;<em>Wrist Sensor</em>&nbsp;app, select your device(s) from the list of Available Devices (make sure your MotionSense device is charged and within range) then select Left or Right wrist placement to pair the wrist band(s) to the phone. When all wrist sensors are paired, tap the back button to return to the mCerebrum app.</p>
+<p><img src="../../images/howto/m2wristConfigured.png" alt="m2wristConfigured" /></p>
+<p>&nbsp;</p>
+<h2 id="a-name-setup-a-sensors-setup">Start Study</h2>
+<p>Once all mCerebrum applications are installed and configured, tap the&nbsp;<em>Start Study</em>&nbsp;button to begin data collection.&nbsp;</p>
+<p><img src="../../images/howto/m2startStudy.png" alt="m2startStudy" /></p>
+<p>&nbsp;</p>
+<h2>How to Wear the Sensors</h2>
+<p><span style="color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">All sensors should be charged overnight each day. The expected battery life is approximately 24 hours with a full charge</span></p>
+<h4 id="a-name-wristsensors-a-wrist-sensors" style="font-family: Roboto, Helvetica, Arial, sans-serif; line-height: 1.1; color: #333333; margin-top: 10px; margin-bottom: 10px; font-size: 18px;">Wrist Sensors</h4>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">Wrist sensors should be worn like a watch on each arm with the charging port pointed away from the hand as shown. The buckle is marked L or R to indicate left wrist or right wrist.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/MSHRVwearingL.png" alt="" style="vertical-align: middle;" /></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/MSHRVwearingR.png" alt="" style="vertical-align: middle;" /></p>
+<h4>&nbsp;</h4>
+<h4 id="a-name-wristsensors-a-wrist-sensors" style="font-size: 18px; font-family: Roboto, Helvetica, Arial, sans-serif; line-height: 1.1; color: #333333; margin-top: 10px; margin-bottom: 10px;">Chest Sensors</h4>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">Chest sensors should be worn under the armpits and underneath the clothing. Attached the wires as shown. Place the ECG stickers on the body as shown. Attach the ECG connectors to the stickers (you will hear them snap like a button).</p>
+<p><img src="../../images/howto/AutoSenseChest2.png" alt="AutoSenseChest2" /></p>
+<p>&nbsp;</p>
+<h4 id="a-name-wristsensors-a-wrist-sensors" style="font-size: 18px; font-family: Roboto, Helvetica, Arial, sans-serif; line-height: 1.1; color: #333333; margin-top: 10px; margin-bottom: 10px;">How to Clean the Sensors</h4>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><em>Wrist sensors</em>&nbsp;and&nbsp;<em>location beacons</em>&nbsp;can be cleaned gently by hand using disinfecting wipes. DO NOT submerge the devices in water. If there is any damage or major spillage, participants should contact a field manager and swap out the device for a new one.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><em>Chest bands (optional)</em>&nbsp;should be cleaned by first detaching the sensor box from the blue band. The sensor may be cleaned gently by hand using disinfecting wipes. DO NOT submerge the sensor in water. The blue belt can be washed using gloved hands in soapy water for several minutes to ensure removal of soilage. Run the belt under running tap water until fully rinsed of all detergent. Dry the belt by firmly pressing it with a towel to remove excess water, followed by a complete air dry.</p>
+<p>&nbsp;</p>
+<h4 id="a-name-dataquality-a-sensor-data-quality" style="font-family: Roboto, Helvetica, Arial, sans-serif; line-height: 1.1; color: #333333; margin-top: 10px; margin-bottom: 10px; font-size: 18px;">Sensor Data Quality</h4>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">Use the Sensor Data Quality icons to determine if your wrist sensors are collecting good data.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/mPerfSensorDataQuality.png" alt="" style="vertical-align: middle;" /></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/greencheck2.png" alt="" style="vertical-align: middle;" /></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">Green checkmark means good data quality.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/yellowcaution2.png" alt="" style="vertical-align: middle;" /></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">Yellow caution icon means bad data quality.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/redX2.png" alt="" style="vertical-align: middle;" /></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">Red X means no data is being collected.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">If you see a yellow caution icon or a red X icon for an extended period of time, you may tap the icon to view a list of simple troubleshooting options:</p>
+<ol style="margin-top: 0px; margin-bottom: 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">
+<li>In the menu (found in the upper-left corner of the app&rsquo;s home screen), tap&nbsp;<em>Reset Application</em>, wait 15 seconds and check again.</li>
+<li>Restart the phone, wait one minute and check again.</li>
+<li>Make sure the wrist sensor is charged and LED lights are on.</li>
+</ol>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">You may also tap the&nbsp;<em>Graph</em>&nbsp;button to view the wrist sensor data on a plotter in real-time, or tap the&nbsp;<em>Tutorial</em>&nbsp;video link to view a video with detailed troubleshooting instructions.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/GraphTutorialButtons.png" alt="" style="vertical-align: middle;" /></p>
+<h2>&nbsp;</h2>
+<h2 id="a-name-leavestudy-a-how-to-leave-a-study">How to Leave the Study (When a Participant is Finished)</h2>
+<p>1) First open the mCerebrum app (by tapping the mCerebrum icon on the phone's home screen OR by selecting&nbsp;<em>Settings</em>&nbsp;from the menu found in the upper-left corner of the Study app).</p>
+<p><img src="http://software.md2k.org/img/howto/mPerf/mCerebrumAppHome.png" alt="" /></p>
+<p>2) In the mCerebrum app, open the menu found in the upper-left corner.</p>
+<p><img src="http://software.md2k.org/img/howto/mPerf/menuIcon.png" alt="" /></p>
+<p>3) Tap the User ID at the top of the menu next to the mCerebrum logo, then tap&nbsp;<em>Leave Study</em>.</p>
+<p><img src="http://software.md2k.org/img/howto/mPerf/leaveStudyButton.png" alt="" /></p>
+<p>4) Tap&nbsp;<em>Yes</em>&nbsp;to confirm and leave the study.</p>
+<p><img src="http://software.md2k.org/img/howto/mPerf/leaveStudyConfirm.png" alt="" /></p>
+<h2>&nbsp;</h2>
+<h2 id="a-name-cleardb-a-how-to-clear-the-database">&nbsp;</h2>
+<h1>Data Syncing</h1>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">When a participant is finished with the study, please complete the following steps to sync the data to the cloud, shut down all applications, back up the data on a computer, and prepare the phone for the next participant.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><span style="font-weight: bold;">IMPORTANT NOTE:</span>&nbsp;The data files that are recorded by the phone are one hour in length before they are completed and a new file is started. This takes place at the top of every hour. (E.g., midnight, 1:00, 2:00&mdash;22:00, 23:00, etc.). This means you should&nbsp;<span style="font-weight: bold;">wait until the top of the hour AFTER completing a participant</span>&nbsp;(e.g., regardless if they are done at 14:01, 14:30, or 14:59, they must wait until 15:00 to sync data to the cloud).</p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><span style="color: #333333; font-size: 30px;">Sync Data to the Cloud</span></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">1) First, make sure the study is running. (If necessary, tap&nbsp;<em>Start Study</em>&nbsp;in the mCerebrum app.)</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/startStudyButton.png" alt="" style="vertical-align: middle;" /></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">2) Open DataKit using the app icon on the phone&rsquo;s apps screen. If applicable, this may require exiting the mobile device management software (ie, AirWatch).</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/DatakitAppIcon.png" alt="" style="vertical-align: middle;" /></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><span style="font-weight: bold;">NOTE:</span>&nbsp;If applicable to your study, you will need to remove the GPS restrictions from the data stream before uploading. To do this, tap the settings gear icon found in the upper-right corner of the Storage/DataKit app, select&nbsp;<em>Upload Data</em>&nbsp;to open the Upload Data menu, then uncheck the&nbsp;<em>Location</em>&nbsp;box under&nbsp;<em>Restricted Data Stream</em>. Tap&nbsp;<em>Save</em>&nbsp;to save your changes, then&nbsp;<em>Close</em>&nbsp;to return to the app.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/restrictedDataUncheck.png" alt="" style="vertical-align: middle;" /></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">3) On the DataKit homescreen, make sure the timer is running to show data is being collected. If the timer says INACTIVE, you may need to start the study as described in step 1.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/DatakitRunning.png" alt="" style="vertical-align: middle;" /></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">4) Under the&nbsp;<em>Cerebral Cortex</em>&nbsp;header, tap the&nbsp;<em>Toggle</em>&nbsp;button to sync data to the cloud.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/DatakitToggle.png" alt="" style="vertical-align: middle;" /></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">5) When you see the &ldquo;Upload Complete&rdquo; message, data syncing is now complete.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/DatakitUploadComplete.png" alt="" style="vertical-align: middle;" /></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><span style="font-weight: bold;">NOTE:</span>&nbsp;If applicable to your study, be sure to access the settings menu and re-check the&nbsp;<em>Location</em>&nbsp;box under&nbsp;<em>Restricted Data Stream</em>&nbsp;to enable GPS restrictions. Then tap&nbsp;<em>Save</em>&nbsp;to save your changes. This should be done after data upload is complete.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/restrictedDataChecked.png" alt="" style="vertical-align: middle;" /></p>
+<h2 id="a-name-stopping-a-stop-data-collection" style="font-family: Roboto, Helvetica, Arial, sans-serif; line-height: 1.1; color: #333333; margin-top: 20px; margin-bottom: 20px; font-size: 30px;">Stop Data Collection</h2>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">1) Open the mCerebrum Study app.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">2) In the Study app, open the menu found in the upper-left corner.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/menuIcon.png" alt="" style="vertical-align: middle;" /></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">3) Tap&nbsp;<em>Settings</em>.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="../../images/mcSettingsButton.png" alt="mcSettingsButton" /></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">4) Enter the password provided to exit the study and stop data collection.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="../../images/enterPassword.png" alt="enterPassword" /></p>
+<p><span style="color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">5) When you see the mCerebrum app home screen (example shown below), this indicates data collection has stopped.</span></p>
+<p><img src="http://software.md2k.org/img/howto/mPerf/mCerebrumAppHome.png" alt="" style="color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px; vertical-align: middle;" /></p>
+<h2 id="a-name-backing-a-back-up-data-on-a-computer" style="font-family: Roboto, Helvetica, Arial, sans-serif; line-height: 1.1; color: #333333; margin-top: 20px; margin-bottom: 20px; font-size: 30px;">Back Up Data on a Computer</h2>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">1) Connect the smartphone to a PC using the charging cable.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/phone2computer.png" alt="" style="vertical-align: middle;" /></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">2) Create a new folder on your computer. (It may be helpful to use the participant&rsquo;s user ID as the new folder name.)</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">3) Using the computer, navigate to the phone&rsquo;s org.md2k.datakit folder.&nbsp;<em>[Phone &gt; Android &gt; data &gt; org.md2k.datakit]</em></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">4) Copy the org.md2k.datakit folder and paste it to the new folder you created.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">5) Navigate to the phone&rsquo;s log folder.&nbsp;<em>[Phone &gt; log]</em></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">6) Copy the log folder and paste it to the new folder you created. All study data is now saved to the computer.</p>
+<h2 id="a-name-preparing-a-prepare-the-phone-for-the-next-participant" style="font-family: Roboto, Helvetica, Arial, sans-serif; line-height: 1.1; color: #333333; margin-top: 20px; margin-bottom: 20px; font-size: 30px;">Prepare the Phone for the Next Participant</h2>
+<h4 id="leave-the-study" style="font-family: Roboto, Helvetica, Arial, sans-serif; line-height: 1.1; color: #333333; margin-top: 10px; margin-bottom: 10px; font-size: 18px;">Leave the study:</h4>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">1) First open the mCerebrum app (by tapping the mCerebrum icon on the home screen or by tapping&nbsp;<em>Settings</em>&nbsp;in the Study app menu found in the upper-left corner).</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/mCerebrumAppHome.png" alt="" style="vertical-align: middle;" /></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">2) In the mCerebrum app, open the menu found in the upper-left corner.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/menuIcon.png" alt="" style="vertical-align: middle;" /></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">3) Tap the User ID at the top of the menu next to the mCerebrum logo, then tap&nbsp;<em>Leave Study</em>.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/leaveStudyButton.png" alt="" style="vertical-align: middle;" /></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">4) Tap&nbsp;<em>Yes</em>&nbsp;to confirm and leave the study.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/leaveStudyConfirm.png" alt="" style="vertical-align: middle;" /></p>
+<h4 id="delete-the-database-storage" style="font-family: Roboto, Helvetica, Arial, sans-serif; line-height: 1.1; color: #333333; margin-top: 10px; margin-bottom: 10px; font-size: 18px;">Delete the Database Storage:</h4>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">1) From the mCerebrum app home screen, tap&nbsp;<em>Application Setup</em>.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/applicationSetup.png" alt="" style="vertical-align: middle;" /></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">2) Find the Storage app in the list, and tap the&nbsp;<em>Delete</em>&nbsp;icon (red minus sign) to clear all data from Storage.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/storageMinus.png" alt="" style="vertical-align: middle;" /></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">3) Tap&nbsp;<em>Yes</em>&nbsp;to confirm.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/deleteDatabaseFiles.png" alt="" style="vertical-align: middle;" /></p>
+<h4 id="join-the-study-with-a-new-participant" style="font-family: Roboto, Helvetica, Arial, sans-serif; line-height: 1.1; color: #333333; margin-top: 10px; margin-bottom: 10px; font-size: 18px;">Join the Study with a New Participant:</h4>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">1) On the mCerebrum home screen, tap&nbsp;<em>mCerebrum (click to join study)</em>.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"><img src="http://software.md2k.org/img/howto/mPerf/click2join.png" alt="" style="vertical-align: middle;" /></p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">2) On the next screen, enter the appropraite User ID and password for the user and tap&nbsp;<em>Login</em>.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">3) When prompted, select the appropriate config file from the list.</p>
+<p style="margin: 0px 0px 10px; color: #555555; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">4) After logging in, check to make sure all apps are installed and up-to-date (tap&nbsp;<em>Application Install</em>&nbsp;from the mCerebrum home screen, then tap the&nbsp;<em>Check Updates</em>&nbsp;button).</p>
+</div></div>
+</div></div></div></div></div></section><section id="sp-feature-team-page" class="div#maximenuck253 div.floatck { 	 	background:#F4F4F4; 	background: -moz-linear-gradient(top, #f4f4f4, #eeeeee); 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f4f4), to(#eeeeee)); 	-moz-border-radius: 0px 5px 5px 5px; 	 }"><div class="row"><div id="sp-secondmenu" class="col-sm-12 col-md-12"><div class="sp-column div.floatck { background: #eeeeee;          background: -moz-linear-gradient(top, #EEEEEE, #EEEEEE);     /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEEEEE), to(#EEEEEE)); */  }"><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
+</div></div></div></div></div></section><footer id="sp-footer"><div class="container"><div class="row"><div id="sp-footer1" class="col-sm-10 col-md-10"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<p style="text-align: center; font-size: 12px; padding-top: 14px;">Copyright &copy; 2020 MD2K. <strong>MD2K was established by the National Institutes of Health Big Data to Knowledge Initiative <a href="https://projectreporter.nih.gov/project_info_description.cfm?aid=9303353&amp;icde=36143741&amp;ddparam=&amp;ddvalue=&amp;ddsub=&amp;cr=7&amp;csb=default&amp;cs=ASC&amp;pball=" target="_blank">(Grant #1U54EB020404)</a></strong><br /><span style="color: #ffffff; font-style: italic;">Team: Cornell Tech, GA Tech, Harvard, U. Memphis, Northwestern, Ohio State, UCLA, UCSD, UCSF, UMass, U. Michigan, U. Utah, WVU </span></p></div>
+</div></div></div></div><div id="sp-footer2" class="col-sm-2 col-md-2"><div class="sp-column "><ul class="sp-contact-info"><li class="sp-contact-phone"><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:901-678-1493">901-678-1493</a></li><li class="sp-contact-email"><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@md2k.org">info@md2k.org</a></li></ul></div></div></div></div></footer>            </div> <!-- /.body-innerwrapper -->
+        </div> <!-- /.body-innerwrapper -->
+
+        <!-- Off Canvas Menu -->
+        <div class="offcanvas-menu">
+            <a href="#" class="close-offcanvas" aria-label="Close"><i class="fa fa-remove" aria-hidden="true" title="HELIX_CLOSE_MENU"></i></a>
+            <div class="offcanvas-inner">
+                                  <div class="sp-module "><div class="sp-module-content"><ul class="nav menu">
+<li class="item-101"><a href="../../index.html" > Home</a></li><li class="item-191  deeper parent"><a href="../../about.html" > About</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-191"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-191"><li class="item-196"><a href="../../about/meet-the-team.html" > MD2K Team</a></li><li class="item-198  deeper parent"><a href="../../about/news.html" > News</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-198"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-198"><li class="item-443"><a href="../../about/news/md2k-in-the-news.html" > MD2K in the News</a></li></ul></li><li class="item-581"><a href="../../about/privacy.html" > Privacy</a></li><li class="item-224"><a href="../../about/contact.html" > Contact</a></li></ul></li><li class="item-193  deeper parent"><a href="../../research-agenda.html" > Research</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-193"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-193"><li class="item-338"><a href="../../research-agenda/pubs.html" > Publications</a></li><li class="item-471  divider"><a class="separator ">Research Areas</a>
+</li><li class="item-213"><a href="../../research-agenda/research-agenda.html" > Research Agenda</a></li><li class="item-285"><a href="../../research-agenda/sensors.html" > Sensors</a></li><li class="item-214"><a href="../../research-agenda/biomarkers.html" > mHealth Biomarkers</a></li><li class="item-474"><a href="../../research-agenda/trial-design.html" > Trial Design</a></li><li class="item-216"><a href="../../research-agenda/jitai.html" > mHealth Interventions</a></li><li class="item-284"><a href="../../research-agenda/architecture.html" > Architecture</a></li><li class="item-219"><a href="../../research-agenda/methodology.html" > Big Data Analytics</a></li><li class="item-473"><a href="../../research-agenda/visualization.html" > Visualization</a></li><li class="item-221"><a href="../../research-agenda/privacy.html" > Behavioral Privacy</a></li><li class="item-470  divider"><a class="separator ">Field Study Focus Areas</a>
+</li><li class="item-463"><a href="../../research-agenda/smoking.html" > Smoking</a></li><li class="item-464"><a href="../../research-agenda/eating-control.html" > Eating Regulation</a></li><li class="item-465"><a href="../../research-agenda/drug-use.html" > Drug Use</a></li><li class="item-466"><a href="../../research-agenda/stress-management.html" > Stress Management</a></li><li class="item-467"><a href="../../research-agenda/heart-failure-care.html" > Heart Failure Care</a></li><li class="item-472"><a href="../../research-agenda/behavior-change.html" > Behavior Change</a></li><li class="item-468">		<a  href="http://mperf.md2k.org/"  > Work Productivity</a></li><li class="item-469"><a href="../../research-agenda/oral-health.html" > Oral Health</a></li></ul></li><li class="item-197  deeper parent"><a href="../../software.html" > Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-197"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-197"><li class="item-421  deeper parent"><a href="../../software/under-the-hood.html" > Under the Hood</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-421"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-421"><li class="item-427"><a href="../../software/under-the-hood/mcerebrum.html" > Smartphone Software</a></li><li class="item-428  deeper parent"><a href="../../software/under-the-hood/cerebral-cortex.html" > Cloud Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-428"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-428"><li class="item-436"><a href="../../software/under-the-hood/cerebral-cortex/architecture.html" > Architecture</a></li></ul></li><li class="item-429"><a href="../../software/under-the-hood/bug-reports-feature-requests.html" > Bug Reports / Feature Requests</a></li><li class="item-430"><a href="../../software/under-the-hood/software-license.html" > Software License</a></li><li class="item-431"><a href="../../software/under-the-hood/contributing.html" > Contributing</a></li><li class="item-432"><a href="../../software/under-the-hood/references.html" > References</a></li><li class="item-533"><a href="../../software/under-the-hood/software-docs.html" > Documentation</a></li></ul></li><li class="item-422  deeper parent"><a href="../../software/how-to.html" > How-To</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-422"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-422"><li class="item-433  deeper parent"><a href="../../software/how-to/smartphone-software.html" > Smartphone Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-433"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-433"><li class="item-440"><a href="../../software/how-to/smartphone-software/getting-started.html" > Getting Started</a></li><li class="item-476"><a href="../../software/how-to/smartphone-software/implementing-datakit.html" > Implementing DataKit</a></li></ul></li><li class="item-434  deeper parent"><a href="../../software/how-to/supported-sensors.html" > Supported Sensors</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-434"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-434"><li class="item-441"><a href="../../software/how-to/supported-sensors/sensors-troubleshooting.html" > Sensors Troubleshooting</a></li><li class="item-442"><a href="../../software/how-to/supported-sensors/adding-sensors.html" > Adding Sensors </a></li></ul></li><li class="item-438  deeper parent"><a href="../../software/how-to/getting-started.html" > Cloud Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-438"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-438"><li class="item-437"><a href="../../software/how-to/getting-started/docker.html" > Docker</a></li><li class="item-439"><a href="../../software/how-to/getting-started/working-with-cerebral-cortex.html" > Working with Cerebral Cortex</a></li></ul></li><li class="item-453"><a href="../../software/how-to/software-howto-studyguides.html" > Study Guides</a></li></ul></li><li class="item-423"><a href="../../software/deployments.html" > Deployments</a></li><li class="item-424"><a href="../../software/contributors.html" > Contributors</a></li><li class="item-482"><a href="../../software/personal.html" > Personal Edition</a></li><li class="item-486"><a href="../../software/codeofconduct.html" > Code of Conduct</a></li></ul></li><li class="item-564  deeper parent"><a href="../../tutorials.html" > Tutorials</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-564"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-564"><li class="item-565"><a href="../../tutorials/cps-iot-week-2020.html" > CPS-IoT Week 2020</a></li></ul></li><li class="item-247  deeper parent"><a href="../../webinars.html" > Training</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-247"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-247"><li class="item-425  deeper parent">		<a  href="https://mhti.md2k.org/"  > mHealth Training Institute</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-425"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-425"><li class="item-426">		<a  href="https://mhti.md2k.org/index.php/gallery/2019/2019-lectures"  > mHTI Lectures</a></li></ul></li><li class="item-356">		<a href="https://mhealth.md2k.org/training/webinars" rel="noopener noreferrer" target="_blank" > Webinar Videos</a></li></ul></li><li class="item-223"><a href="../../studies.html" > Deployments</a></li><li class="item-226  deeper parent"><a href="../../events.html" > Events</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-226"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-226"><li class="item-512"><a href="../../events/md2k-2018.html" > 2018 Annual Meeting</a></li><li class="item-353  deeper parent"><a href="../../events/2017-annual-meeting.html" > 2017 Annual Meeting</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-353"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-353"><li class="item-455"><a href="../../events/2017-annual-meeting/2017-career-day.html" > 2017 Career Day</a></li></ul></li><li class="item-228"><a href="../../events/2016-annual-meeting.html" > 2016 Annual Meeting</a></li><li class="item-227"><a href="../../events/2015-annual-meeting.html" > 2015 Annual Meeting</a></li></ul></li><li class="item-348">		<a  href="https://mhealth.md2k.org/"  > mHealthHUB</a></li><li class="item-199  deeper parent"><a href="../../related-projects.html" > Related Projects</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-199"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-199"><li class="item-239">		<a href="http://mperf.md2k.org/" rel="noopener noreferrer" target="_blank" > mPerf</a></li><li class="item-240">		<a href="http://mprov.md2k.org/" rel="noopener noreferrer" target="_blank" > mProv</a></li><li class="item-577">		<a href="http://mcontain.md2k.org/" rel="noopener noreferrer" target="_blank" > mContain</a></li><li class="item-513">		<a href="https://mdot.md2k.org/" rel="noopener noreferrer" target="_blank" > mDOT</a></li></ul></li><li class="item-556"><a href="../../moods.html" > MOODS</a></li></ul>
+</div></div>
+                            </div> <!-- /.offcanvas-inner -->
+        </div> <!-- /.offcanvas-menu -->
+
+        
+        
+        
+        <!-- Preloader -->
+        
+
+        <!-- Go to top -->
+        
+    </body>
+
+<!-- Mirrored from md2k.org/software-how-to/software-howto-studyguides/sobc.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 19:55:49 GMT -->
+</html>

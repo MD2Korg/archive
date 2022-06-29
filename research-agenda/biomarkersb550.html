@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+    
+<!-- Mirrored from md2k.org/research-agenda/biomarkers.feed?type=atom by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 19:51:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+                <!-- head -->
+        <base  />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="mHealth, md2k, mobile health, precision medicine, biomarkers, mobile sensor data, mobile sensors" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Advancing biomedical discovery and improving health through mobile sensor Big Data" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>MD2K - mHealth Biomarkers</title>
+	<link href="biomarkersdcab.html?type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+	<link href="biomarkersb550.html?type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+	<link href="http://md2k-webtest.memphis.edu/research-agenda/biomarkers.feed?type=atom" rel="canonical" />
+	<link href="../images/Logos/favicon2.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="../favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="../media/bibtex/css/bibtex.css" rel="stylesheet" type="text/css" />
+	<link href="../plugins/system/maximenuckmobile/themes/default/maximenuckmobile.css" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic&amp;subset=latin-ext" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Fjalla+One:regular&amp;subset=latin-ext" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&amp;subset=greek,greek-ext" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/legacy.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/template.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/presets/preset2.css" rel="stylesheet" type="text/css" class="preset" />
+	<link href="../templates/shaper_helix3/css/custom.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/frontend-edit.css" rel="stylesheet" type="text/css" />
+	<link href="../modules/mod_maximenuck/themes/custom/css/maximenuck_maximenuck196.css" rel="stylesheet" type="text/css" />
+	<link href="../modules/mod_maximenuck/assets/maximenuresponsiveck.css" rel="stylesheet" type="text/css" />
+	<link href="../modules/mod_maximenuck/assets/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+.mobilebarmaximenuck { display: none; }
+	@media only screen and (max-width:640px){
+    #maximenuck196 { display: none !important; }
+    .mobilebarmaximenuck { display: block; }
+	.hidemenumobileck {display: none !important;}
+     }body{font-family:Lato, sans-serif; font-size:14px; font-weight:normal; }h1{font-family:Fjalla One, sans-serif; font-size:36px; font-weight:normal; }h2{font-family:Fjalla One, sans-serif; font-size:30px; font-weight:normal; }h3{font-family:Roboto, sans-serif; font-size:24px; font-weight:700; }h4{font-family:Roboto, sans-serif; font-size:18px; font-weight:700; }h5{font-family:Roboto, sans-serif; font-size:18px; font-weight:700italic; }h6{font-family:Lato, sans-serif; font-size:16px; font-weight:700; }button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #2a9eb2;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #aed141}
+
+.button:active {
+  background-color: #aed141;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+ 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+     -webkit-flex-direction: column;
+    flex-direction: column;
+    webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+	background-color: #2b3675;
+	border-radius: 45px;
+}
+
+.flex-item {
+    background-color: #ffffff;
+    width: 98%;
+    height: auto;
+    margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 45px;
+	padding: 15px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+	text-align: justify;
+}
+
+.flex-study {
+    background-color: #ffffff;
+    width: 25%;
+    height: auto;
+    margin: 10px;
+	border-radius: 45px;
+	padding: 20px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+	
+}
+.flex-study1 {
+    background-color: #ffffff;
+    width: 25%;
+    height: 100%;
+    margin: 10px;
+	border-radius: 45px;
+	padding: 20px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+      text-align: center;
+-webkit-align-self: center; /* Safari 7.0+ */
+    align-contents: center;
+}
+
+.flex-container2 {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: auto;
+	background-color: #2b3675;
+	border-radius: 45px;
+}
+
+p {
+text-align: justify;
+}
+
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #bbb;
+	width: 100%;
+	}
+	
+	td {
+    border-top: 1px solid #ddd;
+    padding: 4px 8px;
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	font-size: 14px;
+		color: #2b3675;
+}
+	th {
+    border-top: 1px solid #ddd;
+    padding: 4px 8px;
+	font-family:Roboto Black, Raleway Black, Oswald SemiBold, Montserrat SemiBold;
+	font-size: 22px;
+		background-color: #2b3675;
+		color: #fff;
+}
+	
+		
+	tbody tr:nth-child(even) td {
+    background-color: #eee;
+}
+
+
+.one-half,
+
+.one-third,
+
+.two-third,
+
+.one-fourth,
+
+.three-fourth,
+
+.one-fifth,
+
+.two-fifth,
+
+.three-fifth,
+
+.four-fifth,
+
+.one-sixth,
+
+.five-sixth {
+
+  float: left;
+
+  margin: 0 4% 15px 0;
+
+}
+
+.three-across-1
+{
+
+  float: left;
+
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border: 5px;
+  width: 30%;
+
+}
+
+.three-across-2
+{
+
+  float: left;
+
+ margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 30%;
+
+}
+
+
+
+.three-across-3
+{
+
+  float: left;
+   margin-bottom: 15px;
+  margin-left: 15px;
+  
+  width: 30%;
+
+}
+
+
+.one-half.last,
+
+.one-third.last,
+
+.two-third.last,
+
+.one-fourth.last,
+
+.three-fourth.last,
+
+.one-fifth.last,
+
+.two-fifth.last,
+
+.three-fifth.last,
+
+.four-fifth.last,
+
+.one-sixth.last,
+
+.five-sixth.last {
+
+  margin-right: 0;
+
+  margin-bottom: 15px;
+
+}
+
+.one-half {
+
+  width: 48%;
+
+}
+
+.one-third {
+
+  width: 30.66%;
+
+}
+
+.two-third {
+
+  width: 65.33%;
+
+}
+
+.one-fourth {
+
+  width: 22%;
+
+}
+
+.three-fourth {
+
+  width: 74%;
+
+}
+
+.one-fifth {
+
+  width: 16.8%;
+
+}
+
+.two-fifth {
+
+  width: 37.6%;
+
+}
+
+.three-fifth {
+
+  width: 58.4%;
+
+}
+
+.four-fifth {
+
+  width: 79.2%;
+
+}
+
+.one-sixth {
+
+  width: 13.33%;
+
+}
+
+.five-sixth {
+
+  width: 82.66%;
+
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.characteristic {
+  text-align: center;
+  color: #fff;
+
+  padding: 2px 7px;
+
+  background-color: #BB4C38;
+  border-radius: 10px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 60%;
+  margin: 2px;
+  top: -4px;
+  position: relative;
+
+}#sp-top-headline{ padding:0px 20px 0px 20px ;margin:0px 0px -50px 0px; }#sp-biomarker-icons{ padding:20px 0px 0px 0px ; }#sp-biomarker-mobile{ padding:0px 20px 0px 20px; }#sp-main-body{ margin:-20px 0px 0px 0px; }#sp-feature-team-page{ padding:20px; }@media screen and (max-width: 640px) {div#maximenuck196 ul.maximenuck li.maximenuck.nomobileck, div#maximenuck196 .maxipushdownck ul.maximenuck2 li.maximenuck.nomobileck { display: none !important; }}@media screen and (min-width: 641px) {div#maximenuck196 ul.maximenuck li.maximenuck.nodesktopck, div#maximenuck196 .maxipushdownck ul.maximenuck2 li.maximenuck.nodesktopck { display: none !important; }}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"d7f90f5edcdc4cf897badc80e54b33c4","system.paths":{"root":"","base":""}}</script>
+	<script src="../media/system/js/mootools-core700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/system/js/core700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/bibtex/js/bibtex.js" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-noconflict700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-migrate.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/system/js/caption700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../plugins/system/maximenuckmobile/assets/maximenuckmobile.js" type="text/javascript"></script>
+	<script src="../templates/shaper_helix3/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../templates/shaper_helix3/js/jquery.sticky.js" type="text/javascript"></script>
+	<script src="../templates/shaper_helix3/js/main.js" type="text/javascript"></script>
+	<script src="../templates/shaper_helix3/js/frontend-edit.js" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery.ui.core.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/plg_captcha_recaptcha/js/recaptcha.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=JoomlaInitReCaptcha2&amp;render=explicit&amp;hl=en-GB" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});jQuery(document).ready(function($){
+                    $('#maximenuck196').MobileMaxiMenu({usemodules : 0,container : 'menucontainer',showdesc : 0,showlogo : 1,useimages : 0,menuid : 'maximenuck196',showmobilemenutext : 'default',mobilemenutext : 'Menu',mobilebackbuttontext : 'Back',displaytype : 'flat',menubarbuttoncontent : '',topbarbuttoncontent : '',uriroot : '',displayeffect : 'normal',menuwidth : '300',openedonactiveitem : '0'});});// Find all YouTube videos
+var $allVideos = $("iframe[src^='//www.youtube.com']"),
+
+    // The element that is fluid width
+    $fluidEl = $("body");
+
+// Figure out and save aspect ratio for each video
+$allVideos.each(function() {
+
+  $(this)
+    .data('aspectRatio', this.height / this.width)
+
+    // and remove the hard coded width/height
+    .removeAttr('height')
+    .removeAttr('width');
+
+});
+
+// When the window is resized
+$(window).resize(function() {
+
+  var newWidth = $fluidEl.width();
+
+  // Resize all videos according to their own aspect ratio
+  $allVideos.each(function() {
+
+    var $el = $(this);
+    $el
+      .width(newWidth)
+      .height(newWidth * $el.data('aspectRatio'));
+
+  });
+
+// Kick off one resize to fix all videos on page load
+}).resize();
+var sp_preloader = '0';
+
+var sp_gotop = '0';
+
+var sp_offanimation = 'default';
+
+	</script>
+
+            
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55313502-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Universal Google Analytics Plugin by PB Web Development -->
+
+
+</head>
+
+    <body class="site com-content view-category layout-blog no-task itemid-214 en-gb ltr  layout-fluid off-canvas-menu-init">
+
+        <div class="body-wrapper">
+            <div class="body-innerwrapper">
+                <header id="sp-header"><div class="container"><div class="row"><div id="sp-logo" class="col-xs-8 col-sm-2 col-md-2"><div class="sp-column "><div class="logo"><a href="../index.html"><img class="sp-default-logo hidden-xs" src="../images/Logos/MD2K-Logo_80px.png" alt="MD2K"><img class="sp-retina-logo hidden-xs" src="../images/Logos/MD2K-Logo_80px.png" alt="MD2K" width="179" height="80"><img class="sp-default-logo visible-xs" src="../images/Logos/MD2K-Logo_60px.png" alt="MD2K"></a></div></div></div><div id="sp-title" class="col-xs-3 col-sm-10 col-md-10 hidden-sm hidden-xs"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<h2 style="font-size: 1.4em; font-style: italic; font-weight: 300; padding-top: 10px;">Advancing biomedical discovery and improving health through mobile sensor Big Data</h2></div>
+</div></div></div></div></div></div></header><section id="sp-page-title"><div class="row"><div id="sp-othermenu" class="col-sm-12 col-md-12"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+			<!--[if lte IE 7]>
+			<link href="/modules/mod_maximenuck/themes/tabs/css/ie7.css" rel="stylesheet" type="text/css" />
+			<![endif]--><!-- debut Maximenu CK, par cedric keiflin -->
+	<div class="maximenuckh ltr" id="maximenuck196" style="z-index:10;">
+        <div class="maxiroundedleft"></div>
+        <div class="maxiroundedcenter">
+            <ul class=" maximenuck">
+												<li data-level="1" class="maximenuck item101 first level1 " style="z-index : 12000;" ><a class="maximenuck " href="../index.html"><span class="titreck">Home</span></a>
+		</li><li data-level="1" class="maximenuck item191 parent level1 " style="z-index : 11999;" ><a class="maximenuck " href="../about.html"><span class="titreck">About</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item196 first level2 " style="z-index : 11998;" ><a class="maximenuck " href="../about/meet-the-team.html"><span class="titreck">MD2K Team</span></a>
+		</li><li data-level="2" class="maximenuck item198 parent level2 " style="z-index : 11997;" ><a class="maximenuck " href="../about/news.html"><span class="titreck">News</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item443 first last level3 " style="z-index : 11996;" ><a class="maximenuck " href="../about/news/md2k-in-the-news.html"><span class="titreck">MD2K in the News</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item581 level2 " style="z-index : 11995;" ><a class="maximenuck " href="../about/privacy.html"><span class="titreck">Privacy</span></a>
+		</li><li data-level="2" class="maximenuck item224 last level2 " style="z-index : 11994;" ><a class="maximenuck " href="../about/contact.html"><span class="titreck">Contact</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item193 active parent level1 " style="z-index : 11993;" ><a class="maximenuck " href="../research-agenda.html"><span class="titreck">Research</span></a>
+	<div class="floatck" style="width:900px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item338 first level2 " style="z-index : 11992;" ><a class="maximenuck " href="pubs.html"><span class="titreck">Publications</span></a>
+		</li></ul><div class="clr"></div></div><div class="maximenuck2"  style="width:200px;float:left;"><ul class="maximenuck2"><li data-level="2" class="maximenuck headingck item471 level2 " style="z-index : 11991;" ><span class="separator "><span class="titreck"><span class="maximenuiconck fa fa-square"></span>Research Areas</span></span>
+		</li><li data-level="2" class="maximenuck item213 level2 " style="z-index : 11990;" ><a class="maximenuck " href="research-agenda.html"><span class="titreck">Research Agenda</span></a>
+		</li><li data-level="2" class="maximenuck item285 level2 " style="z-index : 11989;" ><a class="maximenuck " href="sensors.html"><span class="titreck">Sensors</span></a>
+		</li><li data-level="2" class="maximenuck item214 current active level2 " style="z-index : 11988;" ><a class="maximenuck " href="biomarkers.html"><span class="titreck">mHealth Biomarkers</span></a>
+		</li><li data-level="2" class="maximenuck item474 level2 " style="z-index : 11987;" ><a class="maximenuck " href="trial-design.html"><span class="titreck">Trial Design</span></a>
+		</li><li data-level="2" class="maximenuck item216 level2 " style="z-index : 11986;" ><a class="maximenuck " href="jitai.html"><span class="titreck">mHealth Interventions</span></a>
+		</li></ul><div class="clr"></div></div><div class="maximenuck2"  style="width:180px;float:left;"><ul class="maximenuck2"><li data-level="2" class="maximenuck item284 level2 " style="z-index : 11985;" ><a class="maximenuck " href="architecture.html"><span class="titreck">Architecture</span></a>
+		</li><li data-level="2" class="maximenuck item219 level2 " style="z-index : 11984;" ><a class="maximenuck " href="methodology.html"><span class="titreck">Big Data Analytics</span></a>
+		</li><li data-level="2" class="maximenuck item473 level2 " style="z-index : 11983;" ><a class="maximenuck " href="visualization.html"><span class="titreck">Visualization</span></a>
+		</li><li data-level="2" class="maximenuck item221 level2 " style="z-index : 11982;" ><a class="maximenuck " href="privacy.html"><span class="titreck">Behavioral Privacy</span></a>
+		</li></ul><div class="clr"></div></div><div class="maximenuck2"  style="width:200px;float:left;"><ul class="maximenuck2"><li data-level="2" class="maximenuck headingck item470 level2 fullwidth" style="z-index : 11981;" ><span class="separator "><span class="titreck"><span class="maximenuiconck fa fa-square"></span>Field Study Focus Areas</span></span>
+		</li><li data-level="2" class="maximenuck item463 level2 " style="z-index : 11980;" ><a class="maximenuck " href="smoking.html"><span class="titreck">Smoking</span></a>
+		</li><li data-level="2" class="maximenuck item464 level2 " style="z-index : 11979;" ><a class="maximenuck " href="eating-control.html"><span class="titreck">Eating Regulation</span></a>
+		</li><li data-level="2" class="maximenuck item465 level2 " style="z-index : 11978;" ><a class="maximenuck " href="drug-use.html"><span class="titreck">Drug Use</span></a>
+		</li><li data-level="2" class="maximenuck item466 level2 " style="z-index : 11977;" ><a class="maximenuck " href="stress-management.html"><span class="titreck">Stress Management</span></a>
+		</li></ul><div class="clr"></div></div><div class="maximenuck2"  style="width:200px;float:left;"><ul class="maximenuck2"><li data-level="2" class="maximenuck item467 level2 " style="z-index : 11976;" ><a class="maximenuck " href="heart-failure-care.html"><span class="titreck">Heart Failure Care</span></a>
+		</li><li data-level="2" class="maximenuck item472 level2 " style="z-index : 11975;" ><a class="maximenuck " href="behavior-change.html"><span class="titreck">Behavior Change</span></a>
+		</li><li data-level="2" class="maximenuck item468 level2 " style="z-index : 11974;" ><a class="maximenuck " href="http://mperf.md2k.org/"><span class="titreck">Work Productivity</span></a>
+		</li><li data-level="2" class="maximenuck item469 last level2 " style="z-index : 11973;" ><a class="maximenuck " href="oral-health.html"><span class="titreck">Oral Health</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item197 parent level1 " style="z-index : 11972;" ><a class="maximenuck " href="../software.html"><span class="titreck">Software</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item421 first parent level2 " style="z-index : 11971;" ><a class="maximenuck " href="../software/under-the-hood.html"><span class="titreck">Under the Hood</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item427 first level3 " style="z-index : 11970;" ><a class="maximenuck " href="../software/under-the-hood/mcerebrum.html"><span class="titreck">Smartphone Software</span></a>
+		</li><li data-level="3" class="maximenuck item428 parent level3 " style="z-index : 11969;" ><a class="maximenuck " href="../software/under-the-hood/cerebral-cortex.html"><span class="titreck">Cloud Software</span></a>
+	<div class="floatck" style="margin-left:225px;width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="4" class="maximenuck item436 first last level4 " style="z-index : 11968;" ><a class="maximenuck " href="../software/under-the-hood/cerebral-cortex/architecture.html"><span class="titreck">Architecture</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="3" class="maximenuck item429 level3 " style="z-index : 11967;" ><a class="maximenuck " href="../software/under-the-hood/bug-reports-feature-requests.html"><span class="titreck">Bug Reports / Feature Requests</span></a>
+		</li><li data-level="3" class="maximenuck item430 level3 " style="z-index : 11966;" ><a class="maximenuck " href="../software/under-the-hood/software-license.html"><span class="titreck">Software License</span></a>
+		</li><li data-level="3" class="maximenuck item431 level3 " style="z-index : 11965;" ><a class="maximenuck " href="../software/under-the-hood/contributing.html"><span class="titreck">Contributing</span></a>
+		</li><li data-level="3" class="maximenuck item432 level3 " style="z-index : 11964;" ><a class="maximenuck " href="../software/under-the-hood/references.html"><span class="titreck">References</span></a>
+		</li><li data-level="3" class="maximenuck item533 last level3 " style="z-index : 11963;" ><a class="maximenuck " href="../software/under-the-hood/software-docs.html"><span class="titreck">Documentation</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item422 parent level2 " style="z-index : 11962;" ><a class="maximenuck " href="../software/how-to.html"><span class="titreck">How-To</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item433 first parent level3 " style="z-index : 11961;" ><a class="maximenuck " href="../software/how-to/smartphone-software.html"><span class="titreck">Smartphone Software</span></a>
+	<div class="floatck" style="margin-left:225px;width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="4" class="maximenuck item440 first level4 " style="z-index : 11960;" ><a class="maximenuck " href="../software/how-to/smartphone-software/getting-started.html"><span class="titreck">Getting Started</span></a>
+		</li><li data-level="4" class="maximenuck item476 last level4 " style="z-index : 11959;" ><a class="maximenuck " href="../software/how-to/smartphone-software/implementing-datakit.html"><span class="titreck">Implementing DataKit</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="3" class="maximenuck item434 parent level3 " style="z-index : 11958;" ><a class="maximenuck " href="../software/how-to/supported-sensors.html"><span class="titreck">Supported Sensors</span></a>
+	<div class="floatck" style="margin-left:225px;width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="4" class="maximenuck item441 first level4 " style="z-index : 11957;" ><a class="maximenuck " href="../software/how-to/supported-sensors/sensors-troubleshooting.html"><span class="titreck">Sensors Troubleshooting</span></a>
+		</li><li data-level="4" class="maximenuck item442 last level4 " style="z-index : 11956;" ><a class="maximenuck " href="../software/how-to/supported-sensors/adding-sensors.html"><span class="titreck">Adding Sensors </span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="3" class="maximenuck item438 parent level3 " style="z-index : 11955;" ><a class="maximenuck " href="../software/how-to/getting-started.html"><span class="titreck">Cloud Software</span></a>
+	<div class="floatck" style="width:300px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="4" class="maximenuck item437 first level4 " style="z-index : 11954;" ><a class="maximenuck " href="../software/how-to/getting-started/docker.html"><span class="titreck">Docker</span></a>
+		</li><li data-level="4" class="maximenuck item439 last level4 " style="z-index : 11953;" ><a class="maximenuck " href="../software/how-to/getting-started/working-with-cerebral-cortex.html"><span class="titreck">Working with Cerebral Cortex</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="3" class="maximenuck item453 last level3 " style="z-index : 11952;" ><a class="maximenuck " href="../software/how-to/software-howto-studyguides.html"><span class="titreck">Study Guides</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item423 level2 " style="z-index : 11951;" ><a class="maximenuck " href="../software/deployments.html"><span class="titreck">Deployments</span></a>
+		</li><li data-level="2" class="maximenuck item424 level2 " style="z-index : 11950;" ><a class="maximenuck " href="../software/contributors.html"><span class="titreck">Contributors</span></a>
+		</li><li data-level="2" class="maximenuck item482 level2 " style="z-index : 11949;" ><a class="maximenuck " href="../software/personal.html"><span class="titreck">Personal Edition</span></a>
+		</li><li data-level="2" class="maximenuck item486 last level2 " style="z-index : 11948;" ><a class="maximenuck " href="../software/codeofconduct.html"><span class="titreck">Code of Conduct</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item564 parent level1 " style="z-index : 11947;" ><a class="maximenuck " href="../tutorials.html"><span class="titreck">Tutorials</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item565 first last level2 " style="z-index : 11946;" ><a class="maximenuck " href="../tutorials/cps-iot-week-2020.html"><span class="titreck">CPS-IoT Week 2020</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item247 parent level1 " style="z-index : 11945;" ><a class="maximenuck " href="../webinars.html"><span class="titreck">Training</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item425 first parent level2 " style="z-index : 11944;" ><a class="maximenuck " href="https://mhti.md2k.org/"><span class="titreck">mHealth Training Institute</span></a>
+	<div class="floatck" style="margin-left:200px;width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item426 first last level3 " style="z-index : 11943;" ><a class="maximenuck " href="https://mhti.md2k.org/index.php/gallery/2019/2019-lectures"><span class="titreck">mHTI Lectures</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item356 last level2 " style="z-index : 11942;" ><a class="maximenuck " href="https://mhealth.md2k.org/training/webinars" target="_blank" ><span class="titreck">Webinar Videos</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item223 level1 " style="z-index : 11941;" ><a class="maximenuck " href="../studies.html"><span class="titreck">Deployments</span></a>
+		</li><li data-level="1" class="maximenuck item226 parent level1 " style="z-index : 11940;" ><a class="maximenuck " href="../events.html"><span class="titreck">Events</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item512 first level2 " style="z-index : 11939;" ><a class="maximenuck " href="../events/md2k-2018.html"><span class="titreck">2018 Annual Meeting</span></a>
+		</li><li data-level="2" class="maximenuck item353 parent level2 " style="z-index : 11938;" ><a class="maximenuck " href="../events/2017-annual-meeting.html"><span class="titreck">2017 Annual Meeting</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item455 first last level3 " style="z-index : 11937;" ><a class="maximenuck " href="../events/2017-annual-meeting/2017-career-day.html"><span class="titreck">2017 Career Day</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item228 level2 " style="z-index : 11936;" ><a class="maximenuck " href="../events/2016-annual-meeting.html"><span class="titreck">2016 Annual Meeting</span></a>
+		</li><li data-level="2" class="maximenuck item227 last level2 " style="z-index : 11935;" ><a class="maximenuck " href="../events/2015-annual-meeting.html"><span class="titreck">2015 Annual Meeting</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item348 level1 " style="z-index : 11934;" ><a class="maximenuck " href="https://mhealth.md2k.org/"><span class="titreck">mHealthHUB</span></a>
+		</li><li data-level="1" class="maximenuck item199 parent level1 " style="z-index : 11933;" ><a class="maximenuck " href="../related-projects.html"><span class="titreck">Related Projects</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item239 first level2 " style="z-index : 11932;" ><a class="maximenuck " href="http://mperf.md2k.org/" target="_blank" ><span class="titreck">mPerf</span></a>
+		</li><li data-level="2" class="maximenuck item240 level2 " style="z-index : 11931;" ><a class="maximenuck " href="http://mprov.md2k.org/" target="_blank" ><span class="titreck">mProv</span></a>
+		</li><li data-level="2" class="maximenuck item577 level2 " style="z-index : 11930;" ><a class="maximenuck " href="http://mcontain.md2k.org/" target="_blank" ><span class="titreck">mContain</span></a>
+		</li><li data-level="2" class="maximenuck item513 last level2 " style="z-index : 11929;" ><a class="maximenuck " href="https://mdot.md2k.org/" target="_blank" ><span class="titreck">mDOT</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item556 last level1 " style="z-index : 11928;" ><a class="maximenuck " href="../moods.html"><span class="titreck">MOODS</span></a></li>            </ul>
+        </div>
+        <div class="maxiroundedright"></div>
+        <div style="clear:both;"></div>
+    </div>
+    <!-- fin maximenuCK -->
+</div></div></div></div></div></section><section id="sp-top-headline"><div class="row"><div id="sp-top-headline" class="col-sm-12 col-md-12"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<h1 style="margin: -125px 0px -100px 0px;">mHealth Biomarkers</h1></div>
+</div></div></div></div></div></section><section id="sp-biomarker-icons" class="align: center;  hidden-xs hidden-sm"><div class="container"><div class="row"><div id="sp-biomarker" class="col-sm-12 col-md-12"><div class="sp-column align: center;"><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<div style="padding-left: 20px; align: center; margin-top: 20px;"><img src="../images/Icons/cigarette.png" alt="cigarette" class="img-responsive" style="float: left; width: 12%;" /><img src="../images/Icons/craving.png" alt="craving" class="img-responsive" style="float: left; width: 12%; padding-left: 10px;" /><img src="../images/Icons/drug_use.png" alt="drug use" class="img-responsive" style="float: left; width: 12%; padding-left: 10px;" /><img src="../images/Icons/eating.png" alt="eating" class="img-responsive" style="float: left; padding-left: 10px; width: 12%;" /><img src="../images/Icons/conversation-text.png" alt="tv viewing" class="img-responsive" style="float: left; padding-left: 10px; width: 12%;" /><img src="../images/Icons/fatigue.png" alt="fatigue" class="img-responsive" style="float: left; padding-left: 10px; width: 12%;" /><img src="../images/Icons/stress.png" alt="stress" class="img-responsive" style="float: left; padding-left: 10px; width: 12%;" /><img src="../images/Icons/tv_viewing.png" alt="tv viewing" class="img-responsive" style="float: left; padding-left: 10px; width: 12%;" /></div></div>
+</div></div></div></div></div></div></section><section id="sp-biomarker-mobile" class=" hidden-md"><div class="container"><div class="row"><div id="sp-biomarker-mobile" class="col-sm-12 col-md-12 hidden-md hidden-lg"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<div style="padding-left: 20px; align: center; margin-top: 20px;"><img src="../images/Icons/cigarette.png" alt="cigarette" class="img-responsive" style="float: left; width: 12%;" /><img src="../images/Icons/craving.png" alt="craving" class="img-responsive" style="float: left; width: 12%; padding-left: 10px;" /><img src="../images/Icons/drug_use.png" alt="drug use" class="img-responsive" style="float: left; width: 12%; padding-left: 10px;" /><img src="../images/Icons/eating.png" alt="eating" class="img-responsive" style="float: left; padding-left: 10px; width: 12%;" /><img src="../images/Icons/conversation-text.png" alt="tv viewing" class="img-responsive" style="float: left; padding-left: 10px; width: 12%;" /><img src="../images/Icons/fatigue.png" alt="fatigue" class="img-responsive" style="float: left; padding-left: 10px; width: 12%;" /><img src="../images/Icons/stress.png" alt="stress" class="img-responsive" style="float: left; padding-left: 10px; width: 12%;" /><img src="../images/Icons/tv_viewing.png" alt="tv viewing" class="img-responsive" style="float: left; padding-left: 10px; width: 12%;" /></div></div>
+</div></div></div></div></div></div></section><section id="sp-main-body"><div class="container"><div class="row"><div id="sp-component" class="col-sm-12 col-md-12"><div class="sp-column custom-class"><div id="system-message-container">
+	</div>
+<div class="blog" itemscope itemtype="http://schema.org/Blog">
+	
+	
+	
+	
+	
+				<div class="items-leading clearfix">
+							<article class="item leading-0"
+					itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+					
+
+
+
+<div class="entry-header">
+
+	
+		
+	
+</div>
+
+
+
+<div style="padding-left: 20px; padding-right: 20px; margin-top: -50px;">
+<h1>mHealth Biomarkers</h1>
+<p style="text-align: justify;">A biomarker is an objective indicator of a physical or state that can be observed and measured accurately and reproducibly. The World Health Organization has defined a biomarker as "any substance structure or process that can be measured in the body or its products and influence or predict the incidence of outcome or disease." [1, 2]</p>
+<div style="float: right; width: 325px; padding: 10px; margin-left: 10px; background-color: #eeeeee;">
+<p style="font-size: 18px; font-weight: bold; text-align: center;">Team members</p>
+<p style="text-align: center; font-size: 13px;"><strong>Faculty</strong><br /> <a href="../about/meet-the-team.html#rehg">James M. Rehg</a>&nbsp;(Thrust 2 Lead, Georgia Tech)<br /><a href="../about/meet-the-team.html#ganesan">Deepak Ganesan</a> (UMass Amherst)<br /><a href="../about/meet-the-team.html#marlin">Benjamin Marlin</a> (UMass Amherst)<br /><a href="../about/meet-the-team.html#alabsi">Mustafa al'Absi</a> (Minnesota)<br /><a href="../about/meet-the-team.html#kumar">Santosh Kumar</a> (Memphis)<br /><a href="../about/meet-the-team.html#abowd">Gregory Abowd</a> (Georgia Tech)<br /><a href="../about/meet-the-team.html#lam">Cho Lam</a> (Utah)<br /><a href="../about/meet-the-team.html#spring">Bonnie Spring</a> (Northwestern)<br /><a href="../about/meet-the-team.html#wetter">David Wetter</a> (Utah)</p>
+<p style="text-align: center; font-size: 13px;"><strong>Students</strong><br /> <a href="../about/meet-the-team.html#chatterjee">Soujanya Chatterjee</a> (Memphis)<br /><a href="../about/meet-the-team.html#mayberry">Addison Mayberry</a> (UMass)<br /><a href="../about/meet-the-team.html#saleheen">Nazir Saleheen</a> (Memphis)<br /><a href="../about/meet-the-team.html#bari">Rumanna Bari</a> (Memphis)</p>
+</div>
+<p style="text-align: justify;">MD2K has two biomedical applications for its research, detection of smoking relapse among abstinent smokers, and of onset of congestion in congestive heart failure patients (CHF). Once identified, researchers focus on the risk factors for smoking lapses and CHF.</p>
+<p style="text-align: justify;">Since it began in 2014, MD2K has successfully identified robust markers of stress, smoking, craving (eating/smoking), fatigue, eating and TV viewing (for detecting exposures to alcohol ads).</p>
+<p style="text-align: justify;">To identify and validate these biomarkers, MD2K researchers have correlated sensor data with self-reports known as Ecological Momentary Assessments (EMAs) to identify biomarkers within the sensor data. These biomarkers -- of stress, craving, smoking, drug use, and eating -- are exposed within the millions of bits of sensor data by using computational models that identify combinations within the sensor data.</p>
+<p style="text-align: justify;">For example, a wrist sensor might identify a hand movement to the mouth that could mean anything. But, when that information is combined with respiratory sensor that shows inhalation and exhalation, the moment a puff on a cigarette occures becomes clear.</p>
+<p>Methodological advances resulted in novel methods for:</p>
+<div style="margin-left: 30px;">
+<p style="text-align: justify;">&bull; Efficiently computing biomarker features from compressively sampled ECG data<br /> &bull; Structured prediction models to compute biomarkers in the presence of temporally imprecise labels<br /> &bull; Better lab-to-field generalizability in biomarker computation by addressing covariate shift and prior probability shift (in feature computation).</p>
+</div>
+<p style="text-align: justify;">Data science research on discovery of mHealth predictors led to a new pattern mining approach for identifying a significant stress episode from the (minute-level) time-series of stress biomarkers and a discovery dashboard (with interactive motif discovery capabilities) to facilitate visual exploration of multivariate biomarker time series. Modeling advances resulted in a new latent state model for modeling patterns in mobile health event data. The model combines the benefits of a continuous time Hidden Markov Model (CT-HMM) for capturing patterns in event data with irregular arrival times with survival analysis, which provides interpretable models for predicting the risk of adverse events over future time intervals.</p>
+<p style="font-size: 12px; font-style: italic;">[1] WHO International Programme on Chemical Safety Biomarkers in Risk Assessment: Validity and Validation. 2001. Retrieved from <a href="http://www.inchem.org/documents/ehc/ehc/ehc222.htm">http://www.inchem.org/documents/ehc/ehc/ehc222.htm.</a></p>
+<p style="font-size: 12px; font-style: italic;">[2] Strimbu, K., &amp; Tavel, J. A. (2010). What are Biomarkers? Current Opinion in HIV and AIDS, 5(6), 463&ndash;466. http://doi.org/10.1097/COH.0b013e32833ed177</p>
+<p><a id="pubs" name="pubs"></a></p>
+<h2>Publications</h2>
+<ol class="bibtex-list"><li id="ArticleEntry-Bari_2018_RMM_3200905_3191734"><p>Rummana Bari, Roy   J Adams, Md. Mahbubur Rahman, Megan Battles Parsons, Eugene   H Buder and Santosh Kumar. <br><strong>rConverse: Moment by Moment Conversation Detection Using a Mobile Respiration Sensor</strong>. <i>Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.</i> 2(1):2:1–2:27, 2018. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://doi.acm.org/10.1145/3191734">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1145/3191734">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Bari:2018:RMM:3200905.3191734,
+	author = "Bari, Rummana and Adams, Roy J. and Rahman, Md. Mahbubur and Parsons, Megan Battles and Buder, Eugene H. and Kumar, Santosh",
+	title = "rConverse: Moment by Moment Conversation Detection Using a Mobile Respiration Sensor",
+	journal = "Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.",
+	year = 2018,
+	volume = 2,
+	number = 1,
+	pages = "2:1--2:27",
+	month = "",
+	issn = "2474-9567",
+	abstract = "Monitoring of in-person conversations has largely been done using acoustic sensors. In this paper, we propose a new method to detect moment-by-moment conversation episodes by analyzing breathing patterns captured by a mobile respiration sensor. Since breathing is affected by physical and cognitive activities, we develop a comprehensive method for cleaning, screening, and analyzing noisy respiration data captured in the field environment at individual breath cycle level. Using training data collected from a speech dynamics lab study with 12 participants, we show that our algorithm can identify each respiration cycle with 96.34% accuracy even in presence of walking. We present a Conditional Random Field, Context-Free Grammar (CRF-CFG) based conversation model, called rConverse, to classify respiration cycles into speech or non-speech, and subsequently infer conversation episodes. Our model achieves 82.7% accuracy for speech/non-speech classification and it identifies conversation episodes with 95.9% accuracy on lab data using a leave-one-subject-out cross-validation. Finally, the system is validated against audio ground-truth in a field study with 32 participants. rConverse identifies conversation episodes with 71.7% accuracy on 254 hours of field data. For comparison, the accuracy from a high-quality audio-recorder on the same data is 71.9%.",
+	acmid = 3191734,
+	address = "New York, NY, USA",
+	articleno = 2,
+	doi = "10.1145/3191734",
+	issue_date = "March 2018",
+	keywords = "Conversation Modeling, Machine Learning, Respiration Signal, Wearable Sensing",
+	numpages = 27,
+	publisher = "ACM",
+	url = "http://doi.acm.org/10.1145/3191734"
+}
+</pre></li><li id="ProceedingsPaperEntry-Thomaz_2017_ESA_3089341_3089345"><p>Edison Thomaz, Abdelkareem Bedri, Temiloluwa Prioleau, Irfan Essa and Gregory   D Abowd. <br><strong>Exploring Symmetric and Asymmetric Bimanual Eating Detection with Inertial Sensors on the Wrist</strong>. In <i>Proceedings of the 1st Workshop on Digital Biomarkers</i>. 2017, 21–26. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/biomarkers/p21-thomaz.pdf">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1145/3089341.3089345">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{Thomaz:2017:ESA:3089341.3089345,
+	author = "Thomaz, Edison and Bedri, Abdelkareem and Prioleau, Temiloluwa and Essa, Irfan and Abowd, Gregory D.",
+	title = "Exploring Symmetric and Asymmetric Bimanual Eating Detection with Inertial Sensors on the Wrist",
+	booktitle = "Proceedings of the 1st Workshop on Digital Biomarkers",
+	year = 2017,
+	series = "DigitalBiomarkers '17",
+	pages = "21--26",
+	address = "New York, NY, USA",
+	publisher = "ACM",
+	abstract = "Motivated by health applications, eating detection with off-the-shelf devices has been an active area of research. A common approach has been to recognize and model individual intake gestures with wrist-mounted inertial sensors. Despite promising results, this approach is limiting as it requires the sensing device to be worn on the hand performing the intake gesture, which cannot be guaranteed in practice. Through a study with 14 participants comparing eating detection performance when gestural data is recorded with a wrist-mounted device on (1) both hands, (2) only the dominant hand, and (3) only the non-dominant hand, we provide evidence that a larger set of arm and hand movement patterns beyond food intake gestures are predictive of eating activities when L1 or L2 normalization is applied to the data. Our results are supported by the theory of asymmetric bimanual action and contribute to the field of automated dietary monitoring. In particular, it shines light on a new direction for eating activity recognition with consumer wearables in realistic settings.",
+	acmid = 3089345,
+	doi = "10.1145/3089341.3089345",
+	isbn = "978-1-4503-4963-5",
+	keywords = "activity recognition, dietary monitoring, eating detection, food logging, food tracking, inertial sensing",
+	location = "Niagara Falls, New York, USA",
+	numpages = 6,
+	url = "https://md2k.org/images/papers/biomarkers/p21-thomaz.pdf"
+}
+</pre></li><li id="InBookEntry-Parate2017"><p>James   M Rehg, Susan   A Murphy and Santosh Kumar (eds.). <i><br><strong>Detecting Eating and Smoking Behaviors Using Smartwatches</strong></i>. pages 175–201, Springer International Publishing, 2017. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/biomarkers/Parate_Detecting-Eating.pdf">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1007/978-3-319-51394-2_10">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inbook{Parate2017,
+	pages = "175--201",
+	title = "Detecting Eating and Smoking Behaviors Using Smartwatches",
+	publisher = "Springer International Publishing",
+	year = 2017,
+	author = "Parate, Abhinav and Ganesan, Deepak",
+	editor = "Rehg, James M. and Murphy, Susan A. and Kumar, Santosh",
+	address = "Cham",
+	isbn = "978-3-319-51394-2",
+	__markedentry = "[bbwillms:]",
+	abstract = "Inertial sensors embedded in commercial smartwatches and fitness bands are among the most informative and valuable on-body sensors for monitoring human behavior. This is because humans perform a variety of daily activities that impacts their health, and many of these activities involve using hands and have some characteristic hand gesture associated with it. For example, activities like eating food or smoking a cigarette require the direct use of hands and have a set of distinct hand gesture characteristics. However, recognizing these behaviors is a challenging task because the hand gestures associated with these activities occur only sporadically over the course of a day, and need to be separated from a large number of irrelevant hand gestures. In this chapter, we will look at approaches designed to detect behaviors involving sporadic hand gestures. These approaches involve two main stages: (1) spotting the relevant hand gestures in a continuous stream of sensor data, and (2) recognizing the high-level activity from the sequence of recognized hand gestures. We will describe and discuss the various categories of approaches used for each of these two stages, and conclude with a discussion about open questions that remain to be addressed.",
+	booktitle = "Mobile Health: Sensors, Analytic Methods, and Applications",
+	doi = "10.1007/978-3-319-51394-2_10",
+	url = "https://md2k.org/images/papers/biomarkers/Parate_Detecting-Eating.pdf"
+}
+</pre></li><li id="ArticleEntry-Soha_2017_ILS_3120957_3090088"><p>Rostaminia Soha, Mayberry Addison, Ganesan Deepak, Marlin Benjamin and Gummeson Jeremy. <br><strong>iLid: Low-power Sensing of Fatigue and Drowsiness Measures on a Computational Eyeglass</strong>. <i>Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.</i> 1(2):23:1–23:26, 2017. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/biomarkers/Ubicomp17-iLid.pdf">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1145/3090088">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Soha:2017:ILS:3120957.3090088,
+	author = "Soha, Rostaminia and Addison, Mayberry and Deepak, Ganesan and Benjamin, Marlin and Jeremy, Gummeson",
+	title = "iLid: Low-power Sensing of Fatigue and Drowsiness Measures on a Computational Eyeglass",
+	journal = "Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.",
+	year = 2017,
+	volume = 1,
+	number = 2,
+	pages = "23:1--23:26",
+	issn = "2474-9567",
+	abstract = "The ability to monitor eye closures and blink patterns has long been known to enable accurate assessment of fatigue and drowsiness in individuals. Many measures of the eye are known to be correlated with fatigue including coarse-grained measures like the rate of blinks as well as #ne-grained measures like the duration of blinks and the extent of eye closures. Despite a plethora of research validating these measures, we lack wearable devices that can continually and reliably monitor them in the natural environment. In this work, we present a low-power system, iLid, that can continually sense fine-grained measures such as blink duration and Percentage of Eye Closures (PERCLOS) at high frame rates of 100fps. We present a complete solution including design of the sensing, signal processing, and machine learning pipeline; implementation on a prototype computational eyeglass platform; and extensive evaluation under many conditions including illumination changes, eyeglass shifts, and mobility. Our results are very encouraging, showing that we can detect blinks, blink duration, eyelid location, and fatigue-related metrics such as PERCLOS with less than a few percent error.",
+	acmid = 3090088,
+	address = "New York, NY, USA",
+	articleno = 23,
+	doi = "10.1145/3090088",
+	keywords = "Blinks, Drowsiness, Eyeglasses, Eyelid, Fatigue, PERCLOS",
+	numpages = 26,
+	publisher = "ACM",
+	url = "https://md2k.org/images/papers/biomarkers/Ubicomp17-iLid.pdf"
+}
+</pre></li><li id="ProceedingsPaperEntry-Sarker_2016_FSS_2858036_2858218"><p>Hillol Sarker, Matthew Tyburski, Md Mahbubur Rahman, Karen Hovsepian, Moushumi Sharmin, David   H Epstein, Kenzie   L Preston, Debra   C Furr-Holden, Adam Milam, Inbal Nahum-Shani, Mustafa  and Santosh Kumar. <br><strong>Finding Significant Stress Episodes in a Discontinuous Time Series of Rapidly Varying Mobile Sensor Data</strong>. In <i>Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems</i>. 2016, 4489–4501. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/biomarkers/p4489-sarker.pdf">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1145/2858036.2858218">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{Sarker:2016:FSS:2858036.2858218,
+	author = "Sarker, Hillol and Tyburski, Matthew and Rahman, Md Mahbubur and Hovsepian, Karen and Sharmin, Moushumi and Epstein, David H. and Preston, Kenzie L. and Furr-Holden, C. Debra and Milam, Adam and Nahum-Shani, Inbal and al'Absi, Mustafa and Kumar, Santosh",
+	title = "Finding Significant Stress Episodes in a Discontinuous Time Series of Rapidly Varying Mobile Sensor Data",
+	booktitle = "Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems",
+	year = 2016,
+	series = "CHI '16",
+	pages = "4489--4501",
+	address = "Santa Clara, California, USA",
+	publisher = "ACM",
+	abstract = "Management of daily stress can be greatly improved by de- livering sensor-triggered just-in-time interventions (JITIs) on mobile devices. The success of such JITIs critically depends on being able to mine the time series of noisy sensor data to find the most opportune moments. In this paper, we propose a time series pattern mining method to detect significant stress episodes in a time series of discontinuous and rapidly varying stress data. We apply our model to 4 weeks of physiological, GPS, and activity data collected from 38 users in their natu-ral environment to discover patterns of stress in real-life. We find that the duration of a prior stress episode predicts the du-ration of the next stress episode and stress in mornings and evenings is lower than during the day. We then analyze the relationship between stress and objectively rated disorder in the surrounding neighborhood and develop a model to predict stressful episodes.",
+	doi = "10.1145/2858036.2858218",
+	isbn = "978-1-4503-3362-7",
+	keywords = "intervention, mobile health (mHealth), stress management",
+	pubstate = "published",
+	tppubtype = "inproceedings",
+	url = "https://md2k.org/images/papers/biomarkers/p4489-sarker.pdf"
+}
+</pre></li><li id="ProceedingsPaperEntry-Chatterjee2016Crave"><p>Soujanya Chatterjee, Karen Hovsepian, Hillol Sarker, Nazir Saleheen, Mustafa al’Absi, Gowtham Atluri, Emre Ertin, Cho Lam, Andrine Lemieux, Motohiro Nakajima, Bonnie Spring, David  W Wetter and Santosh Kumar. <br><strong>mCrave: Continuous Estimation of Craving During Smoking Cessation</strong>. In <i>Proceedings of the 2016 ACM International Joint Conference on Pervasive and Ubiquitous Computing</i>. 2016, 863-874. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/biomarkers/mCrave-UbiComp-2016.pdf">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1145/2971648.2971672">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{Chatterjee2016Crave,
+	author = "Soujanya Chatterjee and Karen Hovsepian and Hillol Sarker and Nazir Saleheen and Mustafa al’Absi and Gowtham Atluri and Emre Ertin and Cho Lam and Andrine Lemieux and Motohiro Nakajima and Bonnie Spring and David W. Wetter and Santosh Kumar",
+	title = "mCrave: Continuous Estimation of Craving During Smoking Cessation",
+	booktitle = "Proceedings of the 2016 ACM International Joint Conference on Pervasive and Ubiquitous Computing",
+	year = 2016,
+	pages = "863-874",
+	address = "New York, NY USA",
+	publisher = "ACM",
+	abstract = "Craving usually precedes a lapse for impulsive behaviors such as overeating, drinking, smoking, and drug use. Passive estimation of craving from sensor data in the natural environment can be used to assist users in coping with craving. In this paper, we take the first steps towards developing a computational model to estimate cigarette craving (during smoking abstinence) at the minute-level using mobile sensor data. We use 2,012 hours of sensor data and 1,812 craving self-reports from 61 participants in a smoking cessation study. To estimate craving, we first obtain a continuous measure of stress from sensor data. We find that during hours of day when craving is high, stress associated with self-reported high craving is greater than stress associated with low craving. We use this and other insights to develop feature functions, and encode them as pattern detectors in a Conditional Random Field (CRF) based model to infer craving probabilities.",
+	doi = "10.1145/2971648.2971672",
+	isbn = "978-1-4503-4461-6",
+	keywords = "Craving, mobile health, smoking cessation, Stress",
+	pubstate = "published",
+	tppubtype = "inproceedings",
+	url = "https://md2k.org/images/papers/biomarkers/mCrave-UbiComp-2016.pdf"
+}
+</pre></li><li id="ProceedingsPaperEntry-Thomaz_2015_IME_2678025_2701405"><p>E Thomaz, C Zhang, I Essa and G D Abowd. <br><strong>Inferring Meal Eating Activities in Real World Settings from Ambient Sounds: A Feasibility Study</strong>. In <i>Proceedings of the 20th International Conference on Intelligent User Interfaces (IUI '15)</i>. 2015, 427–431. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/biomarkers/nihms675643_Thomaz.pdf">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1145/2678025.2701405">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{Thomaz:2015:IME:2678025.2701405,
+	author = "E. Thomaz and C. Zhang and I. Essa and G.D. Abowd",
+	title = "Inferring Meal Eating Activities in Real World Settings from Ambient Sounds: A Feasibility Study",
+	booktitle = "Proceedings of the 20th International Conference on Intelligent User Interfaces (IUI '15)",
+	year = 2015,
+	series = "IUI '15",
+	pages = "427--431",
+	address = "Atlanta, Georgia, USA",
+	publisher = "ACM",
+	abstract = "Dietary self-monitoring has been shown to be an effective method for weight-loss, but it remains an onerous task despite recent advances in food journaling systems. Semi-automated food journaling can reduce the effort of logging, but often requires that eating activities be detected automatically. In this work we describe results from a feasibility study conducted in-the-wild where eating activities were inferred from ambient sounds captured with a wrist-mounted device; twenty participants wore the device during one day for an average of 5 hours while performing normal everyday activities. Our system was able to identify meal eating with an F-score of 79.8% in a person-dependent evaluation, and with 86.6% accuracy in a person-independent evaluation. Our approach is intended to be practical, leveraging off-the-shelf devices with audio sensing capabilities in contrast to systems for automated dietary assessment based on specialized sensors.",
+	doi = "10.1145/2678025.2701405",
+	isbn = "978-1-4503-3306-1",
+	keywords = "acoustic sensor, activity recognition, ambient sound, automated dietary assessment, dietary intake, food journaling, machine learning, sound classification",
+	pubstate = "published",
+	tppubtype = "inproceedings",
+	url = "https://md2k.org/images/papers/biomarkers/nihms675643_Thomaz.pdf"
+}
+</pre></li><li id="ArticleEntry-Kennedy2015"><p>Ashley  P Kennedy, David  H Epstein, Michelle  L Jobes, Daniel Agage, Matthew Tyburski, Karran  A Phillips, Amin Ahsan Ali, Rummana Bari, Syed Monowar Hossain, Karen Hovsepian, Mahbubur Rahman, Emre Ertin, Santosh Kumar and Kenzie  L Preston. <br><strong>Continuous In-The-Field Measurement of Heart Rate: Correlates of Drug Use, Craving, Stress, and Mood in Polydrug Users</strong>. <i>Drug and Alcohol Dependence</i> (0):-, 2015. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/biomarkers/nihms678863_Kennedy.pdf">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/http://dx.doi.org/10.1016/j.drugalcdep.2015.03.024">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Kennedy2015,
+	author = "Ashley P. Kennedy and David H. Epstein and Michelle L. Jobes and Daniel Agage and Matthew Tyburski and Karran A. Phillips and Amin Ahsan Ali and Rummana Bari and Syed Monowar Hossain and Karen Hovsepian and Mahbubur Rahman and Emre Ertin and Santosh Kumar and Kenzie L. Preston",
+	title = "Continuous In-The-Field Measurement of Heart Rate: Correlates of Drug Use, Craving, Stress, and Mood in Polydrug Users",
+	journal = "Drug and Alcohol Dependence",
+	year = 2015,
+	number = 0,
+	pages = "-",
+	issn = "0376-8716",
+	abstract = "AbstractBackground Ambulatory physiological monitoring could clarify antecedents and consequences of drug use and could contribute to a sensor-triggered mobile intervention that automatically detects behaviorally risky situations. Our goal was to show that such monitoring is feasible and can produce meaningful data. Methods We assessed heart rate (HR) with AutoSense, a suite of biosensors that wirelessly transmits data to a smartphone, for up to four weeks in 40 polydrug users in opioid-agonist maintenance as they went about their daily lives. Participants also self-reported drug use, mood, and activities on electronic diaries. We compared HR with self-report using multilevel modeling (SAS Proc Mixed). Results Compliance with AutoSense was good; the data yield from the wireless electrocardiographs was 85.7%. HR was higher when participants reported cocaine use than when they reported heroin use (F(2,9)&#xa0;=&#xa0;250.3, p&lt;.0001) and was also higher as a function of the dose of cocaine reported (F(1,8)&#xa0;=&#xa0;207.7, p&lt;.0001). HR was higher when participants reported craving heroin (F(1,16)&#xa0;=&#xa0;230.9, p&lt;.0001) or cocaine (F(1,14)&#xa0;=&#xa0;157.2, p&lt;.0001) than when they reported of not craving. HR was lower (p&lt;.05) in randomly prompted entries in which participants reported feeling relaxed, feeling happy, or watching TV, and was higher when they reported feeling stressed, being hassled, or walking. Conclusions High-yield, high-quality heart-rate data can be obtained from drug users in their natural environment as they go about their daily lives, and the resultant data robustly reflect episodes of cocaine and heroin use and other mental and behavioral events of interest.",
+	doi = "http://dx.doi.org/10.1016/j.drugalcdep.2015.03.024",
+	keywords = "cocaine",
+	pubstate = "published",
+	tppubtype = "article",
+	url = "https://md2k.org/images/papers/biomarkers/nihms678863_Kennedy.pdf"
+}
+</pre></li><li id="ProceedingsPaperEntry-cordeiro2015barriers"><p>F Cordeiro, D Epstein, E Thomaz, E Bales, A K Jagannathan, G D Abowd and J Fogarty. <br><strong>Barriers and Negative Nudges: Exploring Challenges in Food Journaling</strong>. In <i>Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems (CHI ’15)</i>. 2015. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/biomarkers/nihms675889_cordiero.pdf">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@conference{cordeiro2015barriers,
+	author = "F. Cordeiro and D. Epstein and E. Thomaz and E. Bales and A.K. Jagannathan and G.D. Abowd and J. Fogarty",
+	title = "Barriers and Negative Nudges: Exploring Challenges in Food Journaling",
+	booktitle = "Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems (CHI ’15)",
+	year = 2015,
+	publisher = "Submission",
+	note = "Accepted to International ACM Conference on Human Factors in Computing Systems (CHI) 2015, Seoul, Korea",
+	abstract = "Although food journaling is understood to be both important and difficult, little work has empirically documented the specific challenges people experience with food journals. We identify key challenges in a qualitative study combining a survey of 141 current and lapsed food journalers with analysis of 5,526 posts in community forums for three mobile food journals. Analyzing themes in this data, we find and discuss barriers to reliable food entry, negative nudges caused by current techniques, and challenges with social features. Our results motivate research exploring a wider range of approaches to food journal design and technology.",
+	keywords = "Barriers, food journals, Negative Nudges, Personal informatics",
+	pubstate = "published",
+	tppubtype = "conference",
+	url = "https://md2k.org/images/papers/biomarkers/nihms675889_cordiero.pdf"
+}
+</pre></li><li id="ProceedingsPaperEntry-Li_2015_CVPR"><p>Yin Li, Zhefan Ye and James  M Rehg. <br><strong>Delving Into Egocentric Actions</strong>. In <i>The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</i>. 2015. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/biomarkers/nihms728698_Rehg.pdf">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{Li_2015_CVPR,
+	author = "Yin Li and Zhefan Ye and James M. Rehg",
+	title = "Delving Into Egocentric Actions",
+	booktitle = "The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+	year = 2015,
+	abstract = "We address the challenging problem of recognizing the camera wearer's actions from videos captured by an egocentric camera. Egocentric videos encode a rich set of signals regarding the camera wearer, including head movement, hand pose and gaze information. We propose to utilize these mid-level egocentric cues for egocentric action recognition. We present a novel set of egocentric features and show how they can be combined with motion and object features. The result is a compact representation with superior performance. In addition, we provide the first systematic evaluation of motion, object and egocentric cues in egocentric action recognition. Our benchmark leads to several surprising findings. These findings uncover the best practices for egocentric actions, with a significant performance boost over all previous state-of-the-art methods on three publicly available datasets.",
+	date = "2015-06-01",
+	pubstate = "published",
+	tppubtype = "inproceedings",
+	url = "https://md2k.org/images/papers/biomarkers/nihms728698_Rehg.pdf"
+}
+</pre></li><li id="ProceedingsPaperEntry-Thomaz_2015_PAR_2750858_2807545"><p>Edison Thomaz, Irfan Essa and Gregory   D Abowd. <br><strong>A Practical Approach for Recognizing Eating Moments with Wrist-mounted Inertial Sensing</strong>. In <i>Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing</i>. 2015, 1029–1040. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/biomarkers/ubicomp_2015_thomaz.pdf">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1145/2750858.2807545">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{Thomaz:2015:PAR:2750858.2807545,
+	author = "Thomaz, Edison and Essa, Irfan and Abowd, Gregory D.",
+	title = "A Practical Approach for Recognizing Eating Moments with Wrist-mounted Inertial Sensing",
+	booktitle = "Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing",
+	year = 2015,
+	series = "UbiComp '15",
+	pages = "1029--1040",
+	address = "Osaka, Japan",
+	publisher = "ACM",
+	abstract = "Recognizing when eating activities take place is one of the key challenges in automated food intake monitoring. Despite progress over the years, most proposed approaches have been largely impractical for everyday usage, requiring multiple on-body sensors or specialized devices such as neck collars for swallow detection. In this paper, we describe the implemen-tation and evaluation of an approach for inferring eating mo-ments based on 3-axis accelerometry collected with a popu-lar off-the-shelf smartwatch. Trained with data collected in a semi-controlled laboratory setting with 20 subjects, our sys-tem recognized eating moments in two free-living condition studies (7 participants, 1 day; 1 participant, 31 days), with F-scores of 76.1% (66.7% Precision, 88.8% Recall), and 71.3%(65.2% Precision, 78.6% Recall). This work represents a contribution towards the implementation of a practical, au-tomated system for everyday food intake monitoring, with applicability in areas ranging from health research and food journaling.",
+	doi = "10.1145/2750858.2807545",
+	isbn = "978-1-4503-3574-4",
+	keywords = "activity recognition, automated dietary assessment, dietary intake, food journaling, inertial sensors",
+	pubstate = "published",
+	tppubtype = "inproceedings",
+	url = "https://md2k.org/images/papers/biomarkers/ubicomp_2015_thomaz.pdf"
+}
+</pre></li><li id="ProceedingsPaperEntry-Hovsepian_2015_CTG_2750858_2807526"><p>Karen Hovsepian, Mustafa , Emre Ertin, Thomas Kamarck, Motohiro Nakajima and Santosh Kumar. <br><strong>cStress: Towards a Gold Standard for Continuous Stress Assessment in the Mobile Environment</strong>. In <i>Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing</i>. 2015, 493–504. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/biomarkers/p493-hovsepian_cStress.pdf">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1145/2750858.2807526">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{Hovsepian:2015:CTG:2750858.2807526,
+	author = "Hovsepian, Karen and al'Absi, Mustafa and Ertin, Emre and Kamarck, Thomas and Nakajima, Motohiro and Kumar, Santosh",
+	title = "cStress: Towards a Gold Standard for Continuous Stress Assessment in the Mobile Environment",
+	booktitle = "Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing",
+	year = 2015,
+	series = "UbiComp '15",
+	pages = "493--504",
+	address = "Osaka, Japan",
+	publisher = "ACM",
+	abstract = "Recent advances in mobile health have produced several new models for inferring stress from wearable sensors. But, the lack of a gold standard is a major hurdle in making clinical use of continuous stress measurements derived from wear-able sensors. In this paper, we present a stress model (called cStress) that has been carefully developed with attention to every step of computational modeling including data collec-tion, screening, cleaning, filtering, feature computation, nor-malization, and model training. More importantly, cStress was trained using data collected from a rigorous lab study with 21 participants and validated on two independently col-lected data sets — in a lab study on 26 participants and in a week-long field study with 20 participants. In testing, the model obtains a recall of 89% and a false positive rate of 5%on lab data. On field data, the model is able to predict each instantaneous self-report with an accuracy of 72%.",
+	doi = "10.1145/2750858.2807526",
+	isbn = "978-1-4503-3574-4",
+	keywords = "mobile health (mHealth), modeling, Stress, Wearable Sensors",
+	pubstate = "published",
+	tppubtype = "inproceedings",
+	url = "https://md2k.org/images/papers/biomarkers/p493-hovsepian_cStress.pdf"
+}
+</pre></li><li id="ProceedingsPaperEntry-Saleheen_2015_PMA_2750858_2806897"><p>Nazir Saleheen, Amin Ahsan Ali, Syed Monowar Hossain, Hillol Sarker, Soujanya Chatterjee, Benjamin Marlin, Emre Ertin, Mustafa  and Santosh Kumar. <br><strong>puffMarker: A Multi-sensor Approach for Pinpointing the Timing of First Lapse in Smoking Cessation</strong>. In <i>Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing</i>. 2015, 999–1010. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/biomarkers/p999-_PuffMarker.html">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1145/2750858.2806897">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{Saleheen:2015:PMA:2750858.2806897,
+	author = "Saleheen, Nazir and Ali, Amin Ahsan and Hossain, Syed Monowar and Sarker, Hillol and Chatterjee, Soujanya and Marlin, Benjamin and Ertin, Emre and al'Absi, Mustafa and Kumar, Santosh",
+	title = "puffMarker: A Multi-sensor Approach for Pinpointing the Timing of First Lapse in Smoking Cessation",
+	booktitle = "Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing",
+	year = 2015,
+	series = "UbiComp '15",
+	pages = "999--1010",
+	address = "Osaka, Japan",
+	publisher = "ACM",
+	abstract = "Recent researches have demonstrated the feasibility of detect-ing smoking from wearable sensors, but their performance on real-life smoking lapse detection is unknown. In this pa-per, we propose a new model and evaluate its performance on 61 newly abstinent smokers for detecting a first lapse. We use two wearable sensors — breathing pattern from respira-tion and arm movements from 6-axis inertial sensors worn on wrists. In 10-fold cross-validation on 40 hours of training data from 6 daily smokers, our model achieves a recall rate of 96.9%, for a false positive rate of 1.1%. When our model is applied to 3 days of post-quit data from 32 lapsers, it cor-rectly pinpoints the timing of first lapse in 28 participants. Only 2 false episodes are detected on 20 abstinent days of these participants. When tested on 84 abstinent days from 28 abstainers, the false episode per day is limited to 1/6.",
+	doi = "10.1145/2750858.2806897",
+	isbn = "978-1-4503-3574-4",
+	keywords = "mobile health (mHealth), smartwatch, smoking cessation, smoking detection, Wearable Sensors",
+	pubstate = "published",
+	tppubtype = "inproceedings",
+	url = "https://md2k.org/images/papers/biomarkers/p999-_PuffMarker.pdf"
+}
+</pre></li><li id="ProceedingsPaperEntry-Parate_2014_RRS_2594368_2594379"><p>A Parate, M Chiu, C Chadowitz, D Ganesan and E Kalogerakis. <br><strong>RisQ: Recognizing Smoking Gestures with Inertial Sensors on a Wristband</strong>. In <i>Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services (MobiSys '14)</i>. 2014, 149–161. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/biomarkers/p149-parate_risq.pdf">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/http://doi.acm.org/10.1145/2594368.2594379">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{Parate:2014:RRS:2594368.2594379,
+	author = "A. Parate and M. Chiu and C. Chadowitz and D. Ganesan and E. Kalogerakis",
+	title = "RisQ: Recognizing Smoking Gestures with Inertial Sensors on a Wristband",
+	booktitle = "Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services (MobiSys '14)",
+	year = 2014,
+	series = "MobiSys '14",
+	pages = "149--161",
+	address = "Bretton Woods, New Hampshire, USA",
+	publisher = "ACM",
+	abstract = "Smoking-induced diseases are known to be the leading cause of death in the United States. In this work, we design RisQ, a mobile solution that leverages a wristband containing a 9-axis inertial measurement unit to capture changes in the orientation of a person's arm, and a machine learning pipeline that processes this data to accurately detect smoking gestures and sessions in real-time. Our key innovations are four-fold: a) an arm trajectory-based method that extracts candidate hand-to-mouth gestures, b) a set of trajectory-based features to distinguish smoking gestures from confounding gestures including eating and drinking, c) a probabilistic model that analyzes sequences of hand-to-mouth gestures and infers which gestures are part of individual smoking sessions, and d) a method that leverages multiple IMUs placed on a person's body together with 3D animation of a person's arm to reduce burden of self-reports for labeled data collection. Our experiments show that our gesture recognition algorithm can detect smoking gestures with high accuracy (95.7%), precision (91%) and recall (81%). We also report a user study that demonstrates that we can accurately detect the number of smoking sessions with very few false positives over the period of a day, and that we can reliably extract the beginning and end of smoking session periods.",
+	doi = "http://doi.acm.org/10.1145/2594368.2594379",
+	isbn = "978-1-4503-2793-0",
+	keywords = "inertial measurement unit, mobile computing, smoking detection, wearables",
+	pubstate = "published",
+	tppubtype = "inproceedings",
+	url = "https://md2k.org/images/papers/biomarkers/p149-parate_risq.pdf"
+}
+</pre></li><li id="ProceedingsPaperEntry-Mayberry_2014_IDW_2594368_2594388"><p>A Mayberry, P Hu, B Marlin, C Salthouse and D Ganesan. <br><strong>iShadow: Design of a Wearable, Real-time Mobile Gaze Tracker</strong>. In <i>Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services (MobiSys '14)</i>. 2014, 82–94. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/biomarkers/ishadow_mobisys14.pdf">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/http://doi.acm.org/10.1145/2594368.2594388">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{Mayberry:2014:IDW:2594368.2594388,
+	author = "A. Mayberry and P. Hu and B. Marlin and C. Salthouse and D. Ganesan",
+	title = "iShadow: Design of a Wearable, Real-time Mobile Gaze Tracker",
+	booktitle = "Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services (MobiSys '14)",
+	year = 2014,
+	series = "MobiSys '14",
+	pages = "82--94",
+	address = "Bretton Woods, New Hampshire, USA",
+	publisher = "ACM",
+	abstract = "Continuous, real-time tracking of eye gaze is valuable in a variety of scenarios including hands-free interaction with the physical world, detection of unsafe behaviors, leveraging visual context for advertising, life logging, and others. While eye tracking is commonly used in clinical trials and user studies, it has not bridged the gap to everyday consumer use. The challenge is that a real-time eye tracker is a power-hungry and computation-intensive device which requires continuous sensing of the eye using an imager running at many tens of frames per second, and continuous processing of the image stream using sophisticated gaze estimation algorithms. Our key contribution is the design of an eye tracker that dramatically reduces the sensing and computation needs for eye tracking, thereby achieving orders of magnitude reductions in power consumption and form-factor. The key idea is that eye images are extremely redundant, therefore we can estimate gaze by using a small subset of carefully chosen pixels per frame. We instantiate this idea in a prototype hardware platform equipped with a low-power image sensor that provides random access to pixel values, a low-power ARM Cortex M3 microcontroller, and a bluetooth radio to communicate with a mobile phone. The sparse pixel-based gaze estimation algorithm is a multi-layer neural network learned using a state-of-the-art sparsity-inducing regularization function that minimizes the gaze prediction error while simultaneously minimizing the number of pixels used. Our results show that we can operate at roughly 70mW of power, while continuously estimating eye gaze at the rate of 30 Hz with errors of roughly 3 degrees.",
+	doi = "http://doi.acm.org/10.1145/2594368.2594388",
+	isbn = "978-1-4503-2793-0",
+	keywords = "eye tracking, lifelog, neural network",
+	pubstate = "published",
+	tppubtype = "inproceedings",
+	url = "https://md2k.org/images/papers/biomarkers/ishadow_mobisys14.pdf"
+}
+</pre></li><li id="ArticleEntry-Hossain2014a"><p>S M Hossain, A A Ali, M M Rahman, E Ertin, D Epstein, A Kennedy, K Preston, A Umbricht, Y Chen and S Kumar. <br><strong>Identifying Drug (Cocaine) Intake Events from Acute Physiological Response in the Presence of Free-living Physical Activity.</strong>. <i>Proceedings of the 13th ACM/IEE Conference on Information Processing in Sensor Networks</i> 2014:71–82, 2014. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dl.acm.org/ft_gateway.cfm?id=2602348&amp;ftid=1444466&amp;dwn=1&amp;CFID=494348324&amp;CFTOKEN=58863845">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Hossain2014a,
+	author = "S.M. Hossain and A.A. Ali and M.M. Rahman and E. Ertin and D. Epstein and A. Kennedy and K. Preston and A. Umbricht and Y. Chen and S. Kumar",
+	title = "Identifying Drug (Cocaine) Intake Events from Acute Physiological Response in the Presence of Free-living Physical Activity.",
+	journal = "Proceedings of the 13th ACM/IEE Conference on Information Processing in Sensor Networks",
+	year = 2014,
+	volume = 2014,
+	pages = "71--82",
+	abstract = "A variety of health and behavioral states can potentially be inferred from physiological measurements that can now be collected in the natural free-living environment. The major challenge, however, is to develop computational models for automated detection of health events that can work reliably in the natural field environment. In this paper, we develop a physiologically-informed model to automatically detect drug (cocaine) use events in the free-living environment of participants from their electrocardiogram (ECG) measurements. The key to reliably detecting drug use events in the field is to incorporate the knowledge of autonomic nervous system (ANS) behavior in the model development so as to decompose the activation effect of cocaine from the natural recovery behavior of the parasympathetic nervous system (after an episode of physical activity). We collect 89 days of data from 9 active drug users in two residential lab environments and 922 days of data from 42 active drug users in the field environment, for a total of 11,283 hours. We develop a model that tracks the natural recovery by the parasympathetic nervous system and then estimates the dampening caused to the recovery by the activation of the sympathetic nervous system due to cocaine. We develop efficient methods to screen and clean the ECG time series data and extract candidate windows to assess for potential drug use. We then apply our model on the recovery segments from these windows. Our model achieves 100% true positive rate while keeping the false positive rate to 0.87/day over (9+ hours/day of) lab data and to 1.13/day over (11+ hours/day of) field data.",
+	institution = "Dept of Computer Science and Engg., Washington University in St. Louise.",
+	keywords = "Drug Event Detection, electrocardiogram, Wearable Sensors",
+	pubstate = "published",
+	tppubtype = "article",
+	url = "http://dl.acm.org/ft_gateway.cfm?id=2602348&amp;ftid=1444466&amp;dwn=1&amp;CFID=494348324&amp;CFTOKEN=58863845"
+}
+</pre></li><li id="ProceedingsPaperEntry-rahman2011mconverse"><p>Md Mahbubur Rahman, Amin Ahsan Ali, Kurt Plarre, Mustafa Al'Absi, Emre Ertin and Santosh Kumar. <br><strong>mconverse: Inferring conversation episodes from respiratory measurements collected in the field</strong>. In <i>Proceedings of the 2nd Conference on Wireless Health</i>. 2011, 10. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/biomarkers/mConverse.pdf">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{rahman2011mconverse,
+	author = "Rahman, Md Mahbubur and Ali, Amin Ahsan and Plarre, Kurt and Al'Absi, Mustafa and Ertin, Emre and Kumar, Santosh",
+	title = "mconverse: Inferring conversation episodes from respiratory measurements collected in the field",
+	booktitle = "Proceedings of the 2nd Conference on Wireless Health",
+	year = 2011,
+	pages = 10,
+	organization = "ACM",
+	abstract = "Automated detection of social interactions in the natural environment has resulted in promising advances in organizational behavior, consumer behavior, and behavioral health. Progress, however, has been limited since the primary means of assessing social interactions today (i.e., audio recording) has several issues in field usage such as microphone occlusion, lack of speaker specificity, and high energy drain, in addition to significant privacy concerns. In this paper, we present mConverse, a new mobilebased system to infer conversation episodes from respiration measurements collected in the field from an unobtrusively wearable respiratory inductive plethysmograph (RIP) band worn around the user’s chest. The measurements are wirelessly transmitted to a mobile phone, where they are used in a novel machine learning model to determine whether the wearer is speaking, listening, or quiet. Our model incorporates several innovations to address issues that naturally arise in the noisy field environment such as confounding events, poor data quality due to sensor loosening and detachment, losses in the wireless channel, etc. Our basic model obtains 83% accuracy for the three class classification. We formulate a Hidden Markov Model to further improve the accuracy to 87%. Finally, we apply our model to data collected from 22 subjects who wore the sensor for 2 full days in the field to observe conversation behavior in daily life and find that people spend 25% of their day in conversations",
+	url = "https://md2k.org/images/papers/biomarkers/mConverse.pdf"
+}
+</pre></li></ol></div>
+
+
+
+
+				</article>
+									</div><!-- end items-leading -->
+	
+	
+	
+	
+		</div>
+</div></div></div></div></section><section id="sp-feature-team-page" class="div#maximenuck253 div.floatck { 	 	background:#F4F4F4; 	background: -moz-linear-gradient(top, #f4f4f4, #eeeeee); 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f4f4), to(#eeeeee)); 	-moz-border-radius: 0px 5px 5px 5px; 	 }"><div class="row"><div id="sp-secondmenu" class="col-sm-12 col-md-12"><div class="sp-column div.floatck { background: #eeeeee;          background: -moz-linear-gradient(top, #EEEEEE, #EEEEEE);     /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEEEEE), to(#EEEEEE)); */  }"><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
+</div></div></div></div></div></section><footer id="sp-footer"><div class="container"><div class="row"><div id="sp-footer1" class="col-sm-10 col-md-10"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<p style="text-align: center; font-size: 12px; padding-top: 14px;">Copyright &copy; 2020 MD2K. <strong>MD2K was established by the National Institutes of Health Big Data to Knowledge Initiative <a href="https://projectreporter.nih.gov/project_info_description.cfm?aid=9303353&amp;icde=36143741&amp;ddparam=&amp;ddvalue=&amp;ddsub=&amp;cr=7&amp;csb=default&amp;cs=ASC&amp;pball=" target="_blank">(Grant #1U54EB020404)</a></strong><br /><span style="color: #ffffff; font-style: italic;">Team: Cornell Tech, GA Tech, Harvard, U. Memphis, Northwestern, Ohio State, UCLA, UCSD, UCSF, UMass, U. Michigan, U. Utah, WVU </span></p></div>
+</div></div></div></div><div id="sp-footer2" class="col-sm-2 col-md-2"><div class="sp-column "><ul class="sp-contact-info"><li class="sp-contact-phone"><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:901-678-1493">901-678-1493</a></li><li class="sp-contact-email"><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@md2k.org">info@md2k.org</a></li></ul><ul class="social-icons"><li><a target="_blank" href="https://twitter.com/MD2Korg" aria-label="twitter"><i class="fa fa-twitter"></i></a></li><li><a target="_blank" href="https://www.youtube.com/c/MD2KCenter" aria-label="youtube"><i class="fa fa-youtube"></i></a></li></ul></div></div></div></div></footer>            </div> <!-- /.body-innerwrapper -->
+        </div> <!-- /.body-innerwrapper -->
+
+        <!-- Off Canvas Menu -->
+        <div class="offcanvas-menu">
+            <a href="#" class="close-offcanvas" aria-label="Close"><i class="fa fa-remove" aria-hidden="true" title="HELIX_CLOSE_MENU"></i></a>
+            <div class="offcanvas-inner">
+                                  <div class="sp-module "><div class="sp-module-content"><ul class="nav menu">
+<li class="item-101"><a href="../index.html" > Home</a></li><li class="item-191  deeper parent"><a href="../about.html" > About</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-191"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-191"><li class="item-196"><a href="../about/meet-the-team.html" > MD2K Team</a></li><li class="item-198  deeper parent"><a href="../about/news.html" > News</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-198"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-198"><li class="item-443"><a href="../about/news/md2k-in-the-news.html" > MD2K in the News</a></li></ul></li><li class="item-581"><a href="../about/privacy.html" > Privacy</a></li><li class="item-224"><a href="../about/contact.html" > Contact</a></li></ul></li><li class="item-193  active deeper parent"><a href="../research-agenda.html" > Research</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-193"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-193"><li class="item-338"><a href="pubs.html" > Publications</a></li><li class="item-471  divider"><a class="separator ">Research Areas</a>
+</li><li class="item-213"><a href="research-agenda.html" > Research Agenda</a></li><li class="item-285"><a href="sensors.html" > Sensors</a></li><li class="item-214  current active"><a href="biomarkers.html" > mHealth Biomarkers</a></li><li class="item-474"><a href="trial-design.html" > Trial Design</a></li><li class="item-216"><a href="jitai.html" > mHealth Interventions</a></li><li class="item-284"><a href="architecture.html" > Architecture</a></li><li class="item-219"><a href="methodology.html" > Big Data Analytics</a></li><li class="item-473"><a href="visualization.html" > Visualization</a></li><li class="item-221"><a href="privacy.html" > Behavioral Privacy</a></li><li class="item-470  divider"><a class="separator ">Field Study Focus Areas</a>
+</li><li class="item-463"><a href="smoking.html" > Smoking</a></li><li class="item-464"><a href="eating-control.html" > Eating Regulation</a></li><li class="item-465"><a href="drug-use.html" > Drug Use</a></li><li class="item-466"><a href="stress-management.html" > Stress Management</a></li><li class="item-467"><a href="heart-failure-care.html" > Heart Failure Care</a></li><li class="item-472"><a href="behavior-change.html" > Behavior Change</a></li><li class="item-468">		<a  href="http://mperf.md2k.org/"  > Work Productivity</a></li><li class="item-469"><a href="oral-health.html" > Oral Health</a></li></ul></li><li class="item-197  deeper parent"><a href="../software.html" > Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-197"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-197"><li class="item-421  deeper parent"><a href="../software/under-the-hood.html" > Under the Hood</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-421"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-421"><li class="item-427"><a href="../software/under-the-hood/mcerebrum.html" > Smartphone Software</a></li><li class="item-428  deeper parent"><a href="../software/under-the-hood/cerebral-cortex.html" > Cloud Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-428"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-428"><li class="item-436"><a href="../software/under-the-hood/cerebral-cortex/architecture.html" > Architecture</a></li></ul></li><li class="item-429"><a href="../software/under-the-hood/bug-reports-feature-requests.html" > Bug Reports / Feature Requests</a></li><li class="item-430"><a href="../software/under-the-hood/software-license.html" > Software License</a></li><li class="item-431"><a href="../software/under-the-hood/contributing.html" > Contributing</a></li><li class="item-432"><a href="../software/under-the-hood/references.html" > References</a></li><li class="item-533"><a href="../software/under-the-hood/software-docs.html" > Documentation</a></li></ul></li><li class="item-422  deeper parent"><a href="../software/how-to.html" > How-To</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-422"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-422"><li class="item-433  deeper parent"><a href="../software/how-to/smartphone-software.html" > Smartphone Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-433"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-433"><li class="item-440"><a href="../software/how-to/smartphone-software/getting-started.html" > Getting Started</a></li><li class="item-476"><a href="../software/how-to/smartphone-software/implementing-datakit.html" > Implementing DataKit</a></li></ul></li><li class="item-434  deeper parent"><a href="../software/how-to/supported-sensors.html" > Supported Sensors</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-434"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-434"><li class="item-441"><a href="../software/how-to/supported-sensors/sensors-troubleshooting.html" > Sensors Troubleshooting</a></li><li class="item-442"><a href="../software/how-to/supported-sensors/adding-sensors.html" > Adding Sensors </a></li></ul></li><li class="item-438  deeper parent"><a href="../software/how-to/getting-started.html" > Cloud Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-438"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-438"><li class="item-437"><a href="../software/how-to/getting-started/docker.html" > Docker</a></li><li class="item-439"><a href="../software/how-to/getting-started/working-with-cerebral-cortex.html" > Working with Cerebral Cortex</a></li></ul></li><li class="item-453"><a href="../software/how-to/software-howto-studyguides.html" > Study Guides</a></li></ul></li><li class="item-423"><a href="../software/deployments.html" > Deployments</a></li><li class="item-424"><a href="../software/contributors.html" > Contributors</a></li><li class="item-482"><a href="../software/personal.html" > Personal Edition</a></li><li class="item-486"><a href="../software/codeofconduct.html" > Code of Conduct</a></li></ul></li><li class="item-564  deeper parent"><a href="../tutorials.html" > Tutorials</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-564"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-564"><li class="item-565"><a href="../tutorials/cps-iot-week-2020.html" > CPS-IoT Week 2020</a></li></ul></li><li class="item-247  deeper parent"><a href="../webinars.html" > Training</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-247"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-247"><li class="item-425  deeper parent">		<a  href="https://mhti.md2k.org/"  > mHealth Training Institute</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-425"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-425"><li class="item-426">		<a  href="https://mhti.md2k.org/index.php/gallery/2019/2019-lectures"  > mHTI Lectures</a></li></ul></li><li class="item-356">		<a href="https://mhealth.md2k.org/training/webinars" rel="noopener noreferrer" target="_blank" > Webinar Videos</a></li></ul></li><li class="item-223"><a href="../studies.html" > Deployments</a></li><li class="item-226  deeper parent"><a href="../events.html" > Events</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-226"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-226"><li class="item-512"><a href="../events/md2k-2018.html" > 2018 Annual Meeting</a></li><li class="item-353  deeper parent"><a href="../events/2017-annual-meeting.html" > 2017 Annual Meeting</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-353"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-353"><li class="item-455"><a href="../events/2017-annual-meeting/2017-career-day.html" > 2017 Career Day</a></li></ul></li><li class="item-228"><a href="../events/2016-annual-meeting.html" > 2016 Annual Meeting</a></li><li class="item-227"><a href="../events/2015-annual-meeting.html" > 2015 Annual Meeting</a></li></ul></li><li class="item-348">		<a  href="https://mhealth.md2k.org/"  > mHealthHUB</a></li><li class="item-199  deeper parent"><a href="../related-projects.html" > Related Projects</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-199"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-199"><li class="item-239">		<a href="http://mperf.md2k.org/" rel="noopener noreferrer" target="_blank" > mPerf</a></li><li class="item-240">		<a href="http://mprov.md2k.org/" rel="noopener noreferrer" target="_blank" > mProv</a></li><li class="item-577">		<a href="http://mcontain.md2k.org/" rel="noopener noreferrer" target="_blank" > mContain</a></li><li class="item-513">		<a href="https://mdot.md2k.org/" rel="noopener noreferrer" target="_blank" > mDOT</a></li></ul></li><li class="item-556"><a href="../moods.html" > MOODS</a></li></ul>
+</div></div>
+                            </div> <!-- /.offcanvas-inner -->
+        </div> <!-- /.offcanvas-menu -->
+
+        
+        
+        
+        <!-- Preloader -->
+        
+
+        <!-- Go to top -->
+        
+    </body>
+
+<!-- Mirrored from md2k.org/research-agenda/biomarkers.feed?type=atom by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 19:51:20 GMT -->
+</html>

@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+    
+<!-- Mirrored from md2k.org/research-agenda/heart-failure-care.feed?type=atom by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 19:53:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+                <!-- head -->
+        <base  />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="mHealth, md2k, mobile health, precision medicine, biomarkers, mobile sensor data, mobile sensors" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Advancing biomedical discovery and improving health through mobile sensor Big Data" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>MD2K - Heart Failure Care</title>
+	<link href="heart-failure-caredcab.html?type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+	<link href="heart-failure-careb550.html?type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+	<link href="http://md2k-webtest.memphis.edu/research-agenda/heart-failure-care.feed?type=atom" rel="canonical" />
+	<link href="../images/Logos/favicon2.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="../favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="../media/bibtex/css/bibtex.css" rel="stylesheet" type="text/css" />
+	<link href="../plugins/system/maximenuckmobile/themes/default/maximenuckmobile.css" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic&amp;subset=latin-ext" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Fjalla+One:regular&amp;subset=latin-ext" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&amp;subset=greek,greek-ext" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/legacy.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/template.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/presets/preset2.css" rel="stylesheet" type="text/css" class="preset" />
+	<link href="../templates/shaper_helix3/css/custom.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/frontend-edit.css" rel="stylesheet" type="text/css" />
+	<link href="../modules/mod_maximenuck/themes/custom/css/maximenuck_maximenuck196.css" rel="stylesheet" type="text/css" />
+	<link href="../modules/mod_maximenuck/assets/maximenuresponsiveck.css" rel="stylesheet" type="text/css" />
+	<link href="../modules/mod_maximenuck/assets/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+.mobilebarmaximenuck { display: none; }
+	@media only screen and (max-width:640px){
+    #maximenuck196 { display: none !important; }
+    .mobilebarmaximenuck { display: block; }
+	.hidemenumobileck {display: none !important;}
+     }body{font-family:Lato, sans-serif; font-size:14px; font-weight:normal; }h1{font-family:Fjalla One, sans-serif; font-size:36px; font-weight:normal; }h2{font-family:Fjalla One, sans-serif; font-size:30px; font-weight:normal; }h3{font-family:Roboto, sans-serif; font-size:24px; font-weight:700; }h4{font-family:Roboto, sans-serif; font-size:18px; font-weight:700; }h5{font-family:Roboto, sans-serif; font-size:18px; font-weight:700italic; }h6{font-family:Lato, sans-serif; font-size:16px; font-weight:700; }button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #2a9eb2;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #aed141}
+
+.button:active {
+  background-color: #aed141;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+ 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+     -webkit-flex-direction: column;
+    flex-direction: column;
+    webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+	background-color: #2b3675;
+	border-radius: 45px;
+}
+
+.flex-item {
+    background-color: #ffffff;
+    width: 98%;
+    height: auto;
+    margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 45px;
+	padding: 15px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+	text-align: justify;
+}
+
+.flex-study {
+    background-color: #ffffff;
+    width: 25%;
+    height: auto;
+    margin: 10px;
+	border-radius: 45px;
+	padding: 20px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+	
+}
+.flex-study1 {
+    background-color: #ffffff;
+    width: 25%;
+    height: 100%;
+    margin: 10px;
+	border-radius: 45px;
+	padding: 20px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+      text-align: center;
+-webkit-align-self: center; /* Safari 7.0+ */
+    align-contents: center;
+}
+
+.flex-container2 {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: auto;
+	background-color: #2b3675;
+	border-radius: 45px;
+}
+
+p {
+text-align: justify;
+}
+
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #bbb;
+	width: 100%;
+	}
+	
+	td {
+    border-top: 1px solid #ddd;
+    padding: 4px 8px;
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	font-size: 14px;
+		color: #2b3675;
+}
+	th {
+    border-top: 1px solid #ddd;
+    padding: 4px 8px;
+	font-family:Roboto Black, Raleway Black, Oswald SemiBold, Montserrat SemiBold;
+	font-size: 22px;
+		background-color: #2b3675;
+		color: #fff;
+}
+	
+		
+	tbody tr:nth-child(even) td {
+    background-color: #eee;
+}
+
+
+.one-half,
+
+.one-third,
+
+.two-third,
+
+.one-fourth,
+
+.three-fourth,
+
+.one-fifth,
+
+.two-fifth,
+
+.three-fifth,
+
+.four-fifth,
+
+.one-sixth,
+
+.five-sixth {
+
+  float: left;
+
+  margin: 0 4% 15px 0;
+
+}
+
+.three-across-1
+{
+
+  float: left;
+
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border: 5px;
+  width: 30%;
+
+}
+
+.three-across-2
+{
+
+  float: left;
+
+ margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 30%;
+
+}
+
+
+
+.three-across-3
+{
+
+  float: left;
+   margin-bottom: 15px;
+  margin-left: 15px;
+  
+  width: 30%;
+
+}
+
+
+.one-half.last,
+
+.one-third.last,
+
+.two-third.last,
+
+.one-fourth.last,
+
+.three-fourth.last,
+
+.one-fifth.last,
+
+.two-fifth.last,
+
+.three-fifth.last,
+
+.four-fifth.last,
+
+.one-sixth.last,
+
+.five-sixth.last {
+
+  margin-right: 0;
+
+  margin-bottom: 15px;
+
+}
+
+.one-half {
+
+  width: 48%;
+
+}
+
+.one-third {
+
+  width: 30.66%;
+
+}
+
+.two-third {
+
+  width: 65.33%;
+
+}
+
+.one-fourth {
+
+  width: 22%;
+
+}
+
+.three-fourth {
+
+  width: 74%;
+
+}
+
+.one-fifth {
+
+  width: 16.8%;
+
+}
+
+.two-fifth {
+
+  width: 37.6%;
+
+}
+
+.three-fifth {
+
+  width: 58.4%;
+
+}
+
+.four-fifth {
+
+  width: 79.2%;
+
+}
+
+.one-sixth {
+
+  width: 13.33%;
+
+}
+
+.five-sixth {
+
+  width: 82.66%;
+
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.characteristic {
+  text-align: center;
+  color: #fff;
+
+  padding: 2px 7px;
+
+  background-color: #BB4C38;
+  border-radius: 10px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 60%;
+  margin: 2px;
+  top: -4px;
+  position: relative;
+
+}#sp-feature-main{ padding:0px 20px 0 px 20px;margin:0px 20px 0 px 20px; }#sp-main-body{ margin:-20px 0px 0px 0px; }#sp-feature-team-page{ padding:20px; }@media screen and (max-width: 640px) {div#maximenuck196 ul.maximenuck li.maximenuck.nomobileck, div#maximenuck196 .maxipushdownck ul.maximenuck2 li.maximenuck.nomobileck { display: none !important; }}@media screen and (min-width: 641px) {div#maximenuck196 ul.maximenuck li.maximenuck.nodesktopck, div#maximenuck196 .maxipushdownck ul.maximenuck2 li.maximenuck.nodesktopck { display: none !important; }}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"d7f90f5edcdc4cf897badc80e54b33c4","system.paths":{"root":"","base":""}}</script>
+	<script src="../media/system/js/mootools-core700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/system/js/core700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/bibtex/js/bibtex.js" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-noconflict700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-migrate.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/system/js/caption700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../plugins/system/maximenuckmobile/assets/maximenuckmobile.js" type="text/javascript"></script>
+	<script src="../templates/shaper_helix3/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../templates/shaper_helix3/js/jquery.sticky.js" type="text/javascript"></script>
+	<script src="../templates/shaper_helix3/js/main.js" type="text/javascript"></script>
+	<script src="../templates/shaper_helix3/js/frontend-edit.js" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery.ui.core.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/plg_captcha_recaptcha/js/recaptcha.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=JoomlaInitReCaptcha2&amp;render=explicit&amp;hl=en-GB" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});jQuery(document).ready(function($){
+                    $('#maximenuck196').MobileMaxiMenu({usemodules : 0,container : 'menucontainer',showdesc : 0,showlogo : 1,useimages : 0,menuid : 'maximenuck196',showmobilemenutext : 'default',mobilemenutext : 'Menu',mobilebackbuttontext : 'Back',displaytype : 'flat',menubarbuttoncontent : '',topbarbuttoncontent : '',uriroot : '',displayeffect : 'normal',menuwidth : '300',openedonactiveitem : '0'});});// Find all YouTube videos
+var $allVideos = $("iframe[src^='//www.youtube.com']"),
+
+    // The element that is fluid width
+    $fluidEl = $("body");
+
+// Figure out and save aspect ratio for each video
+$allVideos.each(function() {
+
+  $(this)
+    .data('aspectRatio', this.height / this.width)
+
+    // and remove the hard coded width/height
+    .removeAttr('height')
+    .removeAttr('width');
+
+});
+
+// When the window is resized
+$(window).resize(function() {
+
+  var newWidth = $fluidEl.width();
+
+  // Resize all videos according to their own aspect ratio
+  $allVideos.each(function() {
+
+    var $el = $(this);
+    $el
+      .width(newWidth)
+      .height(newWidth * $el.data('aspectRatio'));
+
+  });
+
+// Kick off one resize to fix all videos on page load
+}).resize();
+var sp_preloader = '0';
+
+var sp_gotop = '0';
+
+var sp_offanimation = 'default';
+
+	</script>
+
+            
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55313502-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Universal Google Analytics Plugin by PB Web Development -->
+
+
+</head>
+
+    <body class="site com-content view-category layout-blog no-task itemid-467 en-gb ltr  layout-fluid off-canvas-menu-init">
+
+        <div class="body-wrapper">
+            <div class="body-innerwrapper">
+                <header id="sp-header"><div class="container"><div class="row"><div id="sp-logo" class="col-xs-8 col-sm-2 col-md-2"><div class="sp-column "><div class="logo"><a href="../index.html"><img class="sp-default-logo hidden-xs" src="../images/Logos/MD2K-Logo_80px.png" alt="MD2K"><img class="sp-retina-logo hidden-xs" src="../images/Logos/MD2K-Logo_80px.png" alt="MD2K" width="179" height="80"><img class="sp-default-logo visible-xs" src="../images/Logos/MD2K-Logo_60px.png" alt="MD2K"></a></div></div></div><div id="sp-title" class="col-xs-3 col-sm-10 col-md-10 hidden-sm hidden-xs"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<h2 style="font-size: 1.4em; font-style: italic; font-weight: 300; padding-top: 10px;">Advancing biomedical discovery and improving health through mobile sensor Big Data</h2></div>
+</div></div></div></div></div></div></header><section id="sp-page-title"><div class="row"><div id="sp-othermenu" class="col-sm-12 col-md-12"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+			<!--[if lte IE 7]>
+			<link href="/modules/mod_maximenuck/themes/tabs/css/ie7.css" rel="stylesheet" type="text/css" />
+			<![endif]--><!-- debut Maximenu CK, par cedric keiflin -->
+	<div class="maximenuckh ltr" id="maximenuck196" style="z-index:10;">
+        <div class="maxiroundedleft"></div>
+        <div class="maxiroundedcenter">
+            <ul class=" maximenuck">
+												<li data-level="1" class="maximenuck item101 first level1 " style="z-index : 12000;" ><a class="maximenuck " href="../index.html"><span class="titreck">Home</span></a>
+		</li><li data-level="1" class="maximenuck item191 parent level1 " style="z-index : 11999;" ><a class="maximenuck " href="../about.html"><span class="titreck">About</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item196 first level2 " style="z-index : 11998;" ><a class="maximenuck " href="../about/meet-the-team.html"><span class="titreck">MD2K Team</span></a>
+		</li><li data-level="2" class="maximenuck item198 parent level2 " style="z-index : 11997;" ><a class="maximenuck " href="../about/news.html"><span class="titreck">News</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item443 first last level3 " style="z-index : 11996;" ><a class="maximenuck " href="../about/news/md2k-in-the-news.html"><span class="titreck">MD2K in the News</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item581 level2 " style="z-index : 11995;" ><a class="maximenuck " href="../about/privacy.html"><span class="titreck">Privacy</span></a>
+		</li><li data-level="2" class="maximenuck item224 last level2 " style="z-index : 11994;" ><a class="maximenuck " href="../about/contact.html"><span class="titreck">Contact</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item193 active parent level1 " style="z-index : 11993;" ><a class="maximenuck " href="../research-agenda.html"><span class="titreck">Research</span></a>
+	<div class="floatck" style="width:900px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item338 first level2 " style="z-index : 11992;" ><a class="maximenuck " href="pubs.html"><span class="titreck">Publications</span></a>
+		</li></ul><div class="clr"></div></div><div class="maximenuck2"  style="width:200px;float:left;"><ul class="maximenuck2"><li data-level="2" class="maximenuck headingck item471 level2 " style="z-index : 11991;" ><span class="separator "><span class="titreck"><span class="maximenuiconck fa fa-square"></span>Research Areas</span></span>
+		</li><li data-level="2" class="maximenuck item213 level2 " style="z-index : 11990;" ><a class="maximenuck " href="research-agenda.html"><span class="titreck">Research Agenda</span></a>
+		</li><li data-level="2" class="maximenuck item285 level2 " style="z-index : 11989;" ><a class="maximenuck " href="sensors.html"><span class="titreck">Sensors</span></a>
+		</li><li data-level="2" class="maximenuck item214 level2 " style="z-index : 11988;" ><a class="maximenuck " href="biomarkers.html"><span class="titreck">mHealth Biomarkers</span></a>
+		</li><li data-level="2" class="maximenuck item474 level2 " style="z-index : 11987;" ><a class="maximenuck " href="trial-design.html"><span class="titreck">Trial Design</span></a>
+		</li><li data-level="2" class="maximenuck item216 level2 " style="z-index : 11986;" ><a class="maximenuck " href="jitai.html"><span class="titreck">mHealth Interventions</span></a>
+		</li></ul><div class="clr"></div></div><div class="maximenuck2"  style="width:180px;float:left;"><ul class="maximenuck2"><li data-level="2" class="maximenuck item284 level2 " style="z-index : 11985;" ><a class="maximenuck " href="architecture.html"><span class="titreck">Architecture</span></a>
+		</li><li data-level="2" class="maximenuck item219 level2 " style="z-index : 11984;" ><a class="maximenuck " href="methodology.html"><span class="titreck">Big Data Analytics</span></a>
+		</li><li data-level="2" class="maximenuck item473 level2 " style="z-index : 11983;" ><a class="maximenuck " href="visualization.html"><span class="titreck">Visualization</span></a>
+		</li><li data-level="2" class="maximenuck item221 level2 " style="z-index : 11982;" ><a class="maximenuck " href="privacy.html"><span class="titreck">Behavioral Privacy</span></a>
+		</li></ul><div class="clr"></div></div><div class="maximenuck2"  style="width:200px;float:left;"><ul class="maximenuck2"><li data-level="2" class="maximenuck headingck item470 level2 fullwidth" style="z-index : 11981;" ><span class="separator "><span class="titreck"><span class="maximenuiconck fa fa-square"></span>Field Study Focus Areas</span></span>
+		</li><li data-level="2" class="maximenuck item463 level2 " style="z-index : 11980;" ><a class="maximenuck " href="smoking.html"><span class="titreck">Smoking</span></a>
+		</li><li data-level="2" class="maximenuck item464 level2 " style="z-index : 11979;" ><a class="maximenuck " href="eating-control.html"><span class="titreck">Eating Regulation</span></a>
+		</li><li data-level="2" class="maximenuck item465 level2 " style="z-index : 11978;" ><a class="maximenuck " href="drug-use.html"><span class="titreck">Drug Use</span></a>
+		</li><li data-level="2" class="maximenuck item466 level2 " style="z-index : 11977;" ><a class="maximenuck " href="stress-management.html"><span class="titreck">Stress Management</span></a>
+		</li></ul><div class="clr"></div></div><div class="maximenuck2"  style="width:200px;float:left;"><ul class="maximenuck2"><li data-level="2" class="maximenuck item467 current active level2 " style="z-index : 11976;" ><a class="maximenuck " href="heart-failure-care.html"><span class="titreck">Heart Failure Care</span></a>
+		</li><li data-level="2" class="maximenuck item472 level2 " style="z-index : 11975;" ><a class="maximenuck " href="behavior-change.html"><span class="titreck">Behavior Change</span></a>
+		</li><li data-level="2" class="maximenuck item468 level2 " style="z-index : 11974;" ><a class="maximenuck " href="http://mperf.md2k.org/"><span class="titreck">Work Productivity</span></a>
+		</li><li data-level="2" class="maximenuck item469 last level2 " style="z-index : 11973;" ><a class="maximenuck " href="oral-health.html"><span class="titreck">Oral Health</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item197 parent level1 " style="z-index : 11972;" ><a class="maximenuck " href="../software.html"><span class="titreck">Software</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item421 first parent level2 " style="z-index : 11971;" ><a class="maximenuck " href="../software/under-the-hood.html"><span class="titreck">Under the Hood</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item427 first level3 " style="z-index : 11970;" ><a class="maximenuck " href="../software/under-the-hood/mcerebrum.html"><span class="titreck">Smartphone Software</span></a>
+		</li><li data-level="3" class="maximenuck item428 parent level3 " style="z-index : 11969;" ><a class="maximenuck " href="../software/under-the-hood/cerebral-cortex.html"><span class="titreck">Cloud Software</span></a>
+	<div class="floatck" style="margin-left:225px;width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="4" class="maximenuck item436 first last level4 " style="z-index : 11968;" ><a class="maximenuck " href="../software/under-the-hood/cerebral-cortex/architecture.html"><span class="titreck">Architecture</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="3" class="maximenuck item429 level3 " style="z-index : 11967;" ><a class="maximenuck " href="../software/under-the-hood/bug-reports-feature-requests.html"><span class="titreck">Bug Reports / Feature Requests</span></a>
+		</li><li data-level="3" class="maximenuck item430 level3 " style="z-index : 11966;" ><a class="maximenuck " href="../software/under-the-hood/software-license.html"><span class="titreck">Software License</span></a>
+		</li><li data-level="3" class="maximenuck item431 level3 " style="z-index : 11965;" ><a class="maximenuck " href="../software/under-the-hood/contributing.html"><span class="titreck">Contributing</span></a>
+		</li><li data-level="3" class="maximenuck item432 level3 " style="z-index : 11964;" ><a class="maximenuck " href="../software/under-the-hood/references.html"><span class="titreck">References</span></a>
+		</li><li data-level="3" class="maximenuck item533 last level3 " style="z-index : 11963;" ><a class="maximenuck " href="../software/under-the-hood/software-docs.html"><span class="titreck">Documentation</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item422 parent level2 " style="z-index : 11962;" ><a class="maximenuck " href="../software/how-to.html"><span class="titreck">How-To</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item433 first parent level3 " style="z-index : 11961;" ><a class="maximenuck " href="../software/how-to/smartphone-software.html"><span class="titreck">Smartphone Software</span></a>
+	<div class="floatck" style="margin-left:225px;width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="4" class="maximenuck item440 first level4 " style="z-index : 11960;" ><a class="maximenuck " href="../software/how-to/smartphone-software/getting-started.html"><span class="titreck">Getting Started</span></a>
+		</li><li data-level="4" class="maximenuck item476 last level4 " style="z-index : 11959;" ><a class="maximenuck " href="../software/how-to/smartphone-software/implementing-datakit.html"><span class="titreck">Implementing DataKit</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="3" class="maximenuck item434 parent level3 " style="z-index : 11958;" ><a class="maximenuck " href="../software/how-to/supported-sensors.html"><span class="titreck">Supported Sensors</span></a>
+	<div class="floatck" style="margin-left:225px;width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="4" class="maximenuck item441 first level4 " style="z-index : 11957;" ><a class="maximenuck " href="../software/how-to/supported-sensors/sensors-troubleshooting.html"><span class="titreck">Sensors Troubleshooting</span></a>
+		</li><li data-level="4" class="maximenuck item442 last level4 " style="z-index : 11956;" ><a class="maximenuck " href="../software/how-to/supported-sensors/adding-sensors.html"><span class="titreck">Adding Sensors </span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="3" class="maximenuck item438 parent level3 " style="z-index : 11955;" ><a class="maximenuck " href="../software/how-to/getting-started.html"><span class="titreck">Cloud Software</span></a>
+	<div class="floatck" style="width:300px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="4" class="maximenuck item437 first level4 " style="z-index : 11954;" ><a class="maximenuck " href="../software/how-to/getting-started/docker.html"><span class="titreck">Docker</span></a>
+		</li><li data-level="4" class="maximenuck item439 last level4 " style="z-index : 11953;" ><a class="maximenuck " href="../software/how-to/getting-started/working-with-cerebral-cortex.html"><span class="titreck">Working with Cerebral Cortex</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="3" class="maximenuck item453 last level3 " style="z-index : 11952;" ><a class="maximenuck " href="../software/how-to/software-howto-studyguides.html"><span class="titreck">Study Guides</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item423 level2 " style="z-index : 11951;" ><a class="maximenuck " href="../software/deployments.html"><span class="titreck">Deployments</span></a>
+		</li><li data-level="2" class="maximenuck item424 level2 " style="z-index : 11950;" ><a class="maximenuck " href="../software/contributors.html"><span class="titreck">Contributors</span></a>
+		</li><li data-level="2" class="maximenuck item482 level2 " style="z-index : 11949;" ><a class="maximenuck " href="../software/personal.html"><span class="titreck">Personal Edition</span></a>
+		</li><li data-level="2" class="maximenuck item486 last level2 " style="z-index : 11948;" ><a class="maximenuck " href="../software/codeofconduct.html"><span class="titreck">Code of Conduct</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item564 parent level1 " style="z-index : 11947;" ><a class="maximenuck " href="../tutorials.html"><span class="titreck">Tutorials</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item565 first last level2 " style="z-index : 11946;" ><a class="maximenuck " href="../tutorials/cps-iot-week-2020.html"><span class="titreck">CPS-IoT Week 2020</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item247 parent level1 " style="z-index : 11945;" ><a class="maximenuck " href="../webinars.html"><span class="titreck">Training</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item425 first parent level2 " style="z-index : 11944;" ><a class="maximenuck " href="https://mhti.md2k.org/"><span class="titreck">mHealth Training Institute</span></a>
+	<div class="floatck" style="margin-left:200px;width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item426 first last level3 " style="z-index : 11943;" ><a class="maximenuck " href="https://mhti.md2k.org/index.php/gallery/2019/2019-lectures"><span class="titreck">mHTI Lectures</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item356 last level2 " style="z-index : 11942;" ><a class="maximenuck " href="https://mhealth.md2k.org/training/webinars" target="_blank" ><span class="titreck">Webinar Videos</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item223 level1 " style="z-index : 11941;" ><a class="maximenuck " href="../studies.html"><span class="titreck">Deployments</span></a>
+		</li><li data-level="1" class="maximenuck item226 parent level1 " style="z-index : 11940;" ><a class="maximenuck " href="../events.html"><span class="titreck">Events</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item512 first level2 " style="z-index : 11939;" ><a class="maximenuck " href="../events/md2k-2018.html"><span class="titreck">2018 Annual Meeting</span></a>
+		</li><li data-level="2" class="maximenuck item353 parent level2 " style="z-index : 11938;" ><a class="maximenuck " href="../events/2017-annual-meeting.html"><span class="titreck">2017 Annual Meeting</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item455 first last level3 " style="z-index : 11937;" ><a class="maximenuck " href="../events/2017-annual-meeting/2017-career-day.html"><span class="titreck">2017 Career Day</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item228 level2 " style="z-index : 11936;" ><a class="maximenuck " href="../events/2016-annual-meeting.html"><span class="titreck">2016 Annual Meeting</span></a>
+		</li><li data-level="2" class="maximenuck item227 last level2 " style="z-index : 11935;" ><a class="maximenuck " href="../events/2015-annual-meeting.html"><span class="titreck">2015 Annual Meeting</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item348 level1 " style="z-index : 11934;" ><a class="maximenuck " href="https://mhealth.md2k.org/"><span class="titreck">mHealthHUB</span></a>
+		</li><li data-level="1" class="maximenuck item199 parent level1 " style="z-index : 11933;" ><a class="maximenuck " href="../related-projects.html"><span class="titreck">Related Projects</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item239 first level2 " style="z-index : 11932;" ><a class="maximenuck " href="http://mperf.md2k.org/" target="_blank" ><span class="titreck">mPerf</span></a>
+		</li><li data-level="2" class="maximenuck item240 level2 " style="z-index : 11931;" ><a class="maximenuck " href="http://mprov.md2k.org/" target="_blank" ><span class="titreck">mProv</span></a>
+		</li><li data-level="2" class="maximenuck item577 level2 " style="z-index : 11930;" ><a class="maximenuck " href="http://mcontain.md2k.org/" target="_blank" ><span class="titreck">mContain</span></a>
+		</li><li data-level="2" class="maximenuck item513 last level2 " style="z-index : 11929;" ><a class="maximenuck " href="https://mdot.md2k.org/" target="_blank" ><span class="titreck">mDOT</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item556 last level1 " style="z-index : 11928;" ><a class="maximenuck " href="../moods.html"><span class="titreck">MOODS</span></a></li>            </ul>
+        </div>
+        <div class="maxiroundedright"></div>
+        <div style="clear:both;"></div>
+    </div>
+    <!-- fin maximenuCK -->
+</div></div></div></div></div></section><section id="sp-feature-main"><div class="row"><div id="sp-feature" class="col-sm-12 col-md-12"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<div style="padding-left: 20px; padding-right: 20px;">
+<h1>Heart Failure Care</h1>
+<h2>Studies</h2>
+<hr /></div></div>
+</div></div><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<div style="padding-left: 20px; padding-right: 20px;">
+<div class="row equal">
+<div class="col-md-4"><img src="../images/logos-cropped/ohio_state.png" alt="" width="150" class="img-responsive" /> <a id="ohiostate" name="ohiostate"></a>
+<h3>Ohio State</h3>
+<h4>PI: William Abraham</h4>
+<h4>Congestive Heart Failure</h4>
+</div>
+<div class="col-md-2">
+<h4>Users:</h4>
+225
+<h4>Person-Days:</h4>
+6,750
+<h4>Samples:</h4>
+224 billion</div>
+<div class="col-md-2">
+<h4>Sensors</h4>
+<p>&bull; Microsoft Band<br />&bull; EasySense<br />&bull; Phone<br />&bull; Omron Scale<br />&bull; Omron Blood Pressure</p>
+</div>
+<div class="col-md-4">
+<h4>Description</h4>
+<p style="text-align: justify;">This study is designed to evaluate the efficacy of the novel EasySense wireless, contactless system in assessing pulmonary congestion via measurements of thoracic impedance and cardiac and lung motion in patients with congestive heart failure (CHF) during hospitalization and post-discharge.</p>
+</div>
+</div>
+<hr /></div></div>
+</div></div></div></div></div></section><section id="sp-main-body"><div class="container"><div class="row"><div id="sp-component" class="col-sm-12 col-md-12"><div class="sp-column custom-class"><div id="system-message-container">
+	</div>
+<div class="blog" itemscope itemtype="http://schema.org/Blog">
+	
+	
+	
+	
+	
+				<div class="items-leading clearfix">
+							<article class="item leading-0"
+					itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+					
+
+
+
+<div class="entry-header">
+
+	
+		
+	
+</div>
+
+
+
+<h2>Publications</h2>
+<p><ol class="bibtex-list"><li id="ArticleEntry-desai2016benefit"><p>Ashkay  S Desai, Muthiah Vaduganathan, Greg Ginn, William  T Abraham, Philip  B Adamson, Maria Rosa Costanzo, THomas  J Heywood and Lynne  W Stevenson. <br><strong>Benefit of Longitudinal Pulmonary Artery Pressure Monitoring to Reduce Heart Failure Hospitalization Extends to Obese Patients</strong>. <i>Journal of Cardiac Failure</i> 22(8):S54, 2016. <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{desai2016benefit,
+	author = "Ashkay S Desai and Muthiah Vaduganathan and Greg Ginn and William T Abraham and Philip B Adamson and Maria Rosa Costanzo and J THomas Heywood and Lynne W Stevenson",
+	title = "Benefit of Longitudinal Pulmonary Artery Pressure Monitoring to Reduce Heart Failure Hospitalization Extends to Obese Patients",
+	journal = "Journal of Cardiac Failure",
+	year = 2016,
+	volume = 22,
+	number = 8,
+	pages = "S54",
+	publisher = "Elsevier"
+}
+</pre></li><li id="ArticleEntry-costanzo2016interventions"><p>Maria  R Costanzo, Lynne  W Stevenson, Philip  B Adamson, Ashkay  S Desai, Thomas  J Heywood, Robert  C Bourge, Jordan Bauman and William  T Abraham. <br><strong>Interventions linked to decreased heart failure hospitalizations during ambulatory pulmonary artery pressure monitoring</strong>. <i>JACC: Heart Failure</i> 4(5):333–344, 2016. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://heartfailure.onlinejacc.org/article.aspx?articleid=2491371">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1016/j.jchf.2015.11.011">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{costanzo2016interventions,
+	author = "Maria R Costanzo and Lynne W Stevenson and Philip B Adamson and Ashkay S Desai and J Thomas Heywood and Robert C Bourge and Jordan Bauman and William T Abraham",
+	title = "Interventions linked to decreased heart failure hospitalizations during ambulatory pulmonary artery pressure monitoring",
+	journal = "JACC: Heart Failure",
+	year = 2016,
+	volume = 4,
+	number = 5,
+	pages = "333--344",
+	abstract = "OBJECTIVES: This study sought to analyze medical therapy data from the CHAMPION (CardioMEMS Heart Sensor Allows Monitoring of Pressure to Improve Outcomes in Class III Heart Failure) trial to determine which interventions were linked to decreases in heart failure (HF) hospitalizations during ambulatory pulmonary artery (PA) pressure-guided management. BACKGROUND: Elevated cardiac filling pressures, which increase the risk of hospitalizations and mortality, can be detected using an ambulatory PA pressure monitoring system before onset of symptomatic congestion allowing earlier intervention to prevent HF hospitalizations. METHODS: The CHAMPION trial was a randomized, controlled, single-blind study of 550 patients with New York Heart Association functional class III HF with a HF hospitalization in the prior year. All patients undergoing implantation of the ambulatory PA pressure monitoring system were randomized to the active monitoring group (PA pressure-guided HF management plus standard of care) or to the blind therapy group (HF management by standard clinical assessment), and followed for a minimum of 6 months. Medical therapy data were compared between groups to understand what interventions produced the significant reduction in HF hospitalizations in the active monitoring group. RESULTS: Both groups had similar baseline medical therapy. After 6 months, the active monitoring group experienced a higher frequency of medications adjustments; significant increases in the doses of diuretics, vasodilators, and neurohormonal antagonists; targeted intensification of diuretics and vasodilators in patients with higher PA pressures; and preservation of renal function despite diuretic intensification. CONCLUSIONS: Incorporation of a PA pressure-guided treatment algorithm to decrease filling pressures led to targeted changes, particularly in diuretics and vasodilators, and was more effective in reducing HF hospitalizations than management of patient clinical signs or symptoms alone.",
+	doi = "10.1016/j.jchf.2015.11.011",
+	publisher = "Journal of the American College of Cardiology",
+	url = "http://heartfailure.onlinejacc.org/article.aspx?articleid=2491371"
+}
+</pre></li><li id="ArticleEntry-Thanikachalam2015"><p>S Thanikachalam, V Harivanzan, M V Mahadevan, J S N Murthy, C Anbarasi, C S Saravanababu, A Must, R R Baliga, W T Abraham and M Thanikachalam. <br><strong>Population Study of Urban, Rural, and Semiurban Regions for the Detection of Endovascular Disease and Prevalence of Risk Factors and Holistic Intervention Study (PURSE-HIS): Rationale, Study Design, and Baseline Characteristics</strong>. <i>Global Heart</i> (0):-, 2015. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://www.sciencedirect.com/science/article/pii/S2211816014026696">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Thanikachalam2015,
+	author = "S. Thanikachalam and V. Harivanzan and M.V. Mahadevan and J.S.N. Murthy and C. Anbarasi and C.S. Saravanababu and A. Must and R.R. Baliga and W.T. Abraham and M. Thanikachalam",
+	title = "Population Study of Urban, Rural, and Semiurban Regions for the Detection of Endovascular Disease and Prevalence of Risk Factors and Holistic Intervention Study (PURSE-HIS): Rationale, Study Design, and Baseline Characteristics",
+	journal = "Global Heart",
+	year = 2015,
+	number = 0,
+	pages = "-",
+	abstract = "Abstract We designed and implemented the PURSE-HIS (Population Study of Urban, Rural and Semiurban Regions for the Detection of Endovascular Disease and Prevalence of Risk Factors and Holistic Intervention Study) to understand the prevalence and progression of subclinical and overt endovascular disease (EVD) and its risk factors in urban, semiurban, and rural communities in South India. The study is also designed to generate clinical evidence for effective, affordable, and sustainable community-specific intervention strategies to control risks factors for EVD. As of June 2012, 8,080 (urban: 2,221; semiurban: 2,821; rural: 3,038) participants &gt;20 years of age were recruited using 2-stage cluster sampling. Baseline measurements included standard cardiovascular disease risk factors, sociodemographic factors, lifestyle habits, psychosocial factors, and nutritional assessment. Fasting blood samples were assayed for putative biochemical risk factors and urine samples for microalbuminuria. All nondiabetic participants underwent oral glucose tolerance test with blood and urine samples collected every 30 min for 2 h. Additional baseline measurements included flow-mediated brachial artery endothelial vasodilation, assessment of carotid intimal medial wall thickness using ultrasonography, screening for peripheral vascular disease using ankle and brachial blood pressures, hemodynamic screening using a high-fidelity applanation tonometry to measure central blood pressure parameters, and aortic pulse wave velocity. To assess prevalence of coronary artery disease, all participants underwent surface electrocardiography and documentation of ventricular wall motion abnormality and function using echocardiography imaging. To detect subclinical lesions, all eligible participants completed an exercise treadmill test. Prospectively, the study will assess progression of subclinical and overt EVD, including risk factorâoutcome relation differences across communities. The study will also evaluate community-specific EVD prevention using traditional Indian system of medicine versus recognized allopathic (mainstream) systems of medicine.",
+	url = "http://www.sciencedirect.com/science/article/pii/S2211816014026696"
+}
+</pre></li><li id="ArticleEntry-Sharma2015129"><p>V Sharma, L D Rathman, R S Small, D J Whellan, J Koehler, E Warman and W T Abraham. <br><strong>Stratifying patients at the risk of heart failure hospitalization using existing device diagnostic thresholds</strong>. <i>Heart &amp; Lung: The Journal of Acute and Critical Care</i> 44(2):129 - 136, 2015. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://www.sciencedirect.com/science/article/pii/S014795631400418X">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Sharma2015129,
+	author = "V. Sharma and L.D. Rathman and R.S. Small and D.J. Whellan and J. Koehler and E. Warman and W.T. Abraham",
+	title = "Stratifying patients at the risk of heart failure hospitalization using existing device diagnostic thresholds",
+	journal = "Heart \&amp; Lung: The Journal of Acute and Critical Care",
+	year = 2015,
+	volume = 44,
+	number = 2,
+	pages = "129 - 136",
+	abstract = "Background Heart failure hospitalizations (HFHs) cost the US health care system â¼$20 billion annually. Identifying patients at risk of HFH to enable timely intervention and prevent expensive hospitalization remains a challenge. Implantable cardioverter defibrillators (ICDs) and cardiac resynchronization devices with defibrillation capability (CRT-Ds) collect a host of diagnostic parameters that change with HF status and collectively have the potential to signal an increasing risk of HFH. These device-collected diagnostic parameters include activity, day and night heart rate, atrial tachycardia/atrial fibrillation (AT/AF) burden, mean rate during AT/AF, percent CRT pacing, number of shocks, and intrathoracic impedance. There are thresholds for these parameters that when crossed trigger a notification, referred to as device observation, which gets noted on the device report. We investigated if these existing device observations can stratify patients at varying risk of HFH. Methods We analyzed data from 775 patients (age: 69Â Â±Â 11 year, 68% male) with CRT-D devices followed for 13Â Â±Â 5 months with adjudicated HFHs. HFH rate was computed for increasing number of device observations. Data were analyzed by both excluding and including intrathoracic impedance. HFH risk was assessed at the time of a device interrogation session, and all the data between previous and current follow-up sessions were used to determine the HFH risk for the next 30 days. Results 2276 follow-up sessions in 775 patients were evaluated with 42 HFHs in 37 patients. Percentage of evaluations that were followed by an HFH within the next 30 days increased with increasing number of device observations. Patients with 3 or more device observations were at 42Ã HFH risk compared to patients with no device observation. Even after excluding intrathoracic impedance, the remaining device parameters effectively stratified patients at HFH risk. Conclusion Available device observations could provide an effective method to stratify patients at varying risk of heart failure hospitalization.",
+	url = "http://www.sciencedirect.com/science/article/pii/S014795631400418X"
+}
+</pre></li><li id="ArticleEntry-Khayat2015"><p>R Khayat, D Jarjoura, K Porter, A Sow, J Wannemacher, R Dohar, A Pleister and W T Abraham. <br><strong>Sleep disordered breathing and post-discharge mortality in patients with acute heart failure</strong>. <i>Eur Heart J</i>, 2015. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1093/eurheartj/ehu522">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Khayat2015,
+	author = "R. Khayat and D. Jarjoura and K. Porter and A. Sow and J. Wannemacher and R. Dohar and A. Pleister and W.T. Abraham",
+	title = "Sleep disordered breathing and post-discharge mortality in patients with acute heart failure",
+	journal = "Eur Heart J",
+	year = 2015,
+	abstract = "Hospitalizations for heart failure are associated with a high post-discharge risk for mortality. Identification of modifiable predictors of post-discharge mortality during hospitalization may improve outcome. Sleep disordered breathing (SDB) is the most common co-morbidity in heart failure patients.Prospective cohort study of patients hospitalized with acute heart failure (AHF) in a single academic heart hospital. Between January 2007 and December 2010, all patients hospitalized with AHF who have left ventricular ejection fraction (LVEF) ? 45% and were not already diagnosed with SDB were the target population.Patients underwent in-hospital attended polygraphy testing for SDB and were followed for a median of 3 years post-discharge. Mortality was recorded using national and state vital statistics databases.During the study period, 1117 hospitalized AHF patients underwent successful sleep testing. Three hundred and forty-four patients (31%) had central sleep apnoea (CSA), 525(47%) patients had obstructive sleep apnoea (OSA), and 248 had no or minimal SDB (nmSDB). Of those, 1096 patients survived to discharge and were included in the mortality analysis. Central sleep apnoea was independently associated with mortality. The multivariable hazard ratio (HR) for time to death for CSA vs. nmSDB was 1.61 (95% CI: 1.1, 2.4",
+	school = "Sleep Heart Program, The Ohio State University, Columbus, OH, USA Division of Cardiovascular Medicine, The Ohio State University, Columbus, OH, USA.",
+	url = "http://dx.doi.org/10.1093/eurheartj/ehu522"
+}
+</pre></li><li id="ArticleEntry-Gold2015"><p>M R Gold, C Daubert, W T Abraham, S Ghio, M S J Sutton, J H Hudnall, J Cerkvenik and C Linde. <br><strong>The effect of reverse remodeling on long-term survival in mildly symptomatic patients with heart failure receiving cardiac resynchronization therapy: Results of the REVERSE study.</strong>. <i>Heart Rhythm</i> 12(3):524–530, 2015. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1016/j.hrthm.2014.11.014">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Gold2015,
+	author = "M.R. Gold and C. Daubert and W.T. Abraham and S. Ghio and M.S.J. Sutton and J.H. Hudnall and J. Cerkvenik and C. Linde",
+	title = "The effect of reverse remodeling on long-term survival in mildly symptomatic patients with heart failure receiving cardiac resynchronization therapy: Results of the REVERSE study.",
+	journal = "Heart Rhythm",
+	year = 2015,
+	volume = 12,
+	number = 3,
+	pages = "524--530",
+	abstract = "Cardiac resynchronization therapy (CRT) reduces mortality, improves functional status, and induces reverse left ventricular remodeling in selected populations with heart failure (HF). The magnitude of reverse remodeling predicts survival with many HF medical therapies. However, there are few studies assessing the effect of remodeling on long-term survival with CRT.The purpose of this study was to assess the effect of CRT-induced reverse remodeling on long-term survival in patients with mildly symptomatic heart failure.The REsynchronization reVErses Remodeling in Systolic Left vEntricular Dysfunction trial was a multicenter, double-blind, randomized trial of CRT in patients with mild HF. Long-term follow-up of 5 years was preplanned. The present analysis was restricted to the 353 patients who were randomized to the CRT ON group with paired echocardiographic studies at baseline and 6 months postimplantation. The left ventricular end-systolic volume index (LVESVi) was measured in the core laboratory and was an independently powered end point of the REsynchronization reVErses Remodeling in Systolic Left vEntricular Dysfunction trial.A 68% reduction in mortality was observed in patients with ?15% decrease in LVESVi compared to the rest of the patients (P = .0004). Multivariable analysis showed that the change in LVESVi was a strong independent predictor (P = .0002), with a 14% reduction in mortality for every 10% decrease in LVESVi. Other remodeling parameters such as left ventricular end-diastolic volume index and ejection fraction had a similar association with mortality.The change in left ventricular end-systolic volume after 6 months of CRT is a strong independent predictor of long-term survival in mild HF.",
+	school = "Karolinska University Hospital, Stockholm, Sweden.",
+	url = "http://dx.doi.org/10.1016/j.hrthm.2014.11.014"
+}
+</pre></li><li id="ArticleEntry-Costanzo2015"><p>M R Costanzo, R Khayat, P Ponikowski, R Augostini, C Stellbrink, M Mianulli and W T Abraham. <br><strong>Mechanisms and Clinical Consequences of Untreated Central Sleep Apnea in Heart Failure</strong>. <i>Journal of the American College of Cardiology</i> 65(1):72–84, 2015. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1016/j.jacc.2014.10.025">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Costanzo2015,
+	author = "M.R. Costanzo and R. Khayat and P. Ponikowski and R. Augostini and C. Stellbrink and M. Mianulli and W.T. Abraham",
+	title = "Mechanisms and Clinical Consequences of Untreated Central Sleep Apnea in Heart Failure",
+	journal = "Journal of the American College of Cardiology",
+	year = 2015,
+	volume = 65,
+	number = 1,
+	pages = "72--84",
+	abstract = "Central sleep apnea (CSA) is a highly prevalent, though often unrecognized, comorbidity in patients with heart failure (HF). Data from HF population studies suggest that it may present in 30% to 50% of HF patients. CSA is recognized as an important contributor to the progression of HF and to HF-related morbidity and mortality. Over the past 2 decades, an expanding body of research has begun to shed light on the pathophysiologic mechanisms of CSA. Armed with this growing knowledge base, the sleep, respiratory, and cardiovascular research communities have been working to identify ways to treat CSA in HF with the ultimate goal of improving patient quality of life and clinical outcomes. In this paper, we examine the current state of knowledge about the mechanisms of CSA in HF and review emerging therapies for this disorder.",
+	school = "Division of Cardiovascular Medicine, The Ohio State University, Columbus, Ohio.",
+	url = "http://dx.doi.org/10.1016/j.jacc.2014.10.025"
+}
+</pre></li><li id="ArticleEntry-Bayram2015"><p>M Bayram, St.  J A Cyr and W T Abraham. <br><strong>d-Ribose aids heart failure patients with preserved ejection fraction and diastolic dysfunction: a pilot study</strong>. <i>Ther Adv Cardiovasc Dis</i>, 2015. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1177/1753944715572752">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Bayram2015,
+	author = "M. Bayram and J.A. St. Cyr and W.T. Abraham",
+	title = "d-Ribose aids heart failure patients with preserved ejection fraction and diastolic dysfunction: a pilot study",
+	journal = "Ther Adv Cardiovasc Dis",
+	year = 2015,
+	abstract = "The incidence of heart failure continues to escalate with >550,000 newly diagnosed patients annually worldwide. More than half of the patients with heart failure have preserved ejection fraction or isolated diastolic dysfunction, for which no current effective therapies for diastolic dysfunction exist. Every cell requires adequate levels of high energy phosphates to maintain integrity and function. Previous studies have demonstrated that diastolic function is energy dependent and supplemental d-ribose has shown to improve diastolic dysfunction. This study investigated what role d-ribose might play in congestive heart failure patients with preserved systolic function and diastolic dysfunction.A total of 11 patients, New York Heart Association class II-IV, with clinical symptoms, normal left ventricular systolic function and echocardiographic evidence of diastolic dysfunction were enrolled after meeting inclusion criteria. Each patient received oral d-ribose (5 g/dose) for 6 weeks. Echocardiographic evaluation, cardiopulmonary metabolic testing and subjective questionnaire assessment were performed at baseline, 6 weeks and at 9 weeks (3 weeks after discontinuing d-ribose).An improvement in their tissue Doppler velocity (E'), which was maintained at 9 weeks, was demonstrated in 64% of the patients. Five patients showed an improvement in their ratio of early diastolic filling velocity (E) to early annulus relaxation velocity (E'). There was no appreciable difference in these measurements during valsalva or with leg raising and handgrip exercises. Four patients also had an improvement in their maximum predicted VO2 values; two demonstrated a worsening effect and no differences were noted in the remaining patients. Subjective assessment revealed a benefit in only one patient, worsening symptoms in one patient and no change in the remaining cohort.This pilot study revealed some beneficial trends with D-ribose even with this small cohort size. However, future investigations are necessary to further substantiate these observed benefits.",
+	school = "Cardiovascular Medicine, Ohio State University, Columbus, OH, USA.",
+	url = "http://dx.doi.org/10.1177/1753944715572752"
+}
+</pre></li><li id="ArticleEntry-Amat-Santos2015"><p>I J Amat-Santos, S Bergeron, M Bernier, R Allende, H B Ribeiro, M Urena, P Pibarot, S Verheye, G Keren, M Yaacoby, Y Nitzan, W T Abraham and J Rodés-Cabau. <br><strong>Left atrial decompression through unidirectional left-to-right interatrial shunt for the treatment of left heart failure: first-in-man experience with the V-Wave device</strong>. <i>EuroIntervention</i> 10(9):1127–1131, 2015. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://www.pcronline.com/eurointervention/ahead_of_print/201405-07/">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Amat-Santos2015,
+	author = "I.J. Amat-Santos and S. Bergeron and M. Bernier and R. Allende and H.B. Ribeiro and M. Urena and P. Pibarot and S. Verheye and G. Keren and M. Yaacoby and Y. Nitzan and W.T. Abraham and J. Rodés-Cabau",
+	title = "Left atrial decompression through unidirectional left-to-right interatrial shunt for the treatment of left heart failure: first-in-man experience with the V-Wave device",
+	journal = "EuroIntervention",
+	year = 2015,
+	volume = 10,
+	number = 9,
+	pages = "1127--1131",
+	abstract = "Elevated filling pressures of the left atrium (LA) are associated with poorer outcomes in patients with chronic heart failure. The V-Wave is a new percutaneously implanted device intended to decrease the LA pressure by the shunting of blood from the LA to the right atrium. This report describes the first-in-man experience with the V-Wave device.A 70-year-old man with a history of heart failure of ischaemic origin, left ventricular dysfunction (LVEF: 35%, pulmonary wedge: 19 mmHg), no right heart dysfunction, NYHA Class III and orthopnoea despite optimal treatment, was accepted for V-Wave device implantation. The device consists of an ePTFE encapsulated nitinol frame that is implanted at the level of the interatrial septum and contains a trileaflet pericardium tissue valve sutured inside which allows a unidirectional LA to right atrium shunt. The procedure was performed through a transfemoral venous approach under fluoroscopic and TEE guidance. The device was successfully implanted and the patient was discharged 24 hours after the procedure with no complications. At three-month follow-up a left-to-right shunt through the device was confirmed by TEE. The patient was in NYHA Class II, without orthopnoea, the Kansas City Cardiomyopathy index was 77.6 (from 39.1 at baseline) and NT-proBNP was 322 ng/mL (from 502 ng/mL at baseline). The QP/QS was 1.17 and the pulmonary wedge was 8 mmHg, with no changes in pulmonary pressure or right ventricular function.Left atrial decompression through a unidirectional left-to-right interatrial shunt represents a new concept for the treatment of patients with left ventricular failure. The present report shows the feasibility of applying this new therapy with the successful and uneventful implantation of the V-Wave device, which was associated with significant improvement in functional, quality of life and haemodynamic parameters at 90 days.",
+	school = "Lung Institute, Quebec City, Quebec, Canada.",
+	url = "http://www.pcronline.com/eurointervention/ahead_of_print/201405-07/"
+}
+</pre></li><li id="ArticleEntry-Small2014"><p>R S Small, D J Whellan, A Boyle, S Sarkar, J Koehler, E N Warman and W T Abraham. <br><strong>Implantable device diagnostics on day of discharge identify heart failure patients at increased risk for early readmission for heart failure</strong>. <i>European journal of heart failure</i> 16(4):419–425, 2014. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://www.ncbi.nlm.nih.gov/pmc/articles/pmid/24464745/">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Small2014,
+	author = "R.S. Small and D.J. Whellan and A. Boyle and S. Sarkar and J. Koehler and E.N. Warman and W.T. Abraham",
+	title = "Implantable device diagnostics on day of discharge identify heart failure patients at increased risk for early readmission for heart failure",
+	journal = "European journal of heart failure",
+	year = 2014,
+	volume = 16,
+	number = 4,
+	pages = "419--425",
+	abstract = "AIMS: We hypothesized that diagnostic data in implantable devices evaluated on the day of discharge from a heart failure hospitalization (HFH) can identify patients at risk for HF readmission (HFR) within 30 days. METHODS AND RESULTS: In this retrospective analysis of four studies enrolling patients with CRT devices, we identified patients with a HFH, device data on the day of discharge, and 30-day post-discharge clinical follow-up. Four diagnostic criteria were evaluated on the discharge day: (i) intrathoracic impedance>8 ? below reference impedance; (ii) AF burden>6 h; (iii) CRT pacing<90%; and (iv) night heart rate>80 b.p.m. Patients were considered to have higher risk for HFR if ?2 criteria were met, average risk if 1 criterion was met, and lower risk if no criteria were met. A Cox proportional hazards model was used to compare the groups. The data cohort consisted of a total of 265 HFHs in 175 patients, of which 36 (14%) were followed by HFR. On the discharge day, ?2 criteria were met in 43 (16% of 265 HFHs), only 1 criterion was met in 92 (35%), and none of the four criteria were met in 130 HFHs (49%); HFR rates were 28, 16, and 7%, respectively. HFH with ?2 criteria met was five times more likely to have HFR compared with HFH with no criteria met (adjusted hazard ratio 5.0; 95% confidence interval 1.913.5",
+	publisher = "Wiley Online Library",
+	url = "http://www.ncbi.nlm.nih.gov/pmc/articles/pmid/24464745/"
+}
+</pre></li><li id="ArticleEntry-Raina2014"><p>A Raina, R C Bourge, W T Abraham, P B Adamson, J Bauman, J Yadav and R L Benza. <br><strong>Use of a Wireless Implantable Hemodynamic Monitor Leads to Reductions in Heart Failure Hospitalizations Among WHO Group II Pulmonary Hypertension Patients</strong>. <i>The Journal of Heart and Lung Transplantation</i> 33(4):S92–S92, 2014. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://www.jhltonline.org/article/S1053-2498(14)00296-4/abstract">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Raina2014,
+	author = "A. Raina and R.C. Bourge and W.T. Abraham and P.B. Adamson and J. Bauman and J. Yadav and R.L. Benza",
+	title = "Use of a Wireless Implantable Hemodynamic Monitor Leads to Reductions in Heart Failure Hospitalizations Among WHO Group II Pulmonary Hypertension Patients",
+	journal = "The Journal of Heart and Lung Transplantation",
+	year = 2014,
+	volume = 33,
+	number = 4,
+	pages = "S92--S92",
+	abstract = "Morbidity and mortality in heart failure (HF) remain high despite contemporary therapy, especially in patients with concomitant pulmonary hypertension (PH). RHC is used to risk stratify patients with HF and to determine the etiology and severity of PH. However, implantable hemodynamic monitors (IHM) can provide ongoing hemodynamic data which affords the opportunity for optimal medical management of HF patients with PH.",
+	publisher = "Elsevier",
+	url = "http://www.jhltonline.org/article/S1053-2498(14)00296-4/abstract"
+}
+</pre></li><li id="ArticleEntry-Pleister2014"><p>A Pleister, A Hasan, W T Abraham, K James and R Khayat. <br><strong>Changes in Thoracic Impedance Measured via the Azygos Vein with the remed=etextregistered System Indicate Worsening Heart Failure</strong>. <i>Journal of Cardiac Failure</i> 20(8):S111–S112, 2014. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://www.onlinejcf.com/article/S1071-9164(14)00546-6/abstract">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Pleister2014,
+	author = "A. Pleister and A. Hasan and W.T. Abraham and K. James and R. Khayat",
+	title = "Changes in Thoracic Impedance Measured via the Azygos Vein with the remed=etextregistered System Indicate Worsening Heart Failure",
+	journal = "Journal of Cardiac Failure",
+	year = 2014,
+	volume = 20,
+	number = 8,
+	pages = "S111--S112",
+	abstract = "Central sleep apnea occurs in approximately one third of patients with heart failure and is associated with an increased risk of recurrent hospitalizations. A new therapeutic approach, the remedē® System, has demonstrated improved sleep indices and quality of life. The device measures transthoracic impedance (TI) between an implantable pulse generator (IPG) implanted in the pectoral region and an electrode on a lead in one of three unique locations: the pericardiophrenic vein, the brachiocephalic vein or the azygos vein.",
+	publisher = "Elsevier",
+	url = "http://www.onlinejcf.com/article/S1071-9164(14)00546-6/abstract"
+}
+</pre></li><li id="ArticleEntry-Krahnke2014"><p>J S Krahnke, W T Abraham, P B Adamson, R C Bourge, J Bauman, G Ginn, F J Martinez, G J Criner and CHAMPION Trial Study Group. <br><strong>Heart Failure and respiratory hospitalizations are reduced in heart failure subjects with chronic obstructive pulmonary disease using an implantable pulmonary artery pressure monitoring device</strong>. <i>Journal of cardiac failure</i> 21(3):240-9, 2014. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://www.sciencedirect.com/science/article/pii/S1071916414013505">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Krahnke2014,
+	author = "J.S. Krahnke and W.T. Abraham and P.B. Adamson and R.C. Bourge and J. Bauman and G. Ginn and F.J. Martinez and G.J. Criner and CHAMPION Trial Study Group",
+	title = "Heart Failure and respiratory hospitalizations are reduced in heart failure subjects with chronic obstructive pulmonary disease using an implantable pulmonary artery pressure monitoring device",
+	journal = "Journal of cardiac failure",
+	year = 2014,
+	volume = 21,
+	number = 3,
+	pages = "240-9",
+	abstract = "Background Chronic obstructive pulmonary disease (COPD) is a frequent comorbidity in patients with heart failure (HF). Elevated pulmonary arterial (PA) pressure can be seen in both conditions and has been shown to predict morbidity and mortality. Methods and Results A total of 550 subjects with New York Heart Association functional class III HF were randomly assigned to the treatment (n = 270) and control (n = 280) groups in the CHAMPION Trial. Physicians had access to the PA pressure measurements in the treatment group only, in which HF therapy was used to lower the elevated pressures. HF and respiratory hospitalizations were compared in both groups. A total of 187 subjects met criteria for classification into the COPD subgroup. In the entire cohort, the treatment group had a 37% reduction in HF hospitalization rates (P < .0001) and a 49% reduction in respiratory hospitalization rates (P = .0061). In the COPD subgroup, the treatment group had a 41% reduction in HF hospitalization rates (P = .0009) and a 62% reduction in respiratory hospitalization rates (P = .0023). The rate of respiratory hospitalizations in subjects without COPD was not statistically different (P = .76). Conclusions HF management incorporating hemodynamic information from an implantable PA pressure monitor significantly reduces HF and respiratory hospitalizations in HF subjects with comorbid COPD compared with standard care.",
+	publisher = "Churchill Livingstone",
+	url = "http://www.sciencedirect.com/science/article/pii/S1071916414013505"
+}
+</pre></li><li id="ArticleEntry-Benza2014"><p>R L Benza, A Raina, W T Abraham, P B Adamson, J Lindenfeld, A B Miller, R C Bourge, J Bauman and J Yadav. <br><strong>Pulmonary hypertension related to left heart disease: Insight from a wireless implantable hemodynamic monitor</strong>. <i>The Journal of Heart and Lung Transplantation</i> (0):-, 2014. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://www.sciencedirect.com/science/article/pii/S1053249814011127">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Benza2014,
+	author = "R.L. Benza and A. Raina and W.T. Abraham and P.B. Adamson and J. Lindenfeld and A.B. Miller and R.C. Bourge and J. Bauman and J. Yadav",
+	title = "Pulmonary hypertension related to left heart disease: Insight from a wireless implantable hemodynamic monitor",
+	journal = "The Journal of Heart and Lung Transplantation",
+	year = 2014,
+	number = 0,
+	pages = "-",
+	abstract = "{Background Pulmonary hypertension (PH) associated with left heart disease (World Health Organization [WHO] Group II) has previously been linked with significant morbidity and mortality. However, there are currently no approved therapies or hemodynamic monitoring systems to improve outcomes in WHO Group II PH. Methods We conducted a retrospective analysis of the CHAMPION trial of an implantable hemodynamic monitor (IHM) in 550 New York Heart Association (NYHA) Functional Class III HF patients, regardless of left ventricular ejection fraction (LVEF) or heart failure (HF) etiology. We evaluated clinical variables, changes in medical therapy, HF hospitalization rates and survival in patients with and without WHO Group II PH. Results Data were obtained for 314 patients (59%) who had WHO Group II PH. Patients without PH were at significantly lower risk for mortality than PH patients (hazard ratio [HR] 0.31, 95% confidence interval [CI] 0.19 to 0.52, p < 0.0001). PH patients had higher HF hospitalization rates than non-PH patients (0.77/year vs 0.37/year; HR 0.49, 95% CI 0.39 to 0.61, p < 0.001). In patients with and without PH, ongoing knowledge of hemodynamic data resulted in a reduction in HF hospitalization for PH patients (HR 0.64, 95% CI 0.51 to 0.81",
+	p = "",
+	url = "http://www.sciencedirect.com/science/article/pii/S1053249814011127"
+}
+</pre></li><li id="ArticleEntry-adamson2014impact"><p>P B Adamson, W T Abraham, J Bauman and J Yadav. <br><strong>Impact of Wireless Pulmonary Artery Pressure Monitoring on Heart Failure Hospitalizations and All-Cause 30-Day Readmissions in Medicare-Eligible Patients With NYHA Class III Heart Failure: Results From the CHAMPION Trial</strong>. <i>Circulation</i> 130(A16744), 2014. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://circ.ahajournals.org/content/130/Suppl_2/A16744.abstract">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{adamson2014impact,
+	author = "P.B. Adamson and W.T. Abraham and J. Bauman and J. Yadav",
+	title = "Impact of Wireless Pulmonary Artery Pressure Monitoring on Heart Failure Hospitalizations and All-Cause 30-Day Readmissions in Medicare-Eligible Patients With NYHA Class III Heart Failure: Results From the CHAMPION Trial",
+	journal = "Circulation",
+	year = 2014,
+	volume = 130,
+	number = "A16744",
+	abstract = "Heart failure (HF) is the most frequent discharge diagnosis for hospitalized Medicare beneficiaries. Readmission after a HF hospitalization (HFH) is an important metric for quality of care. Under the Hospital Readmissions Reduction Program (HRRP), hospitals with excess all-cause 30-day readmissions may be penalized for inadequate quality of care. Results from the CHAMPION trial confirmed that HF management using pulmonary artery pressure (PAP) monitoring from an implanted sensor in patients with NYHA Class III HF reduced HFH rates compared to standard management. However, the impact of this strategy on HFH rates and all-cause 30-day readmissions in Medicare-eligible patients is unknown.",
+	url = "http://circ.ahajournals.org/content/130/Suppl_2/A16744.abstract"
+}
+</pre></li><li id="ArticleEntry-Adamson2014a"><p>P B Adamson, W T Abraham, R C Bourge, M R Costanzo, A Hasan, C Yadav, J Henderson, P Cowart and L W Stevenson. <br><strong>Wireless Pulmonary Artery Pressure Monitoring Guides Management to Reduce Decompensation in Heart Failure With Preserved Ejection Fraction</strong>. <i>Circulation: Heart Failure</i>, pages CIRCHEARTFAILURE–113, 2014. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://circheartfailure.ahajournals.org/content/early/2014/10/06/CIRCHEARTFAILURE.113.001229.abstract">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Adamson2014a,
+	author = "P.B. Adamson and W.T. Abraham and R.C. Bourge and M.R. Costanzo and A. Hasan and C. Yadav and J. Henderson and P. Cowart and L.W. Stevenson",
+	title = "Wireless Pulmonary Artery Pressure Monitoring Guides Management to Reduce Decompensation in Heart Failure With Preserved Ejection Fraction",
+	journal = "Circulation: Heart Failure",
+	year = 2014,
+	pages = "CIRCHEARTFAILURE--113",
+	abstract = "Background—No treatment strategies have been demonstrated to be beneficial for the population for patients with heart failure and preserved ejection fraction. Methods and Results—The CHAMPION Trial was a prospective, single-blinded, randomized controlled clinical trial testing the hypothesis that hemodynamically guided heart failure management decreases decompensation leading to hospitalization. Of the 550 patients enrolled in the study, 119 had LVEF ≥40% (average 50.6%), 430 patients had low LVEF (<40%, average 23.3%) and one patient had no documented LVEF. A microelectromechanical systems (MEMS) pressure sensor was permanently implanted in all participants during right heart catheterization. After implant, subjects were randomly assigned in single-blind fashion to a treatment group in whom daily uploaded pressures were used in a treatment strategy for HF management or to a control group in whom standard HF management included weight-monitoring , and pressures were uploaded but not available for investigator use. The primary efficacy endpoint of HF hospitalization rate over 6 months for preserved EF patients was 46% lower in the treatment group compared to control (IRR 0.54, C.I. 0.38-0.70, p<0.0001). After an average of 17.6 months of blinded follow-up, the hospitalization rate was 50% lower (IRR 0.50, C.I. 0.35-0.70, p<0.0001). In response to PA pressure information, more changes in diuretic and vasodilator therapies were made in the treatment group. Conclusions—Hemodynamically-guided management of HF patients with preserved ejection fraction reduced decompensation leading to hospitalization compared to standard HF management strategies.",
+	publisher = "Lippincott Williams \&amp; Wilkins",
+	url = "http://circheartfailure.ahajournals.org/content/early/2014/10/06/CIRCHEARTFAILURE.113.001229.abstract"
+}
+</pre></li><li id="ArticleEntry-Abraham2014b"><p>W T Abraham, P B Adamson, L W Stevenson and J Yadav. <br><strong>Benefits of Pulmonary Artery Pressure Monitoring in Patients with NYHA Class III Heart Failure and Chronic Kidney Disease: Results from the CHAMPION Trial</strong>. <i>Journal of Cardiac Failure</i> 20(8):S93, 2014. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://www.onlinejcf.com/article/S1071-9164(14)00492-8/fulltext">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Abraham2014b,
+	author = "W.T. Abraham and P.B. Adamson and L.W. Stevenson and J. Yadav",
+	title = "Benefits of Pulmonary Artery Pressure Monitoring in Patients with NYHA Class III Heart Failure and Chronic Kidney Disease: Results from the CHAMPION Trial",
+	journal = "Journal of Cardiac Failure",
+	year = 2014,
+	volume = 20,
+	number = 8,
+	pages = "S93",
+	abstract = "Management of heart failure (HF) patients incorporates diuretic strategies to reduce congestion and prevent decompensation. Elevated cardiac filling pressures precede signs/symptoms that lead to decompensation; implantable hemodynamic monitoring (IHM) devices allow home monitoring of this signal. The CHAMPION trial found significant reductions in HF hospitalizations (HFH) in NYHA class III HF patients whose syndrome was managed using pulmonary artery pressure (PAP) from an IHM. We examined the potential benefit of PAP monitoring in patients with HF and chronic kidney disease (CKD), a difficult population to manage effectively.",
+	publisher = "Elsevier",
+	url = "http://www.onlinejcf.com/article/S1071-9164(14)00492-8/fulltext"
+}
+</pre></li><li id="ArticleEntry-Abraham2014a"><p>W T Abraham, P Adamson, M Packer, J Bauman and J Yadav. <br><strong>Impact of Introduction of Pulmonary Artery Pressure Monitoring for Heart Failure Management:: Longitudinal Results from the Champion Trial</strong>. <i>Journal of the American College of Cardiology</i> 63(12_S), 2014. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://content.onlinejacc.org/article.aspx?articleid=1856280">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Abraham2014a,
+	author = "W.T. Abraham and P. Adamson and M. Packer and J. Bauman and J. Yadav",
+	title = "Impact of Introduction of Pulmonary Artery Pressure Monitoring for Heart Failure Management:: Longitudinal Results from the Champion Trial",
+	journal = "Journal of the American College of Cardiology",
+	year = 2014,
+	volume = 63,
+	number = "12_S",
+	publisher = "Am Coll Cardio Found",
+	url = "http://content.onlinejacc.org/article.aspx?articleid=1856280"
+}
+</pre></li><li id="ArticleEntry-Abraham2014"><p>W T Abraham, W G Stough, I L Pina, C Linde, J S Borer, De  G M Ferrari, R Mehran, K M Stein, A Vincent, J S Yadav, S D Anker and F Zannad. <br><strong>Trials of implantable monitoring devices in heart failure: which design is optimal?</strong>. <i>Nature Reviews Cardiology</i> 11(10):576–585, 2014. <a target="_blank" class="bibtex-link bibtex-link-html" href="http://www.nature.com/nrcardio/journal/v11/n10/full/nrcardio.2014.114.html">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{Abraham2014,
+	author = "W.T. Abraham and W.G. Stough and I.L. Pina and C. Linde and J.S. Borer and G.M. De Ferrari and R. Mehran and K.M. Stein and A. Vincent and J.S. Yadav and S.D. Anker and F. Zannad",
+	title = "Trials of implantable monitoring devices in heart failure: which design is optimal?",
+	journal = "Nature Reviews Cardiology",
+	year = 2014,
+	volume = 11,
+	number = 10,
+	pages = "576--585",
+	abstract = "Implantable monitoring devices have been developed to detect early evidence of heart failure (HF) decompensation, with the hypothesis that early detection might enable clinicians to commence therapy sooner than would otherwise be possible, and potentially to reduce the rate of hospitalization. In addition to the usual challenges inherent to device trials (such as the difficulty of double-blinding and potential for bias), studies of implantable monitoring devices present unique difficulties because they involve assessment of therapeutic end points for diagnostic devices. Problems include the lack of uniform approaches to treatment in study protocols for device alerts or out-of-range values, and the requirement of levels of evidence traditionally associated with therapeutic devices to establish effectiveness and safety. In this Review, the approaches used to deal with these issues are discussed, including the use of objective primary end points with blinded adjudication, identical duration of follow-up and number of encounters for patients in active monitoring and control groups, and treatment recommendations between groups that are consistent with international guidelines. Remote monitoring devices hold promise for reducing the rate of hospitalization among patients with HF. However, optimization of regulatory approaches and clinical trial design is needed to facilitate further evaluation of the effectiveness of combining health information technology and medical devices.",
+	publisher = "Nature Publishing Group",
+	url = "http://www.nature.com/nrcardio/journal/v11/n10/full/nrcardio.2014.114.html"
+}
+</pre></li></ol></p>
+
+
+
+
+				</article>
+									</div><!-- end items-leading -->
+	
+	
+	
+	
+		</div>
+</div></div></div></div></section><section id="sp-feature-team-page" class="div#maximenuck253 div.floatck { 	 	background:#F4F4F4; 	background: -moz-linear-gradient(top, #f4f4f4, #eeeeee); 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f4f4), to(#eeeeee)); 	-moz-border-radius: 0px 5px 5px 5px; 	 }"><div class="row"><div id="sp-secondmenu" class="col-sm-12 col-md-12"><div class="sp-column div.floatck { background: #eeeeee;          background: -moz-linear-gradient(top, #EEEEEE, #EEEEEE);     /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEEEEE), to(#EEEEEE)); */  }"><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
+</div></div></div></div></div></section><footer id="sp-footer"><div class="container"><div class="row"><div id="sp-footer1" class="col-sm-10 col-md-10"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<p style="text-align: center; font-size: 12px; padding-top: 14px;">Copyright &copy; 2020 MD2K. <strong>MD2K was established by the National Institutes of Health Big Data to Knowledge Initiative <a href="https://projectreporter.nih.gov/project_info_description.cfm?aid=9303353&amp;icde=36143741&amp;ddparam=&amp;ddvalue=&amp;ddsub=&amp;cr=7&amp;csb=default&amp;cs=ASC&amp;pball=" target="_blank">(Grant #1U54EB020404)</a></strong><br /><span style="color: #ffffff; font-style: italic;">Team: Cornell Tech, GA Tech, Harvard, U. Memphis, Northwestern, Ohio State, UCLA, UCSD, UCSF, UMass, U. Michigan, U. Utah, WVU </span></p></div>
+</div></div></div></div><div id="sp-footer2" class="col-sm-2 col-md-2"><div class="sp-column "><ul class="sp-contact-info"><li class="sp-contact-phone"><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:901-678-1493">901-678-1493</a></li><li class="sp-contact-email"><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@md2k.org">info@md2k.org</a></li></ul><ul class="social-icons"><li><a target="_blank" href="https://twitter.com/MD2Korg" aria-label="twitter"><i class="fa fa-twitter"></i></a></li><li><a target="_blank" href="https://www.youtube.com/c/MD2KCenter" aria-label="youtube"><i class="fa fa-youtube"></i></a></li></ul></div></div></div></div></footer>            </div> <!-- /.body-innerwrapper -->
+        </div> <!-- /.body-innerwrapper -->
+
+        <!-- Off Canvas Menu -->
+        <div class="offcanvas-menu">
+            <a href="#" class="close-offcanvas" aria-label="Close"><i class="fa fa-remove" aria-hidden="true" title="HELIX_CLOSE_MENU"></i></a>
+            <div class="offcanvas-inner">
+                                  <div class="sp-module "><div class="sp-module-content"><ul class="nav menu">
+<li class="item-101"><a href="../index.html" > Home</a></li><li class="item-191  deeper parent"><a href="../about.html" > About</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-191"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-191"><li class="item-196"><a href="../about/meet-the-team.html" > MD2K Team</a></li><li class="item-198  deeper parent"><a href="../about/news.html" > News</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-198"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-198"><li class="item-443"><a href="../about/news/md2k-in-the-news.html" > MD2K in the News</a></li></ul></li><li class="item-581"><a href="../about/privacy.html" > Privacy</a></li><li class="item-224"><a href="../about/contact.html" > Contact</a></li></ul></li><li class="item-193  active deeper parent"><a href="../research-agenda.html" > Research</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-193"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-193"><li class="item-338"><a href="pubs.html" > Publications</a></li><li class="item-471  divider"><a class="separator ">Research Areas</a>
+</li><li class="item-213"><a href="research-agenda.html" > Research Agenda</a></li><li class="item-285"><a href="sensors.html" > Sensors</a></li><li class="item-214"><a href="biomarkers.html" > mHealth Biomarkers</a></li><li class="item-474"><a href="trial-design.html" > Trial Design</a></li><li class="item-216"><a href="jitai.html" > mHealth Interventions</a></li><li class="item-284"><a href="architecture.html" > Architecture</a></li><li class="item-219"><a href="methodology.html" > Big Data Analytics</a></li><li class="item-473"><a href="visualization.html" > Visualization</a></li><li class="item-221"><a href="privacy.html" > Behavioral Privacy</a></li><li class="item-470  divider"><a class="separator ">Field Study Focus Areas</a>
+</li><li class="item-463"><a href="smoking.html" > Smoking</a></li><li class="item-464"><a href="eating-control.html" > Eating Regulation</a></li><li class="item-465"><a href="drug-use.html" > Drug Use</a></li><li class="item-466"><a href="stress-management.html" > Stress Management</a></li><li class="item-467  current active"><a href="heart-failure-care.html" > Heart Failure Care</a></li><li class="item-472"><a href="behavior-change.html" > Behavior Change</a></li><li class="item-468">		<a  href="http://mperf.md2k.org/"  > Work Productivity</a></li><li class="item-469"><a href="oral-health.html" > Oral Health</a></li></ul></li><li class="item-197  deeper parent"><a href="../software.html" > Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-197"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-197"><li class="item-421  deeper parent"><a href="../software/under-the-hood.html" > Under the Hood</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-421"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-421"><li class="item-427"><a href="../software/under-the-hood/mcerebrum.html" > Smartphone Software</a></li><li class="item-428  deeper parent"><a href="../software/under-the-hood/cerebral-cortex.html" > Cloud Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-428"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-428"><li class="item-436"><a href="../software/under-the-hood/cerebral-cortex/architecture.html" > Architecture</a></li></ul></li><li class="item-429"><a href="../software/under-the-hood/bug-reports-feature-requests.html" > Bug Reports / Feature Requests</a></li><li class="item-430"><a href="../software/under-the-hood/software-license.html" > Software License</a></li><li class="item-431"><a href="../software/under-the-hood/contributing.html" > Contributing</a></li><li class="item-432"><a href="../software/under-the-hood/references.html" > References</a></li><li class="item-533"><a href="../software/under-the-hood/software-docs.html" > Documentation</a></li></ul></li><li class="item-422  deeper parent"><a href="../software/how-to.html" > How-To</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-422"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-422"><li class="item-433  deeper parent"><a href="../software/how-to/smartphone-software.html" > Smartphone Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-433"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-433"><li class="item-440"><a href="../software/how-to/smartphone-software/getting-started.html" > Getting Started</a></li><li class="item-476"><a href="../software/how-to/smartphone-software/implementing-datakit.html" > Implementing DataKit</a></li></ul></li><li class="item-434  deeper parent"><a href="../software/how-to/supported-sensors.html" > Supported Sensors</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-434"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-434"><li class="item-441"><a href="../software/how-to/supported-sensors/sensors-troubleshooting.html" > Sensors Troubleshooting</a></li><li class="item-442"><a href="../software/how-to/supported-sensors/adding-sensors.html" > Adding Sensors </a></li></ul></li><li class="item-438  deeper parent"><a href="../software/how-to/getting-started.html" > Cloud Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-438"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-438"><li class="item-437"><a href="../software/how-to/getting-started/docker.html" > Docker</a></li><li class="item-439"><a href="../software/how-to/getting-started/working-with-cerebral-cortex.html" > Working with Cerebral Cortex</a></li></ul></li><li class="item-453"><a href="../software/how-to/software-howto-studyguides.html" > Study Guides</a></li></ul></li><li class="item-423"><a href="../software/deployments.html" > Deployments</a></li><li class="item-424"><a href="../software/contributors.html" > Contributors</a></li><li class="item-482"><a href="../software/personal.html" > Personal Edition</a></li><li class="item-486"><a href="../software/codeofconduct.html" > Code of Conduct</a></li></ul></li><li class="item-564  deeper parent"><a href="../tutorials.html" > Tutorials</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-564"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-564"><li class="item-565"><a href="../tutorials/cps-iot-week-2020.html" > CPS-IoT Week 2020</a></li></ul></li><li class="item-247  deeper parent"><a href="../webinars.html" > Training</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-247"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-247"><li class="item-425  deeper parent">		<a  href="https://mhti.md2k.org/"  > mHealth Training Institute</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-425"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-425"><li class="item-426">		<a  href="https://mhti.md2k.org/index.php/gallery/2019/2019-lectures"  > mHTI Lectures</a></li></ul></li><li class="item-356">		<a href="https://mhealth.md2k.org/training/webinars" rel="noopener noreferrer" target="_blank" > Webinar Videos</a></li></ul></li><li class="item-223"><a href="../studies.html" > Deployments</a></li><li class="item-226  deeper parent"><a href="../events.html" > Events</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-226"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-226"><li class="item-512"><a href="../events/md2k-2018.html" > 2018 Annual Meeting</a></li><li class="item-353  deeper parent"><a href="../events/2017-annual-meeting.html" > 2017 Annual Meeting</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-353"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-353"><li class="item-455"><a href="../events/2017-annual-meeting/2017-career-day.html" > 2017 Career Day</a></li></ul></li><li class="item-228"><a href="../events/2016-annual-meeting.html" > 2016 Annual Meeting</a></li><li class="item-227"><a href="../events/2015-annual-meeting.html" > 2015 Annual Meeting</a></li></ul></li><li class="item-348">		<a  href="https://mhealth.md2k.org/"  > mHealthHUB</a></li><li class="item-199  deeper parent"><a href="../related-projects.html" > Related Projects</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-199"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-199"><li class="item-239">		<a href="http://mperf.md2k.org/" rel="noopener noreferrer" target="_blank" > mPerf</a></li><li class="item-240">		<a href="http://mprov.md2k.org/" rel="noopener noreferrer" target="_blank" > mProv</a></li><li class="item-577">		<a href="http://mcontain.md2k.org/" rel="noopener noreferrer" target="_blank" > mContain</a></li><li class="item-513">		<a href="https://mdot.md2k.org/" rel="noopener noreferrer" target="_blank" > mDOT</a></li></ul></li><li class="item-556"><a href="../moods.html" > MOODS</a></li></ul>
+</div></div>
+                            </div> <!-- /.offcanvas-inner -->
+        </div> <!-- /.offcanvas-menu -->
+
+        
+        
+        
+        <!-- Preloader -->
+        
+
+        <!-- Go to top -->
+        
+    </body>
+
+<!-- Mirrored from md2k.org/research-agenda/heart-failure-care.feed?type=atom by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 19:53:39 GMT -->
+</html>

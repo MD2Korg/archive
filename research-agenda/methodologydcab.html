@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+    
+<!-- Mirrored from md2k.org/research-agenda/methodology.feed?type=rss by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 19:52:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+                <!-- head -->
+        <base  />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="mHealth, md2k, mobile health, precision medicine, biomarkers, mobile sensor data, mobile sensors" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Advancing biomedical discovery and improving health through mobile sensor Big Data" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>MD2K - Big Data Analytics</title>
+	<link href="methodologydcab.html?type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+	<link href="methodologyb550.html?type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+	<link href="http://md2k-webtest.memphis.edu/research-agenda/methodology.feed?type=rss" rel="canonical" />
+	<link href="../images/Logos/favicon2.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="../favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="../media/bibtex/css/bibtex.css" rel="stylesheet" type="text/css" />
+	<link href="../plugins/system/maximenuckmobile/themes/default/maximenuckmobile.css" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic&amp;subset=latin-ext" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Fjalla+One:regular&amp;subset=latin-ext" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&amp;subset=greek,greek-ext" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/legacy.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/template.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/presets/preset2.css" rel="stylesheet" type="text/css" class="preset" />
+	<link href="../templates/shaper_helix3/css/custom.css" rel="stylesheet" type="text/css" />
+	<link href="../templates/shaper_helix3/css/frontend-edit.css" rel="stylesheet" type="text/css" />
+	<link href="../modules/mod_maximenuck/themes/custom/css/maximenuck_maximenuck196.css" rel="stylesheet" type="text/css" />
+	<link href="../modules/mod_maximenuck/assets/maximenuresponsiveck.css" rel="stylesheet" type="text/css" />
+	<link href="../modules/mod_maximenuck/assets/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+.mobilebarmaximenuck { display: none; }
+	@media only screen and (max-width:640px){
+    #maximenuck196 { display: none !important; }
+    .mobilebarmaximenuck { display: block; }
+	.hidemenumobileck {display: none !important;}
+     }body{font-family:Lato, sans-serif; font-size:14px; font-weight:normal; }h1{font-family:Fjalla One, sans-serif; font-size:36px; font-weight:normal; }h2{font-family:Fjalla One, sans-serif; font-size:30px; font-weight:normal; }h3{font-family:Roboto, sans-serif; font-size:24px; font-weight:700; }h4{font-family:Roboto, sans-serif; font-size:18px; font-weight:700; }h5{font-family:Roboto, sans-serif; font-size:18px; font-weight:700italic; }h6{font-family:Lato, sans-serif; font-size:16px; font-weight:700; }button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #2a9eb2;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #aed141}
+
+.button:active {
+  background-color: #aed141;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+ 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+     -webkit-flex-direction: column;
+    flex-direction: column;
+    webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+	background-color: #2b3675;
+	border-radius: 45px;
+}
+
+.flex-item {
+    background-color: #ffffff;
+    width: 98%;
+    height: auto;
+    margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 45px;
+	padding: 15px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+	text-align: justify;
+}
+
+.flex-study {
+    background-color: #ffffff;
+    width: 25%;
+    height: auto;
+    margin: 10px;
+	border-radius: 45px;
+	padding: 20px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+	
+}
+.flex-study1 {
+    background-color: #ffffff;
+    width: 25%;
+    height: 100%;
+    margin: 10px;
+	border-radius: 45px;
+	padding: 20px;
+	font-family: Lato, "sans-serif";
+	font-size: 1.2em; 
+      text-align: center;
+-webkit-align-self: center; /* Safari 7.0+ */
+    align-contents: center;
+}
+
+.flex-container2 {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: auto;
+	background-color: #2b3675;
+	border-radius: 45px;
+}
+
+p {
+text-align: justify;
+}
+
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #bbb;
+	width: 100%;
+	}
+	
+	td {
+    border-top: 1px solid #ddd;
+    padding: 4px 8px;
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	font-size: 14px;
+		color: #2b3675;
+}
+	th {
+    border-top: 1px solid #ddd;
+    padding: 4px 8px;
+	font-family:Roboto Black, Raleway Black, Oswald SemiBold, Montserrat SemiBold;
+	font-size: 22px;
+		background-color: #2b3675;
+		color: #fff;
+}
+	
+		
+	tbody tr:nth-child(even) td {
+    background-color: #eee;
+}
+
+
+.one-half,
+
+.one-third,
+
+.two-third,
+
+.one-fourth,
+
+.three-fourth,
+
+.one-fifth,
+
+.two-fifth,
+
+.three-fifth,
+
+.four-fifth,
+
+.one-sixth,
+
+.five-sixth {
+
+  float: left;
+
+  margin: 0 4% 15px 0;
+
+}
+
+.three-across-1
+{
+
+  float: left;
+
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border: 5px;
+  width: 30%;
+
+}
+
+.three-across-2
+{
+
+  float: left;
+
+ margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 30%;
+
+}
+
+
+
+.three-across-3
+{
+
+  float: left;
+   margin-bottom: 15px;
+  margin-left: 15px;
+  
+  width: 30%;
+
+}
+
+
+.one-half.last,
+
+.one-third.last,
+
+.two-third.last,
+
+.one-fourth.last,
+
+.three-fourth.last,
+
+.one-fifth.last,
+
+.two-fifth.last,
+
+.three-fifth.last,
+
+.four-fifth.last,
+
+.one-sixth.last,
+
+.five-sixth.last {
+
+  margin-right: 0;
+
+  margin-bottom: 15px;
+
+}
+
+.one-half {
+
+  width: 48%;
+
+}
+
+.one-third {
+
+  width: 30.66%;
+
+}
+
+.two-third {
+
+  width: 65.33%;
+
+}
+
+.one-fourth {
+
+  width: 22%;
+
+}
+
+.three-fourth {
+
+  width: 74%;
+
+}
+
+.one-fifth {
+
+  width: 16.8%;
+
+}
+
+.two-fifth {
+
+  width: 37.6%;
+
+}
+
+.three-fifth {
+
+  width: 58.4%;
+
+}
+
+.four-fifth {
+
+  width: 79.2%;
+
+}
+
+.one-sixth {
+
+  width: 13.33%;
+
+}
+
+.five-sixth {
+
+  width: 82.66%;
+
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.characteristic {
+  text-align: center;
+  color: #fff;
+
+  padding: 2px 7px;
+
+  background-color: #BB4C38;
+  border-radius: 10px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 60%;
+  margin: 2px;
+  top: -4px;
+  position: relative;
+
+}#sp-main-body{ margin:-20px 0px 0px 0px; }#sp-feature-team-page{ padding:20px; }@media screen and (max-width: 640px) {div#maximenuck196 ul.maximenuck li.maximenuck.nomobileck, div#maximenuck196 .maxipushdownck ul.maximenuck2 li.maximenuck.nomobileck { display: none !important; }}@media screen and (min-width: 641px) {div#maximenuck196 ul.maximenuck li.maximenuck.nodesktopck, div#maximenuck196 .maxipushdownck ul.maximenuck2 li.maximenuck.nodesktopck { display: none !important; }}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"d7f90f5edcdc4cf897badc80e54b33c4","system.paths":{"root":"","base":""}}</script>
+	<script src="../media/system/js/mootools-core700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/system/js/core700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/bibtex/js/bibtex.js" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-noconflict700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery-migrate.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/system/js/caption700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../plugins/system/maximenuckmobile/assets/maximenuckmobile.js" type="text/javascript"></script>
+	<script src="../templates/shaper_helix3/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../templates/shaper_helix3/js/jquery.sticky.js" type="text/javascript"></script>
+	<script src="../templates/shaper_helix3/js/main.js" type="text/javascript"></script>
+	<script src="../templates/shaper_helix3/js/frontend-edit.js" type="text/javascript"></script>
+	<script src="../media/jui/js/jquery.ui.core.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="../media/plg_captcha_recaptcha/js/recaptcha.min700d.js?34dd122c670690e9b69fe6416d952b1e" type="text/javascript"></script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=JoomlaInitReCaptcha2&amp;render=explicit&amp;hl=en-GB" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});jQuery(document).ready(function($){
+                    $('#maximenuck196').MobileMaxiMenu({usemodules : 0,container : 'menucontainer',showdesc : 0,showlogo : 1,useimages : 0,menuid : 'maximenuck196',showmobilemenutext : 'default',mobilemenutext : 'Menu',mobilebackbuttontext : 'Back',displaytype : 'flat',menubarbuttoncontent : '',topbarbuttoncontent : '',uriroot : '',displayeffect : 'normal',menuwidth : '300',openedonactiveitem : '0'});});// Find all YouTube videos
+var $allVideos = $("iframe[src^='//www.youtube.com']"),
+
+    // The element that is fluid width
+    $fluidEl = $("body");
+
+// Figure out and save aspect ratio for each video
+$allVideos.each(function() {
+
+  $(this)
+    .data('aspectRatio', this.height / this.width)
+
+    // and remove the hard coded width/height
+    .removeAttr('height')
+    .removeAttr('width');
+
+});
+
+// When the window is resized
+$(window).resize(function() {
+
+  var newWidth = $fluidEl.width();
+
+  // Resize all videos according to their own aspect ratio
+  $allVideos.each(function() {
+
+    var $el = $(this);
+    $el
+      .width(newWidth)
+      .height(newWidth * $el.data('aspectRatio'));
+
+  });
+
+// Kick off one resize to fix all videos on page load
+}).resize();
+var sp_preloader = '0';
+
+var sp_gotop = '0';
+
+var sp_offanimation = 'default';
+
+	</script>
+
+            
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55313502-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Universal Google Analytics Plugin by PB Web Development -->
+
+
+</head>
+
+    <body class="site com-content view-category layout-blog no-task itemid-219 en-gb ltr  layout-fluid off-canvas-menu-init">
+
+        <div class="body-wrapper">
+            <div class="body-innerwrapper">
+                <header id="sp-header"><div class="container"><div class="row"><div id="sp-logo" class="col-xs-8 col-sm-2 col-md-2"><div class="sp-column "><div class="logo"><a href="../index.html"><img class="sp-default-logo hidden-xs" src="../images/Logos/MD2K-Logo_80px.png" alt="MD2K"><img class="sp-retina-logo hidden-xs" src="../images/Logos/MD2K-Logo_80px.png" alt="MD2K" width="179" height="80"><img class="sp-default-logo visible-xs" src="../images/Logos/MD2K-Logo_60px.png" alt="MD2K"></a></div></div></div><div id="sp-title" class="col-xs-3 col-sm-10 col-md-10 hidden-sm hidden-xs"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<h2 style="font-size: 1.4em; font-style: italic; font-weight: 300; padding-top: 10px;">Advancing biomedical discovery and improving health through mobile sensor Big Data</h2></div>
+</div></div></div></div></div></div></header><section id="sp-page-title"><div class="row"><div id="sp-othermenu" class="col-sm-12 col-md-12"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+			<!--[if lte IE 7]>
+			<link href="/modules/mod_maximenuck/themes/tabs/css/ie7.css" rel="stylesheet" type="text/css" />
+			<![endif]--><!-- debut Maximenu CK, par cedric keiflin -->
+	<div class="maximenuckh ltr" id="maximenuck196" style="z-index:10;">
+        <div class="maxiroundedleft"></div>
+        <div class="maxiroundedcenter">
+            <ul class=" maximenuck">
+												<li data-level="1" class="maximenuck item101 first level1 " style="z-index : 12000;" ><a class="maximenuck " href="../index.html"><span class="titreck">Home</span></a>
+		</li><li data-level="1" class="maximenuck item191 parent level1 " style="z-index : 11999;" ><a class="maximenuck " href="../about.html"><span class="titreck">About</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item196 first level2 " style="z-index : 11998;" ><a class="maximenuck " href="../about/meet-the-team.html"><span class="titreck">MD2K Team</span></a>
+		</li><li data-level="2" class="maximenuck item198 parent level2 " style="z-index : 11997;" ><a class="maximenuck " href="../about/news.html"><span class="titreck">News</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item443 first last level3 " style="z-index : 11996;" ><a class="maximenuck " href="../about/news/md2k-in-the-news.html"><span class="titreck">MD2K in the News</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item581 level2 " style="z-index : 11995;" ><a class="maximenuck " href="../about/privacy.html"><span class="titreck">Privacy</span></a>
+		</li><li data-level="2" class="maximenuck item224 last level2 " style="z-index : 11994;" ><a class="maximenuck " href="../about/contact.html"><span class="titreck">Contact</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item193 active parent level1 " style="z-index : 11993;" ><a class="maximenuck " href="../research-agenda.html"><span class="titreck">Research</span></a>
+	<div class="floatck" style="width:900px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item338 first level2 " style="z-index : 11992;" ><a class="maximenuck " href="pubs.html"><span class="titreck">Publications</span></a>
+		</li></ul><div class="clr"></div></div><div class="maximenuck2"  style="width:200px;float:left;"><ul class="maximenuck2"><li data-level="2" class="maximenuck headingck item471 level2 " style="z-index : 11991;" ><span class="separator "><span class="titreck"><span class="maximenuiconck fa fa-square"></span>Research Areas</span></span>
+		</li><li data-level="2" class="maximenuck item213 level2 " style="z-index : 11990;" ><a class="maximenuck " href="research-agenda.html"><span class="titreck">Research Agenda</span></a>
+		</li><li data-level="2" class="maximenuck item285 level2 " style="z-index : 11989;" ><a class="maximenuck " href="sensors.html"><span class="titreck">Sensors</span></a>
+		</li><li data-level="2" class="maximenuck item214 level2 " style="z-index : 11988;" ><a class="maximenuck " href="biomarkers.html"><span class="titreck">mHealth Biomarkers</span></a>
+		</li><li data-level="2" class="maximenuck item474 level2 " style="z-index : 11987;" ><a class="maximenuck " href="trial-design.html"><span class="titreck">Trial Design</span></a>
+		</li><li data-level="2" class="maximenuck item216 level2 " style="z-index : 11986;" ><a class="maximenuck " href="jitai.html"><span class="titreck">mHealth Interventions</span></a>
+		</li></ul><div class="clr"></div></div><div class="maximenuck2"  style="width:180px;float:left;"><ul class="maximenuck2"><li data-level="2" class="maximenuck item284 level2 " style="z-index : 11985;" ><a class="maximenuck " href="architecture.html"><span class="titreck">Architecture</span></a>
+		</li><li data-level="2" class="maximenuck item219 current active level2 " style="z-index : 11984;" ><a class="maximenuck " href="methodology.html"><span class="titreck">Big Data Analytics</span></a>
+		</li><li data-level="2" class="maximenuck item473 level2 " style="z-index : 11983;" ><a class="maximenuck " href="visualization.html"><span class="titreck">Visualization</span></a>
+		</li><li data-level="2" class="maximenuck item221 level2 " style="z-index : 11982;" ><a class="maximenuck " href="privacy.html"><span class="titreck">Behavioral Privacy</span></a>
+		</li></ul><div class="clr"></div></div><div class="maximenuck2"  style="width:200px;float:left;"><ul class="maximenuck2"><li data-level="2" class="maximenuck headingck item470 level2 fullwidth" style="z-index : 11981;" ><span class="separator "><span class="titreck"><span class="maximenuiconck fa fa-square"></span>Field Study Focus Areas</span></span>
+		</li><li data-level="2" class="maximenuck item463 level2 " style="z-index : 11980;" ><a class="maximenuck " href="smoking.html"><span class="titreck">Smoking</span></a>
+		</li><li data-level="2" class="maximenuck item464 level2 " style="z-index : 11979;" ><a class="maximenuck " href="eating-control.html"><span class="titreck">Eating Regulation</span></a>
+		</li><li data-level="2" class="maximenuck item465 level2 " style="z-index : 11978;" ><a class="maximenuck " href="drug-use.html"><span class="titreck">Drug Use</span></a>
+		</li><li data-level="2" class="maximenuck item466 level2 " style="z-index : 11977;" ><a class="maximenuck " href="stress-management.html"><span class="titreck">Stress Management</span></a>
+		</li></ul><div class="clr"></div></div><div class="maximenuck2"  style="width:200px;float:left;"><ul class="maximenuck2"><li data-level="2" class="maximenuck item467 level2 " style="z-index : 11976;" ><a class="maximenuck " href="heart-failure-care.html"><span class="titreck">Heart Failure Care</span></a>
+		</li><li data-level="2" class="maximenuck item472 level2 " style="z-index : 11975;" ><a class="maximenuck " href="behavior-change.html"><span class="titreck">Behavior Change</span></a>
+		</li><li data-level="2" class="maximenuck item468 level2 " style="z-index : 11974;" ><a class="maximenuck " href="http://mperf.md2k.org/"><span class="titreck">Work Productivity</span></a>
+		</li><li data-level="2" class="maximenuck item469 last level2 " style="z-index : 11973;" ><a class="maximenuck " href="oral-health.html"><span class="titreck">Oral Health</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item197 parent level1 " style="z-index : 11972;" ><a class="maximenuck " href="../software.html"><span class="titreck">Software</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item421 first parent level2 " style="z-index : 11971;" ><a class="maximenuck " href="../software/under-the-hood.html"><span class="titreck">Under the Hood</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item427 first level3 " style="z-index : 11970;" ><a class="maximenuck " href="../software/under-the-hood/mcerebrum.html"><span class="titreck">Smartphone Software</span></a>
+		</li><li data-level="3" class="maximenuck item428 parent level3 " style="z-index : 11969;" ><a class="maximenuck " href="../software/under-the-hood/cerebral-cortex.html"><span class="titreck">Cloud Software</span></a>
+	<div class="floatck" style="margin-left:225px;width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="4" class="maximenuck item436 first last level4 " style="z-index : 11968;" ><a class="maximenuck " href="../software/under-the-hood/cerebral-cortex/architecture.html"><span class="titreck">Architecture</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="3" class="maximenuck item429 level3 " style="z-index : 11967;" ><a class="maximenuck " href="../software/under-the-hood/bug-reports-feature-requests.html"><span class="titreck">Bug Reports / Feature Requests</span></a>
+		</li><li data-level="3" class="maximenuck item430 level3 " style="z-index : 11966;" ><a class="maximenuck " href="../software/under-the-hood/software-license.html"><span class="titreck">Software License</span></a>
+		</li><li data-level="3" class="maximenuck item431 level3 " style="z-index : 11965;" ><a class="maximenuck " href="../software/under-the-hood/contributing.html"><span class="titreck">Contributing</span></a>
+		</li><li data-level="3" class="maximenuck item432 level3 " style="z-index : 11964;" ><a class="maximenuck " href="../software/under-the-hood/references.html"><span class="titreck">References</span></a>
+		</li><li data-level="3" class="maximenuck item533 last level3 " style="z-index : 11963;" ><a class="maximenuck " href="../software/under-the-hood/software-docs.html"><span class="titreck">Documentation</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item422 parent level2 " style="z-index : 11962;" ><a class="maximenuck " href="../software/how-to.html"><span class="titreck">How-To</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item433 first parent level3 " style="z-index : 11961;" ><a class="maximenuck " href="../software/how-to/smartphone-software.html"><span class="titreck">Smartphone Software</span></a>
+	<div class="floatck" style="margin-left:225px;width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="4" class="maximenuck item440 first level4 " style="z-index : 11960;" ><a class="maximenuck " href="../software/how-to/smartphone-software/getting-started.html"><span class="titreck">Getting Started</span></a>
+		</li><li data-level="4" class="maximenuck item476 last level4 " style="z-index : 11959;" ><a class="maximenuck " href="../software/how-to/smartphone-software/implementing-datakit.html"><span class="titreck">Implementing DataKit</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="3" class="maximenuck item434 parent level3 " style="z-index : 11958;" ><a class="maximenuck " href="../software/how-to/supported-sensors.html"><span class="titreck">Supported Sensors</span></a>
+	<div class="floatck" style="margin-left:225px;width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="4" class="maximenuck item441 first level4 " style="z-index : 11957;" ><a class="maximenuck " href="../software/how-to/supported-sensors/sensors-troubleshooting.html"><span class="titreck">Sensors Troubleshooting</span></a>
+		</li><li data-level="4" class="maximenuck item442 last level4 " style="z-index : 11956;" ><a class="maximenuck " href="../software/how-to/supported-sensors/adding-sensors.html"><span class="titreck">Adding Sensors </span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="3" class="maximenuck item438 parent level3 " style="z-index : 11955;" ><a class="maximenuck " href="../software/how-to/getting-started.html"><span class="titreck">Cloud Software</span></a>
+	<div class="floatck" style="width:300px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="4" class="maximenuck item437 first level4 " style="z-index : 11954;" ><a class="maximenuck " href="../software/how-to/getting-started/docker.html"><span class="titreck">Docker</span></a>
+		</li><li data-level="4" class="maximenuck item439 last level4 " style="z-index : 11953;" ><a class="maximenuck " href="../software/how-to/getting-started/working-with-cerebral-cortex.html"><span class="titreck">Working with Cerebral Cortex</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="3" class="maximenuck item453 last level3 " style="z-index : 11952;" ><a class="maximenuck " href="../software/how-to/software-howto-studyguides.html"><span class="titreck">Study Guides</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item423 level2 " style="z-index : 11951;" ><a class="maximenuck " href="../software/deployments.html"><span class="titreck">Deployments</span></a>
+		</li><li data-level="2" class="maximenuck item424 level2 " style="z-index : 11950;" ><a class="maximenuck " href="../software/contributors.html"><span class="titreck">Contributors</span></a>
+		</li><li data-level="2" class="maximenuck item482 level2 " style="z-index : 11949;" ><a class="maximenuck " href="../software/personal.html"><span class="titreck">Personal Edition</span></a>
+		</li><li data-level="2" class="maximenuck item486 last level2 " style="z-index : 11948;" ><a class="maximenuck " href="../software/codeofconduct.html"><span class="titreck">Code of Conduct</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item564 parent level1 " style="z-index : 11947;" ><a class="maximenuck " href="../tutorials.html"><span class="titreck">Tutorials</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item565 first last level2 " style="z-index : 11946;" ><a class="maximenuck " href="../tutorials/cps-iot-week-2020.html"><span class="titreck">CPS-IoT Week 2020</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item247 parent level1 " style="z-index : 11945;" ><a class="maximenuck " href="../webinars.html"><span class="titreck">Training</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item425 first parent level2 " style="z-index : 11944;" ><a class="maximenuck " href="https://mhti.md2k.org/"><span class="titreck">mHealth Training Institute</span></a>
+	<div class="floatck" style="margin-left:200px;width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first "  style="width:250px;float:left;">
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item426 first last level3 " style="z-index : 11943;" ><a class="maximenuck " href="https://mhti.md2k.org/index.php/gallery/2019/2019-lectures"><span class="titreck">mHTI Lectures</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item356 last level2 " style="z-index : 11942;" ><a class="maximenuck " href="https://mhealth.md2k.org/training/webinars" target="_blank" ><span class="titreck">Webinar Videos</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item223 level1 " style="z-index : 11941;" ><a class="maximenuck " href="../studies.html"><span class="titreck">Deployments</span></a>
+		</li><li data-level="1" class="maximenuck item226 parent level1 " style="z-index : 11940;" ><a class="maximenuck " href="../events.html"><span class="titreck">Events</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item512 first level2 " style="z-index : 11939;" ><a class="maximenuck " href="../events/md2k-2018.html"><span class="titreck">2018 Annual Meeting</span></a>
+		</li><li data-level="2" class="maximenuck item353 parent level2 " style="z-index : 11938;" ><a class="maximenuck " href="../events/2017-annual-meeting.html"><span class="titreck">2017 Annual Meeting</span></a>
+	<div class="floatck" style="width:250px;"><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item455 first last level3 " style="z-index : 11937;" ><a class="maximenuck " href="../events/2017-annual-meeting/2017-career-day.html"><span class="titreck">2017 Career Day</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item228 level2 " style="z-index : 11936;" ><a class="maximenuck " href="../events/2016-annual-meeting.html"><span class="titreck">2016 Annual Meeting</span></a>
+		</li><li data-level="2" class="maximenuck item227 last level2 " style="z-index : 11935;" ><a class="maximenuck " href="../events/2015-annual-meeting.html"><span class="titreck">2015 Annual Meeting</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item348 level1 " style="z-index : 11934;" ><a class="maximenuck " href="https://mhealth.md2k.org/"><span class="titreck">mHealthHUB</span></a>
+		</li><li data-level="1" class="maximenuck item199 parent level1 " style="z-index : 11933;" ><a class="maximenuck " href="../related-projects.html"><span class="titreck">Related Projects</span></a>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style="width:auto;"><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item239 first level2 " style="z-index : 11932;" ><a class="maximenuck " href="http://mperf.md2k.org/" target="_blank" ><span class="titreck">mPerf</span></a>
+		</li><li data-level="2" class="maximenuck item240 level2 " style="z-index : 11931;" ><a class="maximenuck " href="http://mprov.md2k.org/" target="_blank" ><span class="titreck">mProv</span></a>
+		</li><li data-level="2" class="maximenuck item577 level2 " style="z-index : 11930;" ><a class="maximenuck " href="http://mcontain.md2k.org/" target="_blank" ><span class="titreck">mContain</span></a>
+		</li><li data-level="2" class="maximenuck item513 last level2 " style="z-index : 11929;" ><a class="maximenuck " href="https://mdot.md2k.org/" target="_blank" ><span class="titreck">mDOT</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck item556 last level1 " style="z-index : 11928;" ><a class="maximenuck " href="../moods.html"><span class="titreck">MOODS</span></a></li>            </ul>
+        </div>
+        <div class="maxiroundedright"></div>
+        <div style="clear:both;"></div>
+    </div>
+    <!-- fin maximenuCK -->
+</div></div></div></div></div></section><section id="sp-main-body"><div class="container"><div class="row"><div id="sp-component" class="col-sm-12 col-md-12"><div class="sp-column custom-class"><div id="system-message-container">
+	</div>
+<div class="blog" itemscope itemtype="http://schema.org/Blog">
+	
+	
+	
+	
+	
+				<div class="items-leading clearfix">
+							<article class="item leading-0"
+					itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+					
+
+
+
+<div class="entry-header">
+
+	
+		
+	
+</div>
+
+
+
+<div style="padding-right: 20px; padding-left: 20px; margin-top: -75px;">
+<div style="float: right; width: 275px; padding: 10px; margin-left: 10px; background-color: #eeeeee;">
+<p style="font-size: 18px; font-weight: bold; text-align: center;">Team members</p>
+<p style="text-align: center; font-size: 13px;"><strong>Faculty</strong><br /> <a href="../about/meet-the-team.html#rehg">James M. Rehg</a> (Georgia Tech)<br /> <a href="../about/meet-the-team.html#marlin">Benjamin Marlin</a> (UMass Amherst)<br /> <a href="../about/meet-the-team.html#ganesan">Deepak Ganesan</a> (UMass Amherst)<br /><a href="../about/meet-the-team.html#ertin">Emre Ertin</a> (Ohio State)<br /><a href="../about/meet-the-team.html#kumar">Santosh Kumar</a> (Memphis)<br /><a href="../about/meet-the-team.html#murphy">Susan Murphy</a> (Michigan)</p>
+<p style="text-align: center; font-size: 13px;"><strong>Students</strong><br /> <a href="../about/meet-the-team.html#adams">Roy Adams</a> (UMass Amherst)<br /><a href="../about/meet-the-team.html#gao">Ju Gao</a> (Ohio State)<br /><a href="../about/meet-the-team.html#dempsey">Walter Dempsey</a> (Harvard)<br /><a href="../about/meet-the-team.html#saleheen">Nazir Saleheen</a> (Memphis)</p>
+</div>
+</div>
+<div style="padding-right: 20px; padding-left: 20px;">
+<h1>Big Data Analytics</h1>
+<p>MD2K&rsquo;s goal is to create generalizable theory, methods, tools, and software that addresses the major barriers to processing complex mobile sensor data. This is to enable the use of this data by the broader community for biomedical knowledge discovery and just-in-time care delivery. MD2K&rsquo;s Data Science Research Core seeks to demonstrate the feasibility, utility, and generalizability of the MD2K approach by implementing the entire MD2K data analytics system in the context of two biomedical applications - reducing relapse among abstinent daily smokers and reducing readmission among congestive heart failure (CHF) patients.</p>
+<p>All of the tools and software developed by MD2K are freely available as open-source projects for mHealth and data science researchers. Biomedical researchers will be able to install the MD2K software on mobile devices to collect mobile sensor data and the MD2K analytics software on their servers to analyze these data for biomedical discovery.</p>
+<div style="padding-right: 20px;">
+<div style="float: left; width: 300px; text-align: center;"><strong>Computational Model Development</strong><br /><img src="../images/comp_model.png" alt="comp model" width="300" class="img-responsive" style="float: right; padding-right: 10px;" /></div>
+</div>
+<p>Specific goals of the DSR Core include:<br />  &bull; Develop general principles, computational methods, and a toolbox for inferring markers (i.e., measures) of patient health, as well as markers of the behavioral, physical, social, and environmental risk factors that are often found in a wide variability of behaviors. In addition, develop methods to address known and unknown confounders, errors in self-report data, and the variable quality and availability of sensor data.</p>
+<p>&bull; Develop time series pattern mining algorithms and interactive visualization tools to help biomedical researchers accurately discover vulnerable states from sensor-based markers. This is done with the goal of being able to predict adverse health events, ahead of the onset of adverse clinical events, and to develop online learning algorithms for delivering just-in-time adaptive intervention that can move an individual back to a healthy state.</p>
+<p>&bull; Develop and implement a standards-based, interoperable, extensible and open-source big data software platform for efficient implementation of MD2K data analytics developed in the previous two points. This supports both off-line analysis of mobile sensor data at population-scale and online data analysis at the individual scale, and provide a reliable and responsive user experience to biomedical researchers, patients, and care providers.</p>
+<p>&bull; Conduct user studies with smokers, CHF patients, researchers, and clinicians to inform the design of MD2K tools and to evaluate their utility, usability, and validity for biomedical research and care delivery.</p>
+</div>
+<div style="padding-right: 20px; padding-left: 20px;">
+<p>Some of the major activities that MD2K has undertaken to reach the above-stated goals include:</p>
+<div style="margin-left: 30px;">
+<p>&bull; Detection of smoking from respiration and wrist-worn accelerometers<br />&bull;Detecting craving from respiration and ECG data<br /> &bull; Detection of eating events using wrist-worn accelerometers<br /> &bull; Use of iShadow glasses for detecting drowsiness and fatigue<br /> &bull; Automated detection of visual smoking cues using first person vision<br /> &bull; Analysis of compressively sampled ECG data<br /> &bull; Structured prediction models for multivariate time series data with temporally imprecise labels<br /> &bull; Use of a Discovery Dashboard to discover and visualize predictors for adverse events. <br /> &bull; Predicting risk for adverse health events from marker data<br /> &bull; Learning decision rules for timing and content of just-in-time adaptive interventions.</p>
+</div>
+<p><a id="pubs" name="pubs"></a></p>
+<br />
+<h2>Publications</h2>
+<ol class="bibtex-list"><li id="ProceedingsPaperEntry-Jeyakumar2018"><p>Jeya Vikranth Jeyakumar, Eun Sun Lee, Zhengxu Xia, Sandeep Singh Sandha, Nathan Tausik and Mani Srivastava. <br><strong>Deep Convolutional Bidirectional LSTM Based Transportation Mode Recognition</strong>. In <i>Proceedings of the 2018 ACM International Joint Conference and 2018 International Symposium on Pervasive and Ubiquitous Computing and Wearable Computers</i>. 2018, 1606–1615. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://doi.acm.org/10.1145/3267305.3267529">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1145/3267305.3267529">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{Jeyakumar2018,
+	author = "Jeyakumar, Jeya Vikranth and Lee, Eun Sun and Xia, Zhengxu and Sandha, Sandeep Singh and Tausik, Nathan and Srivastava, Mani",
+	title = "Deep Convolutional Bidirectional LSTM Based Transportation Mode Recognition",
+	booktitle = "Proceedings of the 2018 ACM International Joint Conference and 2018 International Symposium on Pervasive and Ubiquitous Computing and Wearable Computers",
+	year = 2018,
+	series = "UbiComp '18",
+	pages = "1606--1615",
+	address = "New York, NY, USA",
+	publisher = "ACM",
+	__markedentry = "[bbwillms:6]",
+	acmid = 3267529,
+	doi = "10.1145/3267305.3267529",
+	isbn = "978-1-4503-5966-5",
+	keywords = "Deep Learning, Machine Learning, Mobile Sensing, Transportation Modes Classification",
+	location = "Singapore, Singapore",
+	numpages = 10,
+	url = "http://doi.acm.org/10.1145/3267305.3267529"
+}
+</pre></li><li id="ArticleEntry-interlandi2017adding"><p>Matteo Interlandi, Ari Ekmekji, Kshitij Shah, Muhammad Ali Gulzar, Sai Deep Tetali, Miryung Kim, Todd Millstein and Tyson Condie. <br><strong>Adding data provenance support to Apache Spark</strong>. <i>The VLDB Journal</i>, pages 1–21, 2017. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/methods/adding-provenance_interlandi.pdf">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{interlandi2017adding,
+	author = "Matteo Interlandi and Ari Ekmekji and Kshitij Shah and Muhammad Ali Gulzar and Sai Deep Tetali and Miryung Kim and Todd Millstein and Tyson Condie",
+	title = "Adding data provenance support to Apache Spark",
+	journal = "The VLDB Journal",
+	year = 2017,
+	pages = "1--21",
+	abstract = "Debugging data processing logic in data-intensive scalable computing (DISC) systems is a difficult and time-consuming effort. Today’s DISC systems offer very little tooling for debugging programs, and as a result, programmers spend countless hours collecting evidence (e.g., from log files) and performing trial-and-error debugging. To aid this effort, we built Titian, a library that enables data provenance—tracking data through transformations—in Apache Spark. Data scientists using the Titian Spark extension will be able to quickly identify the input data at the root cause of a potential bug or outlier result. Titian is built directly into the Spark platform and offers data provenance support at interactive speeds—orders of magnitude faster than alternative solutions—while minimally impacting Spark job performance; observed overheads for capturing data lineage rarely exceed 30% above the baseline job execution time.",
+	publisher = "Springer Berlin Heidelberg",
+	pubstate = "published",
+	tppubtype = "article",
+	url = "https://md2k.org/images/papers/methods/adding-provenance_interlandi.pdf"
+}
+</pre></li><li id="ProceedingsPaperEntry-gulzar2017debugging"><p>Muhammad Ali Gulzar, Matteo Interlandi, Tyson Condie and Miryung Kim. <br><strong>Debugging Big Data Analytics in Spark with BigDebug</strong>. In <i>Proceedings of the 2017 ACM International Conference on Management of Data</i>. 2017, 1627–1630. <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{gulzar2017debugging,
+	author = "Muhammad Ali Gulzar and Matteo Interlandi and Tyson Condie and Miryung Kim",
+	title = "Debugging Big Data Analytics in Spark with BigDebug",
+	booktitle = "Proceedings of the 2017 ACM International Conference on Management of Data",
+	year = 2017,
+	pages = "1627--1630",
+	organization = "ACM",
+	abstract = "Developing Big Data Analytics workloads often involves trial and error debugging, due to the unclean nature of datasets or wrong assumptions made about data. When errors (e.g., program crash, outlier results, etc.) arise, developers are often interested in identify-ing a subset of the input data that is able to reproduce the problem. BIGSIFT is a new faulty data localization approach that combines insights from automated fault isolation in software engineering and data provenance in database systems to ﬁnd a minimum set of failure-inducing inputs. BIGSIFT redeﬁnes data provenance for the purpose of debugging using a test oracle function and implements several unique optimizations, speciﬁcally geared towards the iterative nature of automated debugging workloads. BIGSIFT improves the accu-racy of fault localizability by several orders-of-magnitude (∼103 to 107×) compared to Titian data provenance, and improves perfor-mance by up to 66× compared to Delta Debugging, an automated fault-isolation technique. For each faulty output, BIGSIFT is able to localize fault-inducing data within 62% of the original job running time.",
+	pubstate = "published",
+	tppubtype = "inproceedings"
+}
+</pre></li><li id="ProceedingsPaperEntry-Hohman_2017_STU_3027063_3053103"><p>Fred Hohman, Nathan Hodas and Duen Horng Chau. <br><strong>ShapeShop: Towards Understanding Deep Learning Representations via Interactive Experimentation</strong>. In <i>Proceedings of the 2017 CHI Conference Extended Abstracts on Human Factors in Computing Systems</i>. 2017, 1694–1699. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/methods/ea1694-hohman.pdf">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1145/3027063.3053103">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{Hohman:2017:STU:3027063.3053103,
+	author = "Fred Hohman and Nathan Hodas and Duen Horng Chau",
+	title = "ShapeShop: Towards Understanding Deep Learning Representations via Interactive Experimentation",
+	booktitle = "Proceedings of the 2017 CHI Conference Extended Abstracts on Human Factors in Computing Systems",
+	year = 2017,
+	series = "CHI EA '17",
+	pages = "1694--1699",
+	address = "Denver, Colorado, USA",
+	publisher = "ACM",
+	abstract = "Deep learning is the driving force behind many recent technologies; however, deep neural networks are often viewed as “black-boxes” due to their internal complexity that is hard to understand. Little research focuses on helping people explore and understand the relationship between a user’s data and the learned representations in deep learning models. We present our ongoing work, ShapeShop, an interactive system for visualizing and understanding what semantics a neural network model has learned. Built using standard web technologies, ShapeShop allows users to experiment with and compare deep learning models to help explore the robustness of image classifiers",
+	doi = "10.1145/3027063.3053103",
+	isbn = "978-1-4503-4656-6",
+	keywords = "interactive visualization, learning semantics, model exploration",
+	pubstate = "published",
+	tppubtype = "inproceedings",
+	url = "https://md2k.org/images/papers/methods/ea1694-hohman.pdf"
+}
+</pre></li><li id="ProceedingsPaperEntry-Fang_2017_MVD_3123024_3123170"><p>Dezhi Fang, Fred Hohman, Peter Polack, Hillol Sarker, Minsuk Kahng, Moushumi Sharmin, Mustafa  and Duen Horng Chau. <br><strong>mHealth Visual Discovery Dashboard</strong>. In <i>Proceedings of the 2017 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2017 ACM International Symposium on Wearable Computers</i>. 2017, 237–240. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/methods/p237-fang.html">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1145/3123024.3123170">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{Fang:2017:MVD:3123024.3123170,
+	author = "Fang, Dezhi and Hohman, Fred and Polack, Peter and Sarker, Hillol and Kahng, Minsuk and Sharmin, Moushumi and al'Absi, Mustafa and Chau, Duen Horng",
+	title = "mHealth Visual Discovery Dashboard",
+	booktitle = "Proceedings of the 2017 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2017 ACM International Symposium on Wearable Computers",
+	year = 2017,
+	series = "UbiComp '17",
+	pages = "237--240",
+	address = "New York, NY, USA",
+	publisher = "ACM",
+	abstract = "We present Discovery Dashboard, a visual analytics system for exploring large volumes of time series data from mobile medical field studies. Discovery Dashboard offers interactive exploration tools and a data mining motif discovery algorithm to help researchers formulate hypotheses, discover trends and patterns, and ultimately gain a deeper understanding of their data. Discovery Dashboard emphasizes user freedom and flexibility during the data exploration process and enables researchers to do things previously challenging or impossible to do --- in the web-browser and in real time. We demonstrate our system visualizing data from a mobile sensor study conducted at the University of Minnesota that included 52 participants who were trying to quit smoking.",
+	acmid = 3123170,
+	doi = "10.1145/3123024.3123170",
+	isbn = "978-1-4503-5190-4",
+	keywords = "health informatics, motif discovery, time series data, visual analytics",
+	location = "Maui, Hawaii",
+	numpages = 4,
+	url = "https://md2k.org/images/papers/methods/p237-fang.pdf"
+}
+</pre></li><li id="ProceedingsPaperEntry-Dadkhahi17"><p>Hamid Dadkhahi and Benjamin Marlin. <br><strong>Learning Tree-Structured Detection Cascades for Heterogeneous Networks of Embedded Devices</strong>. In <i>Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</i>. 2017. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/methods/p1773-dadkhahi.pdf">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{Dadkhahi17,
+	author = "Hamid Dadkhahi and Benjamin Marlin",
+	title = "Learning Tree-Structured Detection Cascades for Heterogeneous Networks of Embedded Devices",
+	booktitle = "Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining",
+	year = 2017,
+	abstract = "In this paper, we present a new approach to learning cascaded classifiers for use in computing environments that involve networks of heterogeneous and resource-constrained, low-power embedded compute and sensing nodes. We present a generalization of the classical linear detection cascade to the case of tree-structured cascades where different branches of the tree execute on different physical compute nodes in the network. Different nodes have access to different features, as well as access to potentially different computation and energy resources. We concentrate on the problem of jointly learning the parameters for all of the classifiers in the cascade given a fixed cascade architecture and a known set of costs required to carry out the computation at each node. To accomplish the objective of joint learning of all detectors, we propose a novel approach to combining classifier outputs during training that better matches the hard cascade setting in which the learned system will be deployed. This work is motivated by research in the area of mobile health where energy efficient real time detectors integrating information from multiple wireless on-body sensors and a smart phone are needed for real-time monitoring and the delivery of just-in-time adaptive interventions. We evaluate our framework on mobile sensor-based human activity recognition and mobile health detector learning problems.",
+	journal = "23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining., 2017",
+	keywords = "Cascaded classification, low-power embedded sensing networks, mobile health",
+	pubstate = "forthcoming",
+	tppubtype = "inproceedings",
+	url = "https://md2k.org/images/papers/methods/p1773-dadkhahi.pdf"
+}
+</pre></li><li id="ProceedingsPaperEntry-alzantot17"><p>Moustafa Alzantot, Yingnan Wang, Zhengshuang Ren and Mani  B Srivastava. <br><strong>RSTensorFlow: GPU Enabled TensorFlow for Deep Learning on Commodity Android Devices</strong>. In <i>Proceedings of the 1st International Workshop on Deep Learning for Mobile Systems and Applications</i>. 2017. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/methods/p7-alzantot.pdf">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/https://doi.org/10.1145/3089801.3089805">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{alzantot17,
+	author = "Moustafa Alzantot and Yingnan Wang and Zhengshuang Ren and Mani B. Srivastava",
+	title = "RSTensorFlow: GPU Enabled TensorFlow for Deep Learning on Commodity Android Devices",
+	booktitle = "Proceedings of the 1st International Workshop on Deep Learning for Mobile Systems and Applications",
+	year = 2017,
+	abstract = "Mobile devices have become an essential part of our daily lives. By virtue of both their increasing computing power and the recent progress made in AI, mobile devices evolved to act as intelligent assistants in many tasks rather than a mere way of making phone calls. However, popular and commonly used tools and frameworks for machine intelli-gence are still lacking the ability to make proper use of the available heterogeneous computing resources on mobile devices. In this paper, we study the beneﬁts of utilizing the heterogeneous (CPU and GPU) computing resources available on commodity android devices while running deep learning models. We leveraged the heterogeneous comput-ing framework RenderScript to accelerate the execution of deep learning models on commodity Android devices. Our system is implemented as an extension to the popular open-source framework TensorFlow. By integrating our acceler-ation framework tightly into TensorFlow, machine learning engineers can now easily make beneﬁt of the heterogeneous computing resources on mobile devices without the need of any extra tools. We evaluate our system on diﬀerent android phones models to study the trade-oﬀs of running diﬀerent neural network operations on the GPU. We also compare the performance of running diﬀerent models architectures such as convolutional and recurrent neural networks on CPU only vs using heterogeneous computing resources. Our result shows that although GPUs on the phones are capable of of-fering substantial performance gain in matrix multiplication on mobile devices. Therefore, models that involve multi-plication of large matrices can run much faster (approx. 3 times faster in our experiments) due to GPU support.",
+	doi = "https://doi.org/10.1145/3089801.3089805",
+	keywords = "android, Convolution, deep learning, hetero-geneous computing, LSTM, Neural networks, RenderScript, TensorFlow",
+	pubstate = "published",
+	tppubtype = "inproceedings",
+	url = "https://md2k.org/images/papers/methods/p7-alzantot.pdf"
+}
+</pre></li><li id="InBookEntry-Liu2017"><p>James   M Rehg, Susan   A Murphy and Santosh Kumar (eds.). <i><br><strong>Learning Continuous-Time Hidden Markov Models for Event Data</strong></i>. pages 361–387, Springer International Publishing, 2017. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/methods/LearningC-THMM.pdf">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1007/978-3-319-51394-2_19">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inbook{Liu2017,
+	pages = "361--387",
+	title = "Learning Continuous-Time Hidden Markov Models for Event Data",
+	publisher = "Springer International Publishing",
+	year = 2017,
+	author = "Liu, Yu-Ying and Moreno, Alexander and Li, Shuang and Li, Fuxin and Song, Le and Rehg, James M.",
+	editor = "Rehg, James M. and Murphy, Susan A. and Kumar, Santosh",
+	address = "Cham",
+	isbn = "978-3-319-51394-2",
+	abstract = "The Continuous-Time Hidden Markov Model (CT-HMM) is an attractive modeling tool for mHealth data that takes the form of events occurring at irregularly-distributed continuous time points. However, the lack of an efficient parameter learning algorithm for CT-HMM has prevented its widespread use, necessitating the use of very small models or unrealistic constraints on the state transitions. In this paper, we describe recent advances in the development of efficient EM-based learning methods for CT-HMM models. We first review the structure of the learning problem, demonstrating that it consists of two challenges: (1) the estimation of posterior state probabilities and (2) the computation of end-state conditioned expectations. The first challenge can be addressed by reformulating the estimation problem in terms of an equivalent discrete time-inhomogeneous hidden Markov model. The second challenge is addressed by exploiting computational methods traditionally used for continuous-time Markov chains and adapting them to the CT-HMM domain. We describe three computational approaches and analyze the tradeoffs between them. We evaluate the resulting parameter learning methods in simulation and demonstrate the use of models with more than 100 states to analyze disease progression using glaucoma and Alzheimer's Disease datasets.",
+	booktitle = "Mobile Health: Sensors, Analytic Methods, and Applications",
+	doi = "10.1007/978-3-319-51394-2_19",
+	url = "https://md2k.org/images/papers/methods/LearningC-THMM.pdf"
+}
+</pre></li><li id="ProceedingsPaperEntry-adams17"><p>Roy  J Adams and Benjamin  M Marlin. <br><strong>Learning Time Series Detection Models from Temporally Imprecise Labels</strong>. In <i>Proceedings of the 20th International Conference on Artificial Intelligence and Statistics</i>. 2017. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/methods/adams17a.pdf">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{adams17,
+	author = "Roy J. Adams and Benjamin M. Marlin",
+	title = "Learning Time Series Detection Models from Temporally Imprecise Labels",
+	booktitle = "Proceedings of the 20th International Conference on Artificial Intelligence and Statistics",
+	year = 2017,
+	abstract = "In this paper, we consider a new low-quality label learning problem: learning time series detection models from temporally imprecise labels. In this problem, the data consist of a set of input time series, and supervision is provided by a sequence of noisy time stamps corresponding to the occurrence of positive class events. Such temporally imprecise labels commonly occur in areas like mobile health research where human annotators are tasked with labeling the occurrence of very short duration events. We propose a general learning framework for this problem that can accommodate different base classifiers and noise models. We present results on real mobile health data showing that the proposed framework significantly outperforms a number of alternatives including assuming that the label time stamps are noise-free, transforming the problem into the multiple instance learning framework, and learning on labels that were manually re-aligned.",
+	keywords = "machine learning, mobile health, time series",
+	pubstate = "published",
+	tppubtype = "inproceedings",
+	url = "https://md2k.org/images/papers/methods/adams17a.pdf"
+}
+</pre></li><li id="ProceedingsPaperEntry-pmlr-v70-dempsey17a"><p>Walter  H Dempsey, Alexander Moreno, Christy  K Scott, Michael  L Dennis, David  H Gustafson, Susan  A Murphy and James  M Rehg. <br><strong>iSurvive: An Interpretable, Event-time Prediction Model for mHealth</strong>. In Doina Precup and Yee Whye Teh (eds.). <i>Proceedings of the 34th International Conference on Machine Learning</i> 70. 2017, 970–979. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/methods/dempsey17a.pdf">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/http://proceedings.mlr.press/v70/dempsey17a.html">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{pmlr-v70-dempsey17a,
+	author = "Walter H. Dempsey and Alexander Moreno and Christy K. Scott and Michael L. Dennis and David H. Gustafson and Susan A. Murphy and James M. Rehg",
+	title = "i{S}urvive: An Interpretable, Event-time Prediction Model for m{H}ealth",
+	booktitle = "Proceedings of the 34th International Conference on Machine Learning",
+	year = 2017,
+	editor = "Doina Precup and Yee Whye Teh",
+	volume = 70,
+	series = "Proceedings of Machine Learning Research",
+	pages = "970--979",
+	address = "International Convention Centre, Sydney, Australia",
+	publisher = "PMLR",
+	abstract = "An important mobile health (mHealth) task is the use of multimodal data, such as sensor streams and self-report, to construct interpretable time-to-event predictions of, for example, lapse to alcohol or illicit drug use. Interpretability of the prediction model is important for acceptance and adoption by domain scientists, enabling model outputs and parameters to inform theory and guide intervention design. Temporal latent state models are therefore attractive, and so we adopt the continuous time hidden Markov model (CT-HMM) due to its ability to describe irregular arrival times of event data. Standard CT-HMMs, however, are not specialized for predicting the time to a future event, the key variable for mHealth interventions. Also, standard emission models lack a sufficiently rich structure to describe multimodal data and incorporate domain knowledge. We present iSurvive, an extension of classical survival analysis to a CT-HMM. We present a parameter learning method for GLM emissions and survival model fitting, and present promising results on both synthetic data and an mHealth drug use dataset.",
+	doi = "http://proceedings.mlr.press/v70/dempsey17a.html",
+	file = "dempsey17a.pdf:http\://proceedings.mlr.press/v70/dempsey17a/dempsey17a.pdf:PDF",
+	url = "https://md2k.org/images/papers/methods/dempsey17a.pdf"
+}
+</pre></li><li id="ProceedingsPaperEntry-dadkhahi2016learning"><p>Hamid Dadkhahi, Nazir Saleheen, Santosh Kumar and Benjamin  M Marlin. <br><strong>Learning Shallow Detection Cascades for Wearable Sensor-Based Mobile Health Applications</strong>. 2016. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/methods/Shallow-Detection-Cascades_Marlin16.pdf">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{dadkhahi2016learning,
+	author = "Hamid Dadkhahi and Nazir Saleheen and Santosh Kumar and Benjamin M Marlin",
+	title = "Learning Shallow Detection Cascades for Wearable Sensor-Based Mobile Health Applications",
+	year = 2016,
+	abstract = "The field of mobile health aims to leverage recent advances in wearable on-body sensing technol-ogy and smart phone computing capabilities to develop systems that can monitor health states and deliver just-in-time adaptive interventions. How-ever, existing work has largely focused on analyz-ing collected data in the off-line setting. In this paper, we propose a novel approach to learning shallow detection cascades developed explicitly for use in a real-time wearable-phone or wearable-phone-cloud systems. We apply our approach to the problem of cigarette smoking detection from a combination of wrist-worn actigraphy data and respiration chest band data using two and three stage cascades.",
+	journal = "Proceedings of the 33rd International Conference on Machine Learning, 2016",
+	pubstate = "published",
+	tppubtype = "article",
+	url = "https://md2k.org/images/papers/methods/Shallow-Detection-Cascades_Marlin16.pdf"
+}
+</pre></li><li id="ProceedingsPaperEntry-adams2016hierarchical"><p>Roy  J Adams, Abinhav Parate and Benjamin  M Marlin. <br><strong>Hierarchical Span-Based Conditional Random Fields for Labeling and Segmenting Events in Wearable Sensor Data Streams</strong>. In <i>Proceedings of The 33rd International Conference on Machine Learning</i>. 2016, 334–343. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/methods/adams16.pdf">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{adams2016hierarchical,
+	author = "Roy J Adams and Abinhav Parate and Benjamin M Marlin",
+	title = "Hierarchical Span-Based Conditional Random Fields for Labeling and Segmenting Events in Wearable Sensor Data Streams",
+	booktitle = "Proceedings of The 33rd International Conference on Machine Learning",
+	year = 2016,
+	pages = "334--343",
+	abstract = "The field of mobile health (mHealth) has the potential to yield new insights into health and behavior through the analysis of continuously recorded data from wearable health and activity sensors. In this paper, we present a hierarchi-cal span-based conditional random field model for the key problem of jointly detecting discrete events in such sensor data streams and segment-ing these events into high-level activity sessions. Our model includes higher-order cardinality fac-tors and inter-event duration factors to capture domain-specific structure in the label space. We show that our model supports exact MAP in-ference in quadratic time via dynamic program-ming, which we leverage to perform learning in the structured support vector machine frame-work. We apply the model to the problems of smoking and eating detection using four real data sets. Our results show statistically significant improvements in segmentation performance rel-ative to a hierarchical pairwise CRF.",
+	pubstate = "published",
+	tppubtype = "inproceedings",
+	url = "https://md2k.org/images/papers/methods/adams16.pdf"
+}
+</pre></li><li id="ProceedingsPaperEntry-sugavanam2016recovery"><p>Nithin Sugavanam, Siddharth Baskar and Emre Ertin. <br><strong>Recovery guarantees for high resolution radar sensing with compressive illumination</strong>. In <i>Compressed Sensing Theory and its Applications to Radar, Sonar and Remote Sensing (CoSeRa), 2016 4th International Workshop on</i>. 2016, 252–256. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://ieeexplore.ieee.org/document/7745739/">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{sugavanam2016recovery,
+	author = "Nithin Sugavanam and Siddharth Baskar and Emre Ertin",
+	title = "Recovery guarantees for high resolution radar sensing with compressive illumination",
+	booktitle = "Compressed Sensing Theory and its Applications to Radar, Sonar and Remote Sensing (CoSeRa), 2016 4th International Workshop on",
+	year = 2016,
+	pages = "252--256",
+	organization = "IEEE",
+	abstract = "We present a compressive radar design that combines multitone linear frequency modulated (LFM) waveforms on transmit with classical stretch processor and sub-Nyquist sampling on receive. The proposed compressive illumination scheme has much fewer random elements compared to previously proposed compressive radar designs based on stochastic waveforms, resulting in reduced storage and complexity for implementation. We present bounds on the operator norm and mutual coherence of the sensing matrix of the proposed scheme and show that for sufficiently large number of modulating tones, high resolution range recovery is guaranteed for a sparse scene using sampling rates that scale linearly with the scene sparsity. Simulation results are presented to study recovery performance as a function of system parameters for targets both on and off the grid. In addition, we present experimental results using a high speed digital waveform generator and a custom designed analog stretch processor.",
+	pubstate = "published",
+	tppubtype = "inproceedings",
+	url = "http://ieeexplore.ieee.org/document/7745739/"
+}
+</pre></li><li id="ProceedingsPaperEntry-7516253"><p>J Gao, D Teng and E Ertin. <br><strong>ECG feature detection using randomly compressed samples for stable HRV analysis over low rate links</strong>. In <i>2016 IEEE 13th International Conference on Wearable and Implantable Body Sensor Networks (BSN)</i>. 2016, 165-170. <a target="_blank" class="bibtex-link bibtex-link-url" href="http://ieeexplore.ieee.org/document/7516253/">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1109/BSN.2016.7516253">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{7516253,
+	author = "J. Gao and D. Teng and E. Ertin",
+	title = "ECG feature detection using randomly compressed samples for stable HRV analysis over low rate links",
+	booktitle = "2016 IEEE 13th International Conference on Wearable and Implantable Body Sensor Networks (BSN)",
+	year = 2016,
+	pages = "165-170",
+	abstract = "Wireless biosensors enable continuous monitoring of physiology and can provide early signs of imminent problems allowing for quick intervention and improved outcomes. Wireless communication of the sensor data for remote storage and analysis dominates the device power budget and puts severe constraints on lifetime and size of these sensors. Traditionally, to minimize the wireless communication bandwidth, data compression at the sensor node and signal reconstruction at the remote terminal is utilized. Here we consider an alternative strategy of feature detection with compressed samples without the intermediate step of signal reconstruction. Specifically, we present a compressed matched subspace detection algorithm to detect fiducial points of ECG waveform from streaming random projections of the data. We provide a theoretical analysis to compare the performance of the compressed matched detector performance to that of a matched detector operating with uncompressed data. We present extensive experimental results with ECG data collected in the field illustrating that the proposed system can provide high quality heart rate variability indices and achieve an order of magnitude better RMSE in beat-to-beat heart rate estimation than the traditional filter/downsample solutions at low data rates.",
+	doi = "10.1109/BSN.2016.7516253",
+	keywords = "electrocardiography;feature extraction;medical signal processing;ECG data;ECG feature detection;ECG waveform;beat-to-beat heart;compressed matched subspace detection algorithm;feature detection;low rate links;randomly compressed samples;remote storage;sensor node;signal reconstruction;stable HRV analysis;wireless biosensors;wireless communication;Detectors;Electrocardiography;Feature extraction;Heart rate variability;Monitoring;Wireless communication;Wireless sensor networks",
+	url = "http://ieeexplore.ieee.org/document/7516253/"
+}
+</pre></li><li id="ProceedingsPaperEntry-Natarajan_2016_DAM_2971648_2971666b"><p>Annamalai Natarajan, Gustavo Angarita, Edward Gaiser, Robert Malison, Deepak Ganesan and Benjamin  M Marlin. <br><strong>Domain Adaptation Methods for Improving Lab-to-field Generalization of Cocaine Detection Using Wearable ECG</strong>. In <i>Proceedings of the 2016 ACM International Joint Conference on Pervasive and Ubiquitous Computing</i>. 2016, 875–885. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/methods/nihms835285_Marlin.pdf">URL</a>, <a target="_blank" class="bibtex-link bibtex-link-url" href="http://dx.doi.org/10.1145/2971648.2971666">DOI</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@inproceedings{Natarajan:2016:DAM:2971648.2971666b,
+	author = "Annamalai Natarajan and Gustavo Angarita and Edward Gaiser and Robert Malison and Deepak Ganesan and Benjamin M. Marlin",
+	title = "Domain Adaptation Methods for Improving Lab-to-field Generalization of Cocaine Detection Using Wearable ECG",
+	booktitle = "Proceedings of the 2016 ACM International Joint Conference on Pervasive and Ubiquitous Computing",
+	year = 2016,
+	series = "UbiComp '16",
+	pages = "875--885",
+	address = "Heidelberg, Germany",
+	publisher = "ACM",
+	abstract = "Mobile health research on illicit drug use detection typically involves a two-stage study design where data to learn detectors is first collected in lab-based trials, followed by a deployment to subjects in a free-living environment to assess detector performance. While recent work has demonstrated the feasibility of wearable sensors for illicit drug use detection in the lab setting, several key problems can limit lab-to-field generalization performance. For example, lab-based data collection often has low ecological validity, the ground-truth event labels collected in the lab may not be available at the same level of temporal granularity in the field, and there can be significant variability between subjects. In this paper, we present domain adaptation methods for assessing and mitigating potential sources of performance loss in lab-to-field generalization and apply them to the problem of cocaine use detection from wearable electrocardiogram sensor data.",
+	doi = "10.1145/2971648.2971666",
+	isbn = "978-1-4503-4461-6",
+	keywords = "classification, cocaine detection, covariate shift, domain adaptation, prior probability shift, Wearable Sensors",
+	pubstate = "published",
+	tppubtype = "inproceedings",
+	url = "https://md2k.org/images/papers/methods/nihms835285_Marlin.pdf"
+}
+</pre></li><li id="ArticleEntry-2015arXiv150807964T"><p>D Teng and E Ertin. <br><strong>Learning to Aggregate Information for Sequential Inferences</strong>. <i>ArXiv e-prints</i>, 2015. <a target="_blank" class="bibtex-link bibtex-link-pdf" href="../images/papers/methods/Learning-to-Aggregate_Ertin16.pdf">URL</a> <a href="#" class="bibtex-link bibtex-link-code">BibTeX</a></p><pre class="bibtex-code">@article{2015arXiv150807964T,
+	author = "Teng, D. and Ertin, E.",
+	title = "Learning to Aggregate Information for Sequential Inferences",
+	journal = "ArXiv e-prints",
+	year = 2015,
+	abstract = "We consider the problem of training a binary sequential classiﬁer un-der an error rate constraint. It is well known that for known densities, accumulating the likelihood ratio statistics is time optimal under a ﬁxed error rate constraint. For the case of unknown densities, we formulate the learning for sequential detection problem as a constrained density ratio estimation problem. Speciﬁcally, we show that the problem can be posed as a convex optimization problem using a Reproducing Kernel Hilbert Space representation for the log-density ratio function. The proposed bi-nary sequential classiﬁer is tested on synthetic data set and UC Irvine human activity recognition data set, together with previous approaches for density ratio estimation. Our empirical results show that the classiﬁer trained through the proposed technique achieves smaller average sampling cost than previous classiﬁers proposed in the literature for the same error rate.",
+	keywords = "Computer Science - Learning, Statistics - Machine Learning",
+	pubstate = "published",
+	tppubtype = "article",
+	url = "https://md2k.org/images/papers/methods/Learning-to-Aggregate_Ertin16.pdf"
+}
+</pre></li></ol></div>
+
+
+
+
+				</article>
+									</div><!-- end items-leading -->
+	
+	
+	
+	
+		</div>
+</div></div></div></div></section><section id="sp-feature-team-page" class="div#maximenuck253 div.floatck { 	 	background:#F4F4F4; 	background: -moz-linear-gradient(top, #f4f4f4, #eeeeee); 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f4f4), to(#eeeeee)); 	-moz-border-radius: 0px 5px 5px 5px; 	 }"><div class="row"><div id="sp-secondmenu" class="col-sm-12 col-md-12"><div class="sp-column div.floatck { background: #eeeeee;          background: -moz-linear-gradient(top, #EEEEEE, #EEEEEE);     /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEEEEE), to(#EEEEEE)); */  }"><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
+</div></div></div></div></div></section><footer id="sp-footer"><div class="container"><div class="row"><div id="sp-footer1" class="col-sm-10 col-md-10"><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom"  >
+	<p style="text-align: center; font-size: 12px; padding-top: 14px;">Copyright &copy; 2020 MD2K. <strong>MD2K was established by the National Institutes of Health Big Data to Knowledge Initiative <a href="https://projectreporter.nih.gov/project_info_description.cfm?aid=9303353&amp;icde=36143741&amp;ddparam=&amp;ddvalue=&amp;ddsub=&amp;cr=7&amp;csb=default&amp;cs=ASC&amp;pball=" target="_blank">(Grant #1U54EB020404)</a></strong><br /><span style="color: #ffffff; font-style: italic;">Team: Cornell Tech, GA Tech, Harvard, U. Memphis, Northwestern, Ohio State, UCLA, UCSD, UCSF, UMass, U. Michigan, U. Utah, WVU </span></p></div>
+</div></div></div></div><div id="sp-footer2" class="col-sm-2 col-md-2"><div class="sp-column "><ul class="sp-contact-info"><li class="sp-contact-phone"><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:901-678-1493">901-678-1493</a></li><li class="sp-contact-email"><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@md2k.org">info@md2k.org</a></li></ul><ul class="social-icons"><li><a target="_blank" href="https://twitter.com/MD2Korg" aria-label="twitter"><i class="fa fa-twitter"></i></a></li><li><a target="_blank" href="https://www.youtube.com/c/MD2KCenter" aria-label="youtube"><i class="fa fa-youtube"></i></a></li></ul></div></div></div></div></footer>            </div> <!-- /.body-innerwrapper -->
+        </div> <!-- /.body-innerwrapper -->
+
+        <!-- Off Canvas Menu -->
+        <div class="offcanvas-menu">
+            <a href="#" class="close-offcanvas" aria-label="Close"><i class="fa fa-remove" aria-hidden="true" title="HELIX_CLOSE_MENU"></i></a>
+            <div class="offcanvas-inner">
+                                  <div class="sp-module "><div class="sp-module-content"><ul class="nav menu">
+<li class="item-101"><a href="../index.html" > Home</a></li><li class="item-191  deeper parent"><a href="../about.html" > About</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-191"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-191"><li class="item-196"><a href="../about/meet-the-team.html" > MD2K Team</a></li><li class="item-198  deeper parent"><a href="../about/news.html" > News</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-198"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-198"><li class="item-443"><a href="../about/news/md2k-in-the-news.html" > MD2K in the News</a></li></ul></li><li class="item-581"><a href="../about/privacy.html" > Privacy</a></li><li class="item-224"><a href="../about/contact.html" > Contact</a></li></ul></li><li class="item-193  active deeper parent"><a href="../research-agenda.html" > Research</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-193"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-193"><li class="item-338"><a href="pubs.html" > Publications</a></li><li class="item-471  divider"><a class="separator ">Research Areas</a>
+</li><li class="item-213"><a href="research-agenda.html" > Research Agenda</a></li><li class="item-285"><a href="sensors.html" > Sensors</a></li><li class="item-214"><a href="biomarkers.html" > mHealth Biomarkers</a></li><li class="item-474"><a href="trial-design.html" > Trial Design</a></li><li class="item-216"><a href="jitai.html" > mHealth Interventions</a></li><li class="item-284"><a href="architecture.html" > Architecture</a></li><li class="item-219  current active"><a href="methodology.html" > Big Data Analytics</a></li><li class="item-473"><a href="visualization.html" > Visualization</a></li><li class="item-221"><a href="privacy.html" > Behavioral Privacy</a></li><li class="item-470  divider"><a class="separator ">Field Study Focus Areas</a>
+</li><li class="item-463"><a href="smoking.html" > Smoking</a></li><li class="item-464"><a href="eating-control.html" > Eating Regulation</a></li><li class="item-465"><a href="drug-use.html" > Drug Use</a></li><li class="item-466"><a href="stress-management.html" > Stress Management</a></li><li class="item-467"><a href="heart-failure-care.html" > Heart Failure Care</a></li><li class="item-472"><a href="behavior-change.html" > Behavior Change</a></li><li class="item-468">		<a  href="http://mperf.md2k.org/"  > Work Productivity</a></li><li class="item-469"><a href="oral-health.html" > Oral Health</a></li></ul></li><li class="item-197  deeper parent"><a href="../software.html" > Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-197"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-197"><li class="item-421  deeper parent"><a href="../software/under-the-hood.html" > Under the Hood</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-421"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-421"><li class="item-427"><a href="../software/under-the-hood/mcerebrum.html" > Smartphone Software</a></li><li class="item-428  deeper parent"><a href="../software/under-the-hood/cerebral-cortex.html" > Cloud Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-428"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-428"><li class="item-436"><a href="../software/under-the-hood/cerebral-cortex/architecture.html" > Architecture</a></li></ul></li><li class="item-429"><a href="../software/under-the-hood/bug-reports-feature-requests.html" > Bug Reports / Feature Requests</a></li><li class="item-430"><a href="../software/under-the-hood/software-license.html" > Software License</a></li><li class="item-431"><a href="../software/under-the-hood/contributing.html" > Contributing</a></li><li class="item-432"><a href="../software/under-the-hood/references.html" > References</a></li><li class="item-533"><a href="../software/under-the-hood/software-docs.html" > Documentation</a></li></ul></li><li class="item-422  deeper parent"><a href="../software/how-to.html" > How-To</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-422"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-422"><li class="item-433  deeper parent"><a href="../software/how-to/smartphone-software.html" > Smartphone Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-433"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-433"><li class="item-440"><a href="../software/how-to/smartphone-software/getting-started.html" > Getting Started</a></li><li class="item-476"><a href="../software/how-to/smartphone-software/implementing-datakit.html" > Implementing DataKit</a></li></ul></li><li class="item-434  deeper parent"><a href="../software/how-to/supported-sensors.html" > Supported Sensors</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-434"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-434"><li class="item-441"><a href="../software/how-to/supported-sensors/sensors-troubleshooting.html" > Sensors Troubleshooting</a></li><li class="item-442"><a href="../software/how-to/supported-sensors/adding-sensors.html" > Adding Sensors </a></li></ul></li><li class="item-438  deeper parent"><a href="../software/how-to/getting-started.html" > Cloud Software</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-438"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-438"><li class="item-437"><a href="../software/how-to/getting-started/docker.html" > Docker</a></li><li class="item-439"><a href="../software/how-to/getting-started/working-with-cerebral-cortex.html" > Working with Cerebral Cortex</a></li></ul></li><li class="item-453"><a href="../software/how-to/software-howto-studyguides.html" > Study Guides</a></li></ul></li><li class="item-423"><a href="../software/deployments.html" > Deployments</a></li><li class="item-424"><a href="../software/contributors.html" > Contributors</a></li><li class="item-482"><a href="../software/personal.html" > Personal Edition</a></li><li class="item-486"><a href="../software/codeofconduct.html" > Code of Conduct</a></li></ul></li><li class="item-564  deeper parent"><a href="../tutorials.html" > Tutorials</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-564"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-564"><li class="item-565"><a href="../tutorials/cps-iot-week-2020.html" > CPS-IoT Week 2020</a></li></ul></li><li class="item-247  deeper parent"><a href="../webinars.html" > Training</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-247"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-247"><li class="item-425  deeper parent">		<a  href="https://mhti.md2k.org/"  > mHealth Training Institute</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-425"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-425"><li class="item-426">		<a  href="https://mhti.md2k.org/index.php/gallery/2019/2019-lectures"  > mHTI Lectures</a></li></ul></li><li class="item-356">		<a href="https://mhealth.md2k.org/training/webinars" rel="noopener noreferrer" target="_blank" > Webinar Videos</a></li></ul></li><li class="item-223"><a href="../studies.html" > Deployments</a></li><li class="item-226  deeper parent"><a href="../events.html" > Events</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-226"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-226"><li class="item-512"><a href="../events/md2k-2018.html" > 2018 Annual Meeting</a></li><li class="item-353  deeper parent"><a href="../events/2017-annual-meeting.html" > 2017 Annual Meeting</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-353"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-353"><li class="item-455"><a href="../events/2017-annual-meeting/2017-career-day.html" > 2017 Career Day</a></li></ul></li><li class="item-228"><a href="../events/2016-annual-meeting.html" > 2016 Annual Meeting</a></li><li class="item-227"><a href="../events/2015-annual-meeting.html" > 2015 Annual Meeting</a></li></ul></li><li class="item-348">		<a  href="https://mhealth.md2k.org/"  > mHealthHUB</a></li><li class="item-199  deeper parent"><a href="../related-projects.html" > Related Projects</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-199"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span><ul class="collapse" id="collapse-menu-199"><li class="item-239">		<a href="http://mperf.md2k.org/" rel="noopener noreferrer" target="_blank" > mPerf</a></li><li class="item-240">		<a href="http://mprov.md2k.org/" rel="noopener noreferrer" target="_blank" > mProv</a></li><li class="item-577">		<a href="http://mcontain.md2k.org/" rel="noopener noreferrer" target="_blank" > mContain</a></li><li class="item-513">		<a href="https://mdot.md2k.org/" rel="noopener noreferrer" target="_blank" > mDOT</a></li></ul></li><li class="item-556"><a href="../moods.html" > MOODS</a></li></ul>
+</div></div>
+                            </div> <!-- /.offcanvas-inner -->
+        </div> <!-- /.offcanvas-menu -->
+
+        
+        
+        
+        <!-- Preloader -->
+        
+
+        <!-- Go to top -->
+        
+    </body>
+
+<!-- Mirrored from md2k.org/research-agenda/methodology.feed?type=rss by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 19:52:24 GMT -->
+</html>
